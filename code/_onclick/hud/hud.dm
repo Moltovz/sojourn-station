@@ -31,8 +31,8 @@ var/list/global_huds
 	//that white blurry effect you get when you eyes are damaged
 	blurry = new /obj/screen/fullscreen/tile("blurry")
 
-	nvg = new /obj/screen/fullscreen("nvg_hud")
-	//nvg.plane = LIGHTING_PLANE
+	nvg = new /obj/screen/fullscreen("nvg_hud") //who decided that making overlays the size of the game window was remotely a good idea 
+	//nvg.plane = LIGHTING_PLANE                    
 	thermal = new /obj/screen/fullscreen("thermal_hud")
 	meson = new /obj/screen/fullscreen("meson_hud")
 	science = new /obj/screen/fullscreen("science_hud")

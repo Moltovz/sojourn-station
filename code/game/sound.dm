@@ -62,6 +62,9 @@
 #define ASTEROID CAVE
 #define SPACE UNDERWATER
 
+//default for anything that has sound tied to its world.view
+#define DEFAULT_RANGE 15
+
 var/list/shatter_sound = list(
 	'sound/effects/Glassbr1.ogg','sound/effects/Glassbr2.ogg','sound/effects/Glassbr3.ogg'
 )
@@ -365,7 +368,7 @@ var/list/rummage_sound = list(\
 	frequency = vary && isnull(frequency) ? get_rand_frequency() : frequency // Same frequency for everybody
 
 	var/turf/turf_source = get_turf(source)
-	var/maxdistance = (world.view + extrarange) * 2
+	var/maxdistance = DEFAULT_RANGE + extrarange
 
  	// Looping through the player list has the added bonus of working for mobs inside containers
 	var/list/listeners = GLOB.player_list
@@ -417,7 +420,7 @@ var/const/FALLOFF_SOUNDS = 0.5
 		//sound volume falloff with distance
 		var/distance = get_dist(T, turf_source)
 
-		S.volume -= max(distance - (world.view + extrarange), 0) * 2 //multiplicative falloff to add on top of natural audio falloff.
+		S.volume -= max(distance - (DEFAULT_RANGE + extrarange), 0) * 2 //multiplicative falloff to add on top of natural audio falloff.
 
 		var/datum/gas_mixture/hearer_env = T.return_air()
 		var/datum/gas_mixture/source_env = turf_source.return_air()

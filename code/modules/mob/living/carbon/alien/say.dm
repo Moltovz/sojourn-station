@@ -1,6 +1,6 @@
 /mob/living/carbon/alien/say(var/message)
 	var/verb = "says"
-	var/message_range = world.view
+	var/message_range = DEFAULT_RANGE
 
 	if(client)
 		if(client.prefs.muted & MUTE_IC)

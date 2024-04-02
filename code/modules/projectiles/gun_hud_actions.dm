@@ -1,7 +1,7 @@
 /obj/screen/item_action/top_bar/gun
 	icon = 'icons/mob/screen/gun_actions.dmi'
-	screen_loc = "8,1:13"
-	minloc = "7,2:13"
+	screen_loc = "11,1:13"
+	minloc = "9,2:13"
 
 /obj/screen/item_action/top_bar/gun/safety
 	name = "safety"
@@ -30,9 +30,8 @@
 /obj/screen/item_action/top_bar/gun/scope
 	name = "scope"
 	icon_state = "scope0"
-	screen_loc = "9,1:13"
-	minloc = "8,2:13"
-	ErisOptimized_minloc = "9,1.35"
+	screen_loc = "11,1:13"
+	minloc = "10,2:13"
 
 /obj/screen/item_action/top_bar/gun/scope/update_icon()
 	..()
@@ -42,8 +41,8 @@
 
 /obj/screen/item_action/top_bar/weapon_info
 	icon = 'icons/mob/screen/gun_actions.dmi'
-	screen_loc = "9:16,1:13"
-	minloc = "8.5,2:13"
+	screen_loc = "11:16,1:13"
+	minloc = null
 	name = "Weapon Info"
 	icon_state = "info"
 	ErisOptimized_minloc = "16.5,10.3"
