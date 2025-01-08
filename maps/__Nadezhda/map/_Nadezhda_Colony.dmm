@@ -63197,7 +63197,9 @@
 	pixel_y = 32;
 	pixel_x = 12;
 	name = "Antique Anti-Materiel Rifle";
-	anchored = 1
+	anchored = 1;
+	cant_be_pulled = 1;
+	abstract = 1
 	},
 /turf/simulated/floor/wood/wild2,
 /area/nadezhda/crew_quarters/dorm5)
@@ -74469,10 +74471,11 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/nadezhda/maintenance/surfacesec)
 "nWZ" = (
-/obj/structure/safe/floor,
-/obj/item/spacecash/bundle{
-	icon_state = "20_alt";
-	worth = 5000
+/obj/item/oddity/rare/Reizaplaque{
+	anchored = 1;
+	cant_be_pulled = 1;
+	abstract = 1;
+	pixel_y = 32
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm3)
@@ -85266,10 +85269,14 @@
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/nadezhda/maintenance/undergroundfloor1south)
 "pUZ" = (
-/obj/item/oddity/rare/Reizaplaque{
-	anchored = 1
+/obj/structure/safe/floor,
+/obj/item/spacecash/bundle{
+	icon_state = "20_alt";
+	worth = 5000
 	},
-/turf/simulated/wall,
+/turf/simulated/floor/carpet/bcarpet{
+	name = "damaged black carpet"
+	},
 /area/nadezhda/crew_quarters/dorm3)
 "pVd" = (
 /obj/random/furniture/pottedplant,
@@ -103296,7 +103303,9 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/vasiliy_shuttle_area)
 "trQ" = (
-/obj/structure/closet/secure_closet/personal,
+/obj/structure/closet/secure_closet/personal{
+	anchored = 1
+	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm3)
 "trV" = (
@@ -119190,6 +119199,8 @@
 /area/nadezhda/dungeon/outside/hunter_cabin)
 "wjQ" = (
 /obj/structure/closet/secure_closet/personal,
+/obj/item/clothing/suit/armor/flakvest,
+/obj/item/clothing/mask/balaclava/tactical,
 /turf/simulated/floor/wood/wild2,
 /area/nadezhda/crew_quarters/dorm5)
 "wjS" = (
@@ -184246,7 +184257,7 @@ hel
 wpG
 wpG
 wpG
-pUZ
+wpG
 nWZ
 wXv
 lsV
@@ -184451,7 +184462,7 @@ omp
 lfQ
 wXv
 wXv
-wXv
+pUZ
 wpG
 rWi
 wZE
