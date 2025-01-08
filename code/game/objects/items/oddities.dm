@@ -1025,3 +1025,25 @@
 		STAT_COG = 25,
 		STAT_VIG = 25
 	)
+
+
+/obj/item/oddity/rare/openedpuzzlebox
+	name = "Opened Puzzlebox" //todo add cool sound; make sure path is correct
+	desc = "The box... it's been opened."
+	icon_state = "puzzlebox_open"
+	prob_perk = 100 //Pandoras box
+	min_stats = 15
+	oddity_stats = list(
+		STAT_COG = 25,
+		STAT_VIG = 25
+	)
+
+/obj/item/oddity/rare/Reizaplaque
+	name = "Robust exporter: Batons"
+	desc = "Awarded to Reiza Nak for exporting far too many batons on the date of 01/08/2565"
+	icon_state = "reiza_plaque"
+	min_stats = 20
+	oddity_stats = list(
+		STAT_ROB = 25,
+		STAT_COG = 25
+	)
