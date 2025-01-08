@@ -301,7 +301,7 @@
 /datum/perk/rezsickness/assign(mob/living/L)
 	..()
 	initial_time = world.time
-	cooldown_time = world.time + 30 MINUTES
+	cooldown_time = world.time + 10 MINUTES
 	holder.brute_mod_perk *= 1.10
 	holder.burn_mod_perk *= 1.10
 	holder.oxy_mod_perk *= 1.10
@@ -388,7 +388,7 @@
 		to_chat(holder, SPAN_NOTICE("[lose_text]"))
 		return
 	if(holder.buckled)
-		cooldown_time -= 2 SECONDS
+		cooldown_time -= cooldown_time
 
 /datum/perk/racial/slime_rez_sickness
 	name = "Aulvae Decohesion Syndrome"
@@ -401,7 +401,7 @@
 /datum/perk/racial/slime_rez_sickness/assign(mob/living/L)
 	..()
 	initial_time = world.time
-	cooldown_time = world.time + 30 MINUTES
+	cooldown_time = world.time + 10 MINUTES
 	holder.brute_mod_perk *= 1.3
 	holder.burn_mod_perk *= 1.3
 	holder.stats.changeStat(STAT_ROB, 30)
@@ -424,7 +424,7 @@
 		to_chat(holder, SPAN_NOTICE("[lose_text]"))
 		return
 	if(holder.buckled)
-		cooldown_time -= 2 SECONDS
+		cooldown_time -= cooldown_time
 
 /datum/perk/handyman
 	name = "Handyman"
