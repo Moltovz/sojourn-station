@@ -3666,26 +3666,10 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/hallway/surface/section1)
 "aKN" = (
-<<<<<<< Updated upstream
-/obj/structure/disposalpipe/segment,
-/obj/effect/decal/cleanable/dirt,
-/obj/random/contraband/low_chance,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/turf/simulated/floor/tiled/dark/violetcorener,
-/area/nadezhda/crew_quarters/techshop)
-=======
 /obj/effect/spider/stickyweb,
 /mob/living/carbon/superior_animal/giant_spider/plasma,
 /turf/simulated/floor/industrial/black_large_slates,
 /area/nadezhda/maintenance/undergroundfloor2west)
->>>>>>> Stashed changes
 "aKO" = (
 /obj/random/structures/low_chance,
 /turf/simulated/wall,
@@ -4887,11 +4871,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-<<<<<<< Updated upstream
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-=======
 /obj/machinery/door/airlock/glass,
->>>>>>> Stashed changes
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/crew_quarters/sleep/cryo2)
 "aYt" = (
@@ -11502,15 +11482,6 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/rnd/rbreakroom)
 "ckN" = (
-<<<<<<< Updated upstream
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark/violetcorener,
-/area/nadezhda/crew_quarters/techshop)
-=======
 /obj/effect/overlay/water,
 /obj/effect/overlay/water/top,
 /obj/random/junk/low_chance,
@@ -11519,7 +11490,6 @@
 	name = "murky water"
 	},
 /area/nadezhda/maintenance/undergroundfloor1north)
->>>>>>> Stashed changes
 "ckO" = (
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/nadezhda/outside/inside_colony)
@@ -28072,14 +28042,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-<<<<<<< Updated upstream
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark/violetcorener,
-/area/nadezhda/crew_quarters/techshop)
-=======
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/nadezhda/crew_quarters/sleep/cryo2)
->>>>>>> Stashed changes
 "fma" = (
 /obj/structure/sign/warning/nosmoking,
 /turf/simulated/wall/r_wall,
@@ -63202,11 +63166,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-<<<<<<< Updated upstream
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-=======
 /obj/effect/floor_decal/corner/purple/border,
->>>>>>> Stashed changes
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/nadezhda/hallway/side/f2section1)
 "lVY" = (
@@ -77733,12 +77693,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark/violetcorener,
-/area/nadezhda/crew_quarters/techshop)
-=======
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/nadezhda/crew_quarters/sleep/cryo2)
->>>>>>> Stashed changes
 "oBP" = (
 /turf/simulated/floor/rock,
 /area/nadezhda/outside/inside_colony)
@@ -88356,25 +88313,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/maintenance/undergroundfloor1south)
-<<<<<<< Updated upstream
-"qAJ" = (
-/obj/structure/shuttle_part/escpod{
-	icon_state = "escpodwall10";
-	tag = "icon-escpodwall10"
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/simulated/floor/holofloor/space{
-	layer = 1
-	},
-/area/nadezhda/crew_quarters/sleep/bedrooms)
-=======
 "qAG" = (
 /obj/item/contraband/poster/placed/generic/here_for_your_safety,
 /turf/simulated/wall,
 /area/nadezhda/maintenance/undergroundfloor2east)
->>>>>>> Stashed changes
 "qAK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/rack/shelf,
@@ -95820,13 +95762,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-<<<<<<< Updated upstream
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
-	},
-=======
 /obj/effect/floor_decal/corner/blue/border,
->>>>>>> Stashed changes
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/nadezhda/hallway/side/f2section1)
 "rXy" = (
@@ -119183,7 +119119,6 @@
 /obj/random/medical,
 /obj/machinery/camera/network/colony_underground{
 	dir = 1
->>>>>>> Stashed changes
 	},
 /turf/simulated/floor/tiled/dark/cyancorner,
 /area/nadezhda/crew_quarters/sleep/cryo2)
@@ -125144,11 +125079,6 @@
 "xsi" = (
 /obj/effect/spider/stickyweb,
 /obj/effect/decal/cleanable/dirt,
-<<<<<<< Updated upstream
-/obj/item/trash/material/circuit,
-/turf/simulated/floor/tiled/dark/violetcorener,
-/area/nadezhda/crew_quarters/techshop)
-=======
 /obj/effect/decal/cleanable/dirt,
 /obj/random/junk,
 /turf/simulated/floor/industrial/black_large_slates,
@@ -128183,13 +128113,7 @@
 	sortType = "Misc - Tech Shop 2"
 	},
 /obj/effect/decal/cleanable/dirt,
-<<<<<<< Updated upstream
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
-	},
-=======
 /obj/effect/floor_decal/corner/blue/border,
->>>>>>> Stashed changes
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/nadezhda/hallway/side/f2section1)
 "xUV" = (
@@ -189279,17 +189203,13 @@ cEj
 iyQ
 whU
 xUT
-<<<<<<< Updated upstream
-bic
-=======
 bXe
->>>>>>> Stashed changes
 yfR
-fzj
-fzj
-fzj
-fzj
-fzj
+nkP
+iyl
+iyl
+wZp
+tYn
 fHr
 nCK
 tAO
@@ -189487,12 +189407,12 @@ whU
 bMG
 dCv
 nCK
-fzj
-fzj
-fzj
-fzj
-fzj
-fzj
+oli
+jDV
+ygM
+xjS
+cxN
+rOi
 nCK
 tAO
 gSu
@@ -192114,17 +192034,10 @@ rXw
 lVX
 aYq
 flW
-<<<<<<< Updated upstream
-aAA
-aKN
-cdF
-mDo
-=======
 flW
 flW
 flW
 flW
->>>>>>> Stashed changes
 kzx
 fyk
 ayv
