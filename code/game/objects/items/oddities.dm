@@ -1043,6 +1043,7 @@
 	desc = "Awarded to Reiza Nak for exporting far too many batons on the date of 01/08/2565"
 	anchored = 1
 	icon_state = "reiza_plaque"
+	perk = PERK_THIN_SKIN
 	min_stats = 6
 	oddity_stats = list(
 		STAT_ROB = 8,
