@@ -6597,6 +6597,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/nadezhda/hallway/side/f2section1)
+"bnQ" = (
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_y = -32
+	},
+/turf/simulated/floor/wood/wild3,
+/area/nadezhda/crew_quarters/dorm5)
 "bnT" = (
 /obj/effect/spider/stickyweb,
 /obj/effect/spider/stickyweb,
@@ -23488,7 +23495,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/light/small,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm1)
 "eur" = (
@@ -36545,9 +36552,12 @@
 	},
 /obj/item/mine{
 	pixel_y = 9;
-	pixel_x = -4
+	pixel_x = -4;
+	layer = 32
 	},
-/obj/item/tool/screwdriver,
+/obj/item/tool/screwdriver{
+	layer = 33
+	},
 /obj/structure/table/woodentable,
 /turf/simulated/floor/carpet,
 /area/nadezhda/crew_quarters/dorm5)
@@ -46905,6 +46915,13 @@
 /obj/item/folder/black,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/nadezhda/crew_quarters/hydroponics)
+"iLQ" = (
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_y = -32
+	},
+/turf/simulated/floor/carpet,
+/area/nadezhda/crew_quarters/dorm5)
 "iLR" = (
 /obj/effect/window_lwall_spawn/reinforced/polarized{
 	id = "Captain"
@@ -69873,6 +69890,9 @@
 /obj/effect/floor_decal/steeldecal/steel_decals_central6{
 	pixel_y = -10
 	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/carpet,
 /area/nadezhda/crew_quarters/dorm1)
 "nfv" = (
@@ -79142,6 +79162,10 @@
 /obj/structure/table/woodentable,
 /obj/item/deck/cards,
 /obj/item/implanter/death_alarm,
+/obj/item/spacecash/bundle{
+	icon_state = "20_alt";
+	worth = 5000
+	},
 /turf/simulated/floor/carpet,
 /area/nadezhda/crew_quarters/dorm5)
 "oOa" = (
@@ -181697,7 +181721,7 @@ ban
 goC
 lkf
 pwY
-wVi
+iLQ
 eqI
 vxO
 rAx
@@ -182095,7 +182119,7 @@ fRe
 mXL
 gWg
 hVz
-hVz
+bnQ
 eqI
 nJf
 etI
