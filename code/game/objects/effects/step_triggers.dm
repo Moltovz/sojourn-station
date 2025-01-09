@@ -196,6 +196,24 @@ var/list/obj/effect/step_trigger/STEP_TELEPORTERS = list()
 	id = "surface_to_forest_2_B"
 	id_target = "surface_to_forest_1_B"
 
+//EASTSurface to forest
+/obj/effect/step_trigger/east_surface_to_forest_1_A
+	id = "east_surface_to_forest_1_A"
+	id_target = "east_surface_to_forest_2_A"
+
+/obj/effect/step_trigger/east_surface_to_forest_2_A
+	id = "east_surface_to_forest_2_A"
+	id_target = "east_surface_to_forest_1_A"
+
+/obj/effect/step_trigger/surface_to_forest_1_B
+	id = "surface_to_forest_1_B"
+	id_target = "surface_to_forest_2_B"
+
+/obj/effect/step_trigger/east_surface_to_forest_2_B
+	id = "east_surface_to_forest_2_B"
+	id_target = "east_surface_to_forest_1_B"
+
+
 //HuT to Gulag
 /obj/effect/step_trigger/hut_to_gulag_1_A
 	id = "hut_to_gulag_1_A"

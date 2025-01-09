@@ -1041,9 +1041,10 @@
 /obj/item/oddity/rare/Reizaplaque
 	name = "Robust exporter: Batons"
 	desc = "Awarded to Reiza Nak for exporting far too many batons on the date of 01/08/2565"
+	anchored = 1
 	icon_state = "reiza_plaque"
-	min_stats = 20
+	min_stats = 6
 	oddity_stats = list(
-		STAT_ROB = 25,
-		STAT_COG = 25
+		STAT_ROB = 8,
+		STAT_COG = 8
 	)

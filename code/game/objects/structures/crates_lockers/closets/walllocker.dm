@@ -7,6 +7,8 @@
 	wall_mounted = TRUE //This handles density in closets.dm
 	density = FALSE
 
+/obj/structure/closet/wall_mounted/meteors_normal
+	icon_state = "metal"
 
 /obj/structure/closet/wall_mounted/emcloset
 	name = "emergency locker"
@@ -25,6 +27,7 @@
 
 /obj/structure/closet/wall_mounted/emcloset/escape_pods
 	icon_state = "emerg-escape"
+
 
 
 /obj/structure/closet/wall_mounted/firecloset
