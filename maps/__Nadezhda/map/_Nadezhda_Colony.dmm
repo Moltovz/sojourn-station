@@ -8825,9 +8825,13 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "bIL" = (
-/obj/random/furniture/painting,
-/turf/simulated/wall,
-/area/nadezhda/crew_quarters/dorm2)
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = 9;
+	pixel_y = -22
+	},
+/turf/simulated/floor/carpet/bcarpet,
+/area/nadezhda/crew_quarters/dorm4)
 "bIM" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -26217,6 +26221,9 @@
 /obj/structure/closet/wall_mounted{
 	pixel_y = -32
 	},
+/obj/item/tool/sword/katana/spatial_cutter,
+/obj/item/clothing/accessory/holster/saber/saya,
+/obj/item/gun/energy/stunrevolver,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm4)
 "eUJ" = (
@@ -44540,6 +44547,9 @@
 /area/nadezhda/maintenance/undergroundfloor1west)
 "inE" = (
 /obj/structure/cyberplant,
+/obj/machinery/light_switch{
+	pixel_y = 30
+	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm2)
 "inH" = (
@@ -50208,6 +50218,22 @@
 /obj/structure/scrap_cube,
 /turf/simulated/floor/industrial/concrete_bricks,
 /area/nadezhda/maintenance/undergroundfloor2east)
+"jrV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = 9;
+	pixel_y = -22
+	},
+/turf/simulated/floor/industrial/bricks,
+/area/nadezhda/maintenance{
+	name = "Residential District Maintenance"
+	})
 "jrW" = (
 /obj/structure/table/glass,
 /obj/item/device/radio/intercom{
@@ -58101,6 +58127,13 @@
 /obj/random/scrap/sparse_weighted,
 /turf/simulated/floor/rock,
 /area/nadezhda/maintenance/undergroundfloor1north)
+"kSV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light_switch{
+	pixel_y = 30
+	},
+/turf/simulated/floor/carpet/bcarpet,
+/area/nadezhda/crew_quarters/dorm1)
 "kSX" = (
 /turf/simulated/wall,
 /area/nadezhda/crew_quarters/toilet/public)
@@ -85346,6 +85379,11 @@
 /obj/item/spacecash/bundle{
 	icon_state = "20_alt";
 	worth = 5000
+	},
+/obj/machinery/light_switch{
+	dir = 1;
+	pixel_x = 9;
+	pixel_y = -22
 	},
 /turf/simulated/floor/carpet/bcarpet{
 	name = "damaged black carpet"
@@ -182334,7 +182372,7 @@ wjx
 htd
 htd
 htd
-bIL
+htd
 inE
 qeA
 qeA
@@ -186579,7 +186617,7 @@ tHC
 wUb
 oNl
 oNl
-oNl
+bIL
 lUB
 rWi
 wZE
@@ -187155,7 +187193,7 @@ bbA
 rIX
 bvv
 onp
-uRa
+kSV
 uRa
 faM
 onp
@@ -192437,7 +192475,7 @@ hVY
 rWi
 aRf
 aRf
-rHi
+jrV
 hua
 rWi
 rWi
