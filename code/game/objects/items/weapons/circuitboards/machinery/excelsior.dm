@@ -136,6 +136,10 @@
 		/obj/item/device/assembly/prox_sensor = 1,
 	)
 
+/obj/item/circuitboard/artificer_turret/mining
+	build_name = "artificer mining turret"
+	build_path = /obj/machinery/porta_turret/artificer/mining
+
 /obj/item/circuitboard/artificer_turret/opifex
 	build_name = "opifex turret"
 	build_path = /obj/machinery/porta_turret/artificer/opifex

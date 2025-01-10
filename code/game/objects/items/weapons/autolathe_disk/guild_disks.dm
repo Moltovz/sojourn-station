@@ -133,7 +133,7 @@
 	designs = list(
 		/datum/design/autolathe/conveyor = 0,
 		/datum/design/autolathe/conveyor_switch = 0,
-		///datum/design/autolathe/circuit/smelter = 3, //Balance, no more rnd/guild abuse
+		/datum/design/autolathe/circuit/smelter = 3, //Balance, no more rnd/guild abuse //we'll see about that
 		/datum/design/autolathe/circuit/sorter = 3,
 		/datum/design/autolathe/circuit/recycler,
 		/datum/design/autolathe/circuit/pile_ripper,

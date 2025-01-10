@@ -1457,6 +1457,12 @@
 /obj/random/medical,
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/nadezhda/maintenance/undergroundfloor2west)
+"aoR" = (
+/obj/machinery/porta_turret/artificer/mining{
+	anchored = 0
+	},
+/turf/simulated/floor/tiled/steel,
+/area/nadezhda/quartermaster/miningdock)
 "aoT" = (
 /obj/machinery/camera/network/engineering{
 	dir = 8
@@ -2050,6 +2056,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/security/maingate)
+"auG" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/closet/crate,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/nadezhda/quartermaster/hangarsupply)
 "auL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/standard,
@@ -2571,6 +2582,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/maintenance/surfacesec)
+"azN" = (
+/obj/structure/window/reinforced,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/nadezhda/crew_quarters/hydroponics)
 "azO" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /obj/structure/table/reinforced,
@@ -3282,12 +3300,10 @@
 /turf/unsimulated/wall/jungle,
 /area/nadezhda/outside/forest)
 "aFV" = (
-/obj/structure/railing/grey{
-	dir = 1
-	},
-/obj/structure/flora/small/grassb1,
-/turf/simulated/floor/asteroid/grass,
-/area/nadezhda/crew_quarters/hydroponics)
+/obj/effect/decal/cleanable/dirt,
+/obj/item/paper/crumpled,
+/turf/simulated/floor/tiled/steel,
+/area/nadezhda/quartermaster/hangarsupply)
 "aFW" = (
 /obj/machinery/door/firedoor,
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -3851,6 +3867,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/quartermaster/hangarsupply)
 "aMy" = (
@@ -3892,6 +3909,7 @@
 	pixel_x = 3;
 	pixel_y = 4
 	},
+/obj/item/reagent_containers/blood/OMinus,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/nadezhda/medical/surgery)
 "aMT" = (
@@ -4561,15 +4579,19 @@
 /turf/simulated/floor/carpet/sblucarpet,
 /area/nadezhda/medical/psych)
 "aUv" = (
-/obj/machinery/vending/wallmed/lobby{
-	pixel_y = -32
-	},
 /obj/effect/floor_decal/industrial/arrows/white,
 /obj/effect/floor_decal/industrial/hatch,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/remote/airlock{
+	blue_ink_tk_blocker = 1;
+	desc = "A remote control switch.";
+	id = "medbay exit";
+	name = "Medbay Entrance Button";
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled/white/cyancorner,
 /area/nadezhda/medical/reception)
 "aUE" = (
@@ -5849,6 +5871,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/danger,
 /area/nadezhda/engineering/engine_room)
+"bgO" = (
+/obj/item/storage/firstaid/ifak,
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/white/techfloor,
+/area/nadezhda/quartermaster/miningdock)
 "bgV" = (
 /turf/simulated/wall,
 /area/nadezhda/crew_quarters/kitchen)
@@ -6668,6 +6695,7 @@
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
+/obj/item/computer_hardware/hard_drive/portable/design/logistics,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/miningdock)
 "boG" = (
@@ -9855,16 +9883,9 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/nadezhda/absolutism/bioreactor)
 "bTI" = (
-/obj/machinery/door/blast/shutters/glass{
-	id = "buffet2";
-	name = "buffet"
-	},
-/obj/structure/table/marble,
-/obj/machinery/cash_register{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/cafe,
-/area/nadezhda/crew_quarters/kitchen)
+/mob/living/simple_animal/pig/hog,
+/turf/simulated/floor/asteroid/dirt/mud,
+/area/nadezhda/crew_quarters/hydroponics)
 "bTR" = (
 /obj/structure/barricade,
 /obj/machinery/light/small{
@@ -10280,6 +10301,11 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/corner/purple/border,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/nadezhda/hallway/side/f2section1)
 "bXm" = (
@@ -12873,7 +12899,7 @@
 /area/nadezhda/security/sechall)
 "cxN" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/violetcorener,
+/turf/simulated/floor/plating/under,
 /area/nadezhda/crew_quarters/techshop)
 "cxU" = (
 /turf/simulated/floor/asteroid/dirt,
@@ -14822,7 +14848,7 @@
 "cQu" = (
 /obj/structure/flora/big/rocks2,
 /mob/living/simple_animal/chicken,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/asteroid/dirt/mud,
 /area/nadezhda/crew_quarters/hydroponics)
 "cQA" = (
 /obj/random/boxes/low_chance,
@@ -15491,15 +15517,14 @@
 	})
 "cXj" = (
 /obj/structure/closet/secure_closet/freezer,
-/obj/random/junkfood,
-/obj/random/booze,
-/obj/random/booze,
-/obj/random/junkfood,
 /obj/structure/window/reinforced,
 /obj/machinery/power/wall_obelisk{
 	pixel_x = -32;
 	pixel_y = -10
 	},
+/obj/item/reagent_containers/food/snacks/bigbiteburger,
+/obj/item/reagent_containers/food/snacks/bigbiteburger,
+/obj/item/reagent_containers/food/snacks/bigbiteburger,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm3)
 "cXl" = (
@@ -15589,15 +15614,15 @@
 	name = "Medbay Total Lockdown";
 	opacity = 0
 	},
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	id = "Chem";
-	name = "shutter"
-	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/westright{
 	name = "Chemistry Desk";
 	req_access = list(33)
+	},
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id = "Chem";
+	name = "shutter"
 	},
 /turf/simulated/floor/tiled/white/cargo,
 /area/nadezhda/medical/chemistry)
@@ -16543,10 +16568,8 @@
 /turf/simulated/floor/plating/under,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "dhO" = (
-/obj/machinery/door/airlock/glass{
-	name = "R&D"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/inflatable/door,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/rnd/research)
 "dhR" = (
@@ -18328,10 +18351,6 @@
 /turf/simulated/floor/wood_old,
 /area/nadezhda/outside/forest)
 "dyy" = (
-/obj/machinery/door/airlock/medical{
-	name = "Operating Theatre";
-	req_access = list(45)
-	},
 /obj/machinery/holosign/surgery{
 	id = "surgery"
 	},
@@ -18349,6 +18368,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/medical,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/medical/surgery)
 "dyB" = (
@@ -26954,6 +26974,7 @@
 /area/nadezhda/crew_quarters/arcade)
 "faM" = (
 /obj/machinery/light/small,
+/obj/structure/cyberplant,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm1)
 "faT" = (
@@ -28570,7 +28591,11 @@
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/nadezhda/medical/sleeper)
 "fpJ" = (
-/obj/structure/cyberplant,
+/obj/machinery/suit_storage_unit{
+	density = 0;
+	pixel_y = 27
+	},
+/obj/item/clothing/suit/space/void/merc,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm1)
 "fpR" = (
@@ -29194,6 +29219,14 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/rocinante_shuttle_area)
+"fwV" = (
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/light/floor,
+/turf/simulated/floor/asteroid/grass,
+/area/nadezhda/crew_quarters/hydroponics)
 "fwX" = (
 /obj/structure/railing{
 	dir = 4;
@@ -31077,7 +31110,10 @@
 /obj/item/part/gun/frame/motherfucker,
 /obj/item/cell/medium/moebius/nuclear,
 /obj/item/gun/energy/plasma/destroyer,
-/obj/structure/sign/faction/excelsior{
+/obj/item/gun/projectile/revolver/lemant,
+/obj/item/ammo_magazine/ammobox/magnum_40,
+/obj/item/ammo_magazine/speed_loader_magnum_40,
+/obj/structure/sign/faction/neotheology_cross/gold{
 	pixel_y = 32
 	},
 /turf/simulated/floor/wood/wild1,
@@ -31181,7 +31217,13 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/nadezhda/crew_quarters/hydroponics)
 "fRM" = (
-)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating/under,
+/area/nadezhda/crew_quarters/techshop)
 "fRO" = (
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
@@ -34022,6 +34064,9 @@
 	},
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm2)
+"gqY" = (
+/turf/simulated/wall,
+/area/mine/prep)
 "grj" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -36103,7 +36148,7 @@
 /obj/machinery/camera/network/medbay{
 	dir = 4
 	},
-/obj/structure/table/glass,
+/obj/machinery/bioprinter,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/nadezhda/medical/surgery)
 "gNz" = (
@@ -36385,9 +36430,13 @@
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/kitchen)
 "gPx" = (
-/obj/structure/window/reinforced,
-/turf/simulated/floor/asteroid/grass,
-/area/nadezhda/crew_quarters/hydroponics)
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/plating/under,
+/area/nadezhda/crew_quarters/techshop)
 "gPy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -39079,7 +39128,10 @@
 /area/nadezhda/outside/inside_colony)
 "hqp" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/storage/firstaid/ifak,
+/obj/item/cell/large/moebius,
+/obj/item/ammo_magazine/ammobox/rifle_75,
+/obj/item/circuitboard/artificer_turret/mining,
+/obj/item/circuitboard/artificer_turret/mining,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/miningdock)
 "hqs" = (
@@ -41371,13 +41423,9 @@
 	},
 /area/nadezhda/maintenance/undergroundfloor1north)
 "hKi" = (
-/obj/structure/railing/grey{
-	dir = 8
+/obj/structure/window/reinforced{
+	dir = 4
 	},
-/obj/structure/railing/grey{
-	dir = 1
-	},
-/obj/structure/flora/ausbushes/leafybush,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/crew_quarters/hydroponics)
 "hKj" = (
@@ -44233,11 +44281,14 @@
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/nadezhda/maintenance/undergroundfloor1south)
 "ilr" = (
+/obj/structure/table/marble,
 /obj/machinery/door/blast/shutters/glass{
 	id = "buffet2";
 	name = "buffet"
 	},
-/obj/structure/table/marble,
+/obj/machinery/cash_register{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/kitchen)
 "ils" = (
@@ -47904,6 +47955,10 @@
 	},
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
+"iVI" = (
+/mob/living/simple_animal/pig,
+/turf/simulated/floor/asteroid/grass,
+/area/nadezhda/crew_quarters/hydroponics)
 "iVJ" = (
 /obj/structure/catwalk,
 /obj/random/scrap/dense_weighted/low_chance,
@@ -52613,9 +52668,22 @@
 /turf/simulated/floor/plating/under,
 /area/nadezhda/maintenance/surfaceeast)
 "jQg" = (
-/obj/machinery/light/floor,
-/turf/simulated/floor/asteroid/grass,
-/area/nadezhda/crew_quarters/hydroponics)
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/contraband/poster/placed/generic/why{
+	pixel_y = 32;
+	name = "Why do you keep breaking into places?"
+	},
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/lab)
 "jQk" = (
 /obj/structure/table/steel,
 /obj/random/lowkeyrandom/low_chance,
@@ -55168,10 +55236,6 @@
 /turf/simulated/floor/plating/under,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "kpx" = (
-/obj/machinery/door/airlock/glass{
-	name = "Hydroponics";
-	req_access = list(35)
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -55188,6 +55252,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/nadezhda/crew_quarters/kitchen)
 "kpC" = (
@@ -55381,9 +55446,13 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/nadezhda/security/sechall)
 "krs" = (
-/mob/living/simple_animal/frog/rare,
-/turf/simulated/floor/asteroid/grass,
-/area/nadezhda/crew_quarters/hydroponics)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/plating/under,
+/area/nadezhda/crew_quarters/techshop)
 "krt" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
@@ -56737,10 +56806,6 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/nadezhda/absolutism/hallways)
 "kDQ" = (
-/obj/machinery/door/airlock/glass{
-	name = "Kitchen Access";
-	req_access = list(25)
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
 	d1 = 4;
@@ -56753,6 +56818,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/kitchen)
 "kDT" = (
@@ -58044,9 +58110,8 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/maintenance/surfacesec)
 "kSd" = (
-/obj/structure/railing/grey{
-	dir = 8
-	},
+/obj/structure/flora/small/busha3,
+/mob/living/simple_animal/pig,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/crew_quarters/hydroponics)
 "kSi" = (
@@ -58406,7 +58471,14 @@
 /area/nadezhda/rnd/xenobiology/xenoflora)
 "kVK" = (
 /obj/structure/table/woodentable,
-/obj/item/pizzabox/meat,
+/obj/item/pizzabox/meat{
+	pixel_x = -10
+	},
+/obj/structure/flora/pottedplant/water_root{
+	pixel_y = 12;
+	pixel_x = 5;
+	layer = 4
+	},
 /turf/simulated/floor/carpet,
 /area/nadezhda/crew_quarters/dorm5)
 "kVN" = (
@@ -58766,6 +58838,14 @@
 	},
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/nadezhda/crew_quarters/hydroponics/garden)
+"kZW" = (
+/obj/machinery/power/apc{
+	name = "South APC";
+	pixel_y = -28
+	},
+/obj/structure/cable/green,
+/turf/simulated/floor/plating/under,
+/area/nadezhda/crew_quarters/techshop)
 "kZY" = (
 /obj/machinery/computer/general_air_control{
 	dir = 1;
@@ -59510,12 +59590,10 @@
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/nadezhda/hallway/side/f2section1)
 "lhU" = (
-/obj/structure/railing/grey{
-	dir = 8
-	},
-/obj/structure/flora/rock/variant1,
-/turf/simulated/floor/asteroid/grass,
-/area/nadezhda/crew_quarters/hydroponics)
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/item/paper/crumpled,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/nadezhda/quartermaster/hangarsupply)
 "lic" = (
 /obj/structure/flora/small/bushb2,
 /obj/structure/flora/small/bushb2,
@@ -62722,6 +62800,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/item/paper/crumpled,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/hangarsupply)
 "lQm" = (
@@ -63741,6 +63820,10 @@
 	},
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
+"lYV" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/simulated/floor/asteroid/grass,
+/area/nadezhda/crew_quarters/hydroponics)
 "lZj" = (
 /obj/machinery/door/airlock/glass,
 /obj/random/traps/low_chance{
@@ -66864,6 +66947,7 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 1
 	},
+/obj/item/ammo_magazine/ammobox/shotgun/buckshot,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm3)
 "mBW" = (
@@ -69116,6 +69200,13 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/security/maingate/west)
+"mYH" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/turf/simulated/floor/asteroid/grass,
+/area/nadezhda/crew_quarters/hydroponics)
 "mYI" = (
 /obj/structure/flora/big/bush2,
 /obj/structure/flora/big/bush2,
@@ -70210,10 +70301,6 @@
 /turf/simulated/floor/industrial/fancy_slates,
 /area/nadezhda/maintenance/undergroundfloor2north)
 "niD" = (
-/obj/machinery/door/airlock/glass_research{
-	name = "Research and Development";
-	req_access = list(5)
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -70228,6 +70315,7 @@
 	id = "researchlockdown";
 	name = "RESEARCH LOCKDOWN"
 	},
+/obj/structure/inflatable/door,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/rnd/lab)
 "niH" = (
@@ -77127,10 +77215,12 @@
 /turf/simulated/floor/industrial/ornate,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "otI" = (
-/obj/structure/table/glass,
-/obj/item/implanter/death_alarm,
-/turf/simulated/floor/carpet,
-/area/nadezhda/crew_quarters/dorm3)
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/nadezhda/quartermaster/hangarsupply)
 "otL" = (
 /obj/item/device/eftpos{
 	eftpos_name = "Soteria Biolabs EFTPOS scanner"
@@ -78305,11 +78395,11 @@
 /turf/simulated/floor/tiled/steel/brown_platform,
 /area/nadezhda/command/panic_room)
 "oEw" = (
-/obj/structure/closet/secure_closet/personal/miner,
 /obj/item/storage/firstaid/ifak,
 /obj/item/gun/projectile/shotgun/pump,
 /obj/item/ammo_magazine/ammobox/shotgun/buckshot,
 /obj/item/ammo_magazine/ammobox/shotgun/buckshot,
+/obj/structure/table/rack/shelf,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/miningdock)
 "oEG" = (
@@ -88148,6 +88238,7 @@
 "qvk" = (
 /obj/effect/floor_decal/industrial/warningred/corner,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/paper/crumpled,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/hangarsupply)
 "qvz" = (
@@ -88592,7 +88683,7 @@
 /area/nadezhda/maintenance/undergroundfloor1east)
 "qzp" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/spray/sterilizine,
+/obj/item/reagent_containers/blood/OMinus,
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/medical/surgery)
 "qzr" = (
@@ -91340,14 +91431,11 @@
 /turf/simulated/floor/industrial/fancy_slates,
 /area/nadezhda/maintenance/undergroundfloor2west)
 "rbV" = (
-/obj/machinery/door/airlock/medical{
-	name = "Operating Theatre";
-	req_access = list(45)
-	},
 /obj/machinery/holosign/surgery{
 	id = "surgery"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/medical,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/medical/surgery)
 "rca" = (
@@ -92562,11 +92650,10 @@
 /turf/simulated/floor/wood,
 /area/nadezhda/command/cbo)
 "rny" = (
-/obj/structure/railing/grey{
-	dir = 1
-	},
-/turf/simulated/floor/asteroid/grass,
-/area/nadezhda/crew_quarters/hydroponics)
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/item/paper/crumpled,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/nadezhda/quartermaster/hangarsupply)
 "rnD" = (
 /obj/effect/floor_decal/industrial/danger{
 	dir = 4
@@ -98775,7 +98862,7 @@
 /mob/living/simple_animal/cow{
 	name = "Betsy"
 	},
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/asteroid/dirt/mud,
 /area/nadezhda/crew_quarters/hydroponics)
 "svQ" = (
 /obj/structure/window/reinforced{
@@ -100491,6 +100578,14 @@
 	},
 /turf/simulated/floor/tiled/dark/danger,
 /area/nadezhda/rnd/lab)
+"sNW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/warningred{
+	dir = 8
+	},
+/obj/item/paper/crumpled,
+/turf/simulated/floor/tiled/steel,
+/area/nadezhda/quartermaster/hangarsupply)
 "sOb" = (
 /obj/effect/spider/stickyweb,
 /obj/random/scrap/sparse_even/low_chance,
@@ -102257,6 +102352,12 @@
 /obj/structure/flora/small/busha1,
 /turf/unsimulated/wall/jungle,
 /area/nadezhda/outside/forest)
+"tgk" = (
+/obj/structure/flora/tree/jungle_small/variant3{
+	pixel_x = -15
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/nadezhda/crew_quarters/hydroponics)
 "tgm" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid/dirt/dark,
@@ -103395,6 +103496,10 @@
 /obj/structure/closet/secure_closet/personal{
 	anchored = 1
 	},
+/obj/item/tool/sword/katana/nano,
+/obj/item/clothing/accessory/holster/saber/saya,
+/obj/item/tool/shovel/combat,
+/obj/item/storage/belt/utility/full,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm3)
 "trV" = (
@@ -106099,6 +106204,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/nadezhda/maintenance/undergroundfloor2north)
+"tQc" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating/under,
+/area/nadezhda/crew_quarters/techshop)
 "tQe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -108019,6 +108132,7 @@
 "uhB" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/masks,
+/obj/item/reagent_containers/spray/sterilizine,
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/medical/surgery)
 "uhJ" = (
@@ -112148,6 +112262,23 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/security/triage_blackshield)
+"uUi" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/glass_research{
+	name = "Research and Development";
+	req_access = list(5)
+	},
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/lab)
 "uUk" = (
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/nadezhda/crew_quarters/dorm2)
@@ -112793,7 +112924,6 @@
 /turf/simulated/floor/wood/wild4,
 /area/nadezhda/crew_quarters/hydroponics)
 "vau" = (
-/obj/structure/closet/secure_closet/personal/miner,
 /obj/item/storage/firstaid/ifak,
 /obj/item/gun/projectile/shotgun/pump,
 /obj/item/ammo_magazine/ammobox/shotgun/buckshot,
@@ -112801,6 +112931,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 32
 	},
+/obj/structure/table/rack/shelf,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/miningdock)
 "vaw" = (
@@ -116902,12 +117033,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/nadezhda/absolutism/hallways)
 "vOl" = (
-/obj/structure/railing/grey{
-	dir = 8
-	},
-/obj/structure/flora/small/grassb2,
-/obj/structure/flora/big/rocks2,
-/turf/simulated/floor/asteroid/grass,
+/turf/simulated/floor/beach/water/shallow,
 /area/nadezhda/crew_quarters/hydroponics)
 "vOm" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -117446,6 +117572,7 @@
 "vTc" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/lavendergrass,
+/mob/living/simple_animal/pig,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/crew_quarters/hydroponics)
 "vTl" = (
@@ -119058,6 +119185,11 @@
 "whx" = (
 /turf/simulated/mineral,
 /area/nadezhda/pros/foreman)
+"why" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/item/paper/crumpled/bloody,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/nadezhda/quartermaster/hangarsupply)
 "whB" = (
 /obj/structure/closet/crate/secure/large,
 /obj/effect/decal/cleanable/dirt,
@@ -119299,6 +119431,7 @@
 	},
 /obj/item/storage/firstaid/ifak,
 /obj/item/device/flash,
+/obj/item/storage/belt/utility/full,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm5)
 "wjS" = (
@@ -122575,12 +122708,10 @@
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters)
 "wPh" = (
-/obj/structure/railing/grey{
-	dir = 8
-	},
-/obj/structure/flora/small/busha3,
-/turf/simulated/floor/asteroid/grass,
-/area/nadezhda/crew_quarters/hydroponics)
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/paper/crumpled/bloody,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/nadezhda/quartermaster/hangarsupply)
 "wPl" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
@@ -126037,6 +126168,22 @@
 /obj/effect/window_lwall_spawn/reinforced,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/nadezhda/rnd/robotics)
+"xxo" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/glass_research{
+	name = "Research and Development";
+	req_access = list(5)
+	},
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/lab)
 "xxy" = (
 /obj/machinery/atmospherics/unary/freezer{
 	icon_state = "freezer"
@@ -126752,6 +126899,20 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table/glass,
+/obj/item/reagent_containers/glass/bottle/trade/cronexidone{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/glass/bottle/trade/alkysine{
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/bottle{
+	preloaded_reagents = list("trypsin" = 60);
+	name = "trypsin (DEBRIDING AGENT: MAX 10U)";
+	desc = "A small bottle of trypsin, a powerful anti-scaring chemical that painfully heals most burns, dead flesh, and scaring";
+	pixel_x = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/medical/sleeper)
 "xEA" = (
@@ -128477,14 +128638,13 @@
 /turf/simulated/floor/wood,
 /area/nadezhda/maintenance/undergroundfloor2west)
 "xUJ" = (
-/obj/machinery/door/airlock/glass_medical{
-	name = "Chemistry Lab";
-	req_access = list(33)
-	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass_medical{
+	name = "ID Disabled Chemistry Lab"
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/medical/chemistry)
 "xUT" = (
@@ -128503,6 +128663,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/corner/blue/border,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/steel/cyancorner,
 /area/nadezhda/hallway/side/f2section1)
 "xUV" = (
@@ -128534,9 +128699,7 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1
 	},
-/obj/item/implantcase/excelsior/broken{
-	name = "glass case - 'broken Excelsior compliance implant'"
-	},
+/obj/item/paper/card/smile,
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/crew_quarters/podrooms2)
 "xVf" = (
@@ -128785,6 +128948,11 @@
 "xXL" = (
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/maintenance/undergroundfloor1north)
+"xXN" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/frog/rare,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/nadezhda/crew_quarters/hydroponics)
 "xXO" = (
 /obj/structure/catwalk,
 /obj/effect/floor_decal/spline/plain{
@@ -128952,6 +129120,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/maintenance/undergroundfloor1south)
+"xZn" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/closet/crate,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/nadezhda/quartermaster/hangarsupply)
 "xZu" = (
 /obj/structure/salvageable/computer,
 /obj/machinery/light{
@@ -129281,11 +129454,6 @@
 /area/nadezhda/rnd/robotics)
 "ycW" = (
 /obj/effect/window_lwall_spawn/reinforced,
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	id = "Chem";
-	name = "shutter"
-	},
 /obj/machinery/door/blast/regular{
 	density = 0;
 	icon_state = "pdoor0";
@@ -129295,6 +129463,11 @@
 	opacity = 0
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id = "Chem";
+	name = "shutter"
+	},
 /turf/simulated/floor/plating,
 /area/nadezhda/medical/chemistry)
 "ycX" = (
@@ -129594,6 +129767,11 @@
 	},
 /obj/structure/barricade,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/crew_quarters/techshop)
 "yfY" = (
@@ -155885,7 +156063,7 @@ mcl
 wcL
 oBx
 mcl
-mcl
+gqY
 cZb
 cZb
 mcl
@@ -158517,7 +158695,7 @@ cZb
 aFa
 vau
 nbQ
-hLT
+bgO
 aFa
 vRS
 cne
@@ -158919,7 +159097,7 @@ cZb
 cZb
 cZb
 aFa
-hqp
+aoR
 wPl
 qcy
 aFa
@@ -183376,7 +183554,7 @@ mBM
 nwN
 cXj
 wHK
-otI
+qjf
 qjf
 vWl
 rWi
@@ -186551,8 +186729,8 @@ umk
 lTl
 naG
 gLz
-rHM
-vIr
+uUi
+xxo
 enD
 wbu
 jMk
@@ -187157,7 +187335,7 @@ jVT
 brG
 ghd
 gLz
-rHM
+jQg
 rqH
 fws
 qFl
@@ -189373,15 +189551,15 @@ qcv
 whU
 tnO
 mAJ
-hKi
-kSd
-wPh
-kSd
-kSd
-kSd
-vOl
-kSd
-lhU
+sRU
+sRU
+sRU
+sRU
+sRU
+sRU
+sRU
+sRU
+tId
 sRU
 asL
 qmD
@@ -189575,15 +189753,15 @@ hSX
 rNu
 tnO
 mAJ
-rny
-jVN
-xgH
-krs
-iZR
-qAj
-jQg
-jmk
 sRU
+jVN
+maE
+xgH
+iZR
+tgk
+xgH
+jmk
+azN
 sRU
 wAR
 qec
@@ -189600,8 +189778,8 @@ yfR
 fRM
 fRM
 fRM
-fRM
-fRM
+krs
+fzj
 fHr
 nCK
 tAO
@@ -189777,15 +189955,15 @@ hSX
 nio
 hfa
 mAJ
-aFV
-xgH
+sRU
+kSd
 qAj
 viC
 wCB
 iZR
 jmk
-sRU
-sRU
+xgH
+fwV
 iPf
 wAR
 qec
@@ -189799,12 +189977,12 @@ whU
 bMG
 dCv
 nCK
-fRM
-fRM
-fRM
-fRM
+fzj
+fzj
+fzj
+tQc
 cxN
-fRM
+fzj
 nCK
 tAO
 gSu
@@ -189980,13 +190158,13 @@ nDQ
 glG
 quY
 sCN
-sCN
-sCN
-sCN
-sCN
-sRU
-sRU
-sRU
+lYV
+iZR
+vOl
+vOl
+bTI
+hKi
+mYH
 dhK
 iLz
 pos
@@ -190004,9 +190182,9 @@ cCy
 fzj
 fzj
 fzj
-fzj
-fzj
-fzj
+gPx
+fRM
+kZW
 nCK
 qQA
 gSu
@@ -190184,9 +190362,9 @@ mAJ
 sCN
 xgH
 cQu
-xgH
-maE
-gPx
+wCB
+vOl
+oYJ
 nBc
 mmp
 cuH
@@ -190387,7 +190565,7 @@ sCN
 lkK
 xgH
 svP
-xgH
+iZR
 vTc
 mFN
 wVT
@@ -190790,7 +190968,7 @@ tNQ
 tId
 uuc
 cVC
-xgH
+maE
 bbf
 oYJ
 eLv
@@ -190992,7 +191170,7 @@ mAJ
 tId
 pUJ
 hxW
-xgH
+iVI
 sMU
 eMC
 qKE
@@ -191812,7 +191990,7 @@ iVD
 ixL
 uRh
 cuH
-cuH
+xXN
 ody
 sRU
 whU
@@ -193822,9 +194000,9 @@ bCN
 kDQ
 bCN
 ilr
-ilr
-ilr
-bTI
+xTC
+xTC
+xTC
 bCN
 ioj
 xnW
@@ -194460,18 +194638,18 @@ nVS
 fVj
 kFn
 ptL
+lhU
 fjZ
 fjZ
-fjZ
-fjZ
-fjZ
+lhU
+why
 elt
 vtF
 vYW
 vYW
+rny
 vYW
-vYW
-vYW
+rny
 gqv
 hRD
 rWi
@@ -195066,7 +195244,7 @@ xBZ
 por
 kFn
 jsa
-fjZ
+xZn
 fjZ
 fjZ
 fjZ
@@ -195074,7 +195252,7 @@ fjZ
 ndw
 jsa
 vYW
-vYW
+rny
 vYW
 vYW
 vYW
@@ -195269,17 +195447,17 @@ gPE
 kFn
 tZQ
 fjZ
-fjZ
+lhU
 nkT
 fjZ
-fjZ
+lhU
 oDA
 iUM
-vYW
-vYW
+auG
+rny
 oLc
 vYW
-vYW
+rny
 gqv
 iHD
 rXh
@@ -195472,7 +195650,7 @@ kFn
 wUm
 mgH
 mgH
-mgH
+sNW
 nOd
 tAY
 mry
@@ -195673,14 +195851,14 @@ oPL
 kFn
 rln
 mft
-nuS
+otI
 nuS
 obl
 mft
 cly
 xjs
 mft
-mft
+aFV
 ybk
 mft
 feH
@@ -195874,15 +196052,15 @@ deb
 xBZ
 kFn
 sDT
-mft
-nuS
+aFV
+otI
 nuS
 bgW
 nuS
 kDd
 ttk
 nuS
-nuS
+wPh
 ybk
 mft
 iEP
@@ -196077,14 +196255,14 @@ ycd
 kFn
 yfC
 mft
-nuS
+otI
 nuS
 obl
 nuS
 kDd
 mft
 nuS
-nuS
+iEP
 wsx
 aFa
 aFa

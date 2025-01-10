@@ -215,13 +215,16 @@
 /area/mine/prep)
 "aO" = (
 /obj/random/junk,
+/obj/structure/railing{
+	dir = 4
+	},
 /turf/simulated/floor/asteroid,
 /area/nadezhda/quartermaster/mining_outside_doc)
 "aP" = (
-/obj/structure/railing,
 /obj/random/junk,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
-/area/nadezhda/quartermaster/mining_outside_doc)
+/area/mine/prep)
 "aQ" = (
 /obj/structure/railing,
 /turf/simulated/floor/asteroid,
@@ -531,11 +534,6 @@
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/mine/hallway)
 "bT" = (
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 2;
-	name = "Elevator Access";
-	req_access = list(48)
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -545,6 +543,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor/multi_tile{
 	dir = 2
+	},
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/hallway)
@@ -600,10 +601,6 @@
 /turf/simulated/floor/tiled/steel/danger,
 /area/mine/hallway)
 "bY" = (
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 2;
-	name = "Dormitory"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -618,6 +615,9 @@
 	},
 /obj/machinery/door/firedoor/multi_tile{
 	dir = 2
+	},
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/prep)
@@ -659,11 +659,6 @@
 /turf/simulated/floor/tiled/steel/danger,
 /area/mine/prep)
 "cc" = (
-/obj/machinery/door/airlock/multi_tile/metal/mait{
-	dir = 3;
-	name = "Tunnel Access";
-	req_access = list(48)
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -672,6 +667,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor/multi_tile{
 	dir = 2
+	},
+/obj/machinery/door/airlock/multi_tile/metal/mait{
+	dir = 3;
+	name = "Mining Outpost";
+	req_access = list(48)
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/prep)
@@ -684,15 +684,15 @@
 /turf/simulated/floor/tiled/steel/danger,
 /area/mine/prep)
 "ce" = (
-/obj/machinery/door/airlock/multi_tile/metal/mait{
-	dir = 3;
-	name = "Mining Outpost";
-	req_access = list(48)
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor/multi_tile{
 	dir = 2
+	},
+/obj/machinery/door/airlock/multi_tile/metal/mait{
+	dir = 3;
+	name = "Mining Outpost";
+	req_access = list(48)
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/prep)
@@ -2160,37 +2160,31 @@
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/livingarea)
 "gj" = (
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 2;
-	name = "Mining";
-	req_access = list(48)
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor/multi_tile{
 	dir = 2
+	},
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/hallway)
 "gk" = (
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 2;
-	name = "Mining";
-	req_access = list(48)
-	},
 /obj/machinery/door/firedoor/multi_tile{
 	dir = 2
+	},
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/hallway)
 "gl" = (
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 2;
-	name = "Ore Processing";
-	req_access = list(48)
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/firedoor/multi_tile{
 	dir = 2
+	},
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/processing)
@@ -8518,6 +8512,11 @@
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/nadezhda/rnd/mixing)
+"Ed" = (
+/obj/machinery/mining/brace,
+/obj/structure/catwalk,
+/turf/simulated/floor/asteroid,
+/area/mine/prep)
 "Eh" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -8573,6 +8572,11 @@
 /obj/effect/floor_decal/industrial/stand_clear/red,
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/nadezhda/rnd/outpostgeneral)
+"Fa" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/structure/railing,
+/turf/simulated/floor/asteroid,
+/area/nadezhda/quartermaster/mining_outside_doc)
 "Fm" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal{
 	dir = 4
@@ -9032,6 +9036,11 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/nadezhda/quartermaster/mining_outside_doc)
+"Ri" = (
+/obj/effect/decal/cleanable/rubble,
+/obj/random/junk,
+/turf/simulated/floor/asteroid,
+/area/nadezhda/quartermaster/mining_outside_doc)
 "Rq" = (
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 8
@@ -9156,6 +9165,12 @@
 	},
 /turf/simulated/floor/tiled/white/cargo,
 /area/nadezhda/rnd/mixing)
+"SM" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/asteroid,
+/area/nadezhda/quartermaster/mining_outside_doc)
 "SZ" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
@@ -9193,6 +9208,11 @@
 /obj/effect/floor_decal/industrial/warningred/full,
 /turf/simulated/floor/reinforced,
 /area/nadezhda/rnd/mixing)
+"Ub" = (
+/obj/machinery/mining/drill,
+/obj/structure/catwalk,
+/turf/simulated/floor/asteroid,
+/area/mine/prep)
 "Uf" = (
 /obj/machinery/camera/network/research{
 	dir = 4
@@ -43039,7 +43059,7 @@ YC
 Zb
 YC
 Zb
-Fs
+Ri
 aD
 bt
 bL
@@ -43241,7 +43261,7 @@ YC
 Zb
 YC
 Zb
-Fs
+Ri
 aD
 bu
 bM
@@ -43644,7 +43664,7 @@ Ma
 Zb
 Zb
 YC
-Zb
+aQ
 aP
 bb
 bc
@@ -43846,8 +43866,8 @@ ti
 Zb
 Zb
 YC
-Zb
 aQ
+Ed
 uc
 uc
 bc
@@ -44048,8 +44068,8 @@ ti
 ti
 Zb
 YC
-Fs
-aQ
+Fa
+Ub
 ud
 ud
 bc
@@ -44250,8 +44270,8 @@ ti
 ab
 Zb
 YC
-Fs
-aQ
+Fa
+Ed
 uc
 uc
 bc
@@ -44453,7 +44473,7 @@ Zb
 Zb
 YC
 Zb
-Zb
+SM
 bd
 bv
 bN

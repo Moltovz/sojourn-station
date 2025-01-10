@@ -176,6 +176,16 @@
 	idle_power_usage = 1
 	active_power_usage = 1
 
+/obj/machinery/porta_turret/artificer/mining
+	name = "artificer mining turret"
+	desc = "A fully automated battery powered self-repairing anti-wildlife turret platform built by the Artificer's Guild for Lonestar Mining. It features a three round burst fire automatic and an integrated \
+	non-sapient automated artificial-intelligence diagnostic repair system. In other words, the fanciest bit of forging the guild can make. Fires 7.62mm rounds at a slower rate than it's big brother, and holds up to 60. Capable of IFF."
+	circuit = /obj/item/circuitboard/artificer_turret/mining
+	shot_delay = 15
+	ammo_max = 60
+	active_power_usage = 3
+	anchored = 0
+
 /obj/machinery/porta_turret/artificer/auto_use_power()
 	if(disabled)
 		return
@@ -406,6 +416,12 @@
 /obj/machinery/porta_turret/artificer/launch_projectile()
 	ammo--
 	..()
+
+/obj/machinery/porta_turret/artificer/mining/update_icon()
+	cut_overlays()
+
+	if(!(stat & BROKEN))
+		add_overlay(image("turret_gun"))
 
 /obj/machinery/porta_turret/artificer/opifex
 	name = "opifex scrap turret"
