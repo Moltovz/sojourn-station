@@ -1,9 +1,11 @@
 #include "map/_Deep_Forest.dmm"
 #include "map/_Beast_Cave.dmm"
 #include "map/_Greyson_Field_Office.dmm"
+#include "map/_East_Forest.dmm"
 //#include "map/_Prepper_Bunker.dmm"
 #include "map/_River_Forest.dmm"
 #include "map/_River_To_Colony.dmm"
+
 
 /obj/map_data/nadezda_f
 	name = "Deep Forest"
@@ -13,6 +15,14 @@
 	is_sealed = TRUE
 	height = 2
 	digsites = "TECHNICAL"
+
+/obj/map_data/nadezda_fe
+	name = "Eastern Deep Forest"
+	is_player_level = TRUE
+	is_contact_level = FALSE
+	is_accessable_level = FALSE
+	is_sealed = TRUE
+	height = 2
 
 /obj/map_data/beast_cave
 	name = "Beast Cave"

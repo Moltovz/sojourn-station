@@ -67,6 +67,12 @@ won't update every console in existence) but it's more of a hassle to do. Also, 
 	var/selected_imprinter_category
 	var/search_text
 
+	attackby(obj/item/tool/multitool/W as obj, mob/user as mob)
+		if(!W.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_PULSING, FAILCHANCE_ZERO, required_stat = STAT_COG))
+			return ..()
+		hacked = !hacked
+		to_chat(user, SPAN_NOTICE("You [hacked ? "Disable" : "Enable"] the \the [src]'s ID reader."))
+
 /obj/machinery/computer/rdconsole/proc/SyncRDevices() //Makes sure it is properly sync'ed up with the devices attached to it (if any).
 	for(var/obj/machinery/r_n_d/destructive_analyzer/D in range(3, src))
 		if(!isnull(D.linked_console) || D.panel_open)

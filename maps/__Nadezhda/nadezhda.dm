@@ -8,6 +8,7 @@
 
 #include "map/_Nadezhda_Colony.dmm"
 #include "map/_Nadezhda_Solar_Area.dmm"
+#include "map/_Nadezhda_Colony_Dormlevel.dmm"
 
 /obj/map_data/eris
 	name = "Eris"
@@ -30,6 +31,15 @@
 	is_admin_level = TRUE
 	is_accessable_level = FALSE
 	height = 1
+
+/obj/map_data/nadezda_dorms
+	name = "Nadezhda Mountain Dormitories"
+	is_station_level = TRUE
+	is_player_level = TRUE
+	is_contact_level = TRUE
+	is_accessable_level = FALSE
+	is_sealed = TRUE
+	height = 2
 
 /obj/map_data/nadezda_solars
 	name = "Nadezhda Mountain Solars"
