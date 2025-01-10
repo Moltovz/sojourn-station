@@ -181,10 +181,9 @@
 	desc = "A fully automated battery powered self-repairing anti-wildlife turret platform built by the Artificer's Guild for Lonestar Mining. It features a three round burst fire automatic and an integrated \
 	non-sapient automated artificial-intelligence diagnostic repair system. In other words, the fanciest bit of forging the guild can make. Fires 7.62mm rounds at a slower rate than it's big brother, and holds up to 60. Capable of IFF."
 	circuit = /obj/item/circuitboard/artificer_turret/mining
-	shot_delay = 15
+	shot_delay = 10
 	ammo_max = 60
-	active_power_usage = 3
-	anchored = 0
+	active_power_usage = 2
 
 /obj/machinery/porta_turret/artificer/auto_use_power()
 	if(disabled)
@@ -293,9 +292,6 @@
 						spawn(200)
 							disabled = FALSE
 				else if(anchored)
-					if(disabled)
-						to_chat(user, SPAN_NOTICE("The turret is still recalibrating. Wait some time before trying to move it."))
-						return
 					playsound(loc, 'sound/items/Ratchet.ogg', 100, 1)
 					anchored = 0
 					disabled = TRUE
@@ -474,9 +470,6 @@
 						spawn(200)
 							disabled = FALSE
 				else if(anchored)
-					if(disabled)
-						to_chat(user, SPAN_NOTICE("The turret is still recalibrating. Wait some time before trying to move it."))
-						return
 					playsound(loc, 'sound/items/Ratchet.ogg', 100, 1)
 					anchored = 0
 					disabled = TRUE

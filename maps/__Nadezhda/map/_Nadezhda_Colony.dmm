@@ -1458,9 +1458,7 @@
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/nadezhda/maintenance/undergroundfloor2west)
 "aoR" = (
-/obj/machinery/porta_turret/artificer/mining{
-	anchored = 0
-	},
+/obj/machinery/porta_turret/artificer/mining,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/miningdock)
 "aoT" = (
@@ -6695,7 +6693,6 @@
 /obj/machinery/alarm{
 	pixel_y = 32
 	},
-/obj/item/computer_hardware/hard_drive/portable/design/logistics,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/miningdock)
 "boG" = (
@@ -33662,6 +33659,9 @@
 /obj/machinery/camera/network/cargo{
 	dir = 8
 	},
+/obj/structure/table/rack/shelf,
+/obj/item/computer_hardware/hard_drive/portable/design/logistics,
+/obj/item/computer_hardware/hard_drive/portable/design/logistics,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/miningdock)
 "goA" = (
@@ -76449,11 +76449,15 @@
 /turf/simulated/floor/wood/wild2,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "omE" = (
-/obj/structure/table/rack,
-/obj/random/tool_upgrade/low_chance,
-/obj/random/tool_upgrade/low_chance,
-/obj/random/tool_upgrade/low_chance,
-/obj/random/science/low_chance,
+/obj/item/device/kit/paint/ripley/syndieripley,
+/obj/item/device/kit/paint/ripley/clark{
+	pixel_y = -5;
+	pixel_x = 6
+	},
+/obj/item/device/kit/paint/ripley/combatripley{
+	pixel_y = 12
+	},
+/obj/structure/table/rack/shelf,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/nadezhda/quartermaster/office)
 "omO" = (

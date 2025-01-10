@@ -300,9 +300,6 @@ GLOBAL_LIST_INIT(turret_channels, new/list(5))
 							spawn(200)
 								disabled = FALSE
 					else if(anchored)
-						if(disabled)
-							to_chat(user, SPAN_NOTICE("The turret is still recalibrating. Wait some time before trying to move it."))
-							return
 						playsound(loc, 'sound/items/Ratchet.ogg', 100, 1)
 						anchored = FALSE
 						disabled = TRUE
