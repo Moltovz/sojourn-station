@@ -979,6 +979,21 @@
 	icon_state = "erisblue"
 	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
 
+/area/nadezhda/absolutism/dorms
+	name = "\improper Church Dormatories"
+	icon_state = "erisblue"
+	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+
+/area/nadezhda/absolutism/dorms/one
+	name = "\improper Church Dormatories"
+	icon_state = "erisblue"
+	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+
+/area/nadezhda/absolutism/dorms/two
+	name = "\improper Church Dormatories"
+	icon_state = "erisblue"
+	area_light_color = COLOR_LIGHTING_NEOTHEOLOGY_BRIGHT
+
 /area/nadezhda/absolutism/vectorrooms
 	name = "\improper Church Commons"
 	icon_state = "erisblue"

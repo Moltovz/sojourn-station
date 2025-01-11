@@ -178,7 +178,7 @@
 
 /obj/machinery/porta_turret/artificer/mining
 	name = "artificer mining turret"
-	desc = "A fully automated battery powered self-repairing anti-wildlife turret platform built by the Artificer's Guild for Lonestar Mining. It features a three round burst fire automatic and an integrated \
+	desc = "A fully automated battery powered self-repairing anti-wildlife turret platform built by the Artificer's Guild for Lonestar Mining. It features a two round burst fire automatic and an integrated \
 	non-sapient automated artificial-intelligence diagnostic repair system. In other words, the fanciest bit of forging the guild can make. Fires 7.62mm rounds at a slower rate than it's big brother, and holds up to 60. Capable of IFF."
 	circuit = /obj/item/circuitboard/artificer_turret/mining
 	shot_delay = 10
@@ -394,6 +394,19 @@
 	launch_projectile(target)
 	sleep(shot_delay)
 	launch_projectile(target)
+
+/obj/machinery/porta_turret/artificer/mining/shootAt(var/mob/living/target)
+	var/turf/T = get_turf(src)
+	var/turf/U = get_turf(target)
+	if(!istype(T) || !istype(U))
+		return
+
+	if(!raised) //the turret has to be raised in order to fire - makes sense, right?
+		return
+
+	launch_projectile(target)
+	launch_projectile(target)
+	sleep(shot_delay)
 
 // this turret has no cover, it is always raised
 /obj/machinery/porta_turret/artificer/popUp()

@@ -7,6 +7,7 @@ become keenly aware of the limited battery supply in your flashlight
 All the doors being depowered means that people can crowbar their way into restricted places easily.
 So sometimes this event can result in people finding new and interesting things
 */
+/* NO.
 /datum/storyevent/grid_check
 	id = "gridcheck"
 	name = "Grid Check"
@@ -37,7 +38,7 @@ So sometimes this event can result in people finding new and interesting things
 	command_announcement.Announce("Abnormal activity detected in the colony's powernet. As a precautionary measure, power will be shut off for an indeterminate duration.", "Automated Grid Check", new_sound = 'sound/AI/poweroff.ogg')
 
 
-
+*/
 /proc/power_failure(var/announce = 1, var/severity = 2, var/list/affected_z_levels)
 	if(announce)
 		command_announcement.Announce("Abnormal activity detected in the colony's powernet. As a precautionary measure, power will be shut off for an indeterminate duration.", "Critical Power Failure", new_sound = 'sound/AI/poweroff.ogg')

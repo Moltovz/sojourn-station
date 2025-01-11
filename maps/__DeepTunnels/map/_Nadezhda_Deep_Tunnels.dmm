@@ -669,9 +669,7 @@
 	dir = 2
 	},
 /obj/machinery/door/airlock/multi_tile/metal/mait{
-	dir = 3;
-	name = "Mining Outpost";
-	req_access = list(48)
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/prep)
@@ -690,9 +688,7 @@
 	dir = 2
 	},
 /obj/machinery/door/airlock/multi_tile/metal/mait{
-	dir = 3;
-	name = "Mining Outpost";
-	req_access = list(48)
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/prep)
@@ -804,6 +800,14 @@
 "cw" = (
 /turf/simulated/wall/r_wall,
 /area/mine/atmos)
+"cy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/conveyor/south{
+	id = "mining_internal";
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/mine/processing)
 "cz" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel,
@@ -1159,6 +1163,11 @@
 /obj/effect/floor_decal/industrial/loading{
 	dir = 8
 	},
+/obj/machinery/conveyor/south{
+	id = "mining_internal";
+	dir = 8
+	},
+/obj/structure/plasticflaps,
 /turf/simulated/floor/plating,
 /area/mine/processing)
 "dD" = (
@@ -1523,9 +1532,10 @@
 /area/mine/processing)
 "eF" = (
 /obj/structure/table/steel_reinforced,
-/obj/random/lathe_disk,
 /obj/item/tool/wrench,
 /obj/machinery/smartfridge/disk,
+/obj/random/lathe_disk,
+/obj/item/computer_hardware/hard_drive/portable/design/logistics,
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/processing)
 "eG" = (
@@ -1555,6 +1565,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/structure/plasticflaps,
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/mine/processing)
 "eM" = (
@@ -1562,6 +1573,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warningdust{
 	dir = 4
+	},
+/obj/machinery/conveyor/south{
+	id = "mining_internal";
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/mine/processing)
@@ -7470,6 +7485,13 @@
 	},
 /turf/simulated/floor/tiled/cafe,
 /area/mine/livingarea)
+"sY" = (
+/obj/machinery/conveyor/south{
+	id = "mining_internal";
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/mine/processing)
 "tb" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/steel,
@@ -43472,7 +43494,7 @@ aE
 aD
 dG
 eg
-dD
+sY
 eY
 fB
 fZ
@@ -43674,7 +43696,7 @@ fC
 cH
 cX
 dD
-dD
+sY
 eZ
 ir
 af
@@ -43876,7 +43898,7 @@ bc
 bc
 dF
 eh
-eh
+cy
 eh
 fD
 Zb
@@ -44078,7 +44100,7 @@ bc
 bc
 dF
 eh
-eh
+cy
 fa
 fE
 Fs

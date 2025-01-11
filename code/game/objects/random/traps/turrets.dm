@@ -19,3 +19,13 @@
 						/obj/machinery/power/os_turret/laser = 1,
 						/obj/machinery/power/os_turret = 1
 					))
+
+/obj/random/turret/mining
+	name = "mining turret"
+	icon = 'icons/misc/landmarks.dmi'
+	icon_state = "artifact-orange-low"
+
+/obj/random/turret/mining/item_to_spawn()
+		return pickweight(list(
+						/obj/machinery/porta_turret/artificer/mining = 1
+					))
