@@ -78,13 +78,9 @@
 	anchored = 1
 	density = 1
 	layer = 5
-	mouse_opacity = 1
-	light_color = "#ad5058"
-	light_range = 2
-	light_power = 2
 
 /obj/effect/overlay/wallrot/New()
 	..()
 	icon_state = "fungoartiglieria-[rand(1, 3)]"
-	pixel_x += rand(-10, 10)
-	pixel_y += rand(-10, 10)
+	pixel_x += rand(-8, 8)
+	pixel_y += rand(-8, 8)

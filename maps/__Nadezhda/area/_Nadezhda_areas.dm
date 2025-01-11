@@ -776,6 +776,16 @@
 	icon_state = "Sleep"
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
+/area/nadezhda/crew_quarters/Elevator
+	name = "\improper Dormitories Elevator Lobby"
+	icon_state = "Sleep"
+	area_light_color = COLOR_LIGHTING_CREW_SOFT
+
+/area/nadezhda/crew_quarters/elevator/lower
+	name = "\improper Dormitories Elevator Lobby q"
+	icon_state = "Sleep"
+	area_light_color = COLOR_LIGHTING_CREW_SOFT
+
 /area/nadezhda/crew_quarters/toilet
 	name = "\improper Dormitory Toilets"
 	icon_state = "toilet"
@@ -807,6 +817,33 @@
 	name = "\improper Dormitories"
 
 /area/nadezhda/crew_quarters/dorm5
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorm6
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorm7
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorm8
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorm9
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorm10
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorm11
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorm12
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorm13
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorm14
 	name = "\improper Dormitories"
 
 /area/nadezhda/crew_quarters/podrooms
