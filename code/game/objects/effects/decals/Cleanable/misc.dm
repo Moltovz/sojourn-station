@@ -51,7 +51,7 @@
 
 /obj/effect/decal/cleanable/dirt/Initialize(mapload, ...)
 	. = ..()
-	if(prob(75)) //66% to just delete areself to help against effect/decal lag
+	if(prob(90)) //90% to just delete areself to help against effect/decal lag
 		qdel(src)
 
 /obj/effect/decal/cleanable/dirt/snow

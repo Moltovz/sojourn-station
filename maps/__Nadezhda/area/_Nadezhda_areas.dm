@@ -782,7 +782,7 @@
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 
 /area/nadezhda/crew_quarters/elevator/lower
-	name = "\improper Dormitories Elevator Lobby q"
+	name = "\improper Dormitories Elevator Lobby qanc"
 	icon_state = "Sleep"
 	area_light_color = COLOR_LIGHTING_CREW_SOFT
 

@@ -1312,6 +1312,10 @@
 	name = "monochrome carp plushie"
 	icon_state = "silentcarp"
 
+/obj/item/toy/plushie/carp/white
+	name = "great white carp plushie"
+	icon_state = "whitecarp"
+
 /obj/item/toy/plushie/carp/electric
 	name = "electric carp plushie"
 	icon_state = "electriccarp"

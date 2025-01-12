@@ -26,6 +26,11 @@
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
 
+/obj/item/gun/energy/gun/spider
+	icon_state = "senergystun100"
+	name = "\"Spider Spider Spider Rose\" energy pistol"
+	desc = "The Spider Rose is- eww...."
+
 /obj/item/gun/energy/gun/mounted
 	name = "mounted energy gun"
 	self_recharge = 1
