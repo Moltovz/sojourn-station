@@ -2,11 +2,11 @@
 //Shuttle landmark code
 /datum/shuttle/autodock/multi/surface_transport
 	name = "Surface Transport Shuttle"
-	move_time = (2 MINUTES) / (1 SECOND)
+	move_time = (1 MINUTES) / (1 SECOND)
 	shuttle_area = /area/shuttle/surface_transport_lz
 	current_location = "nav_pad_surface_transport"
 	landmark_transition = "nav_transit_surface_transport"
-	destination_tags = list("nav_pad_surface_transport", "nav_hunting_lodge", "nav_deep_forest", "nav_swamps", "nav_river_forest", "nav_space_0")
+	destination_tags = list("nav_pad_surface_transport", "nav_hunting_lodge", "nav_deep_forest", "nav_swamps", "nav_river_forest", "nav_space_1")
 
 /obj/effect/shuttle_landmark/surface_transport
 	name = "Surface Transport Shuttle Pad"
@@ -38,12 +38,6 @@
 	base_turf = /turf/simulated/floor/asteroid/dirt
 	autoset = TRUE
 
-/obj/effect/shuttle_landmark/space
-	name = "Space Debris Field"
-	landmark_tag = "nav_space_0"
-	base_turf = /turf/simulated/floor/asteroid/dirt
-	autoset = TRUE
-
 /obj/effect/shuttle_landmark/river_forest
 	name = "River Forest Landing Zone"
 	landmark_tag = "nav_river_forest"
@@ -68,7 +62,7 @@
 //Skipjack Code
 /datum/shuttle/autodock/multi/skipjack
 	name = "Skipjack"
-	move_time = (7 MINUTES) / (1 SECOND)
+	move_time = (2 MINUTES) / (1 SECOND)
 	shuttle_area = /area/shuttle/skipjack_area
 	current_location = "nav_skipjack_homebase"
 	landmark_transition = "nav_skipjack_transit"
@@ -188,11 +182,11 @@
 //Scav shuttle
 /datum/shuttle/autodock/multi/rocinante
 	name = "The Rocinante"
-	move_time = (1 MINUTES) / (1 SECOND)
+	move_time = (2 MINUTES) / (1 SECOND)
 	shuttle_area = /area/shuttle/rocinante_shuttle_area
 	current_location = "nav_rocinante_homebase"
 	landmark_transition = "nav_rocinante_transit"
-	destination_tags = list("nav_rocinante_homebase", "nav_rocinante_river", "nav_rocinante_swamp", "nav_rocinante_graysonfield", "nav_space_1")//, "nav_rocinante_spacefort"
+	destination_tags = list("nav_rocinante_homebase", "nav_rocinante_river", "nav_rocinante_swamp", "nav_rocinante_graysonfield", "nav_space_0")//, "nav_rocinante_spacefort"
 
 /obj/effect/shuttle_landmark/rocinante_home
 	name = "The Rocinante Home Pad "
@@ -222,6 +216,12 @@
 	name = "Greyson Field Office Dock"
 	landmark_tag = "nav_rocinante_graysonfield"
 	base_turf = /turf/simulated/floor/reinforced
+	autoset = TRUE
+
+/obj/effect/shuttle_landmark/space
+	name = "Space Debris Field"
+	landmark_tag = "nav_space_0"
+	base_turf = /turf/simulated/floor/asteroid/dirt
 	autoset = TRUE
 
 /obj/effect/shuttle_landmark/rocinante_spacefort

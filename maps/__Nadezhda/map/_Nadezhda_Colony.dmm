@@ -45061,7 +45061,7 @@
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "ioc" = (
-/obj/random/cluster/spiders/low_chance,
+/obj/random/cluster/spiders,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/crew_quarters/dorm2)
 "iod" = (
