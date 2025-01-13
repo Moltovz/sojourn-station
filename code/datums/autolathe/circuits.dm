@@ -72,6 +72,10 @@
 	name = "artificer turret"
 	build_path = /obj/item/circuitboard/artificer_turret
 
+/datum/design/autolathe/circuit/turret_artificer/mining
+	name = "artificer turret"
+	build_path = /obj/item/circuitboard/artificer_turret/mining
+
 /datum/design/autolathe/circuit/centrifuge
 	name = "centrifuge"
 	build_path = /obj/item/circuitboard/centrifuge

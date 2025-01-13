@@ -232,6 +232,24 @@
 							/datum/design/research/item/ammo/light_rifle_257,
 							/datum/design/research/item/ammo/kurtz_laser)
 
+/datum/technology/turrets
+	name = "Guild Sentry Guns"
+	desc = "Automatic ballistic defenses on behalf of the guild"
+	tech_type = RESEARCH_COMBAT
+
+	x = 0.7
+	y = 0.8
+	icon = "submachinegun"
+
+	required_technologies = list(/datum/technology/basic_lethal)
+	required_tech_levels = list()
+	cost = 1500
+
+	unlocks_designs = list(/datum/design/autolathe/circuit/turret_artificer/mining = 1,
+							/datum/design/autolathe/circuit/turret_artificer = 3,
+							)
+
+
 /datum/technology/exotic_gunmods
 	name = "Experimental Gunmods"
 	desc = "Experimental gunmods that can grant a wide variety of effects. Use at your own risks."

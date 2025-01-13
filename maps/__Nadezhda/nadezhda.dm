@@ -9,6 +9,8 @@
 #include "map/_Nadezhda_Colony.dmm"
 #include "map/_Nadezhda_Solar_Area.dmm"
 #include "map/_Nadezhda_Colony_Dormlevel.dmm"
+#include "map/_Nadezhda_space.dmm"
+
 
 /obj/map_data/eris
 	name = "Eris"
@@ -57,6 +59,15 @@
 	is_contact_level = FALSE
 	is_accessable_level = FALSE
 	is_sealed = TRUE
+	height = 2
+
+/obj/map_data/space
+	name = "Space Debris Field"
+	is_station_level = FALSE
+	is_player_level = TRUE
+	is_contact_level = FALSE
+	is_accessable_level = FALSE
+	is_sealed = FALSE
 	height = 2
 
 

@@ -160,3 +160,88 @@
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	anchored = TRUE
 
+/// incase church makes fuckies
+/obj/item/bioreactorpack
+	name = "debug bioreactor section"
+	desc = "A small storage unit containing a bioreactor section. To use, place in the correct pattern and use a multitool to deploy."
+	icon = 'icons/obj/machines/antimatter.dmi'
+	icon_state = "box"
+	item_state = "electronic"
+	w_class = ITEM_SIZE_BULKY
+	flags = CONDUCT
+	throwforce = 5
+	throw_speed = 1
+	throw_range = 2
+	matter = list(MATERIAL_STEEL = 3)
+
+/obj/item/bioreactorpack/input
+	name = "loader"
+	desc = "The loader of the bioreactor. To use, place in the correct pattern and use a multitool to deploy."
+
+/obj/item/bioreactorpack/console
+	name = "console"
+	desc = "The bioreactor metrics console, to be placed after the input. To use, place in the correct pattern and use a multitool to deploy."
+
+/obj/item/bioreactorpack/bioport
+	name = "bioport"
+	desc = "Theb bioreactor port, to be placed after the console.. To use, place in the correct pattern and use a multitool to deploy."
+
+/obj/item/bioreactorpack/tank
+	name = "biotank_platform"
+	desc = "The bioreactor tank, to be placed above the port. To use, place in the correct pattern and use a multitool to deploy."
+
+/obj/item/bioreactorpack/unloader
+	name = "unloader"
+	desc = "The bioreactor unloader, to be placed above the tank.. To use, place in the correct pattern and use a multitool to deploy."
+
+/obj/item/bioreactorpack/platform
+	name = "platform"
+	desc = "The bioreactor platform, to be placed in a 2x2 shape above the input and console, beside the tank. To use, place in the correct pattern and use a multitool to deploy."
+
+/obj/item/bioreactorpack/input/attackby(obj/item/I as obj, mob/user as mob)
+	if((QUALITY_PULSING in I.tool_qualities) && isturf(src.loc))
+		new /obj/machinery/multistructure/bioreactor_part/loader(src.loc)
+		qdel(src)
+		return
+	else
+		return ..()
+
+/obj/item/bioreactorpack/console/attackby(obj/item/I as obj, mob/user as mob)
+	if((QUALITY_PULSING in I.tool_qualities) && isturf(src.loc))
+		new /obj/machinery/multistructure/bioreactor_part/console(src.loc)
+		qdel(src)
+		return
+	else
+		return ..()
+
+/obj/item/bioreactorpack/bioport/attackby(obj/item/I as obj, mob/user as mob)
+	if((QUALITY_PULSING in I.tool_qualities) && isturf(src.loc))
+		new /obj/machinery/multistructure/bioreactor_part/bioport(src.loc)
+		qdel(src)
+		return
+	else
+		return ..()
+
+/obj/item/bioreactorpack/tank/attackby(obj/item/I as obj, mob/user as mob)
+	if((QUALITY_PULSING in I.tool_qualities) && isturf(src.loc))
+		new /obj/machinery/multistructure/bioreactor_part/biotank_platform(src.loc)
+		qdel(src)
+		return
+	else
+		return ..()
+
+/obj/item/bioreactorpack/unloader/attackby(obj/item/I as obj, mob/user as mob)
+	if((QUALITY_PULSING in I.tool_qualities) && isturf(src.loc))
+		new /obj/machinery/multistructure/bioreactor_part/unloader(src.loc)
+		qdel(src)
+		return
+	else
+		return ..()
+
+/obj/item/bioreactorpack/platorm/attackby(obj/item/I as obj, mob/user as mob)
+	if((QUALITY_PULSING in I.tool_qualities) && isturf(src.loc))
+		new /obj/machinery/multistructure/bioreactor_part/platform(src.loc)
+		qdel(src)
+		return
+	else
+		return ..()

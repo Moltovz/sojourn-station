@@ -420,3 +420,15 @@
 	/datum/design/autolathe/misc/bulb_spot,
 	/datum/design/autolathe/misc/bulb_powersaver,
 	)
+
+/obj/item/computer_hardware/hard_drive/portable/design/turrets
+	disk_name = "Artificer's KCL-12 Defenses"
+	icon_state = "technomancers"
+
+	license = 10
+	designs = list(
+		/datum/design/autolathe/circuit/turret_artificer/mining = 1,
+		/datum/design/autolathe/circuit/turret_artificer = 3,
+		/datum/design/autolathe/ammo/rifle_ammobox = 2,
+		/datum/design/autolathe/cell/large/high = 1,
+	)

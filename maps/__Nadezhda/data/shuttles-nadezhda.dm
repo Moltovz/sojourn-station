@@ -38,6 +38,12 @@
 	base_turf = /turf/simulated/floor/asteroid/dirt
 	autoset = TRUE
 
+/obj/effect/shuttle_landmark/space
+	name = "Space Debris Field"
+	landmark_tag = "nav_space_0"
+	base_turf = /turf/simulated/floor/asteroid/dirt
+	autoset = TRUE
+
 /obj/effect/shuttle_landmark/river_forest
 	name = "River Forest Landing Zone"
 	landmark_tag = "nav_river_forest"
