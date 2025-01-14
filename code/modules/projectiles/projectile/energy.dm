@@ -85,6 +85,12 @@
 	nodamage = 0
 	stutter = 10
 
+/obj/item/projectile/energy/bolt/nerfed
+	name = "bolt"
+	icon_state = "cbbolt"
+	damage_types = list(TOX = 10, HALLOSS = 10)
+	nodamage = 0
+	stutter = 10
 
 /obj/item/projectile/energy/bolt/large
 	name = "largebolt"

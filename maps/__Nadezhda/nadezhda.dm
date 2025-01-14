@@ -63,11 +63,11 @@
 
 /obj/map_data/space
 	name = "Space Debris Field"
-	is_station_level = FALSE
 	is_player_level = TRUE
-	is_contact_level = FALSE
+	is_contact_level = TRUE
 	is_accessable_level = FALSE
-	is_sealed = FALSE
 	height = 2
+	is_sealed = TRUE
+
 
 

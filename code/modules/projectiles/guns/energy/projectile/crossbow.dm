@@ -21,6 +21,13 @@
 	wield_delay = 0.8 SECOND
 	wield_delay_factor = 0.2 // 20 vig
 
+/obj/item/gun/energy/crossbow/nerfed
+	name = "\"Nemesis\" mini energy crossbow"
+	price_tag = 0
+	projectile_type = /obj/item/projectile/energy/bolt/nerfed
+	serial_type = "S"
+
+
 /obj/item/gun/energy/crossbow/ninja
 	name = "energy dart thrower"
 	desc = "Mini energy crossbow, though this looks black market and doesn't at all resemble existing similar weapons."

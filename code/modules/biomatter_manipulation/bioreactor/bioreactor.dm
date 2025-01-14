@@ -238,7 +238,7 @@
 	else
 		return ..()
 
-/obj/item/bioreactorpack/platorm/attackby(obj/item/I as obj, mob/user as mob)
+/obj/item/bioreactorpack/platform/attackby(obj/item/I as obj, mob/user as mob)
 	if((QUALITY_PULSING in I.tool_qualities) && isturf(src.loc))
 		new /obj/machinery/multistructure/bioreactor_part/platform(src.loc)
 		qdel(src)
