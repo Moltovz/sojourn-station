@@ -421,7 +421,7 @@
 	/datum/design/autolathe/misc/bulb_powersaver,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/turrets
+/obj/item/pc_part/drive/disk/design/turrets
 	disk_name = "Artificer's KCL-12 Defenses"
 	icon_state = "technomancers"
 
