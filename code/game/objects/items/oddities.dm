@@ -1039,8 +1039,9 @@
 	)
 
 /obj/item/oddity/rare/Reizaplaque
-	name = "Robust exporter: Batons"
+	name = "Robust Exporter: Batons"
 	desc = "Awarded to Reiza Nak for exporting far too many batons on the date of 01/08/2565"
+	description_fluff = "You feel like focusing on this oddity is a very bad idea"
 	anchored = 1
 	icon_state = "reiza_plaque"
 	perk = PERK_THIN_SKIN
@@ -1048,4 +1049,16 @@
 	oddity_stats = list(
 		STAT_ROB = 8,
 		STAT_COG = 8
+	)
+
+/obj/item/oddity/rare/apolloplaque
+	name = "Battle Royale Trophy"
+	desc = "Awarded to Apollo-Juniper for winning a battle royale without killing a single person on the date of 01/14/2565"
+	description_fluff = "You feel like focusing on this oddity a very bad idea"
+	anchored = 1
+	icon_state = "apollo_plaque"
+	perk = PERK_THIN_SKIN
+	min_stats = 6
+	oddity_stats = list(
+		STAT_ROB = 20,
 	)

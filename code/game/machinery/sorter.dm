@@ -56,7 +56,7 @@
 	// based on levels of manipulators
 	var/speed = 25
 	// based on levels of scanners
-	var/number_of_settings = 3
+	var/number_of_settings = 5
 	var/input_side = SOUTH
 	var/accept_output_side = EAST
 	var/refuse_output_side = null //by default it will be reversed input_side
