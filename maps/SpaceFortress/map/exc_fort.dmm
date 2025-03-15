@@ -797,9 +797,6 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "rr" = (
 /obj/structure/table/rack,
-/obj/item/ammo_magazine/ammobox/laser_223/lethal,
-/obj/item/ammo_magazine/ammobox/laser_223/lethal,
-/obj/item/ammo_magazine/ammobox/laser_223/lethal,
 /obj/item/ammo_magazine/ammobox/light_rifle_257/highvelocity,
 /obj/item/ammo_magazine/ammobox/light_rifle_257/highvelocity,
 /obj/item/ammo_magazine/ammobox/light_rifle_257/highvelocity,

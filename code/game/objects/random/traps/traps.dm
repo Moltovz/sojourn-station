@@ -4,11 +4,11 @@
 	alpha = 128
 
 /obj/random/traps/item_to_spawn()
-	var/list/possible_traps = list(/obj/structure/wire_splicing = 1,
-	/obj/item/mine/armed = 0.15,
+	var/list/possible_traps = list(/obj/item/mine/armed = 0.15,
 	/obj/item/mine/improvised/armed = 0.30,
 	/obj/item/beartrap/armed = 0.45,
-	/obj/item/beartrap/makeshift/armed = 0.8)
+	/obj/item/beartrap/makeshift/armed = 0.8,
+	/obj/item/emp_mine/armed = 0.3)
 
 	//Check that its possible to spawn the chosen trap at this location
 	while (possible_traps.len)

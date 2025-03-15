@@ -62,6 +62,20 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
 	)
 
+/datum/craft_recipe/machinery/wall/lightswitch
+	name = "light switch"
+	result = /obj/item/frame/button
+	steps = list(
+		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+	)
+
+/datum/craft_recipe/machinery/wall/lightswitch
+	name = "light switch"
+	result = /obj/item/frame/button/lightswitch
+	steps = list(
+		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+	)
+
 /datum/craft_recipe/machinery/machine_frame
 	name = "machine frame"
 	result = /obj/machinery/constructable_frame/machine_frame

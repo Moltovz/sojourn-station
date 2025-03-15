@@ -11,6 +11,16 @@
 	name = "airlock assembly"
 	result = /obj/structure/door_assembly
 
+/datum/craft_recipe/airlock/wood
+	category = "Airlocks"
+	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
+	time = 150
+	steps = list(
+		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
+	)
+	related_stats = list(STAT_MEC)
+	result = /obj/machinery/door/unpowered/simple/wood
+
 /datum/craft_recipe/airlock/airtight
 	name = "airtight hatch assembly"
 	result = /obj/structure/door_assembly/door_assembly_hatch

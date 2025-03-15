@@ -1535,7 +1535,6 @@
 /obj/item/tool/wrench,
 /obj/machinery/smartfridge/disk,
 /obj/random/lathe_disk,
-/obj/item/computer_hardware/hard_drive/portable/design/logistics,
 /turf/simulated/floor/tiled/steel/cargo,
 /area/mine/processing)
 "eG" = (
@@ -3412,6 +3411,7 @@
 /obj/machinery/camera/network/research{
 	dir = 1
 	},
+/obj/item/pc_part/drive/disk/design/logistics,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/nadezhda/rnd/outpoststorage)
 "jv" = (
@@ -5746,6 +5746,7 @@
 /obj/item/stack/cable_coil,
 /obj/structure/table/reinforced,
 /obj/item/hand_labeler,
+/obj/item/pc_part/drive/disk/design/logistics,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/nadezhda/rnd/mixing)
 "oH" = (
@@ -6906,6 +6907,7 @@
 /area/nadezhda/rnd/outpostmedical)
 "rF" = (
 /obj/structure/table/rack/shelf,
+/obj/item/pc_part/drive/disk/design/logistics,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/nadezhda/rnd/outpostgeneral)
 "rG" = (

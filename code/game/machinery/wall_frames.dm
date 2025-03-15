@@ -118,3 +118,15 @@
 	icon_state = "bulb-construct-item"
 	refund_amt = 1
 	build_machine_type = /obj/machinery/light_construct/small
+
+/obj/item/frame/button
+	name = "button frame"
+	icon_state = "button"
+	refund_amt = 1
+	build_machine_type = /obj/machinery/button
+
+/obj/item/frame/button/lightswitch
+	name = "light switch frame"
+	icon_state = "lightswitch"
+	refund_amt = 1
+	build_machine_type = /obj/machinery/light_switch

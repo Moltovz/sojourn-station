@@ -753,7 +753,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	max_storage_space = DEFAULT_HUGE_STORAGE
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_GOLD = 5, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 2)
 	origin_tech = list(TECH_BLUESPACE = 4)
-	price_tag = 3000
+	price_tag = 0
 
 /obj/item/storage/pouch/holding/New()
 	..()
