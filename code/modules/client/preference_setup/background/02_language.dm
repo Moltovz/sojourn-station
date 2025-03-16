@@ -100,10 +100,10 @@
 		var/datum/language/lang = all_languages[L]
 		if(!lang || !is_allowed_language(preference_mob, lang))
 			pref.alternate_languages -= L
-	if(LAZYLEN(free_languages))
-		for(var/lang in free_languages)
-			pref.alternate_languages -= lang
-			pref.alternate_languages.Insert(1, lang)
+//	if(LAZYLEN(free_languages))
+//		for(var/lang in free_languages)
+//			pref.alternate_languages -= lang
+//			pref.alternate_languages.Insert(1, lang)
 
 	pref.alternate_languages = uniquelist(pref.alternate_languages)
 	if(pref.alternate_languages.len > MAX_LANGUAGES)
@@ -115,7 +115,7 @@
 		for(var/i = 1 to pref.alternate_languages.len)
 			var/lang = pref.alternate_languages[i]
 			if(free_languages[lang])
-				LAZYADD(., "- [lang] (required).<br>")
+				LAZYADD(., "- [lang] <a href='?src=\ref[src];remove_language=[i]'>Remove.</a><br>")
 			else
 				LAZYADD(., "- [lang] <a href='?src=\ref[src];remove_language=[i]'>Remove.</a><br>")
 	if(pref.alternate_languages.len < MAX_LANGUAGES)

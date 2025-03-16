@@ -19,7 +19,7 @@
 	if(completed) return
 	UnregisterSignal(mind_holder, COMSIG_HUMAN_ROBOTIC_MODIFICATION)
 	..()
-/*
+
 /datum/individual_objective/inspiration
 	name = "Triumph of the Spirit"
 	desc =  "Observe at least one positive breakdown. Inspiring!"
@@ -36,6 +36,53 @@
 /datum/individual_objective/inspiration/completed()
 	if(completed) return
 	UnregisterSignal(mind_holder, COMSIG_HUMAN_BREAKDOWN)
+	..()
+
+/datum/individual_objective/get_nsa
+	name = "Blow the Lid"
+	req_department = list(DEPARTMENT_SCIENCE, DEPARTMENT_MEDICAL)
+	units_requested = 90
+	units_completed = 0
+
+/datum/individual_objective/get_nsa/assign()
+	..()
+	desc = "Push the limits of chemical science and reach [units_requested] of Nerve System Accumulation. Make sure to survive."
+	RegisterSignal(mind_holder, COMSING_NSA, PROC_REF(task_completed))
+
+/datum/individual_objective/get_nsa/task_completed(n_nsa)
+	units_completed = n_nsa ? n_nsa : 0
+	if(check_for_completion())
+		completed()
+
+/datum/individual_objective/get_nsa/completed()
+	if(completed) return
+	UnregisterSignal(mind_holder, COMSING_NSA)
+	..()
+
+/datum/individual_objective/more_tech/completed()
+	if(completed) return
+	UnregisterSignal(mind_holder, COMSING_HUMAN_EQUITP)
+	..()
+
+/datum/individual_objective/oddity
+	name = "Warded"
+	req_department = list(DEPARTMENT_ENGINEERING)
+	units_requested = 5
+
+/datum/individual_objective/oddity/assign()
+	..()
+	desc = "Acquire at least [units_requested] oddities at the same time to be on you."
+	RegisterSignal(mind_holder, COMSING_HUMAN_EQUITP, PROC_REF(task_completed))
+
+/datum/individual_objective/oddity/task_completed(obj/item/W)
+	units_completed = 0
+	for(var/obj/item/I in mind_holder.GetAllContents())
+		if(I.GetComponent(/datum/component/inspiration))
+			..(1)
+
+/datum/individual_objective/oddity/completed()
+	if(completed) return
+	UnregisterSignal(mind_holder, COMSING_HUMAN_EQUITP)
 	..()
 
 /datum/individual_objective/derange
@@ -65,7 +112,26 @@
 	if(completed) return
 	UnregisterSignal(mind_holder, COMSIG_HUMAN_BREAKDOWN)
 	..()
-*/
+
+
+/datum/individual_objective/time_to_action
+	name = "Time for Action"
+	req_department = list(DEPARTMENT_SECURITY, DEPARTMENT_BLACKSHIELD)
+	units_requested = 20
+
+/datum/individual_objective/time_to_action/assign()
+	..()
+	desc = "Slay or observe the slaying of 20 hostiles (Roaches, Spiders, ect)."
+	RegisterSignal(mind_holder, COMSIG_MOB_DEATH, PROC_REF(task_completed))
+
+/datum/individual_objective/time_to_action/task_completed(mob/mob_death)
+	..(1)
+
+/datum/individual_objective/time_to_action/completed()
+	if(completed) return
+	UnregisterSignal(owner, COMSIG_MOB_DEATH)
+	..()
+
 #define MOB_ADD_DRUG 1
 #define ON_MOB_DRUG 2
 #define MOB_DELETE_DRUG 3
