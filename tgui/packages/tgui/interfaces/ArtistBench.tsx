@@ -49,7 +49,7 @@ export const ArtistBench = (props) => {
   const { mat_capacity, materials, oddity_name, oddity_stats } = data;
 
   return (
-    <Window width={300} height={400}>
+    <Window width={300} height={500}>
       <Window.Content>
         <LoadedMaterials mat_capacity={mat_capacity} materials={materials} />
         <Section

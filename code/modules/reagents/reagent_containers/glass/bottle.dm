@@ -384,6 +384,9 @@
 /obj/item/reagent_containers/glass/bottle/trade/alkysine
 	preloaded_reagents = list("alkysine" = 60)
 
+/obj/item/reagent_containers/glass/bottle/trade/formaldehyde
+	preloaded_reagents = list("formaldehyde" = 60)
+
 /obj/item/reagent_containers/glass/bottle/trade/bicaridine
 	preloaded_reagents = list("bicaridine" = 60)
 

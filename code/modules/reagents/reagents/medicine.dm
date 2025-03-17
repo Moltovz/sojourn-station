@@ -562,6 +562,23 @@ We don't use this but we might find use for it. Porting it since it was updated 
 /datum/reagent/medicine/tramadol/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.add_chemical_effect(CE_PAINKILLER, 50)
 
+/datum/reagent/medicine/formaldehyde
+	name = "Formaldehyde"
+	id = "formaldehyde"
+	description = "Used for preserving bodies until medical aid can be administered."
+	taste_description = "death"
+	reagent_state = LIQUID
+	color = "#37264e"
+	scannable = TRUE
+	metabolism = 0.2
+	nerve_system_accumulations = 0
+
+/datum/reagent/medicine/formaldehyde/affect_blood(mob/living/carbon/M)
+	if(ishuman(M) && is_dead(M))
+		var/mob/living/carbon/human/H = M
+		H.in_stasis = 1
+	..()
+
 /datum/reagent/medicine/tramadol/overdose(mob/living/carbon/M, alien)
 	..()
 	M.hallucination(120, 30)

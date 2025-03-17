@@ -143,6 +143,11 @@
 	required_reagents = list("hclacid" = 1, "ammonia" = 1, "anti_toxin" = 1)
 	result_amount = 2
 
+/datum/chemical_reaction/formaldehyde
+	result = "formaldehyde"
+	required_reagents = list("cryptobiolin" = 1,"cryoxadone" = 1, "ammonia" = 1)
+	result_amount = 2
+
 /datum/chemical_reaction/dexalin
 	result = "dexalin"
 	required_reagents = list("acetone" = 2, "iron" = 0.1)
