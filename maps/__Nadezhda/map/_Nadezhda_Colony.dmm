@@ -5220,10 +5220,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 2;
-	name = "Pool"
-	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters)
 "aYQ" = (
@@ -14379,6 +14375,10 @@
 "cHC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 2;
+	name = "Pool"
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/crew_quarters/pool)
@@ -25285,10 +25285,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 8;
-	name = "Pool"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -75560,6 +75556,10 @@
 "nzW" = (
 /obj/machinery/door/firedoor/multi_tile,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 8;
+	name = "Pool"
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/crew_quarters/pool)
 "nAb" = (
