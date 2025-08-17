@@ -8,9 +8,10 @@
 
 #include "map/_Nadezhda_Colony.dmm"
 #include "map/_Nadezhda_Solar_Area.dmm"
+/*
 #include "map/_Nadezhda_Colony_Dormlevel.dmm"
 #include "map/_Nadezhda_space.dmm"
-
+*/
 
 /obj/map_data/eris
 	name = "Eris"
