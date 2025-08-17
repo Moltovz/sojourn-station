@@ -90,7 +90,7 @@
 	var/psionic_respawn = TRUE
 	var/fast_respawn = 5 MINUTES
 	var/slow_respawn = 15 MINUTES
-	var/respawn_mob_type = /obj/random/mob/psi_monster
+	var/respawn_mob_type = /obj/random/mob/psi_monster/insta_spawn
 	var/affects_chaos = FALSE
 
 	var/leach_on_odds = 0
@@ -237,6 +237,12 @@
 	catalyst_drop = /obj/random/psi_catalyst/flesh_behemoth
 	psion_chance = 45
 	normie_chance = 20
+
+/obj/effect/decal/cleanable/psi_ash/debuffer
+	name = "strange ashes of a shallow breather"
+	catalyst_drop = /obj/random/psi_catalyst/debuffer
+	psion_chance = 75
+	normie_chance = 50
 
 /obj/effect/decal/cleanable/psi_ash/king
 	name = "ashes of the throne bound tyrant"

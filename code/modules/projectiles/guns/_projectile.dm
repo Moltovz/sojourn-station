@@ -216,6 +216,7 @@
 						to_chat(user, SPAN_WARNING("\The [AM] won't fit into the magwell.")) //Prevents an exploit
 						return
 					else if(replace_item(ammo_magazine, A, user)) // The replace_item() proc already existed, THIS is a proper tac reload and not an Iraqi reload.
+						ammo_magazine.update_icon()
 						ammo_magazine = A
 						update_icon()
 						to_chat(user, SPAN_NOTICE("You tactically reload your [src] with [AM]!"))
@@ -375,17 +376,18 @@
 
 /obj/item/gun/projectile/afterattack(atom/A, mob/living/user)
 	..()
-	if(auto_eject && ammo_magazine && ammo_magazine.stored_ammo && !ammo_magazine.stored_ammo.len)
-		ammo_magazine.forceMove(get_turf(src.loc))
-		user.visible_message(
-			"[ammo_magazine] falls out and clatters on the floor!",
-			SPAN_NOTICE("[ammo_magazine] falls out and clatters on the floor!")
-			)
-		if(auto_eject_sound)
-			playsound(user, auto_eject_sound, 40, 1)
-		ammo_magazine.update_icon()
-		ammo_magazine = null
-		update_icon() //make sure to do this after unsetting ammo_magazine
+	if(auto_eject) //Faster return and less processing to quickly boot out
+		if(ammo_magazine && ammo_magazine.stored_ammo && !ammo_magazine.stored_ammo.len)
+			ammo_magazine.forceMove(get_turf(src.loc))
+			user.visible_message(
+				"[ammo_magazine] falls out and clatters on the floor!",
+				SPAN_NOTICE("[ammo_magazine] falls out and clatters on the floor!")
+				)
+			if(auto_eject_sound)
+				playsound(user, auto_eject_sound, 40, 1)
+			ammo_magazine.update_icon()
+			ammo_magazine = null
+			update_icon() //make sure to do this after unsetting ammo_magazine
 
 /obj/item/gun/projectile/examine(mob/user)
 	..(user)

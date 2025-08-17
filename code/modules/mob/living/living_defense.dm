@@ -19,7 +19,7 @@
 /mob/living/proc/damage_through_armor(damage = 0, damagetype = BRUTE, def_zone, attack_flag = ARMOR_MELEE, armor_divisor = 0, used_weapon, sharp = FALSE, edge = FALSE, wounding_multiplier, list/dmg_types = list(), return_continuation = FALSE, dir_mult = 1)
 	if(damage) // If damage is defined, we add it to the list
 		if(!dmg_types[damagetype])
-			dmg_types += damagetype
+			dmg_types[damagetype] = 0 // Should make damage be a numerical value that other damage can be added too - Ryuu
 		dmg_types[damagetype] += damage
 
 	if(armor_divisor <= 0)
@@ -70,6 +70,14 @@
 
 	//log_and_message_admins("LOG 1: armor [armor] | ablative_armor [ablative_armor] | remaining_armor| [remaining_armor] | remaining_ablative [remaining_ablative].")
 	//log_and_message_admins("LOG 1.2: attack_flag [attack_flag] | damagetype [damagetype] | def_zone| [def_zone] | armor_divisor [armor_divisor].")
+
+	//Do we have perks and stats?
+	if(stats)
+		//If we have this perk then reduce armor by 20%
+		if(stats.getPerk(PERK_ARMOR_REDUCTION))
+			ablative_armor *= 0.8
+			remaining_ablative *= 0.8
+			armor *= 0.8
 
 	for(var/dmg_type in dmg_types)
 		var/dmg = dmg_types[dmg_type]
@@ -338,7 +346,7 @@
 
 		if (prob(miss_chance))
 			visible_message("\blue \The [O] misses [src] narrowly!")
-			playsound(src, "miss_sound", 50, 1, -6)
+			playsound(src, get_sfx("miss_sound"), 50, 1, -6)
 			return
 
 		if (O.is_hot() >= HEAT_MOBIGNITE_THRESHOLD)
@@ -440,6 +448,8 @@
 		on_fire = TRUE
 		set_light(light_range + 3, l_color = COLOR_RED)
 		update_fire()
+		add_overlay(image("icon"='icons/mob/OnFire.dmi', "icon_state"="Generic_mob_burning"))
+
 
 /mob/living/proc/ExtinguishMob()
 	if(on_fire)
@@ -447,6 +457,7 @@
 		fire_stacks = 0
 		set_light(max(0, light_range - 3))
 		update_fire()
+		cut_overlay(image("icon"='icons/mob/OnFire.dmi', "icon_state"="Generic_mob_burning"))
 
 /mob/living/proc/update_fire()
 	return

@@ -29,6 +29,7 @@
 #define NUM_E 2.71828183
 
 #define M_PI						3.1416
+#define SQRT_2 1.414214 //CLOSE ENOUGH!
 #define INFINITY				1.#INF // tg uses 1e31, not ready to change this
 #define SYSTEM_TYPE_INFINITY	1.#INF //only for isinf check
 
@@ -100,6 +101,8 @@
 #define Lcm(a, b) (abs(a) / Gcd(a, b) * abs(b))
 
 #define INVERSE(x) ( 1/(x) )
+
+#define IS_CARDINAL(x) ((x & (x - 1)) == 0)
 
 // Used for calculating the radioactive strength falloff
 #define INVERSE_SQUARE(initial_strength,cur_distance,initial_distance) ( (initial_strength)*((initial_distance)**2/(cur_distance)**2) )

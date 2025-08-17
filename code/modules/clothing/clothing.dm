@@ -48,7 +48,9 @@
 
 /obj/item/clothing/Destroy()
 	for(var/obj/item/clothing/accessory/A in accessories)
-		qdel(A)
+		A.on_removed()
+		accessories -= A
+		update_wear_icon()
 	accessories = null
 	return ..()
 
@@ -57,6 +59,20 @@
 	. = ..()
 	gunshot_residue = null
 
+/obj/item/clothing/proc/return_inv()
+	var/list/L = list()
+
+	L += src.contents
+
+	for(var/obj/item/storage/S in src)
+		L += S.return_inv()
+	for(var/obj/item/gift/G in src)
+		L += G.gift
+		if (istype(G.gift, /obj/item/storage))
+			L += G.gift:return_inv()
+	for(var/obj/item/rig_module/RM in src)
+		L += RM.return_inv()
+	return L
 
 //Delayed equipping
 /obj/item/clothing/pre_equip(var/mob/user, var/slot)
@@ -516,6 +532,12 @@ BLIND     // can't see anything
 	force = 2
 	var/overshoes = 0
 
+/obj/item/clothing/shoes/Destroy()
+	if(holding)
+		holding.forceMove(loc)
+		holding = null
+	return ..()
+
 /obj/item/clothing/shoes/proc/draw_knife()
 	set name = "Draw Boot Knife"
 	set desc = "Pull out your boot knife."
@@ -578,7 +600,8 @@ BLIND     // can't see anything
 			/obj/item/material/butterfly,
 			/obj/item/material/kitchen/utensil,
 			/obj/item/tool/knife/tacknife,
-			/obj/item/tool/knife/shiv
+			/obj/item/tool/knife/shiv,
+			/obj/item/oddity/common/old_knife
 		)
 	if(!not_a_knife)
 		not_a_knife = list(/obj/item/tool/knife/psionic_blade)
@@ -675,6 +698,9 @@ BLIND     // can't see anything
 
 /obj/item/clothing/suit/New()
 	LAZYOR(allowed, extra_allowed)
+	.=..()
+
+/obj/item/clothing/suit/Destroy()
 	.=..()
 
 /obj/item/clothing/suit/refresh_upgrades()

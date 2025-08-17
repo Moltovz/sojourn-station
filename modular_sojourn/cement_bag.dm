@@ -1,9 +1,15 @@
-/obj/item/cement_bag
+/obj/item/stack/cement_bag
 	name = "Quick-Cement Bag"
 	desc = "A bag of fast acting cement, used for making underplating nice and flat"
 	icon = 'modular_sojourn/misc_stuff.dmi'
 	icon_state = "cementbag"
-	var/inuse = FALSE
+	max_amount = 100
+
+/obj/item/stack/cement_bag/five
+	amount = 5
+
+/obj/item/stack/cement_bag/full
+	amount = 100
 
 /obj/item/hydro_tray_plant_bag_water
 	name = "Woodchips Bag"

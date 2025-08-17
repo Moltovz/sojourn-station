@@ -108,6 +108,7 @@
 	heating_point = 523
 	heating_products = list("toxin")
 	reagent_type = "Toxin/Stimulator"
+	withdrawal_threshold = 8 //gives you chances to purge it
 
 /datum/reagent/toxin/carpotoxin/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	..()
@@ -838,3 +839,21 @@
 		M.apply_effect(agony_amount, HALLOSS, 0)
 		if(prob(5))
 			to_chat(M, SPAN_DANGER("You feel like your insides are burning!"))
+
+//Bird toxin
+/datum/reagent/toxin/slow_toxin
+	name = "Ciriklo stolidium"
+	id = "slow_toxin"
+	description = "A potent toxin that interferes with a humanoid's motor cortex, acquired by fermenting Ciriklo excretions. Greatly hinders voluntary movement."
+	taste_mult = 0.1 //Sneaky
+	reagent_state = LIQUID
+	color = "#CF3600"
+	strength = 0.02 //Not all that toxic in terms of damage mostly its statis affects
+	metabolism = REM * 4 //We process out fast as we get injected by a lot
+	nerve_system_accumulations = 3
+
+/datum/reagent/toxin/slow_toxin/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	..()
+	//Makes everything you do slower
+	M.add_chemical_effect(CE_SLOWDOWN, 1.5)
+	M.add_chemical_effect(CE_ATTACK_COOLDOWN, 2)

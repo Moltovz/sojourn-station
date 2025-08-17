@@ -5,6 +5,7 @@
 	scannable = TRUE
 
 	sanity_gain = 0.5
+	withdrawal_threshold = 20
 
 /datum/reagent/drug/on_mob_add(mob/living/L)
 	..()
@@ -167,14 +168,8 @@
 		M.emote("drool")
 	..()
 
-	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		var/obj/item/organ/internal/vital/heart/C = H.random_organ_by_process(OP_HEART)
-		if(H && istype(H))
-			if(BP_IS_ROBOTIC(C))
-				return
-			if(C.damage > 0)
-				C.damage = max(C.damage - 0.5, 0)
+	M.add_chemical_effect(CE_HEARTHEAL, 2)
+
 
 /datum/reagent/drug/impedrezene/withdrawal_act(mob/living/carbon/M)
 	M.stats.addTempStat(STAT_ROB, STAT_LEVEL_ADEPT, STIM_TIME, "impedrezene_w")
@@ -191,6 +186,7 @@
 	addiction_chance = 30
 	overdose = REAGENTS_OVERDOSE
 	illegal = TRUE
+	withdrawal_threshold = 3
 
 /datum/reagent/drug/mindbreaker/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.hallucination(50 * effect_multiplier, 50 * effect_multiplier)
@@ -220,6 +216,7 @@
 	overdose = REAGENTS_OVERDOSE
 	nerve_system_accumulations = 90
 	addiction_chance = 30
+	withdrawal_threshold = 1
 
 /datum/reagent/drug/mindwipe/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.hallucination(50 * effect_multiplier, 50 * effect_multiplier)
@@ -255,6 +252,7 @@
 	addiction_chance = 90
 	nerve_system_accumulations = 40
 	reagent_type = "Drug/Stimulator"
+	withdrawal_threshold = 3 //Not to sure how to do this one
 
 /datum/reagent/drug/psi_juice/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	var/mob/living/carbon/human/H = M
@@ -373,6 +371,7 @@
 	addiction_chance = 1 // Note: NEVER make nicotine actually addictive. EVER. //Why? It's based.
 	sanity_gain = 0.8
 	nerve_system_accumulations = 15
+	withdrawal_threshold = 8
 
 /datum/reagent/drug/nicotineplus/affect_blood(mob/living/carbon/M, alien, effect_multiplier) // If you inject fine nicotine
 	..()
@@ -414,6 +413,7 @@
 	withdrawal_threshold = 10
 	nerve_system_accumulations = 55
 	reagent_type = "Drug/Stimulator"
+	withdrawal_threshold = 3
 
 /datum/reagent/drug/hyperzine/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	if(prob(5))
@@ -425,13 +425,7 @@
 
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
-		//G for GUNS
-		var/obj/item/organ/internal/muscle/G = H.random_organ_by_process(OP_MUSCLE)
-		if(H && istype(H))
-			if(BP_IS_ROBOTIC(G))
-				return
-			if(G.damage > 0)
-				G.damage = max(G.damage - 0.5, 0)// small healing
+		M.add_chemical_effect(CE_MUSCLEHEAL, 2)
 		if(H.health <= 50)
 			H.heal_organ_damage(-0.1, -0.1)
 
@@ -486,6 +480,7 @@
 	metabolism = REM
 	overdose = REAGENTS_OVERDOSE/10
 	color = "#8a0303"
+	withdrawal_threshold = 0
 
 /datum/reagent/drug/nanoblood/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.add_chemical_effect(CE_BLOODRESTORE, 4.5 * effect_multiplier)
@@ -523,6 +518,7 @@
 	overdose = REAGENTS_OVERDOSE/2
 	nerve_system_accumulations = 40 // Was incredibly unforgiving for its effects, this makes it able to be mixed with painkillers without forcing vomit. - Seb
 	addiction_chance = 30
+	withdrawal_threshold = 0.01 //The vampire thirsts for the blood bags
 
 /datum/reagent/drug/sanguinum/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.add_chemical_effect(CE_BLOODRESTORE, 1.6 * effect_multiplier)
@@ -553,7 +549,7 @@
 /datum/reagent/drug/nosfernium
 	name = "Nosfernium"
 	id = "nosfernium"
-	description = "A chemical for when the body is bleed dry, and if its not will ensure you are left a skeleton."
+	description = "A chemical that disables the users issues with different blood types, affectively allowing them to be a universal receiver for any type or race."
 	taste_description = "teeth"
 	reagent_state = LIQUID
 	color = "#e06270"
@@ -561,13 +557,14 @@
 	overdose = REAGENTS_OVERDOSE/6
 	nerve_system_accumulations = 80
 	addiction_chance = 30
+	withdrawal_threshold = 0.01 //The thirsts, overwheling
 
 /datum/reagent/drug/nosfernium/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.add_chemical_effect(CE_NOPULSE, 1)
 
 /datum/reagent/drug/nosfernium/withdrawal_act(mob/living/carbon/M)
 	M.add_chemical_effect(CE_SLOWDOWN, 1)
-	M.adjustNutrition(-25)
+	M.adjustNutrition(-2)
 
 datum/reagent/drug/nosfernium/overdose(var/mob/living/carbon/human/M, var/alien)
 	M.adjustBrainLoss(5) // This is meant to be lethal. If you survive this give your doctor a pat on the back.

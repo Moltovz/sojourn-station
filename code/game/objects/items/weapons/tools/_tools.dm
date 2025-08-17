@@ -1153,31 +1153,26 @@
 		if(BP_IS_ROBOTIC(E))
 			to_chat(H, SPAN_WARNING("The world suddenly dims in response to the blindingly bright light, protecting you from its shine."))
 			return
+		//so that way mob lag dosnt cheat folks into eye damage
+		H.update_equipment_vision()
 		var/safety = H.eyecheck()
 		switch(safety)
 			if(FLASH_PROTECTION_MINOR)
-				to_chat(H, SPAN_WARNING("Your eyes sting a little."))
-				E.take_damage(1, BURN)
-				if(E.damage > 12)
-					H.eye_blurry += rand(3,6)
-			if(FLASH_PROTECTION_MINOR)
 				to_chat(H, SPAN_WARNING("The searing light burns your eyes through your insufficient protection."))
-				E.take_damage(rand(3, 6), BURN)
-				if(E.damage > 11)
-					E.take_damage(rand(4, 6), BURN)
+				E.take_damage(1, BURN)
+				H.eye_blurry += rand(3,6)
 			if(FLASH_PROTECTION_NONE)
 				to_chat(H, SPAN_WARNING("Your eyes burn."))
-				E.take_damage(rand(4, 6), BURN)
-				if(E.damage > 10)
-					E.take_damage(rand(2, 6))
+				E.take_damage(rand(1, 2), BURN)
+				H.eye_blurry += rand(6,8)
 			if(FLASH_PROTECTION_REDUCED)
 				to_chat(H, SPAN_DANGER("Your equipment intensify the welder's glow. Your eyes itch and burn severely."))
 				H.eye_blurry += rand(12,20)
-				E.take_damage(rand(8, 16))
-		if(safety<FLASH_PROTECTION_MAJOR)
-			if(E.damage > 10)
-				to_chat(user, SPAN_WARNING("Your eyes are really starting to hurt. This can't be good for you!"))
-
+				E.take_damage(rand(4, 6))
+			if(FLASH_PROTECTION_VULNERABLE)
+				to_chat(H, SPAN_DANGER("Your equipment intensify the welder's glow. Your eyes itch and burn severely."))
+				H.eye_blurry += rand(16,26)
+				E.take_damage(rand(6, 8))
 
 /obj/item/tool/attack(mob/living/M, mob/living/user, var/target_zone)
 	if(isbroken)
@@ -1222,7 +1217,7 @@
 	if(use_power_cost)
 		var/ratio = 0
 		//make sure that rounding down will not give us the empty state even if we have charge for a shot left.
-		if(cell && cell.charge >= use_power_cost)
+		if(cell && cell.charge >= use_power_cost && cell.maxcharge > 0) // Makes sure cell.maxcharge is greater than 0, or it will divide by 0 - Ryuu
 			ratio = cell.charge / cell.maxcharge
 			ratio = max(round(ratio, 0.25) * 100, 25)
 			add_overlay("[icon_state]-[ratio]")
@@ -1230,7 +1225,7 @@
 	if(use_fuel_cost)
 		var/ratio = 0
 		//make sure that rounding down will not give us the empty state even if we have charge for a shot left.
-		if(get_fuel() >= use_fuel_cost)
+		if(get_fuel() >= use_fuel_cost && max_fuel > 0) // Makes sure that max_fuel is greater than 0, or it will divide by 0 - Ryuu
 			ratio = get_fuel() / max_fuel
 			ratio = max(round(ratio, 0.25) * 100, 25)
 			add_overlay("[icon_state]-[ratio]")

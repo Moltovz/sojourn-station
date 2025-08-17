@@ -41,6 +41,17 @@
 	price_tag_setter = 2250
 	brew_timer = 2 MINUTES
 
+//Quick and easy, low strangth, could be used for later "dry" cider maybe if someone wants to do that
+/datum/brewing_product/cider
+	reagent_to_brew = "cider"
+	display_name = "Cider"
+	needed_crops = list("apple" = 20)
+	needed_chems = list("water" = 30, "carbon" = 5)
+
+	price_tag_setter = 1200
+	brew_timer = 1 MINUTES
+	brewed_amount = 6 //6 pack
+
 /datum/brewing_product/melonliquor
 	reagent_to_brew = "melonliquor"
 	display_name = "Melon Liquor"
@@ -421,7 +432,7 @@
 	reagent_to_brew = "witch_brew"
 	display_name = "Witches Brew"
 	//mint is wool of bat, reishi is toe of frog, herbell is Tongue of dog, lastly blueberries are meant to be eye of newt
-	needed_crops = list("mint" = 5, "reishi" = 10, "harebell" = 5, "blueberries" = 25)
+	needed_crops = list("mint" = 5, "reishi" = 10, "harebells" = 5, "blueberries" = 25)
 	needed_chems = list("sugarrush" = 60, "fringeweaver" = 60)
 	brew_timer = 5 MINUTES
 	brewed_amount = 1 //Every 5u is 1 psionic point so this gives you 6 points
@@ -434,7 +445,7 @@
 	display_name = "Absolutism Cahors Wine"
 	prerequisite = "holywater"
 	brewed_amount = 6
-	needed_crops = list("green grape" = 30, "sugarcane" = 25, "harebell" = 5)
+	needed_crops = list("green grape" = 30, "sugarcane" = 25, "harebells" = 5)
 	needed_chems = list("carbon" = 120, "holywater" = 120)
 
 	price_tag_setter = 16000
@@ -445,7 +456,7 @@
 	reagent_to_brew = "holywater"
 	display_name = "Blessed Water"
 	brewed_amount = 12
-	needed_crops = list("mint" = 20, "towercap" = 30, "harebell" = 25)
+	needed_crops = list("mint" = 20, "towercap" = 30, "harebells" = 25)
 	needed_chems = list("carbon" = 120, "water" = 120)
 
 	price_tag_setter = 1000
