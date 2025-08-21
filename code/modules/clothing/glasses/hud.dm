@@ -74,5 +74,21 @@
 	flash_protection = FLASH_PROTECTION_MODERATE
 	icon_state = "swatgoggles"
 
+/obj/item/clothing/glasses/sechud/secret
+	name = "glasses"
+	desc = "Standard-seeming glasses that correct and enhance vision. These ones slightly obscure the wearer's eyes, and iluminate them in the dark."
+	icon_state = "glasses"
+	item_state = "glasses"
+	prescription = TRUE
+	flash_protection = FLASH_PROTECTION_MINOR
+
+	New()
+		..()
+		src.hud = new/obj/item/clothing/glasses/hud/security(src)
+		return
+
+
 /obj/item/clothing/glasses/hud/broken/process_hud(mob/M)
 	process_broken_hud(M, 1)
+
+
