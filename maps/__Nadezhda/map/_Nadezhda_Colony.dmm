@@ -1383,6 +1383,12 @@
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/security)
+"amS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled/white/gray_perforated,
+/area/nadezhda/crew_quarters/sleep/cryo)
 "amY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
@@ -4310,6 +4316,8 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced,
+/obj/item/storage/part_replacer/mini,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
 "aOL" = (
@@ -5798,6 +5806,8 @@
 "bdI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table/standard,
+/obj/item/packageWrap,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/nadezhda/crew_quarters/sleep/cryo)
 "bdK" = (
@@ -8983,6 +8993,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/item/caution,
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/crew_quarters/pool)
 "bGt" = (
@@ -13445,7 +13456,6 @@
 /area/nadezhda/outside/forest)
 "cyd" = (
 /obj/item/stool/padded,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -13618,7 +13628,6 @@
 /area/nadezhda/medical/genetics)
 "czP" = (
 /obj/structure/table/gamblingtable,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atm{
 	dir = 4;
 	pixel_x = 30
@@ -16777,7 +16786,6 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/directions/room1{
 	pixel_y = 32
 	},
@@ -17324,7 +17332,9 @@
 /area/nadezhda/maintenance/undergroundfloor1east)
 "dhO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/inflatable/door,
+/obj/machinery/door/airlock/glass{
+	name = "R&D"
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/rnd/research)
 "dhR" = (
@@ -17549,13 +17559,10 @@
 /turf/simulated/wall/r_wall,
 /area/nadezhda/security/hut_cell1)
 "djJ" = (
-/obj/item/stool/padded,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/space{
-	layer = 1
-	},
-/area/nadezhda/crew_quarters/arcade)
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/research)
 "djQ" = (
 /obj/random/lathe_disk/advanced,
 /obj/random/lathe_disk/advanced,
@@ -19725,6 +19732,7 @@
 	pixel_y = -32
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/filth,
 /turf/simulated/floor/tiled/dark/cyancorner,
 /area/nadezhda/crew_quarters/sleep/cryo)
 "dCX" = (
@@ -20710,7 +20718,6 @@
 /area/nadezhda/maintenance/undergroundfloor2west)
 "dLO" = (
 /obj/machinery/gym/cognition,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -21491,7 +21498,9 @@
 	dir = 1;
 	pixel_y = -32
 	},
-/obj/item/brokenposi,
+/obj/item/brokenposi{
+	desc = s
+	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/nadezhda/rnd/robotics)
 "dSP" = (
@@ -22095,7 +22104,10 @@
 /area/shuttle/rocinante_shuttle_area)
 "dYr" = (
 /obj/structure/table/rack/shelf,
-/obj/item/clothing/accessory/bracelet/watch/leather,
+/obj/item/clothing/accessory/bracelet/watch/leather{
+	name = "anomalous leather watch";
+	desc = "An expensive watch with a leather brown band. It ticks softly, the time reads 11:59. The second hand twitches as it tries to overtake the minute hand, but never crosses over to midnight."
+	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -23365,7 +23377,34 @@
 /area/nadezhda/crew_quarters/dorm2)
 "ejB" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/oddity/common/photo_eyes{
+	desc = "A Photo of Julian McCoy in Research and Development. They are looking at a Photo of Julian McCoy in Research and Development. Who is is turning behind him, expression fearful, at the camera."
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 4
+	},
+/obj/machinery/door/window/southright{
+	dir = 1;
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 8
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/item/paper{
+	name = "sheet of paper: Observer";
+	info = "This photograph, incase you couldn't tell already, occasionally switches to show a new scene. The scenes shown are, atleast to our knowledge, either presently happening, or have happened recently. The scenes occuring on the photograph, atleast to our knowledge, again, are always real.";
+	pixel_y = -7;
+	pixel_x = 5
+	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
 "ejE" = (
@@ -26121,8 +26160,11 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/nadezhda/hallway/surface/section1)
 "eJN" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/toolbox/mechanical,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/decal/weldable/cracks,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
 "eJP" = (
@@ -27430,7 +27472,6 @@
 /area/nadezhda/crew_quarters/dorm4)
 "eUJ" = (
 /obj/machinery/computer/arcade/orion_trail,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -31110,6 +31151,8 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/table/standard,
+/obj/item/cell/small,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/nadezhda/crew_quarters/sleep/cryo)
 "fCj" = (
@@ -32562,9 +32605,6 @@
 /turf/simulated/floor/tiled/steel/brown_perforated,
 /area/nadezhda/rnd/xenobiology)
 "fRe" = (
-/obj/machinery/door/window/westright{
-	dir = 2
-	},
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -32705,6 +32745,7 @@
 /obj/item/storage/box/lights,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/cell/medium/moebius,
+/obj/item/frame/air_alarm,
 /turf/simulated/floor/reinforced,
 /area/nadezhda/crew_quarters/dorm7)
 "fSx" = (
@@ -34871,6 +34912,34 @@
 /area/nadezhda/crew_quarters/bar)
 "glv" = (
 /obj/structure/table/reinforced,
+/obj/item/device/taperecorder/empty{
+	name = "universe recorder"
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 4
+	},
+/obj/machinery/door/window/southright{
+	dir = 1;
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 8
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/item/paper{
+	name = "sheet of paper: Recorder";
+	info = "This recorder is to be stored inside of soteria-science due to anomalous behavior. It plays messages from the common radio that have yet to be recieved- or spoken in the first place. Initially discovered by me in the interrogation room 2/1/2562. -Warrant Officer Clyde Bidell.";
+	pixel_y = -7;
+	pixel_x = 5
+	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
 "glz" = (
@@ -46018,6 +46087,7 @@
 /obj/structure/mirror{
 	pixel_y = -28
 	},
+/obj/item/glass_jar,
 /turf/simulated/floor/wood,
 /area/nadezhda/crew_quarters/clownoffice)
 "ijc" = (
@@ -46676,6 +46746,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/nadezhda/maintenance/undergroundfloor2north)
+"iog" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/caution,
+/turf/simulated/floor/tiled/white,
+/area/nadezhda/crew_quarters/pool)
 "ioj" = (
 /obj/structure/bed/chair/comfy/brown{
 	dir = 8
@@ -49950,7 +50029,6 @@
 /area/nadezhda/outside/inside_colony)
 "iTM" = (
 /obj/machinery/gym,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -53676,6 +53754,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/concrete_bricks,
 /area/nadezhda/maintenance/undergroundfloor1north)
+"jCs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/department/anomaly{
+	name = "ANOMALIES"
+	},
+/turf/simulated/wall/r_wall,
+/area/nadezhda/rnd/research)
 "jCw" = (
 /obj/structure/flora/small/busha2,
 /turf/simulated/floor/asteroid/grass,
@@ -57960,6 +58045,13 @@
 	},
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/nadezhda/security/prisoncells)
+"kqz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/research)
 "kqA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -58220,7 +58312,6 @@
 /obj/machinery/firealarm{
 	pixel_y = 29
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -67380,7 +67471,6 @@
 /obj/effect/floor_decal/industrial/box/red/corners{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -70500,12 +70590,14 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/nadezhda/pros/shuttle)
 "mFm" = (
-/obj/machinery/light/small,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/space{
-	layer = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/area/nadezhda/crew_quarters/arcade)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical,
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/research)
 "mFp" = (
 /obj/machinery/light_switch{
 	pixel_y = 32
@@ -73714,7 +73806,10 @@
 	id = "researchlockdown";
 	name = "RESEARCH LOCKDOWN"
 	},
-/obj/structure/inflatable/door,
+/obj/machinery/door/airlock/glass_research{
+	name = "Research and Development";
+	req_access = list(5)
+	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/rnd/lab)
 "niH" = (
@@ -77377,6 +77472,10 @@
 /obj/item/device/defib_kit/loaded{
 	pixel_x = -16;
 	pixel_y = 8
+	},
+/obj/item/stack/nanopaste{
+	pixel_x = 14;
+	pixel_y = 2
 	},
 /turf/simulated/floor/tiled/white/monofloor,
 /area/nadezhda/medical/surgery)
@@ -85027,7 +85126,6 @@
 /turf/simulated/floor/rock/manmade/road,
 /area/nadezhda/security/maingate)
 "peN" = (
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -85153,7 +85251,6 @@
 /area/shuttle/rocinante_shuttle_area)
 "pgc" = (
 /obj/machinery/gym/bio,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -87016,6 +87113,17 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/nadezhda/engineering/atmos/surface)
+"pwV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/filth,
+/turf/simulated/floor/tiled/white/gray_perforated,
+/area/nadezhda/crew_quarters/sleep/cryo2)
 "pwX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -89184,8 +89292,8 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
 "pQD" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/part_replacer/mini,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/paper/crumpled,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
 "pQG" = (
@@ -89595,8 +89703,6 @@
 /obj/item/tool/crowbar{
 	pixel_x = 6
 	},
-/obj/item/cell/small,
-/obj/item/cell/small,
 /obj/item/tool/crowbar,
 /obj/item/tool/crowbar{
 	pixel_x = 3
@@ -90091,6 +90197,48 @@
 /obj/random/closet_maintloot/low_chance,
 /turf/simulated/floor/industrial/ceramic,
 /area/nadezhda/maintenance/undergroundfloor2north)
+"pXG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/bluespace_dust,
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/southright{
+	dir = 1;
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 8
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 4
+	},
+/obj/item/bluespace_crystal,
+/obj/machinery/telesci_inhibitor/mini{
+	pixel_y = -10
+	},
+/obj/machinery/telesci_inhibitor/mini{
+	pixel_x = 10
+	},
+/obj/machinery/telesci_inhibitor/mini{
+	pixel_x = -10
+	},
+/obj/item/oddity/broken_necklace,
+/obj/item/paper{
+	name = "sheet of paper: Bluespace";
+	info = "Physical bluespace matter present. If you are reading this: You opened the glass. Why did you do that? Why are you still reading this? Try your best not to disturb the dust more, close the windows, and thoroughly clean the department.";
+	pixel_y = -7;
+	pixel_x = 5
+	},
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/research)
 "pXH" = (
 /obj/structure/railing/grey{
 	dir = 4
@@ -95111,7 +95259,6 @@
 /area/nadezhda/maintenance/undergroundfloor2north)
 "qSe" = (
 /obj/machinery/computer/arcade/battle,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -95999,11 +96146,9 @@
 /area/nadezhda/maintenance/undergroundfloor2west)
 "rbu" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/holofloor/space{
-	layer = 1
-	},
-/area/nadezhda/crew_quarters/arcade)
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled/dark/cyancorner,
+/area/nadezhda/crew_quarters/sleep/cryo)
 "rbC" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/navy_slates,
@@ -101548,6 +101693,40 @@
 /obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/substation/servist)
+"rZQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/accessory/bracelet/watch/leather{
+	name = "anomalous leather watch";
+	desc = "An expensive watch with a leather brown band. It ticks softly, the time reads 11:59. The second hand twitches as it tries to overtake the minute hand, but never crosses over to midnight... Touching it hurts."
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 8
+	},
+/obj/machinery/door/window/southright{
+	dir = 1;
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/paper{
+	name = "sheet of paper: Doomsday Watch";
+	info = "The hands on this watch remain fixed at 11:59, with the second hand audibly straining against the minute one. Attempts to adjust the mechanism have failed, even when given directly to the artificer's guild. The watch appears to be in perfect working order, mechanically, at least.Personnel are advised NOT to refer to the device as a ""doomsday watch."" This designation has been shown to cause heightened paranoia in staff and colonists who have directly engaged with SolFed, Greyson Positronics, VoidWolf Mercenaries, and other threats to the colony.";
+	pixel_y = -7;
+	pixel_x = 5
+	},
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/research)
 "rZY" = (
 /obj/machinery/light{
 	dir = 8
@@ -104800,7 +104979,6 @@
 /area/nadezhda/engineering/atmos)
 "sDo" = (
 /obj/machinery/computer/arcade/battle,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera/network/colony_underground,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
@@ -105136,8 +105314,6 @@
 /area/nadezhda/outside/pond)
 "sHb" = (
 /obj/machinery/light/small,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -111958,6 +112134,39 @@
 	},
 /turf/simulated/floor/plating,
 /area/nadezhda/security/maingate)
+"tSh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 4
+	},
+/obj/machinery/door/window/southright{
+	dir = 1;
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5)
+	},
+/obj/machinery/door/window/southright{
+	name = "Research desk";
+	req_access = list(5);
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/item/oddity/ls/manual{
+	desc = "A rugged, somewhat poor compilation of notes and pages from a variety of books and manuals. The first few pages feature information ranging from how to make a molotov cocktail to how to hotwire a mech. It is covered in dry blood and heavy fuel oil. Secured from the crash site of the SEV ERIS."
+	},
+/obj/item/paper{
+	name = "sheet of paper: Manual";
+	info = "The volumes in this... manifesto include instructions on improvised weaponry, incendiary mixtures, and methods for bypassing standard ship security. Honestly, it should be in contraband storage, but the W/O's insist we've got to keep it here. Following the instructions provided in any of the recipies are liable to cause severe injury or death, even if followed to the letter. Papers near the end of the book appear fresh and are consistent with current colony engineering volumes on hydro-electric and solar power, the process of Xeno-archeology, and "How to manipulate the trade beacons, yes you CEO read this section" Notes on these pages are recent, it is impossible for them to have been written on the ERIS. Soteria-Science staff, marshals, and blackshield claim no responsibility.";
+	pixel_y = -7;
+	pixel_x = 5
+	},
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/research)
 "tSl" = (
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/drinks/drinkingglass,
@@ -112111,11 +112320,11 @@
 /area/nadezhda/hallway/side/f2section1)
 "tTr" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible,
-/obj/item/toy/plushie/lizard,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/sofa/black{
 	dir = 4
 	},
+/obj/item/toy/plushie/lizard,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters)
 "tTv" = (
@@ -114310,7 +114519,6 @@
 	dir = 4;
 	pixel_x = -32
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -117583,7 +117791,6 @@
 /area/nadezhda/engineering/engine_room)
 "uPS" = (
 /obj/machinery/gym/mec,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/space{
 	layer = 1
 	},
@@ -123961,6 +124168,13 @@
 	icon_state = "5,12"
 	},
 /area/shuttle/vasiliy_shuttle_area)
+"vUG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/research)
 "vUJ" = (
 /obj/structure/boulder,
 /obj/structure/cable/cyan{
@@ -126279,7 +126493,6 @@
 "wpt" = (
 /obj/structure/table/gamblingtable,
 /obj/machinery/newscaster/directional/north,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -126931,6 +127144,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/maintenance/undergroundfloor2east)
+"wuI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/item/caution,
+/turf/simulated/floor/tiled/white,
+/area/nadezhda/crew_quarters/pool)
 "wuK" = (
 /obj/machinery/power/eotp,
 /obj/structure/invislight,
@@ -128750,6 +128968,7 @@
 /area/nadezhda/maintenance/undergroundfloor2west)
 "wMh" = (
 /obj/structure/closet/crate,
+/obj/item/oddity/artwork,
 /turf/simulated/floor/plating,
 /area/nadezhda/crew_quarters/sleep/bedrooms)
 "wMi" = (
@@ -128855,6 +129074,8 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/nadezhda/medical/sleeper)
 "wMT" = (
@@ -129583,6 +129804,7 @@
 /obj/item/stock_parts/capacitor/one_star,
 /obj/item/stock_parts/capacitor/one_star,
 /obj/item/storage/hcases/parts,
+/obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
 "wTf" = (
@@ -129625,6 +129847,11 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/nadezhda/crew_quarters/hydroponics/garden)
+"wTJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/weldable/cracks,
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/research)
 "wTN" = (
 /obj/item/tool_upgrade/productivity/motor,
 /turf/simulated/floor/tiled/steel/bar_dance,
@@ -129792,11 +130019,18 @@
 /area/nadezhda/crew_quarters/sleep/bedrooms)
 "wVi" = (
 /obj/structure/table/woodentable,
-/obj/item/beartrap,
-/obj/item/beartrap/makeshift{
-	pixel_x = -5;
-	pixel_y = -5
+/obj/item/beartrap{
+	pixel_x = 4;
+	pixel_y = 7
 	},
+/mob/living/silicon/robot/drone{
+	pixel_x = -4;
+	pixel_y = 8;
+	name = "damaged RC drone";
+	desc = "A modified construction drone capable of manipulating small objects. The front pannel of this one is blown inwards, with its legs collapsed under it."
+	},
+/obj/item/remains/posi,
+/obj/item/camera_assembly,
 /turf/simulated/floor/carpet,
 /area/nadezhda/crew_quarters/dorm5)
 "wVn" = (
@@ -131938,6 +132172,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
 "xpJ" = (
@@ -133546,6 +133781,17 @@
 	pixel_x = -5;
 	pixel_y = 9
 	},
+/obj/item/reagent_containers/glass/bottle/trade/cronexidone{
+	pixel_x = -5;
+	pixel_y = 9
+	},
+/obj/item/reagent_containers/glass/bottle/trade/formaldehyde{
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/glass/bottle/trade/alkysine{
+	pixel_y = 9;
+	pixel_x = 8
+	},
 /obj/item/reagent_containers/glass/bottle/trade/alkysine{
 	pixel_y = 9;
 	pixel_x = 8
@@ -133556,8 +133802,11 @@
 	desc = "A small bottle of trypsin, a powerful anti-scaring chemical that painfully heals most burns, dead flesh, and scaring";
 	pixel_x = 8
 	},
-/obj/item/reagent_containers/glass/bottle/trade/formaldehyde{
-	pixel_x = -5
+/obj/item/reagent_containers/glass/bottle{
+	preloaded_reagents = list("trypsin" = 60);
+	name = "trypsin (DEBRIDING AGENT: MAX 10U)";
+	desc = "A small bottle of trypsin, a powerful anti-scaring chemical that painfully heals most burns, dead flesh, and scaring";
+	pixel_x = 8
 	},
 /obj/item/reagent_containers/syringe,
 /obj/item/reagent_containers/syringe,
@@ -133903,6 +134152,14 @@
 /obj/structure/boulder,
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/nadezhda/maintenance/undergroundfloor1north)
+"xHB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/tiled/dark/violetcorener,
+/area/nadezhda/rnd/research)
 "xHD" = (
 /turf/simulated/shuttle/wall/escpod{
 	icon_state = "escpodwall20";
@@ -193946,12 +194203,12 @@ rFl
 gLz
 nKg
 xpH
-brG
+jCs
 cJX
-brG
-brG
+jCs
+vUG
 jVT
-brG
+wTJ
 brG
 dhO
 rHM
@@ -194149,10 +194406,10 @@ gLz
 gLz
 mIe
 glv
-cJX
+xHB
+rZQ
 brG
-eJN
-jVT
+mFm
 brG
 ghd
 gLz
@@ -194352,8 +194609,8 @@ gLz
 npe
 ejB
 hKX
+pXG
 brG
-pQD
 aOJ
 brG
 wSZ
@@ -194553,11 +194810,11 @@ htN
 brG
 brG
 hDX
-brG
+wTJ
+tSh
 brG
 der
-brG
-brG
+pQD
 gmL
 gLz
 uUs
@@ -194613,7 +194870,7 @@ jdz
 siJ
 jdz
 jdz
-siJ
+iog
 oWg
 vnX
 vGb
@@ -194753,11 +195010,11 @@ yky
 wpL
 lIc
 cvD
+djJ
+jCs
 brG
-brG
-brG
-brG
-brG
+jCs
+eJN
 ocT
 ocT
 brG
@@ -194956,8 +195213,8 @@ jjx
 htN
 xkR
 brG
-brG
-brG
+kqz
+pQD
 brG
 brG
 brG
@@ -195163,7 +195420,7 @@ brG
 fsS
 tpp
 brG
-brG
+djJ
 brG
 htN
 rpx
@@ -196633,7 +196890,7 @@ tMK
 tMK
 tMK
 tMK
-tMK
+wuI
 hvy
 isZ
 bBZ
@@ -198821,7 +199078,7 @@ aFW
 uxn
 grz
 fCf
-rZm
+rbu
 dkA
 foj
 pGK
@@ -199022,8 +199279,8 @@ est
 aFW
 pUg
 tTK
-bdI
-rZm
+amS
+rbu
 rZm
 wlO
 pGK
@@ -199225,7 +199482,7 @@ pGK
 kDZ
 kQj
 bdI
-rZm
+rbu
 szW
 sxI
 pGK
@@ -200644,7 +200901,7 @@ osn
 pGK
 nyY
 thj
-evD
+pwV
 bGK
 rvV
 ejm
@@ -201612,7 +201869,7 @@ qtv
 oNS
 dLO
 peN
-djJ
+cyd
 vcP
 cJy
 hRg
@@ -201813,7 +202070,7 @@ kaN
 rtQ
 oNS
 qSe
-rbu
+peN
 sHb
 giA
 ncd
@@ -202015,7 +202272,7 @@ dGA
 qLz
 oNS
 sDo
-rbu
+peN
 peN
 iRC
 qEy
@@ -202217,8 +202474,8 @@ mqr
 cmK
 oNS
 eUJ
-rbu
-rbu
+peN
+peN
 ceX
 hTD
 rtE
@@ -202419,8 +202676,8 @@ pjg
 poU
 oNS
 eUJ
-rbu
-mFm
+peN
+sHb
 gwo
 dpw
 woZ
@@ -202621,7 +202878,7 @@ tdW
 vpa
 oNS
 iTM
-rbu
+peN
 cyd
 vcP
 wHu

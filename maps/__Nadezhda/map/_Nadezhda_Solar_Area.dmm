@@ -343,7 +343,6 @@
 /turf/simulated/floor/plating/under,
 /area/nadezhda/outside/mountainsolars)
 "bx" = (
-/obj/machinery/power/tracker,
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -353,6 +352,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/power/tracker,
 /turf/simulated/floor/plating/under,
 /area/nadezhda/outside/mountainsolars)
 "bz" = (
@@ -1304,6 +1309,19 @@
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging,
 /turf/space,
 /area/nadezhda/outside/mountainsolars)
+"lD" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating/under,
+/area/nadezhda/outside/mountainsolars)
 "lI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2238,6 +2256,24 @@
 "EU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/window_lwall_spawn/reinforced,
+/turf/simulated/floor/plating/under,
+/area/nadezhda/outside/mountainsolars)
+"Fc" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/plating/under,
 /area/nadezhda/outside/mountainsolars)
 "Fk" = (
@@ -8161,39 +8197,39 @@ ac
 ac
 av
 ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
-ad
+ba
+cV
+cV
+cV
+lD
+cV
+cV
+cV
+lD
+cV
+cV
+cV
+lD
+cV
+cV
+cV
+Fc
+cV
+cV
+cV
+cV
+lD
+cV
+cV
+lD
+cV
+cV
+cV
+lD
+cV
+cV
+cV
+Zj
 ad
 ac
 ac
