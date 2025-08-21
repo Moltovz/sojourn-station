@@ -8,8 +8,9 @@
 
 #include "map/_Nadezhda_Colony.dmm"
 #include "map/_Nadezhda_Solar_Area.dmm"
+#include "map/_Nadezhda_Dorms.dmm"
+
 /*
-#include "map/_Nadezhda_Colony_Dormlevel.dmm"
 #include "map/_Nadezhda_space.dmm"
 */
 
@@ -18,7 +19,7 @@
 	is_sealed = TRUE
 	height = 1
 
-/obj/map_data/nadezda //Omnie level has all three surface underground and stairs
+/obj/map_data/nadezda //2 floors
 	name = "Nadezhda Map"
 	is_station_level = TRUE
 	is_player_level = TRUE
@@ -27,6 +28,18 @@
 	is_sealed = TRUE
 	generate_asteroid = TRUE
 	height = 3
+	digsites = "HOUSE"
+
+
+/obj/map_data/nadezda/dorms //Omnie level has all three surface underground and stairs
+	name = "Dorm Map"
+	is_station_level = TRUE
+	is_player_level = TRUE
+	is_contact_level = TRUE
+	is_accessable_level = FALSE
+	is_sealed = TRUE
+	generate_asteroid = TRUE
+	height = 2
 	digsites = "HOUSE"
 
 /obj/map_data/admin
