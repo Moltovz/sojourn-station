@@ -1007,6 +1007,17 @@
 	},
 /turf/simulated/floor/tiled/white/golden,
 /area/nadezhda/engineering/atmos/surface)
+"ajz" = (
+/obj/structure/closet/crate,
+/obj/item/gun/energy/plasma/stranger,
+/obj/item/clothing/gloves/stungloves,
+/obj/item/clothing/head/helmet/faceshield/riot,
+/obj/item/clothing/suit/armor/heavy/riot,
+/obj/item/clothing/glasses/powered/meson,
+/obj/item/cell/large/moebius/high,
+/obj/effect/floor_decal/industrial/box/red,
+/turf/simulated/floor/plating,
+/area/nadezhda/crew_quarters/sleep/bedrooms)
 "ajH" = (
 /obj/effect/floor_decal/spline/wood{
 	dir = 8
@@ -1490,23 +1501,15 @@
 /obj/structure/closet/wall_mounted{
 	pixel_y = 32
 	},
-/obj/item/clothing/gloves/insulated,
-/obj/item/storage/belt/utility/full,
-/obj/item/tool/multitool/hacktool,
-/obj/item/gun/projectile/boltgun/lever,
-/obj/item/ammo_magazine/ammobox/magnum_40,
-/obj/item/ammo_magazine/ammobox/magnum_40/practice,
-/obj/item/gun/energy/gun/spider,
-/obj/item/tool_upgrade/productivity/ergonomic_grip,
-/obj/item/tool_upgrade/refinement/laserguide,
-/obj/item/tool_upgrade/refinement/stabilized_grip,
-/obj/item/tool_upgrade/augment/ai_tool,
-/obj/item/cell/medium/moebius/omega,
-/obj/item/gun/projectile/automatic/omnirifle,
-/obj/item/gun/energy/gun/martin/preloaded,
-/obj/item/gun/energy/pulse/cassad,
-/obj/item/clothing/accessory/shemagh/camo,
-/turf/simulated/floor/carpet/bcarpet,
+/obj/item/storage/pouch/ammo,
+/obj/item/ammo_magazine/ammobox/pistol_35,
+/obj/item/ammo_magazine/pistol_35,
+/obj/item/ammo_magazine/pistol_35,
+/obj/item/ammo_magazine/ammobox/pistol_35/practice,
+/obj/item/gun/projectile/mk58,
+/obj/item/gun/energy/stunrevolver,
+/obj/item/storage/sheath/judgement/exultor/filled,
+/turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm4)
 "aob" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -9262,7 +9265,9 @@
 	pixel_x = 9;
 	pixel_y = -22
 	},
-/turf/simulated/floor/carpet/bcarpet,
+/obj/structure/table/woodentable,
+/obj/item/toy/desk/dippingbird,
+/turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm4)
 "bIM" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -15344,8 +15349,12 @@
 /turf/simulated/floor/industrial/black_large_slates,
 /area/nadezhda/maintenance/undergroundfloor2west)
 "cPz" = (
-/obj/random/furniture/painting,
-/turf/simulated/wall,
+/obj/structure/table/marble,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/microwave,
+/turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm4)
 "cPB" = (
 /turf/simulated/floor/carpet/sblucarpet,
@@ -19190,14 +19199,12 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/crew_quarters/hydroponics/garden)
 "dyg" = (
-/obj/effect/floor_decal/spline/wood{
-	dir = 8
+/obj/machinery/light/small{
+	dir = 4
 	},
-/obj/structure/sign/misc/rent{
-	pixel_x = -32
-	},
+/obj/structure/cyberplant,
 /turf/simulated/floor/wood/wild3,
-/area/nadezhda/crew_quarters)
+/area/nadezhda/crew_quarters/dorm4)
 "dyh" = (
 /obj/structure/sign/levels/stairsdown,
 /turf/simulated/wall/r_wall,
@@ -21499,7 +21506,7 @@
 	pixel_y = -32
 	},
 /obj/item/brokenposi{
-	desc = s
+	desc = "A broken Positronic brain"
 	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/nadezhda/rnd/robotics)
@@ -22160,6 +22167,18 @@
 /obj/random/mob/termite_no_despawn,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
+"dYK" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/shower{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner_techfloor_grid{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/nadezhda/crew_quarters/dorm4)
 "dYT" = (
 /obj/structure/disposalpipe/junction{
 	dir = 2;
@@ -22372,10 +22391,10 @@
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/hangarsupply)
 "eaM" = (
-/obj/structure/sink{
-	pixel_y = -22
+/obj/structure/filingcabinet{
+	pixel_x = -15
 	},
-/turf/simulated/floor/tiled/white/cargo,
+/turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm4)
 "eaN" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -23788,18 +23807,8 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/security/barracks)
 "enl" = (
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/door/window/westright{
-	dir = 2
-	},
-/obj/item/towel,
-/obj/structure/mirror{
-	pixel_y = 28
-	},
-/obj/item/soap,
-/turf/simulated/floor/tiled/white/techfloor_grid,
+/obj/structure/easel,
+/turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm4)
 "env" = (
 /mob/living/simple/hostile/jelly/bloat,
@@ -25013,17 +25022,7 @@
 /turf/simulated/floor/industrial/fancy_slates,
 /area/nadezhda/maintenance/undergroundfloor1south)
 "exC" = (
-/obj/structure/table/woodentable,
-/obj/machinery/recharger{
-	pixel_x = -5
-	},
-/obj/machinery/recharger{
-	pixel_x = 5
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/carpet/bcarpet,
+/turf/simulated/floor/tiled/white/violetcorener,
 /area/nadezhda/crew_quarters/dorm4)
 "exO" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
@@ -25743,6 +25742,16 @@
 "eEL" = (
 /turf/simulated/wall,
 /area/nadezhda/maintenance/undergroundfloor1south)
+"eEU" = (
+/obj/structure/mirror{
+	pixel_y = 28
+	},
+/obj/structure/sink{
+	dir = 1;
+	pixel_y = 16
+	},
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/nadezhda/crew_quarters/dorm4)
 "eEV" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -27457,18 +27466,15 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/nadezhda/command/cro)
 "eUF" = (
-/obj/structure/closet/wall_mounted{
-	pixel_y = -32
+/obj/machinery/light/small,
+/obj/structure/table/woodentable,
+/obj/item/paper_bin{
+	pixel_x = -10
 	},
-/obj/item/gun/energy/stunrevolver,
-/obj/item/storage/sheath/judgement/exultor/filled,
-/obj/item/gun/projectile/mk58,
-/obj/item/storage/pouch/ammo,
-/obj/item/ammo_magazine/pistol_35,
-/obj/item/ammo_magazine/pistol_35,
-/obj/item/ammo_magazine/ammobox/pistol_35/practice,
-/obj/item/ammo_magazine/ammobox/pistol_35,
-/turf/simulated/floor/carpet/bcarpet,
+/obj/item/pen/green{
+	pixel_x = -10
+	},
+/turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm4)
 "eUJ" = (
 /obj/machinery/computer/arcade/orion_trail,
@@ -46378,9 +46384,14 @@
 /area/nadezhda/maintenance/undergroundfloor1east)
 "ilD" = (
 /obj/structure/table/marble,
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/item/reagent_containers/snacks/meatpie,
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = -10
 	},
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = 6
+	},
+/obj/item/clothing/head/flowercrown/sunflower,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm4)
 "ilF" = (
@@ -49339,11 +49350,10 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "iMl" = (
-/obj/item/device/radio/intercom{
-	dir = 1;
-	pixel_y = -24
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -15
 	},
-/obj/structure/closet/secure_closet/freezer,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm4)
 "iMu" = (
@@ -51300,7 +51310,6 @@
 	name = "\improper Maintenance AI Chamber"
 	})
 "jgf" = (
-/obj/item/stool/custom/bar_special,
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
@@ -52380,12 +52389,15 @@
 	},
 /area/shuttle/rocinante_shuttle_area)
 "jpj" = (
-/obj/machinery/shower{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner_techfloor_grid,
-/obj/structure/window/reinforced,
-/turf/simulated/floor/tiled/white/techfloor_grid,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/toy/plushie/carp/electric{
+	layer = 4
+	},
+/obj/structure/table/woodentable,
+/turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm4)
 "jpk" = (
 /obj/random/cluster/spiders/low_chance,
@@ -53536,7 +53548,6 @@
 /obj/structure/closet/crate,
 /obj/item/stack/material/glass/full,
 /obj/item/stack/material/plastic/full,
-/obj/item/stack/material/plasteel/full,
 /obj/item/stack/material/steel/full,
 /obj/item/stack/material/wood/full,
 /obj/machinery/power/wall_obelisk/silver{
@@ -53545,6 +53556,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/item/stack/material/plasteel{
+	amount = 20
+	},
+/obj/item/stack/material/glass/full,
 /turf/simulated/floor/plating,
 /area/nadezhda/crew_quarters/sleep/bedrooms)
 "jAg" = (
@@ -66236,6 +66251,7 @@
 /area/nadezhda/absolutism/bioreactor)
 "lTk" = (
 /obj/machinery/light/small,
+/obj/structure/synthesized_instrument/synthesizer/piano,
 /turf/simulated/floor/plating,
 /area/nadezhda/crew_quarters/sleep/bedrooms)
 "lTl" = (
@@ -68121,10 +68137,9 @@
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
 "miv" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white/cargo,
+/obj/structure/bed/double/padded,
+/obj/item/bedsheet/rddouble,
+/turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm4)
 "miE" = (
 /obj/structure/cable/green{
@@ -68314,6 +68329,13 @@
 	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters)
+"mkn" = (
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/reagent_containers/drinks/cans/waterbottle,
+/obj/item/reagent_containers/drinks/cans/waterbottle,
+/obj/item/reagent_containers/drinks/cans/waterbottle,
+/turf/simulated/floor/tiled/cafe,
+/area/nadezhda/crew_quarters/dorm4)
 "mkr" = (
 /obj/structure/table/rack/shelf,
 /obj/random/gun_shotgun,
@@ -71277,7 +71299,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/inflatable/door,
+/obj/machinery/door/airlock/sandstone{
+	id_tag = "D4A";
+	name = "Dormitory 7/8: Ar-Leth Ssar"
+	},
 /turf/simulated/floor/plating,
 /area/nadezhda/crew_quarters/sleep/bedrooms)
 "mLU" = (
@@ -75690,12 +75715,12 @@
 /turf/simulated/floor/rock,
 /area/nadezhda/outside/forest)
 "nyr" = (
-/obj/item/bedsheet/rd,
-/obj/structure/bed/padded{
-	dir = 8
+/obj/structure/table/woodentable,
+/obj/machinery/recharger{
+	pixel_x = 5
 	},
-/obj/item/toy/plushie/carp/electric{
-	layer = 4
+/obj/machinery/recharger{
+	pixel_x = -5
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm4)
@@ -75776,6 +75801,12 @@
 /obj/structure/table/marble,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/nadezhda/storage/primary)
+"nyP" = (
+/obj/machinery/door/airlock/sandstone{
+	name = "Dormitory"
+	},
+/turf/simulated/floor/plating/under,
+/area/nadezhda/crew_quarters/dorm4)
 "nyQ" = (
 /obj/item/modular_computer/console/preset/engineering,
 /turf/simulated/floor/carpet/oracarpet,
@@ -81431,15 +81462,11 @@
 /turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
 "owy" = (
-/obj/effect/floor_decal/spline/wood{
-	dir = 8
+/obj/structure/toilet{
+	dir = 1
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/misc/rent{
-	pixel_x = -32
-	},
-/turf/simulated/floor/wood/wild3,
-/area/nadezhda/crew_quarters)
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/nadezhda/crew_quarters/dorm4)
 "owA" = (
 /obj/structure/flora/pottedplant/small,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -85778,6 +85805,10 @@
 /area/nadezhda/maintenance{
 	name = "Residential District Maintenance"
 	})
+"pkN" = (
+/obj/item/stool/padded,
+/turf/simulated/floor/plating,
+/area/nadezhda/crew_quarters/sleep/bedrooms)
 "pkU" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -94518,9 +94549,6 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/nadezhda/outside/inside_colony)
 "qKK" = (
-/obj/structure/sink{
-	pixel_y = -14
-	},
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm4)
 "qKT" = (
@@ -97880,7 +97908,6 @@
 /turf/simulated/floor/industrial/checker_large,
 /area/nadezhda/maintenance/undergroundfloor1east)
 "rra" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
@@ -97891,11 +97918,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/random/traps/wire_splicing/low_chance,
-/turf/simulated/floor/industrial/bricks,
-/area/nadezhda/maintenance{
-	name = "Residential District Maintenance"
-	})
+/obj/machinery/door/window/westright{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/item/soap,
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/nadezhda/crew_quarters/dorm4)
 "rrd" = (
 /obj/machinery/shower{
 	dir = 4
@@ -98923,9 +98954,13 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/nadezhda/medical/surgery)
 "rAx" = (
-/obj/structure/inflatable/door,
-/turf/simulated/floor/plating,
-/area/nadezhda/crew_quarters/sleep/bedrooms)
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/nadezhda/crew_quarters/dorm4)
 "rAz" = (
 /obj/effect/spider/stickyweb,
 /obj/effect/decal/cleanable/dirt,
@@ -100637,7 +100672,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
 /area/nadezhda/crew_quarters/sleep/bedrooms)
 "rQQ" = (
@@ -101721,7 +101755,7 @@
 /obj/structure/table/reinforced,
 /obj/item/paper{
 	name = "sheet of paper: Doomsday Watch";
-	info = "The hands on this watch remain fixed at 11:59, with the second hand audibly straining against the minute one. Attempts to adjust the mechanism have failed, even when given directly to the artificer's guild. The watch appears to be in perfect working order, mechanically, at least.Personnel are advised NOT to refer to the device as a ""doomsday watch."" This designation has been shown to cause heightened paranoia in staff and colonists who have directly engaged with SolFed, Greyson Positronics, VoidWolf Mercenaries, and other threats to the colony.";
+	info = "The hands on this watch remain fixed at 11:59, with the second hand audibly straining against the minute one. Attempts to adjust the mechanism have failed, even when given directly to the artificer's guild. The watch appears to be in perfect working order, mechanically, at least.Personnel are advised NOT to refer to the device as a DOOMSDAY WATCH. This designation has been shown to cause heightened paranoia in staff and colonists who have directly engaged with SolFed, Greyson Positronics, VoidWolf Mercenaries, and other threats to the colony.";
 	pixel_y = -7;
 	pixel_x = 5
 	},
@@ -102699,6 +102733,20 @@
 /area/nadezhda/maintenance{
 	name = "Residential District Maintenance"
 	})
+"sjp" = (
+/obj/item/device/radio/intercom{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/structure/table/rack,
+/obj/item/reagent_containers/drinks/cans/space_up,
+/obj/item/reagent_containers/drinks/cans/starkist,
+/obj/item/reagent_containers/drinks/cans/thirteenloko,
+/obj/item/reagent_containers/drinks/cans/tonic,
+/obj/item/reagent_containers/drinks/cans/sodawater,
+/obj/item/reagent_containers/drinks/cans/moonwatercan,
+/turf/simulated/floor/tiled/cafe,
+/area/nadezhda/crew_quarters/dorm4)
 "sjq" = (
 /turf/simulated/floor/industrial/grey_slates_long,
 /area/nadezhda/maintenance{
@@ -110877,7 +110925,8 @@
 /turf/unsimulated/wall/jungle,
 /area/nadezhda/outside/forest)
 "tHC" = (
-/turf/simulated/floor/tiled/white/cargo,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/wall,
 /area/nadezhda/crew_quarters/dorm4)
 "tHK" = (
 /obj/random/scrap/sparse_even/low_chance,
@@ -112161,7 +112210,7 @@
 	},
 /obj/item/paper{
 	name = "sheet of paper: Manual";
-	info = "The volumes in this... manifesto include instructions on improvised weaponry, incendiary mixtures, and methods for bypassing standard ship security. Honestly, it should be in contraband storage, but the W/O's insist we've got to keep it here. Following the instructions provided in any of the recipies are liable to cause severe injury or death, even if followed to the letter. Papers near the end of the book appear fresh and are consistent with current colony engineering volumes on hydro-electric and solar power, the process of Xeno-archeology, and "How to manipulate the trade beacons, yes you CEO read this section" Notes on these pages are recent, it is impossible for them to have been written on the ERIS. Soteria-Science staff, marshals, and blackshield claim no responsibility.";
+	info = "The volumes in this... manifesto include instructions on improvised weaponry, incendiary mixtures, and methods for bypassing standard ship security. Honestly, it should be in contraband storage, but the W/O's insist we've got to keep it here. Following the instructions provided in any of the recipies are liable to cause severe injury or death, even if followed to the letter. Papers near the end of the book appear fresh and are consistent with current colony engineering volumes on hydro-electric and solar power, the process of Xeno-archeology, and How to manipulate the trade beacons, yes you CEO read this section Notes on these pages are recent, it is impossible for them to have been written on the ERIS. Soteria-Science staff, marshals, and blackshield claim no responsibility.";
 	pixel_y = -7;
 	pixel_x = 5
 	},
@@ -112706,7 +112755,16 @@
 	pixel_x = 5;
 	pixel_y = 12
 	},
-/obj/item/reagent_containers/snacks/meatpie,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/cooking_with_jane/stove,
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -3
+	},
+/obj/item/reagent_containers/cwj/container/pan,
+/obj/item/spatula,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm4)
 "tXh" = (
@@ -113371,11 +113429,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/inflatable/door,
-/turf/simulated/floor/plating/under,
-/area/nadezhda/maintenance{
-	name = "Residential District Maintenance"
-	})
+/turf/simulated/wall,
+/area/nadezhda/crew_quarters/dorm4)
 "ucU" = (
 /obj/structure/lattice,
 /obj/structure/catwalk,
@@ -115644,11 +115699,13 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/nadezhda/rnd/server)
 "uxw" = (
-/obj/item/bedsheet/rd,
-/obj/structure/bed/padded{
-	dir = 8
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/carpet/bcarpet,
+/turf/simulated/wall,
 /area/nadezhda/crew_quarters/dorm4)
 "uxy" = (
 /obj/structure/table/bench/steel,
@@ -122131,15 +122188,9 @@
 /turf/simulated/wall/r_wall,
 /area/nadezhda/command/tcommsat/computer)
 "vCO" = (
-/obj/structure/table/marble,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/cafe,
-/area/nadezhda/crew_quarters/dorm4)
+/obj/structure/reagent_dispensers/fueltank/huge,
+/turf/simulated/floor/plating,
+/area/nadezhda/crew_quarters/sleep/bedrooms)
 "vCR" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/asteroid/grass,
@@ -125857,6 +125908,8 @@
 /obj/item/device/encryptionkey/headset_bs/corps,
 /obj/item/card/id/sec{
 	name = "security identification card: VivI Fanteriso (Off duty)"
+	access=list(access_security, access_moebius, access_engine, access_mailsorting, access_eva, access_forensics_lockers, access_medspec,	access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks, access_prospector, access_kitchen, access_medical_suits	);
+	registered_name = "VivI Fanteriso"
 	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm5)
@@ -126884,7 +126937,10 @@
 /turf/simulated/wall/r_wall,
 /area/nadezhda/maintenance/undergroundfloor2north)
 "wrL" = (
-/obj/structure/girder,
+/obj/machinery/alarm{
+	pixel_y = 26
+	},
+/obj/structure/closet/crate,
 /turf/simulated/floor/plating,
 /area/nadezhda/crew_quarters/sleep/bedrooms)
 "wrT" = (
@@ -128967,10 +129023,10 @@
 /turf/simulated/floor/industrial/ceramic,
 /area/nadezhda/maintenance/undergroundfloor2west)
 "wMh" = (
-/obj/structure/closet/crate,
-/obj/item/oddity/artwork,
-/turf/simulated/floor/plating,
-/area/nadezhda/crew_quarters/sleep/bedrooms)
+/obj/structure/table/woodentable,
+/obj/item/device/lighting/toggleable/lamp/green,
+/turf/simulated/floor/wood/wild3,
+/area/nadezhda/crew_quarters/dorm4)
 "wMi" = (
 /obj/effect/floor_decal/spline/fancy,
 /obj/effect/floor_decal/corner_techfloor_grid,
@@ -129866,11 +129922,15 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/command/teleporter)
 "wUb" = (
-/obj/machinery/door/airlock/sandstone{
-	name = "Dormitory"
+/obj/structure/table/standard,
+/obj/item/towel{
+	pixel_x = 5;
+	pixel_y = -3
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/obj/plant_spawner/sunflower{
+	pixel_y = 10
+	},
+/turf/simulated/floor/tiled/white/violetcorener,
 /area/nadezhda/crew_quarters/dorm4)
 "wUj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -130243,6 +130303,10 @@
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/bar)
+"wWC" = (
+/obj/effect/floor_decal/industrial/caution/red,
+/turf/simulated/floor/plating,
+/area/nadezhda/crew_quarters/sleep/bedrooms)
 "wWI" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -132082,8 +132146,24 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/maintenance/surfacesec)
 "xoR" = (
-/obj/structure/toilet,
-/turf/simulated/floor/tiled/steel/panels,
+/obj/structure/closet/secure_closet/personal/cabinet,
+/obj/item/clothing/accessory/shemagh/camo,
+/obj/item/gun/energy/pulse/cassad,
+/obj/item/gun/projectile/automatic/omnirifle,
+/obj/item/gun/energy/gun/martin/preloaded,
+/obj/item/gun/projectile/boltgun/lever,
+/obj/item/cell/medium/moebius/omega,
+/obj/item/tool_upgrade/augment/ai_tool,
+/obj/item/tool_upgrade/refinement/stabilized_grip,
+/obj/item/tool_upgrade/productivity/ergonomic_grip,
+/obj/item/tool_upgrade/refinement/laserguide,
+/obj/item/gun/energy/gun/spider,
+/obj/item/ammo_magazine/ammobox/magnum_40/practice,
+/obj/item/storage/belt/utility/full,
+/obj/item/ammo_magazine/ammobox/magnum_40,
+/obj/item/tool/multitool/hacktool,
+/obj/item/clothing/gloves/insulated,
+/turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm4)
 "xoW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -132191,6 +132271,14 @@
 /obj/structure/closet/random_milsupply,
 /turf/simulated/floor/industrial/navy_slates,
 /area/nadezhda/maintenance/undergroundfloor1south)
+"xpR" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/white/violetcorener,
+/area/nadezhda/crew_quarters/dorm4)
 "xpT" = (
 /obj/machinery/door/unpowered/simple/wood/saloon{
 	name = "Church Foyer"
@@ -189804,7 +189892,7 @@ bPE
 sWT
 sWT
 bBF
-sWT
+maS
 sWT
 sWT
 geN
@@ -190207,8 +190295,8 @@ bBF
 sWT
 sWT
 sWT
-wrL
-maS
+sWT
+sWT
 sWT
 sWT
 bBF
@@ -190407,11 +190495,11 @@ odT
 tvc
 bBF
 bBF
-rAx
-wrL
-bBF
-bBF
-rAx
+sWT
+sWT
+sWT
+sWT
+sWT
 bBF
 odz
 lTy
@@ -190810,13 +190898,13 @@ gaF
 yet
 eQt
 bBF
-wrL
-wrL
-wrL
+sWT
+sWT
+sWT
 rQO
-wrL
-wrL
-wrL
+sWT
+sWT
+sWT
 bBF
 ptP
 jMR
@@ -191018,7 +191106,7 @@ sWT
 bnp
 sWT
 sWT
-sWT
+vCO
 bBF
 prZ
 oxd
@@ -191214,7 +191302,7 @@ tSD
 ktA
 uGt
 bBF
-bPE
+wrL
 sWT
 sWT
 bnp
@@ -191618,13 +191706,13 @@ tSD
 yet
 juA
 bBF
-wMh
+sWT
 sWT
 sWT
 syj
 sWT
 sWT
-sWT
+pkN
 bBF
 rId
 bVV
@@ -191820,8 +191908,8 @@ aYR
 jgv
 qTZ
 bBF
-sWT
-sWT
+ajz
+wWC
 sWT
 syj
 sWT
@@ -192225,11 +192313,11 @@ hVm
 tvc
 sqp
 bhp
-owy
+ajH
 dCF
 eJp
 ajH
-dyg
+pyd
 veX
 oDM
 mOu
@@ -192452,9 +192540,9 @@ lUB
 nsO
 jeE
 iMl
+qKK
+sjp
 lUB
-sOf
-sOf
 afO
 xJv
 btS
@@ -192654,9 +192742,9 @@ sFR
 hYS
 wwv
 qKK
+qKK
+mkn
 lUB
-sOf
-sOf
 onb
 xJv
 qbX
@@ -192853,12 +192941,12 @@ lUB
 wEh
 ldC
 deE
-vCO
+hYS
 tXf
 ilD
 cPz
-sOf
-lpd
+lUB
+lUB
 lpd
 alm
 bsY
@@ -193057,10 +193145,10 @@ tzY
 deE
 jgf
 xwG
+xwG
 deE
 pRf
-sOf
-lpd
+lUB
 aPA
 bsY
 bsY
@@ -193259,10 +193347,10 @@ lRj
 mOh
 nAI
 deE
+deE
 nNX
 lUB
-sOf
-lpd
+lUB
 pIt
 cHU
 cHU
@@ -193463,7 +193551,7 @@ lUB
 rYi
 lUB
 lUB
-sOf
+lUB
 lpd
 pIt
 rXi
@@ -193662,10 +193750,10 @@ lUB
 lUB
 lUB
 aoa
-oNl
-eUF
+deE
+deE
+wMh
 lUB
-sOf
 lpd
 qmm
 wlo
@@ -193861,13 +193949,13 @@ xgm
 aLx
 lUB
 xoR
-tHC
-wUb
 oNl
 oNl
+deE
+deE
+deE
 bIL
 lUB
-sOf
 lpd
 lpd
 jwN
@@ -194062,18 +194150,18 @@ rxL
 xgm
 aLx
 lUB
-enl
-eaM
-lUB
-nyr
-exC
-uxw
+oNl
+oNl
+oNl
+deE
+deE
+deE
+eUF
 lUB
 sOf
-lpd
-lpd
-lpd
-lpd
+sOf
+sOf
+sOf
 jpa
 jpa
 rHi
@@ -194266,16 +194354,16 @@ dDi
 lUB
 jpj
 miv
+nyr
+dyg
+enl
+deE
+eaM
 lUB
-lUB
-lUB
-lUB
-lUB
-ghg
-rWi
-wJe
-wJe
-esJ
+wUb
+exC
+dYK
+tHC
 awL
 awL
 rHi
@@ -194471,11 +194559,11 @@ jYM
 jYM
 jYM
 jYM
-wZE
-wZE
-wZE
-wZE
-mwe
+deE
+deE
+nyP
+exC
+rAx
 rra
 ucS
 bfE
@@ -194676,10 +194764,10 @@ jYM
 jYM
 jYM
 jYM
-eBR
-sWv
-hua
-rWi
+eEU
+xpR
+owy
+lUB
 ghg
 ghg
 ghg
@@ -194878,10 +194966,10 @@ jYM
 lMp
 ylO
 jYM
-eBR
-ddG
-hua
-rWi
+lUB
+uxw
+tHC
+lUB
 ghg
 ghg
 ghg
