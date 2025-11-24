@@ -99,20 +99,6 @@
 
 	tally += (r_hand?.slowdown_hold + l_hand?.slowdown_hold)
 
-	tally = clothing_check(tally)
-
-	return tally
-
-/mob/living/carbon/human/proc/clothing_check(tally)
-	if(tally < 0)
-		if(wear_suit)
-			if(istype(wear_suit, /obj/item/clothing/suit))
-				var/obj/item/clothing/suit/S = wear_suit
-				if(S.tally_locking != -100 && S.tally_locking > tally)
-					return S.tally_locking
-
-//	if(tally > 0)
-//
 	return tally
 
 /mob/living/carbon/human/allow_spacemove()
@@ -182,5 +168,3 @@
 
 /mob/living/carbon/human/proc/clear_movement_delay(movement_clearing = 0)
 	added_movedelay -= movement_clearing
-
-

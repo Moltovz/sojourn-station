@@ -40,12 +40,12 @@ ADMIN_VERB_ADD(/client/proc/profiler_data, R_ADMIN, FALSE)
 	var/list/result = world.Profile(flags)
 
 	var/lenpro = result.len
-	var/link = "<table>"
+	var/link = "<html><table>"
 	for(var/i = 1, i <= lenpro, i+=6)
 		link += "<tr>"
 		for(var/j = 0, j < 6, j++)
 			link += "<td>[result[i + j]]</td>"
 		link += "</tr>"
-	link += "</table>"
+	link += "</table></html>"
 
-	src << browse(HTML_SKELETON(link), "window=serverprofile")
+	src << browse(link, "window=serverprofile")

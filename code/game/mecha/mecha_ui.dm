@@ -4,7 +4,8 @@
 ////////////////////////////////////
 
 /obj/mecha/proc/get_stats_html()
-	var/head = {"<title>[name] data</title>
+	var/output = {"<html>
+	<head><title>[name] data</title>
 	<style>
 	body {color: #00ff00; background: #000000; font-family:"Lucida Console",monospace; font-size: 12px;}
 	hr {border: 1px solid #0f0; color: #0f0; background-color: #0f0;}
@@ -30,8 +31,8 @@
 		ticker();
 	}
 	</script>
-	"}
-	var/body = {"
+	</head>
+	<body>
 	<div id='content'>
 	[get_stats_part()]
 	</div>
@@ -42,9 +43,10 @@
 	<div id='commands'>
 	[get_commands()]
 	</div>
+	</body>
+	</html>
 	"}
-
-	return HTML_SKELETON_INTERNAL(head,body)
+	return output
 
 
 /obj/mecha/proc/report_internal_damage()
@@ -173,7 +175,14 @@
 	if(!id_card || !user)
 		return
 
-	var/output = {"
+	var/output = {"<html>
+		<head><style>
+		h1 {font-size:15px;margin-bottom:4px;}
+		body {color: #00ff00; background: #000000; font-family:"Courier New", Courier, monospace; font-size: 12px;}
+		a {color:#0f0;}
+		</style>
+		</head>
+		<body>
 		<h1>Following keycodes are present in this system:</h1>"}
 
 	for(var/a in operation_req_access)
@@ -191,17 +200,10 @@
 		output += "[a_name] - <a href='?src=\ref[src];add_req_access=[a];user=\ref[user];id_card=\ref[id_card]'>Add</a><br>"
 
 	output += "<hr><a href='?src=\ref[src];finish_req_access=1;user=\ref[user]'>Finish</a> <font color='red'>(Warning! The ID upload panel will be locked. It can be unlocked only through Exosuit Interface.)</font>"
+	output += "</body></html>"
 
-	var/datum/browser/popup = new (user, "exosuit_add_access","Access Panel")
-	popup.set_content(output)
-	popup.add_head_content({"
-		<style>
-		h1 {font-size:15px;margin-bottom:4px;}
-		body {color: #00ff00; background: #000000; font-family:"Courier New", Courier, monospace; font-size: 12px;}
-		a {color:#0f0;}
-		</style>"})
-	popup.open(TRUE)
-
+	user << browse(output, "window=exosuit_add_access")
+	onclose(user, "exosuit_add_access")
 
 /obj/mecha/proc/output_maintenance_dialog(obj/item/card/id/id_card, mob/user)
 	if(!id_card || !user)
@@ -213,20 +215,21 @@
 	if(dna)
 		maint_options += "<a href='?src=\ref[src];maint_reset_dna=1;user=\ref[user]'>Revert DNA-Lock</a>"
 
-	var/output = {"
+	var/output = {"<html>
+		<head>
+		<style>
+		body {color: #00ff00; background: #000000; font-family:"Courier New", Courier, monospace; font-size: 12px;}
+		a {padding:2px 5px; background:#32CD32;color:#000;display:block;margin:2px;text-align:center;text-decoration:none;}
+		</style>
+		</head>
+		<body>
 		[add_req_access?"<a href='?src=\ref[src];req_access=1;id_card=\ref[id_card];user=\ref[user]'>Edit operation keycodes</a>":null]
 		[maint_access?"<a href='?src=\ref[src];maint_access=1;id_card=\ref[id_card];user=\ref[user]'>Initiate maintenance protocol</a>":null]
 		[(state>0) ? maint_options : ""]
-		"}
-
-	var/datum/browser/popup = new (user, "exosuit_maint_console", "Maintenace Panel", 800, 490)
-	popup.set_content(output)
-	popup.add_head_content({"<style>
-		body {color: #00ff00; background: #000000; font-family:"Courier New", Courier, monospace; font-size: 12px;}
-		a {padding:2px 5px; background:#32CD32;color:#000;display:block;margin:2px;text-align:center;text-decoration:none;}
-		</style>"})
-	popup.open()
-
+		</body>
+		</html>"}
+	user << browse(output, "window=exosuit_maint_console")
+	onclose(user, "exosuit_maint_console")
 
 ////////////////////////////////
 /////// Messages and Log ///////

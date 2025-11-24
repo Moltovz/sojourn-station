@@ -33,8 +33,10 @@
 	if (!in_range(src, user))
 		return
 	user.set_machine(src)
-
-	var/style = {"
+	var/dat = {"
+		<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
+		<html>
+			<head>
 				<style>
 					body {
 					    margin-top:5px;
@@ -123,9 +125,10 @@
 					    font-size:15px;
 					}
 				</style>
+			</head>
+			<body>
 	"}
 
-	var/dat = ""
 	if(pai)
 		dat += {"
 			<b><font size='3px'>Personal AI Device</font></b><br><br>
@@ -218,12 +221,8 @@
 				<br>
 				<p>Each time this button is pressed, a request will be sent out to any available personalities. Check back often give plenty of time for personalities to respond. This process could take anywhere from 15 seconds to several minutes, depending on the available personalities' timeliness.</p>
 			"}
-
-
-	var/datum/browser/popup = new (user, "paicard","Personal AI Device")
-	popup.set_content(dat)
-	popup.add_head_content(style)
-	popup.open(TRUE)
+	user << browse(dat, "window=paicard")
+	onclose(user, "paicard")
 	return
 
 /obj/item/device/paicard/Topic(href, href_list)

@@ -43,6 +43,7 @@ Notes:
 	if (C)
 		owner = C
 		owner << browse(file2text('code/modules/tooltip/tooltip.html'), "window=[control]")
+
 	..()
 
 

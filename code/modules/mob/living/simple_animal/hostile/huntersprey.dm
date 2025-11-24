@@ -38,7 +38,6 @@
 	mob_size = MOB_LARGE
 	attack_sound = 'sound/xenomorph/alien_bite2.ogg'
 	sanity_damage = 3
-	research_value = 7500
 
 /obj/item/projectile/renderspine
 	name = "spine"

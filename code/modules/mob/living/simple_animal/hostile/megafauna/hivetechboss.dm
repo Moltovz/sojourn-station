@@ -30,8 +30,6 @@
 	mob_classification = CLASSIFICATION_SYNTHETIC
 	projectiletype = /obj/item/projectile/goo
 
-	research_value = 3750
-
 /mob/living/simple/hostile/megafauna/hivemind_tyrant/emp_act(severity)
 	..()
 	switch(severity)

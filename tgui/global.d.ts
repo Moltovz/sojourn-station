@@ -26,7 +26,6 @@ namespace JSX {
     marquee: any;
     blink: any;
   }
-  Element;
 }
 
 type TguiMessage = {
@@ -41,16 +40,6 @@ type ByondType = {
    * Can be used as a parameter to winget/winset.
    */
   windowId: string;
-
-  /**
-   * True if javascript is running in BYOND.
-   */
-  IS_BYOND: boolean;
-
-  /**
-   * Version of Trident engine of Internet Explorer. Null if N/A.
-   */
-  TRIDENT: number | null;
 
   /**
    * If `true`, unhandled errors and common mistakes result in a blue screen
@@ -142,11 +131,6 @@ type ByondType = {
    * Uses a special encoding to preserve `Infinity` and `NaN`.
    */
   parseJson(text: string): any;
-
-  /**
-   * Downloads a blob, platform-agnostic
-   */
-  saveBlob(blob: Blob, filename: string, ext: string): void;
 
   /**
    * Sends a message to `/datum/tgui_window` which hosts this window instance.

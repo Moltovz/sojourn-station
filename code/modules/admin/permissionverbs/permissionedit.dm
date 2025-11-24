@@ -13,14 +13,13 @@ ADMIN_VERB_ADD(/client/proc/edit_admin_permissions, R_PERMISSIONS, FALSE)
 	if(!check_rights(R_PERMISSIONS))
 		return
 
-	var/head = {"
+	var/output = {"<!DOCTYPE html>
+		<html>
 		<head>
 		<title>Permissions Panel</title>
 		<script type='text/javascript' src='search.js'></script>
 		<link rel='stylesheet' type='text/css' href='panels.css'>
-		</head>"}
-
-	var/output = {"
+		</head>
 		<body onload='selectTextField();updateSearch();'>
 		<div id='main'><table id='searchable' cellspacing='0'>
 		<tr class='title'>
@@ -48,16 +47,9 @@ ADMIN_VERB_ADD(/client/proc/edit_admin_permissions, R_PERMISSIONS, FALSE)
 		</table></div>
 		<div id='top'><b>Search:</b> <input type='text' id='filter' value='' style='width:70%;' onkeyup='updateSearch();'></div>
 		</body>
-		"}
+		</html>"}
 
-	usr << browse(HTML_SKELETON_RAW(head,output),"window=editrights;size=600x500")
-
-/* K5's request to keep this
-	var/datum/browser/popup = new (usr, "editrights","Permissions Panel", 600, 500)
-	popup.set_content(output)
-	popup.add_head_content()
-	popup.open()
-*/
+	usr << browse(output,"window=editrights;size=600x500")
 
 /datum/admins/proc/log_admin_rank_modification(var/admin_ckey, var/new_rank)
 	if(config.admin_legacy_system)

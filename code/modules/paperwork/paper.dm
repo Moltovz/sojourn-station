@@ -187,10 +187,9 @@
 	if(!forceshow && istype(user,/mob/living/silicon/ai))
 		var/mob/living/silicon/ai/AI = user
 		can_read = get_dist(src, AI.camera) < 2
-		if(can_read)
-			user << browse(HTML_SKELETON_PAPER(name,null,info + stamps,color), "window=[name]")
+	user << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY bgcolor='[color]'>[can_read ? info : stars(info)][stamps]</BODY></HTML>", "window=[name]")
 
-	var/html = ""
+	var/html = "<html><head><title>[name]</title></head><body bgcolor='[color]'>"
 	var/body
 	if (can_read && editable)
 		body = info_links
@@ -214,7 +213,9 @@
 
 	html += "<hr />"
 	html += body + stamps
-	user << browse(HTML_SKELETON_PAPER(name,null,html,color), "window=[name]")
+	html += "</body></html>"
+	show_browser(user, html, "window=[name]")
+
 	onclose(user, "[name]")
 
 /obj/item/paper/proc/write_content(mob/user)
@@ -471,7 +472,7 @@
 		playsound(src,'sound/effects/PEN_Ball_Point_Pen_Circling_01_mono.ogg',40,1)
 		update_space(t)
 
-		usr << browse(HTML_SKELETON_PAPER(name,null,info_links + stamps,color), "window=[name]")
+		usr << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY bgcolor='[color]'>[info_links][stamps]</BODY></HTML>", "window=[name]") // Update the window
 
 		update_icon()
 
@@ -540,7 +541,7 @@
 		if ( istype(RP) && RP.mode == 2 )
 			RP.RenamePaper(user,src)
 		else
-			user << browse(HTML_SKELETON_PAPER(name,null,info_links + stamps,color), "window=[name]")
+			user << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY bgcolor='[color]'>[info_links][stamps]</BODY></HTML>", "window=[name]")
 		return
 
 	else if(istype(P, /obj/item/stamp))

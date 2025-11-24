@@ -10,7 +10,7 @@
 	if(!istype(user) || c_ai)
 		return
 
-	if(!ai_belonged || client || key)
+	if(stat != 2 || client || key)
 		to_chat(user, "<span class='warning'>You cannot take control of an autonomous, active drone.</span>")
 		return
 
@@ -21,7 +21,6 @@
 	assume_controll(user)
 
 /mob/living/silicon/robot/proc/assume_controll(var/mob/living/silicon/ai/user)
-	ai_belonged = TRUE
 	user.c_borg = src
 	c_ai = user
 	add_verb(src, /mob/living/silicon/robot/proc/release_ai_controll_verb)
@@ -71,7 +70,6 @@
 	user.amount_of_borgs_printed += 1
 
 	var/mob/living/silicon/robot/new_borg = new drone_type(get_turf(src))
-	new_borg.ai_belonged = TRUE
 	new_borg.assume_controll(user)
 
 
@@ -102,10 +100,8 @@
 
 	if(c_ai)
 		if(mind)
-			remove_cursor()
 			mind.transfer_to(c_ai)
 		else
-			remove_cursor()
 			c_ai.key = key
 		to_chat(c_ai, "<span class='notice'>[message]</span>")
 		c_ai.c_borg = null
@@ -117,4 +113,4 @@
 
 	remove_verb(src, /mob/living/silicon/robot/proc/release_ai_controll_verb)
 	updatename()
-	stat = UNCONSCIOUS
+	death()

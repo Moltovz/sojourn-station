@@ -259,7 +259,7 @@
 		return
 
 	usr.machine = src
-	var/dat = ""
+	var/dat = "<HEAD><TITLE>Piano</TITLE></HEAD><BODY>"
 
 	if(song)
 		if(song.lines.len > 0 && !(playing))
@@ -303,7 +303,8 @@
 					"}
 		else
 			dat += "<A href='?src=\ref[src];help=2'>Show Help</A><BR>"
-	user << browse(HTML_SKELETON_TITLE("Piano",dat), "window=piano;size=700x300")
+	dat += "</BODY></HTML>"
+	user << browse(dat, "window=piano;size=700x300")
 	onclose(user, "piano")
 
 /obj/structure/device/piano/Topic(href, href_list)

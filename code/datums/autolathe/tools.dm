@@ -278,10 +278,6 @@
 	name = "rapid piping device"
 	build_path = /obj/item/rpd
 
-/datum/design/autolathe/tool/breaker
-	name = "Artificer \"Breaker\""
-	build_path = /obj/item/gun/matter/launcher/breaker
-
 //Sun Branch
 /datum/design/autolathe/tool/dawn
 	name = "\"Crack of Dawn\""

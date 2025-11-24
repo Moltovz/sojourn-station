@@ -61,9 +61,6 @@ nanoui is used to open and update nano browser uis
 
 	var/ready_for_updates = FALSE
 
-	//Soj edit: Makes UI auto update more delayed in a modular
-	var/update_passovers = 0
-
  /**
   * Create a new nanoui instance.
   *
@@ -102,7 +99,7 @@ nanoui is used to open and update nano browser uis
 		ref = nref
 
 	add_common_assets()
-
+	
 	if(user?.client)
 		var/datum/asset/nanoui = get_asset_datum(/datum/asset/group/nanoui)
 		if(nanoui.send(user.client))
@@ -564,26 +561,16 @@ nanoui is used to open and update nano browser uis
 		close()
 		return
 
-	if(!status)
-		update_status(1) // Not updating UI, so lets check here if status has changed
-		return
-
-	if(is_auto_updating && is_auto_updating <= update_passovers)
-		update_passovers = 0
-		update()
-		return
-
-	if (update)
-		update_passovers = 0
+	if (status && (update || is_auto_updating))
 		update() // Update the UI (update_status() is called whenever a UI is updated)
+	else
+		update_status(1) // Not updating UI, so lets check here if status has changed
 
  /**
   * This Process proc is called by SSnano.
   * Use try_update() to make manual updates.
   */
 /datum/nanoui/Process()
-	if(is_auto_updating)
-		update_passovers += 1
 	try_update(0)
 
  /**

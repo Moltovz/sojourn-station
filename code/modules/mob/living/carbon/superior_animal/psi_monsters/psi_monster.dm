@@ -102,7 +102,6 @@
 	var/mob/living/Victim = null
 
 	var/can_leave = FALSE
-	research_value = 500
 
 
 /mob/living/carbon/superior/psi/New()

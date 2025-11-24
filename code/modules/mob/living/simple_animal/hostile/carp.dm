@@ -29,8 +29,6 @@
 	break_stuff_probability = 4
 	inherent_mutations = list(MUTATION_EPILEPSY, MUTATION_DEAF, MUTATION_BAROTRAUMA)
 	faction = "carp"
-	research_value = 150
-
 
 /mob/living/simple/hostile/carp/baby
 	name = "space carp spawn"
@@ -43,7 +41,6 @@
 	harm_intent_damage = 8
 	melee_damage_lower = 4
 	melee_damage_upper = 6
-	research_value = 75
 
 /mob/living/simple/hostile/carp/pike
 	name = "space carp pike"
@@ -66,7 +63,6 @@
 	melee_damage_upper = 25
 
 	break_stuff_probability = 100
-	research_value = 175
 
 /mob/living/simple/hostile/carp/shark
 	name = "space shark"
@@ -87,7 +83,6 @@
 	inherent_mutations = list(MUTATION_GIGANTISM, MUTATION_EPILEPSY, MUTATION_DEAF, MUTATION_BAROTRAUMA)
 
 	break_stuff_probability = 100
-	research_value = 250
 
 /mob/living/simple/hostile/carp/greatwhite
 	name = "great white carp"
@@ -114,7 +109,7 @@
 						 /obj/item/animal_part/carp_fang) //HOLY GRAIL
 
 	armor = list(melee = 6, bullet = 2, energy = 16, bomb = 25, bio = 100, rad = 25) //Lasers dont work on scales
-	research_value = 275
+
 
 /mob/living/simple/hostile/carp/allow_spacemove()
 	return 1	//No drifting in space for space carp!	//original comments do not steal

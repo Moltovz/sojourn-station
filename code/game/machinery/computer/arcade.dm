@@ -181,7 +181,7 @@
 
 	dat += "</b></center>"
 
-	user << browse(HTML_SKELETON(dat), "window=arcade")
+	user << browse(dat, "window=arcade")
 	onclose(user, "arcade")
 	return
 

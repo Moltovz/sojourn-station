@@ -146,6 +146,7 @@
 	user.set_machine(src)
 
 	var/dat = ""
+	dat += "<head><title>Ameridian Refinery</title></head>"
 	dat += "Ameridian Refinery<BR>"
 	dat += "<A href='?src=\ref[src];close=1'>Close</A><BR>"
 	dat += "<A href='?src=\ref[src];refresh=1'>Refresh</A><BR><BR>"
@@ -166,7 +167,7 @@
 	else
 		dat += "No Bidon connected. Please connect a Bidon to start the transfer.<BR>"
 
-	user << browse(HTML_SKELETON_TITLE("Ameridian Refinery",dat), "window=AmeridianRefinery")
+	user << browse(dat, "window=AmeridianRefinery")
 	onclose(user, "AmeridianRefinery")
 	return
 

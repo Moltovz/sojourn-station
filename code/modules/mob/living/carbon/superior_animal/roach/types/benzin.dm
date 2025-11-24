@@ -13,7 +13,6 @@
 	var/impending_explosion = FALSE
 
 	var/exploded = FALSE
-	research_value = 250
 
 /mob/living/carbon/superior/roach/nitro/ex_act()
 	if(!exploded)

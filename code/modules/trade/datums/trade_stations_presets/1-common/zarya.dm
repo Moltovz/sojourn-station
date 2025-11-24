@@ -22,9 +22,7 @@
 			/obj/machinery/portable_atmospherics/canister/oxygen,
 			/obj/item/tank/plasma,
 			/obj/machinery/pipedispenser/orderable,
-			/obj/machinery/pipedispenser/disposal/orderable,
-			/obj/machinery/portable_atmospherics/powered/pump,
-			/obj/machinery/portable_atmospherics/powered/scrubber
+			/obj/machinery/pipedispenser/disposal/orderable
 		),
 		"Energiya" = list(
 			/obj/item/cell/large,

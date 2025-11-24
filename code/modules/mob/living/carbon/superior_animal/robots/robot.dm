@@ -105,7 +105,6 @@
 		new cell_drop (loc)
 		cell_drop = null
 	if(termiation)
-		drop_embedded()
 		qdel(src)
 	return
 

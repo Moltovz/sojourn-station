@@ -28,6 +28,7 @@ var turfname = "";
 var imageRetryDelay = 500;
 var imageRetryLimit = 50;
 var menu = document.getElementById('menu');
+var under_menu = document.getElementById('under_menu');
 var statcontentdiv = document.getElementById('statcontent');
 var storedimages = [];
 var split_admin_tabs = false;
@@ -55,28 +56,29 @@ function createStatusTab(name) {
 	if (!verb_tabs.includes(name) && !permanent_tabs.includes(name)) {
 		return;
 	}
-	var button = document.createElement("DIV");
-	button.onclick = function () {
+	var B = document.createElement("BUTTON");
+	B.onclick = function () {
 		tab_change(name);
 		this.blur();
 	};
-	button.id = name;
-	button.textContent = name;
-	button.className = "button";
+	B.id = name;
+	B.textContent = name;
+	B.className = "button";
 	//ORDERING ALPHABETICALLY
-	button.style.order = name.charCodeAt(0);
+	B.style.order = name.charCodeAt(0);
 	// Override for status/MC/perks
 	// this works because ascii chars start at 65
 	if (name == "Status") {
-		button.style.order = 1;
+		B.style.order = 1;
 	} else if (name == "MC") {
-		button.style.order = 2;
+		B.style.order = 2;
 	} else if (name == "Perks") {
-		button.style.order = 3;
+		B.style.order = 3;
 	}
 	//END ORDERING
-	menu.appendChild(button);
+	menu.appendChild(B);
 	SendTabToByond(name);
+	under_menu.style.height = menu.clientHeight + 'px';
 }
 
 function removeStatusTab(name) {
@@ -90,6 +92,7 @@ function removeStatusTab(name) {
 	}
 	menu.removeChild(document.getElementById(name));
 	TakeTabFromByond(name);
+	under_menu.style.height = menu.clientHeight + 'px';
 }
 
 function sortVerbs() {
@@ -104,6 +107,10 @@ function sortVerbs() {
 		return 0;
 	});
 }
+
+window.onresize = function () {
+	under_menu.style.height = menu.clientHeight + 'px';
+};
 
 function addPermanentTab(name) {
 	if (!permanent_tabs.includes(name)) {
@@ -360,7 +367,6 @@ function draw_status() {
 		} else {
 			var div = document.createElement("div");
 			div.textContent = status_tab_parts[i];
-			div.className = "status-info";
 			document.getElementById("statcontent").appendChild(div);
 		}
 	}
@@ -408,7 +414,7 @@ function draw_perks() {
 		td1.title = part.desc || "No Description";
 		if (!part.passive) {
 			var a = document.createElement("a");
-			a.href = "byond://?src=" + part.ref + ";trigger=1";
+			a.href = "?src=" + part.ref + ";trigger=1";
 			if (part.cooldown > perks_tab_time) {
 				a.textContent = part.name + " (Cooldown: " + Math.floor((part.cooldown - perks_tab_time) / 10) + " seconds)";
 				a.className = "color-bad";
@@ -469,7 +475,7 @@ function draw_listedturf() {
 			// rather than every onmousedown getting the "part" of the last entry.
 			return function (e) {
 				e.preventDefault();
-				var clickcatcher = "byond://?src=?_src_=listedturf_click;item_ref=" + part[1];
+				var clickcatcher = "?_src_=listedturf_click;item_ref=" + part[1];
 				switch (e.button) {
 					case 1:
 						clickcatcher += ";statpanel_item_click=middle";
@@ -526,7 +532,7 @@ function draw_spells(cat) {
 		var td2 = document.createElement("td");
 		if (part[3]) {
 			var a = document.createElement("a");
-			a.href = "byond://?src=" + part[3] + ";statpanel_item_click=left";
+			a.href = "?src=" + part[3] + ";statpanel_item_click=left";
 			a.textContent = part[2];
 			td2.appendChild(a);
 		} else {
@@ -610,46 +616,14 @@ function draw_verbs(cat) {
 function set_theme(which) {
 	if (which == "light") {
 		document.body.className = "light";
-		document.documentElement.className = 'light';
 		// WARNING: DO NOT REMOVE
 		// THIS AVOIDS AN IE BUG WITH CLASSNAME NOT UPDATING CHILDREN ELEMENTS
 		set_style_sheet("light");
 	} else if (which == "dark") {
 		document.body.className = "dark";
-		document.documentElement.className = 'dark';
 		// WARNING: DO NOT REMOVE
 		// THIS AVOIDS AN IE BUG WITH CLASSNAME NOT UPDATING CHILDREN ELEMENTS
 		set_style_sheet("dark");
-	}
-}
-
-function set_tabs_style(style) {
-	if (style == "default") {
-		menu.classList.add('menu-wrap');
-		menu.classList.remove('tabs-classic');
-	} else if (style == "classic") {
-		menu.classList.add('menu-wrap');
-		menu.classList.add('tabs-classic');
-	} else if (style == "scrollable") {
-		menu.classList.remove('menu-wrap');
-		menu.classList.remove('tabs-classic');
-	}
-}
-
-function set_font_size(size) {
-	document.body.style.setProperty('font-size', size);
-}
-
-function set_tabs_style(style) {
-	if (style == "default") {
-		menu.classList.add('menu-wrap');
-		menu.classList.remove('tabs-classic');
-	} else if (style == "classic") {
-		menu.classList.add('menu-wrap');
-		menu.classList.add('tabs-classic');
-	} else if (style == "scrollable") {
-		menu.classList.remove('menu-wrap');
-		menu.classList.remove('tabs-classic');
 	}
 }
 

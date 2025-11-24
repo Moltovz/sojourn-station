@@ -28,7 +28,6 @@
 	inherent_mutations = list(MUTATION_EPILEPSY, MUTATION_THICK_FUR, MUTATION_IMBECILE, MUTATION_NERVOUSNESS)
 	var/horror_modifer = TRUE // For-admins to turn this off
 	var/rawr_cooldown = FALSE
-	research_value = 225
 
 /mob/living/simple/hostile/bear/FindTarget()
 	. = ..()
@@ -146,7 +145,6 @@
 	melee_damage_lower = 30
 	melee_damage_upper = 40
 	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
-	research_value = 325
 
 // Credit to scar#1579 for the sprite.
 /mob/living/simple/hostile/bear/mukwah
@@ -164,4 +162,3 @@
 	bones_amount = 10
 	pixel_x = -16
 	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
-	research_value = 750

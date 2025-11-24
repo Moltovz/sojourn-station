@@ -68,7 +68,7 @@
 		dat += "<a href='?src=\ref[src];item=1'>Recover object</a>.<br>"
 		dat += "<a href='?src=\ref[src];allitems=1'>Recover all objects</a>.<br>"
 
-	user << browse(HTML_SKELETON(dat), "window=cryopod_console")
+	user << browse(dat, "window=cryopod_console")
 	onclose(user, "cryopod_console")
 
 /obj/machinery/computer/cryopod/Topic(href, href_list)
@@ -87,7 +87,7 @@
 			dat += "[person]<br/>"
 		dat += "<hr/>"
 
-		user << browse(HTML_SKELETON(dat), "window=cryolog")
+		user << browse(dat, "window=cryolog")
 
 	if(href_list["view"])
 		if(!allow_items) return
@@ -97,7 +97,7 @@
 			dat += "[I.name]<br/>"
 		dat += "<hr/>"
 
-		user << browse(HTML_SKELETON(dat), "window=cryoitems")
+		user << browse(dat, "window=cryoitems")
 
 	else if(href_list["item"])
 		if(!allow_items) return
@@ -476,12 +476,6 @@
 	if(!check_occupant_allowed(affecting))
 		return
 
-	if(issilicon(affecting))
-		var/mob/living/silicon/robot/R = affecting
-		if(R.ai_belonged)
-			to_chat(usr, "<span class='notice'><B>AI based robots can not be moved to storage.</B></span>")
-			return FALSE
-
 	var/willing = null //We don't want to allow people to be forced into despawning.
 
 	if(affecting != user && affecting.client)
@@ -561,12 +555,6 @@
 	if(src.occupant)
 		to_chat(usr, "<span class='notice'><B>\The [src] is in use.</B></span>")
 		return
-
-	if(issilicon(usr))
-		var/mob/living/silicon/robot/R = usr
-		if(R.ai_belonged)
-			to_chat(usr, "<span class='notice'><B>AI based robots can not be moved to storage.</B></span>")
-			return FALSE
 
 	for(var/mob/living/carbon/slime/M in range(1,usr))
 		if(M.Victim == usr)

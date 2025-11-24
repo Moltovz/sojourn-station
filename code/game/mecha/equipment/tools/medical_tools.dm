@@ -130,7 +130,8 @@
 /obj/item/mecha_parts/mecha_equipment/tool/sleeper/proc/get_occupant_stats()
 	if(!occupant)
 		return
-	var/head_ ={"
+	return {"<html>
+				<head>
 				<title>[occupant] statistics</title>
 				<script language='javascript' type='text/javascript'>
 				[js_byjax]
@@ -139,8 +140,8 @@
 				h3 {margin-bottom:2px;font-size:14px;}
 				#lossinfo, #reagents, #injectwith {padding-left:15px;}
 				</style>
-				"}
-	var/body_ = {"
+				</head>
+				<body>
 				<h3>Health statistics</h3>
 				<div id="lossinfo">
 				[get_occupant_dam()]
@@ -149,8 +150,8 @@
 				<div id="reagents">
 				[get_occupant_reagents()]
 				</div>
-				"}
-	return HTML_SKELETON_INTERNAL(head_,body_)
+				</body>
+				</html>"}
 
 /obj/item/mecha_parts/mecha_equipment/tool/sleeper/proc/get_occupant_dam()
 	var/t1
@@ -329,7 +330,8 @@
 		return
 
 /obj/item/mecha_parts/mecha_equipment/tool/syringe_gun/proc/get_reagents_page()
-	var/header = {"
+	var/output = {"<html>
+						<head>
 						<title>Reagent Synthesizer</title>
 						<script language='javascript' type='text/javascript'>
 						[js_byjax]
@@ -340,8 +342,8 @@
 						form {width: 90%; margin:10px auto; border:1px dotted #999; padding:6px;}
 						#submit {margin-top:5px;}
 						</style>
-						"}
-	var/bodyer = {"
+						</head>
+						<body>
 						<h3>Current reagents:</h3>
 						<div id="reagents">
 						[get_current_reagents()]
@@ -350,9 +352,10 @@
 						<div id="reagents_form">
 						[get_reagents_form()]
 						</div>
+						</body>
+						</html>
 						"}
-	return HTML_SKELETON_INTERNAL(header, bodyer)
-
+	return output
 
 /obj/item/mecha_parts/mecha_equipment/tool/syringe_gun/proc/get_reagents_form()
 	var/r_list = get_reagents_list()

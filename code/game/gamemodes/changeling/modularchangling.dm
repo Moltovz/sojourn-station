@@ -140,7 +140,11 @@ var/list/datum/power/carrion/powerinstances = list()
 		for(var/P in powers)
 			powerinstances += new P()
 
-	var/header = {"
+	var/dat = "<html><head><title>Carrion Evolution Menu</title></head>"
+
+	//javascript, the part that does most of the work
+	dat += {"
+		<head>
 			<script type='text/javascript'>
 				var locked_tabs = new Array();
 				function updateSearch(){
@@ -271,10 +275,7 @@ var/list/datum/power/carrion/powerinstances = list()
 					filter_text.select();
 				}
 			</script>
-	"}
-	//javascript, the part that does most of the work
-	var/dat = ""
-	dat += {"
+		</head>
 	"}
 
 	//body tag start + onload and onkeypress (onkeyup) javascript event calls
@@ -344,11 +345,7 @@ var/list/datum/power/carrion/powerinstances = list()
 	</body></html>
 	"}
 
-	var/datum/browser/popup = new (usr, "powers","Carrion Evolution Menu", 900, 480)
-	popup.set_content(dat)
-	popup.add_head_content(header)
-	popup.open()
-
+	usr << browse(dat, "window=powers;size=900x480")
 
 /obj/item/organ/internal/carrion/core/proc/purchasePower(var/Pname, var/free = FALSE)
 	var/datum/power/carrion/Thepower = Pname

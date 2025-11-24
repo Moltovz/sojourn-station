@@ -267,7 +267,7 @@
 			dat += "</tr>"
 		dat += "</table>"
 
-	user << browse(HTML_SKELETON(dat), "window=seedstorage")
+	user << browse(dat, "window=seedstorage")
 	onclose(user, "seedstorage")
 
 /obj/machinery/seed_storage/Topic(var/href, var/list/href_list)

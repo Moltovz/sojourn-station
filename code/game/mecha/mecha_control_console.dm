@@ -52,7 +52,7 @@
 //I have no idea what im doing
 /obj/machinery/computer/mecha/interact(mob/user)
 	user.set_machine(src)
-	var/dat = ""
+	var/dat = "<html><head><title>[name]</title><style>h3 {margin: 0px; padding: 0px;}</style></head><body>"
 	if(screen == FALSE)
 		dat += "<h3>Tracking beacons data</h3>"
 		for(var/obj/item/mecha_parts/mecha_tracking/TR in world)
@@ -68,11 +68,10 @@
 		dat += "[stored_data]"
 		dat += "<A href='?src=\ref[src];print=1'>Print Log</A><BR>"
 		dat += "<A href='?src=\ref[src];refresh=1'>(Refresh)</A><BR>"
+		dat += "</body></html>"
 
-	var/datum/browser/popup = new (user, "computer",name, 400, 500)
-	popup.set_content(dat)
-	popup.add_head_content("<style>h3 {margin: 0px; padding: 0px;}</style>")
-	popup.open(TRUE)
+	user << browse(dat, "window=computer;size=400x500")
+	onclose(user, "computer")
 
 
 /obj/item/mecha_parts/mecha_tracking //Whe is this here WE HAVE FILES FOR THIS?!

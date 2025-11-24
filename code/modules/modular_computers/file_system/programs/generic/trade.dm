@@ -626,7 +626,8 @@
 		ui.add_template("_orders", "trade_orders.tmpl")
 		ui.add_template("_saved", "trade_saved.tmpl")
 		ui.add_template("_logs", "trade_log.tmpl")
-		ui.set_auto_update(10)
+
+		ui.set_auto_update(1)
 		ui.set_initial_data(data)
 		ui.open()
 

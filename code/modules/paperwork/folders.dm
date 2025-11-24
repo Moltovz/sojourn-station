@@ -14,7 +14,6 @@
 	/obj/item/photo,
 	/obj/item/paper/alchemy_recipes
 	)
-	matter = list(MATERIAL_BIOMATTER = 1)
 
 /obj/item/folder/black
 	desc = "A black folder."

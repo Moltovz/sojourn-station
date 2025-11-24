@@ -538,7 +538,8 @@ var/global/list/robot_modules = list(
 					"Tall Crate Pusher Alt" = "mmekacargo",
 					"Dullahan Hazard" = "dullahaneng",
 					"Dullahan" = "dullahancargo",
-					"Traffic Contractor"= "sfmekaengi"
+					"Constuction Contractor"= "sfmekaeng",
+					"Traffic Contractor"= "sfmekaeng"
 					)
 
 	tall_sprites = list(
