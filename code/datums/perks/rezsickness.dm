@@ -10,7 +10,7 @@
 	..()
 
 	initial_time = world.time
-	cooldown_time = world.time + 30 MINUTES
+	cooldown_time = world.time + 1 MINUTES
 	holder.brute_mod_perk *= 1.10
 	holder.burn_mod_perk *= 1.10
 	holder.oxy_mod_perk *= 1.10
