@@ -107,6 +107,8 @@
 	var/braintype = "Cyborg"
 	var/intenselight = 0	// Whether cyborg's integrated light was upgraded
 
+	var/ai_belonged = FALSE //Used for AI controled borgs.
+
 	var/list/robot_verbs_default = list(
 		/mob/living/silicon/robot/proc/sensor_mode,
 		/mob/living/silicon/robot/proc/robot_checklaws
@@ -482,7 +484,7 @@
 	qdel(diagnosis)
 /*
 	var/dat = self_diagnosis()
-	src << browse(dat, "window=robotdiagnosis") */
+	src << browse(HTML_SKELETON(dat), "window=robotdiagnosis") */
 
 
 /mob/living/silicon/robot/verb/toggle_component()
@@ -943,7 +945,7 @@
 	if(!module)
 		pick_module()
 		return
-	var/dat = "<HEAD><TITLE>Modules</TITLE></HEAD><BODY>\n"
+	var/dat = ""
 	dat += {"
 	<B>Activated Modules</B>
 	<BR>
@@ -972,7 +974,7 @@
 		else
 			dat += text("[obj]: \[<A HREF=?src=\ref[src];act=\ref[obj]>Activate</A> | <B>Deactivated</B>\]<BR>")
 */
-	src << browse(dat, "window=robotmod")
+	src << browse(HTML_SKELETON_TITLE("Modules",dat), "window=robotmod")
 
 
 /mob/living/silicon/robot/Topic(href, href_list)
