@@ -1009,7 +1009,7 @@ There are 9 wires.
 		hit(user, I)
 		return
 
-	if(istype(I, /obj/item/keys))
+	if(istype(I, /obj/item/keys/janitor))
 		if(used_now)
 			to_chat(user, SPAN_WARNING("You are already looking for the key!")) //don't want people stacking odds
 			return
@@ -1041,6 +1041,22 @@ There are 9 wires.
 				return
 			used_now = FALSE
 			return
+		return
+
+	if(istype(I, /obj/item/keys/personal))
+		if(ishuman(usr))
+			var/obj/item/keys/personal/K = I
+			if(K.id == id_tag)
+				if(locked)
+					to_chat(user, SPAN_NOTICE("You raise the deadbolts with your key!"))
+					unlock()
+				else
+					to_chat(user, SPAN_NOTICE("You lower the deadbolts with your key!"))
+					lock()
+				return
+			else
+				to_chat(user, SPAN_NOTICE("This is not the right key for this airlock!"))
+				return
 		return
 
 	var/tool_type = I.get_tool_type(user, list(QUALITY_PRYING, QUALITY_SCREW_DRIVING, QUALITY_WELDING, p_open ? QUALITY_PULSING : null, p_open ? QUALITY_HAMMERING : null), src)

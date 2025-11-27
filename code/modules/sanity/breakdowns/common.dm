@@ -5,7 +5,7 @@
 	insight_reward = 20
 	restore_sanity_post = 80
 
-	start_messages = list("You think this doesn’t feel real... you have to make sure this is real! Get a jump from electrictiy!")
+	start_messages = list("You think this doesnï¿½t feel real... you have to make sure this is real! Get a jump from electrictiy!")
 	end_messages = list("You feel alive again.")
 	var/message_time = 0
 	var/messages = list("You want to receive an electric shock to make sure you're really alive.",
@@ -82,7 +82,7 @@
 			continue
 	target = pick(candidates)
 	messages = list("Remember your last time in [target], those were the days",
-					"You feel like you’re drawn to [target] because you were always happy there. Right..?",
+					"You feel like youï¿½re drawn to [target] because you were always happy there. Right..?",
 					"When you are in [target] you feel like home... You want to feel like home.",
 					"[target] reminds you of the hunt.")
 
@@ -206,7 +206,7 @@
 	if(msg == message)
 		finished = TRUE
 
-datum/breakdown/common/noinsight
+/datum/breakdown/common/noinsight
 	name = "Stagnation"
 	duration = 10 MINUTES
 	restore_sanity_post = 150
@@ -218,20 +218,17 @@ datum/breakdown/common/noinsight
 
 	var/insight_passive_gain_multiplier = 0
 
-/datum/breakdown/common/noinsight/update()
-	. = ..()
-	if(!.)
-		return FALSE
-	if(insight_passive_gain_multiplier)
-		return FALSE
+/datum/breakdown/common/noinsight/occur()
 	if(ishuman(holder.owner))
 		var/mob/living/carbon/human/H = holder.owner
-		H.sanity.insight_passive_gain_multiplier -= 1
+		H.sanity.insight_passive_gain_multiplier -= 0.5
+	return..()
+
 
 /datum/breakdown/common/noinsight/conclude()
 	if(ishuman(holder.owner))
 		var/mob/living/carbon/human/H = holder.owner
-		H.sanity.insight_passive_gain_multiplier += 1
+		H.sanity.insight_passive_gain_multiplier += 0.5
 	..()
 
 //Church based common powers

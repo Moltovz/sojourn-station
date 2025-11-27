@@ -1833,6 +1833,11 @@
 	center_of_mass = list("x"=17, "y"=20)
 	preloaded_reagents = list("protein" = 1)
 	matter = list(MATERIAL_BIOMATTER = 3)
+	item_attacking = /obj/item/material/kitchen/rollingpin
+	item_attacker_delete = FALSE
+	delete_self = TRUE
+	item_given = /obj/item/reagent_containers/snacks/patty_raw
+	item_attacking_message = "You pound the meat into a patty."
 
 /obj/item/reagent_containers/snacks/cutlet
 	name = "cutlet"

@@ -386,3 +386,12 @@ var/const/NO_EMAG_ACT = -50
 	name = "lock picks"
 	desc = "A set of lock picks used to open doors, sadly cant pick through \"deadbolts\"."
 	icon_state = "lockpick"
+
+
+/obj/item/keys/personal
+	name = "dormatory key"
+	desc = "unbolts doors to its dormatory"
+	icon = 'icons/obj/card.dmi'
+	icon_state = "keys"
+	w_class = ITEM_SIZE_TINY
+	var/id = "debug"

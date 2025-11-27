@@ -393,7 +393,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 			pref.f_style = new_f_style
 			return TOPIC_REFRESH_UPDATE_PREVIEW
 	else if(href_list["scale_effect"])
-		var/new_size_mult = input(user, "Choose your character's size, ranging from -20% to +100% form normal sprite size. Note that the default is roughly equals to 1.77 meters or 5'10.", "Set Size") as num|null
+		var/new_size_mult = input(user, "Choose your character's size, ranging from -20% to +200% form normal sprite size. Note that the default is roughly equals to 1.77 meters or 5'10.", "Set Size") as num|null
 		if (!ISINRANGE(new_size_mult,-20,100))
 			//pref.size_multiplier = 1 		Obsolete
 			pref.scale_effect = 0

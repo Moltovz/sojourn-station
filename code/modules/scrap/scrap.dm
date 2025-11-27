@@ -301,7 +301,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		big_item.forceMove(get_turf(src))
 		big_item = null
 	else if(rare_item && prob(rare_item_chance))
-		var/obj/O = pickweight(RANDOM_RARE_ITEM - /obj/item/stash_spawner)
+		var/obj/O = pickweight(RANDOM_RARE_ITEM)
 		O = new O(get_turf(src))
 		visible_message("<span class='notice'><span style='color:orange'>\A rare [O.name] is found beneath the [src]!</span>")
 	else if(rare_item && prob(50))
