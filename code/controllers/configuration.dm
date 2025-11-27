@@ -100,10 +100,10 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 	var/serverurl
 	var/server
 	var/banappeals
-	var/wikiurl
+	var/wikiurl     = "https://sojourn13.space/wiki/Main_Page"
 	var/forumurl
 	var/githuburl
-	var/discordurl
+	var/discordurl  = "https://discord.gg/udYKVsQf"
 
 	var/static/ip_reputation = FALSE		//Should we query IPs to get scores? Generates HTTP traffic to an API service.
 	var/static/ipr_email					//Left null because you MUST specify one otherwise you're making the internet worse.
