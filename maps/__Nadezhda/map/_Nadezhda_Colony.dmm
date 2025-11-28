@@ -99591,7 +99591,6 @@
 /obj/machinery/camera/network/command{
 	dir = 4
 	},
-/obj/machinery/telecomms/relay/preset/telecomms,
 /turf/simulated/floor/tiled/steel/bar_light,
 /area/nadezhda/command/tcommsat/computer)
 "rqn" = (
