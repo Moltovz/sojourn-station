@@ -90,3 +90,35 @@
 	icon_state = "folly_deck"
 	endless = TRUE
 	card_eater = TRUE
+
+/obj/item/cardholder/precon
+	name = "preconstructed cardcarp deck"
+	desc = "A box of crappy cardcarp cards usually provided to new players. Intented to be played with the squirrel side deck."
+	var/list/deckocards = list(
+    /obj/item/card_carp/cat = 1,
+    /obj/item/card_carp/manti = 1,
+    /obj/item/card_carp/adder = 1,
+    /obj/item/card_carp/crab = 1,
+    /obj/item/card_carp/chipmunk = 1,
+    /obj/item/card_carp/ant = 1,
+    /obj/item/card_carp/geck = 1,
+    /obj/item/card_carp/bat = 1,
+
+    /obj/item/card_carp/wolf = 1,
+    /obj/item/card_carp/elk = 1,
+    /obj/item/card_carp/stinkbug = 1,
+    /obj/item/card_carp/stunted_wolf = 1,
+    /obj/item/card_carp/fieldmice = 1,
+    /obj/item/card_carp/packrat = 1,
+    /obj/item/card_carp/mole = 1,
+    /obj/item/card_carp/coyote = 1,
+
+    /obj/item/card_carp/grizzly = 1,
+    /obj/item/card_carp/mothman = 1,
+    /obj/item/card_carp/ratking = 1,
+    /obj/item/card_carp/magpie = 1)
+
+/obj/item/cardholder/precon/Initialize()
+    . = ..()
+    for(var/path in deckocards)
+        new path(src)

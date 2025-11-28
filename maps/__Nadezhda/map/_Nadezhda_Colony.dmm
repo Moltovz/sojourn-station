@@ -18812,11 +18812,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 2
 	},
-/obj/structure/bookcase{
-	pixel_x = -30
-	},
-/obj/item/book/manual/wiki/security_space_law,
-/obj/item/book/manual/wiki/security_ironparagraphs,
 /turf/simulated/floor/carpet,
 /area/nadezhda/crew_quarters/dorm5)
 "drx" = (
@@ -67944,6 +67939,9 @@
 	cant_be_pulled = 1;
 	abstract = 1
 	},
+/obj/item/bedsheet/hosdouble,
+/obj/item/gun/projectile/stamp,
+/obj/structure/bed/double/padded,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm5)
 "lUY" = (
@@ -111754,13 +111752,13 @@
 /turf/simulated/floor/plating,
 /area/nadezhda/maintenance/undergroundfloor1south)
 "tvm" = (
-/obj/structure/bed/double/padded,
 /obj/item/device/radio/intercom{
 	dir = 8;
 	pixel_x = 22
 	},
-/obj/item/bedsheet/hosdouble,
-/obj/item/gun/projectile/stamp,
+/obj/structure/bookcase,
+/obj/item/book/manual/wiki/security_ironparagraphs,
+/obj/item/book/manual/wiki/security_space_law,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm5)
 "tvq" = (

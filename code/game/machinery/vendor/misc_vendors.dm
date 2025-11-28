@@ -163,6 +163,7 @@
 					/obj/item/pack_card_carp/flyers_booster_pack = 15,
 					/obj/item/pack_card_carp/rare_booster_pack = 5,
 					/obj/item/cardholder = 40,
+					/obj/item/cardholder/precon = 60,
 					/obj/item/cardholder/squirl = 20,
 					/obj/item/cardholder/ratbox = 20,
 					/obj/item/cardholder/beebox = 20,
