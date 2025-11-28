@@ -471,8 +471,8 @@ default behaviour is:
 	// shut down ongoing problems
 	radiation = 0
 	bodytemperature = T20C
-	sdisabilities = 0
-	disabilities = 0
+//	sdisabilities = 0               disabled because the code below fixes blindness and deafness, so this only fixes mute and nearsighted
+//	disabilities = 0
 
 	// fix blindness and deafness
 	blinded = 0
