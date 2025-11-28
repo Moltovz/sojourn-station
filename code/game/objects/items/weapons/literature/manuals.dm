@@ -670,7 +670,6 @@
 	icon_state = "bookSpaceLaw"
 	author = "The Company"
 	title = "Corporate Regulations"
-	page_link = "https://sojourn13.space/wiki/Laws"
 
 /obj/item/book/manual/security_space_law/New()
 	..()
@@ -1188,7 +1187,7 @@
     			}
 			</script>
 			<p id='loading'>You start skimming through the manual...</p>
-			<iframe width='100%' height='100%' onload="pageloaded(this)" src="[page_link][config.language]?printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>
+			<iframe width='100%' height='97%' onload="pageloaded(this)" src="[config.wikiurl]/[page_link]_Eris[config.language]?printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>
 			</body>
 			</html>
 			"}
@@ -1199,42 +1198,42 @@
 	icon_state = "book_engineering"
 	author = "Engineering Encyclopedia"
 	title = "Engineering Textbook"
-	page_link = "https://sojourn13.space/wiki/Standard_Operating_Procedure_(Guild)"
+	page_link = "Guide_to_Engineering"
 
 /obj/item/book/manual/wiki/engineering_construction
 	name = "Station Repairs and Construction"
 	icon_state ="book_construction"
 	author = "Engineering Encyclopedia"
 	title = "Station Repairs and Construction"
-	page_link = "https://sojourn13.space/wiki/Construction"
+	page_link = "Guide_to_Construction"
 
 /obj/item/book/manual/wiki/engineering_atmos
 	name = "Pipes and You: Getting To Know Your Scary Tools"
 	icon_state = "book_atmos"
 	author = "Maria Crash, Senior Atmospherics Technician"
 	title = "Pipes and You: Getting To Know Your Scary Tools"
-	page_link = "https://sojourn13.space/wiki/Guide_to_Atmospherics"
+	page_link = "Guide_to_Atmospherics"
 
 /obj/item/book/manual/wiki/engineering_hacking
 	name = "Hacking"
 	icon_state ="book_hacking"
 	author = "Engineering Encyclopedia"
 	title = "Hacking"
-	page_link = "https://sojourn13.space/wiki/Guide_to_Hacking"
+	page_link = "Guide_to_Hacking"
 
 /obj/item/book/manual/wiki/engineering_singularity
 	name = "Singularity Safety in Special Circumstances"
 	icon_state ="book_singularity"
 	author = "Engineering Encyclopedia"
 	title = "Singularity Safety in Special Circumstances"
-	page_link = "https://sojourn13.space/wiki/Supermatter_Engine"
+	page_link = "Guide_to_Singularity"
 
 /obj/item/book/manual/wiki/engineering_supermatter
 	name = "Supermatter Engine Operating Manual"
 	icon_state = "book_supermatter"
 	author = "Central Engineering Division"
 	title = "Supermatter Engine Operating Manual"
-	page_link = "https://sojourn13.space/wiki/Supermatter_Engine"
+	page_link = "Guide_to_Supermatter"
 
 //science
 /obj/item/book/manual/wiki/science_research
@@ -1242,24 +1241,16 @@
 	icon_state = "book_rnd"
 	author = "Dr. L. Ight"
 	title = "Research and Development 101"
-	page_link = "https://sojourn13.space/wiki/Guide_to_Research_and_Development"
+	page_link = "Guide_to_Research_and_Development"
 
 /obj/item/book/manual/wiki/science_robotics
 	name = "Cyborgs for Dummies"
 	icon_state = "book_borg"
 	author = "XISC"
 	title = "Cyborgs for Dummies"
-	page_link = "https://sojourn13.space/wiki/Guide_to_Robotics"
+	page_link = "Guide_to_Robotics"
 
 //security
-/obj/item/book/manual/wiki/security_space_law
-	name = "Spacelaw"
-	desc = "A set of corporate guidelines for keeping order on privately-owned space assets."
-	icon_state = "book_ironparagraphs"
-	author = "Marshal Security"
-	title = "Spacelaw"
-	page_link = "https://sojourn13.space/wiki/Laws"
-
 /obj/item/book/manual/wiki/security_ironparagraphs
 	name = "Ironhammer Paragraphs"
 	desc = "A set of corporate guidelines for keeping order on privately-owned space assets."
@@ -1282,14 +1273,14 @@
 	icon_state = "book_medical"
 	author = "Medical Journal, volume 1"
 	title = "Medical Diagnostics Manual"
-	page_link = "https://sojourn13.space/wiki/Guide_to_Medicine"
+	page_link = "Guide_to_Medical"
 
 /obj/item/book/manual/wiki/medical_chemistry
 	name = "Chemistry Textbook"
 	icon_state = "book"//TODO: Add icon
 	author = "Medical Journal, volume 2"
 	title = "Chemistry"
-	page_link = "https://sojourn13.space/wiki/Guide_to_Chemistry"
+	page_link = "Guide_to_Chemistry"
 
 //neotheology
 /obj/item/book/manual/wiki/neotheology_cloning //TODO: Completely change this to be NT-oriented.
@@ -1305,14 +1296,14 @@
 	icon_state = "book"
 	author = "Sir John Rose"
 	title = "Barman Recipes"
-	page_link = "https://sojourn13.space/wiki/Guide_to_Drinks"
+	page_link = "Guide_to_Food_and_Drinks"
 
 /obj/item/book/manual/wiki/chef_recipes
 	name = "Chef Recipes"
 	icon_state = "chefbook"
 	author = "Victoria Ponsonby"
 	title = "Chef Recipes"
-	page_link = "https://sojourn13.space/wiki/Guide_to_Drinks"
+	page_link = "Guide_to_Food_and_Drinks"
 
 /obj/item/book/manual/h_book
 	name = "Holy Book"

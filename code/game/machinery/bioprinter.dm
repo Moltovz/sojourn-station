@@ -137,13 +137,7 @@
 		OP_STOMACH = 		list(/obj/item/organ/internal/stomach/prosthetic, 50),
 		OP_BLOOD_VESSEL =	list(/obj/item/organ/internal/blood_vessel/prosthetic,  10),
 		OP_MUSCLE  =    	list(/obj/item/organ/internal/muscle/robotic,  20),
-		OP_NERVE  =	    	list(/obj/item/organ/internal/nerve/robotic,  10),
-
-		BP_L_LEG =			list(/obj/item/organ/external/robotic/moebius/l_leg,  100),
- 		BP_R_LEG =			list(/obj/item/organ/external/robotic/moebius/r_leg,  100),
-
-		BP_L_ARM =			list(/obj/item/organ/external/robotic/moebius/r_arm,  100),
-		BP_R_ARM =			list(/obj/item/organ/external/robotic/moebius/r_arm,  100)
+		OP_NERVE  =	    	list(/obj/item/organ/internal/nerve/robotic,  10)
 		)
 
 
