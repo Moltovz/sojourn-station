@@ -75,10 +75,10 @@
 	preloaded_reagents = list("protein" = 8, "blattedin" = 12, "starkellin" = 15, "diplopterum" = 4)
 
 /obj/item/reagent_containers/snacks/meat/roachmeat/fuhrer
-	preloaded_reagents = list("protein" = 6, "seligitillin" = 6, "fuhrerole" = 12, "diplopterum" = 6)
+	preloaded_reagents = list("protein" = 6, "seligitillin" = 6, "Vorgesetzterole" = 12, "diplopterum" = 6)
 
 /obj/item/reagent_containers/snacks/meat/roachmeat/kaiser
-	preloaded_reagents = list("protein" = 6, "blattedin" = 12, "seligitillin" = 6, "starkellin" = 15, "fuhrerole" = 12, "diplopterum" = 6)
+	preloaded_reagents = list("protein" = 6, "blattedin" = 12, "seligitillin" = 6, "starkellin" = 15, "Vorgesetzterole" = 12, "diplopterum" = 6)
 
 /obj/item/reagent_containers/snacks/meat/roachmeat/jager
 	preloaded_reagents = list("protein" = 6, "blattedin" = 2, "gewaltine" = 8, "diplopterum" = 2)

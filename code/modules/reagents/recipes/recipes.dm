@@ -723,14 +723,14 @@
 
 /datum/chemical_reaction/violence_ultra
 	result = "violence ultra"
-	required_reagents = list("violence" = 1, "fuhrerole" = 1, "hyperzine" = 1)
+	required_reagents = list("violence" = 1, "Vorgesetzterole" = 1, "hyperzine" = 1)
 	result_amount = 3
 	maximum_temperature = 258
 	minimum_temperature = 243
 
 /datum/chemical_reaction/bouncer
 	result = "bouncer"
-	required_reagents = list("violence" = 1, "fuhrerole" = 1, "hyperzine" = 1)
+	required_reagents = list("violence" = 1, "Vorgesetzterole" = 1, "hyperzine" = 1)
 	result_amount = 3
 	maximum_temperature = 333
 	minimum_temperature = 303
@@ -899,7 +899,7 @@
 
 /datum/chemical_reaction/cyanide
 	result = "cyanide"
-	required_reagents = list("toxin" = 5, "mindbreaker" = 3, "fuhrerole" = 2)
+	required_reagents = list("toxin" = 5, "mindbreaker" = 3, "Vorgesetzterole" = 2)
 	result_amount = 2
 	maximum_temperature = 33
 	minimum_temperature = 10

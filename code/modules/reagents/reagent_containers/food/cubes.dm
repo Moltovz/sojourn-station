@@ -95,7 +95,7 @@
 		Expand()
 
 /obj/item/reagent_containers/snacks/cube/roach/fuhrer
-	name = "Fuhrer Cube"
+	name = "Vorgesetzter Cube"
 	desc = "Just add Blood!"
 	reagent_flags = REFILLABLE
 	icon = 'icons/obj/roach_cubes.dmi'

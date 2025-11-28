@@ -563,8 +563,8 @@
 
 /obj/machinery/vending/plant_gene
 	name = "Eugene's Plant Genes"
-	desc = "A vendor selling data disks with individual plant genes."
-	product_slogans = "Keep your plants on!;Get back to your roots!;Don't leaf me!"
+	desc = "A vendor selling data disks with individual plant genes. An expensive alternative to trading with the SI-TV Arbor"
+	product_slogans = "Keep your plants on!;Get back to your roots!;Don't leaf me!;I'm different...;Keeping you on your tomatoes since ERORR!"
 	product_ads = "Seed for yourself!;Green!;OMG! Only Modified Genetically!"
 	icon_state = "seeds"
 	products = list(
@@ -582,16 +582,16 @@
 		/obj/item/pc_part/drive/disk/plantgene/vigour/maturation_faster = 2
 		)
 	prices = list(
-		/obj/item/pc_part/drive/disk/plantgene/biochemistry/potency_high = 500,
-		/obj/item/pc_part/drive/disk/plantgene/vigour/yield_high = 500,
+		/obj/item/pc_part/drive/disk/plantgene/biochemistry/potency_high = 1500,
+		/obj/item/pc_part/drive/disk/plantgene/vigour/yield_high = 1000,
 		/obj/item/pc_part/drive/disk/plantgene/vigour/production_high = 500,
-		/obj/item/pc_part/drive/disk/plantgene/vigour/maturation_fast = 500,
+		/obj/item/pc_part/drive/disk/plantgene/vigour/maturation_fast = 2500,
 		/obj/item/pc_part/drive/disk/plantgene/metabolism/no_nutrients_water = 500,
-		/obj/item/pc_part/drive/disk/plantgene/biochemistry/psilocybin = 500,
-		/obj/item/pc_part/drive/disk/plantgene/biochemistry/potency_max = 500,
-		/obj/item/pc_part/drive/disk/plantgene/vigour/yield_max = 500,
-		/obj/item/pc_part/drive/disk/plantgene/vigour/production_max = 500,
-		/obj/item/pc_part/drive/disk/plantgene/vigour/maturation_faster = 500
+		/obj/item/pc_part/drive/disk/plantgene/biochemistry/psilocybin = 2000,
+		/obj/item/pc_part/drive/disk/plantgene/biochemistry/potency_max = 3000,
+		/obj/item/pc_part/drive/disk/plantgene/vigour/yield_max = 3000,
+		/obj/item/pc_part/drive/disk/plantgene/vigour/production_max = 3000,
+		/obj/item/pc_part/drive/disk/plantgene/vigour/maturation_faster = 5000
 		)
 
 /obj/machinery/vending/plant_gene/Initialize()

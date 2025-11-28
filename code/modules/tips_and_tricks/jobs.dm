@@ -192,11 +192,11 @@
 
 /tipsAndTricks/jobs/spooder2
 	jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
-	tipText = "For Cht'mant, chemicals obtained from different roach meats will heal them like normal healing chems do to everyone else. Blattedin acts as Tricordazine, Diplopterum as Dexalin, Starkellin as Bicaridine, Seligitilin as Kelotane, Gewaltine as Dylovene and Fuhrerole as Peridaxon. Remember these overdose at 16 units and can be lethal!"
+	tipText = "For Cht'mant, chemicals obtained from different roach meats will heal them like normal healing chems do to everyone else. Blattedin acts as Tricordazine, Diplopterum as Dexalin, Starkellin as Bicaridine, Seligitilin as Kelotane, Gewaltine as Dylovene and Vorgesetzterole as Peridaxon. Remember these overdose at 16 units and can be lethal!"
 
 /tipsAndTricks/jobs/spooder3
 	jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)
-	tipText = "You can grind roach meat on your industrial grinder for useful chemicals. Blattedin and Diplopterum can be obtained from almost every roach, while you can get Seligitillin from Seuche roaches, Gewaltine from Jagers, Starkellin from Panzers, and Fuhrerole from Fuhrers."
+	tipText = "You can grind roach meat on your industrial grinder for useful chemicals. Blattedin and Diplopterum can be obtained from almost every roach, while you can get Seligitillin from Seuche roaches, Gewaltine from Jagers, Starkellin from Panzers, and Vorgesetzterole from Vorgesetzters."
 
 /tipsAndTricks/jobs/birb
 	jobs_list = list(/datum/job/cmo, /datum/job/doctor, /datum/job/recovery_team, /datum/job/psychiatrist)

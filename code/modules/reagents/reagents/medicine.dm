@@ -772,7 +772,7 @@ We don't use this but we might find use for it. Porting it since it was updated 
 /datum/reagent/medicine/peridaxon
 	name = "Peridaxon"
 	id = "peridaxon"
-	description = "Treats damage to organs, healing them. Does not treat brain damage nor heal bones. Will not work for Cht'mant, use Fuhrerole instead."
+	description = "Treats damage to organs, healing them. Does not treat brain damage nor heal bones. Will not work for Cht'mant, use Vorgesetzterole instead."
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#561EC3"

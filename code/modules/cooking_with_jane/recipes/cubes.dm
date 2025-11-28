@@ -20,7 +20,7 @@
 		list(CWJ_ADD_PRODUCE, "potato", reagent_skip=TRUE),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/snacks/meat/roachmeat/fuhrer, qmod=0.2),
 		list(CWJ_ADD_PRODUCE, "potato", reagent_skip=TRUE),
-		list(CWJ_ADD_REAGENT, "fuhrerole", 5, remain_percent=0),
+		list(CWJ_ADD_REAGENT, "Vorgesetzterole", 5, remain_percent=0),
 		list(CWJ_ADD_REAGENT, "protein", 25, remain_percent=0),
 		list(CWJ_USE_TOOL, QUALITY_HAMMERING, 1, max=10, qmod=0.3),
 		list(CWJ_USE_TOOL, QUALITY_CUTTING, 1, max=10, qmod=0.3)

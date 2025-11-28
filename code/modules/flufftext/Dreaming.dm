@@ -84,7 +84,7 @@ var/list/dreams = list(
 	"a sentient tree","a viscerator","a vox armalis","a slime","a cortical borer","a cat","a chick","a chicken",
 	"a corgi","a cow","a crab","a fennec","a goose","a lizard","a mouse","a sentient mushroom","a parrot","a penguin",
 	"a red panda","a fae panda","a space worm","a spiderbot","a tindalos","a sentient tomato","a yithian","a giant spider",
-	"a giant nurse spider","a giant hunter spider","a kampfer roach","a fuhrer roach","a jager roach","a kraftwerk roach",
+	"a giant nurse spider","a giant hunter spider","a kampfer roach","a Vorgesetzter roach","a jager roach","a kraftwerk roach",
 	"a seuche roach","a panzer roach","a gestrahlte roach","a disembodied brain","a monkey","a shadekin","an impossible shape",
     "a crimson jelly","a fading memory","a psionic crusher","a monstrosity without a face","a creature with limbs upon limbs upon limbs",
     "a dark silluette",

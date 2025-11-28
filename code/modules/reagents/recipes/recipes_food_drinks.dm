@@ -422,7 +422,7 @@
 //Eris "lore frendly" verson, commited out do to being unsupported  with pressure
 //datum/chemical_reaction/gargle_blaster
 //	result = "gargleblaster"
-//	required_reagents = list("sbiten" = 1, "carpotoxin" = 1, "singulo" = 1, "pwine" = 1, "fuhrerole" = 1, "limejuice" = 1)
+//	required_reagents = list("sbiten" = 1, "carpotoxin" = 1, "singulo" = 1, "pwine" = 1, "Vorgesetzterole" = 1, "limejuice" = 1)
 //	result_amount = 2
 //	maximum_pressure = 80
 

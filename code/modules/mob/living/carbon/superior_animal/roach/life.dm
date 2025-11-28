@@ -117,7 +117,7 @@
 										var/mob/living/carbon/superior/roach/cannibalism = tasty
 										fed += cannibalism.fed
 									if(istype(src, /mob/living/carbon/superior/roach/roachling))
-										if(tasty.meat_amount >= 6)// ate a fuhrer or kaiser
+										if(tasty.meat_amount >= 6)// ate a Vorgesetzter or kaiser
 											var/mob/living/carbon/superior/roach/roachling/bigboss = src
 											bigboss.big_boss = TRUE
 						else if(snacker && istype(eat_target, /obj/item/reagent_containers/snacks))

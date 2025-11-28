@@ -212,10 +212,10 @@
 /datum/reagent/toxin/gewaltine/overdose(mob/living/carbon/M, alien)
 	M.adjustCloneLoss(2)
 
-/datum/reagent/toxin/fuhrerole
-	name = "Fuhrerole"
-	id = "fuhrerole"
-	description = "Harvested from Fuhrer roaches."
+/datum/reagent/toxin/Vorgesetzterole
+	name = "Vorgesetzterole"
+	id = "Vorgesetzterole"
+	description = "Harvested from Vorgesetzter roaches."
 	taste_description = "third reich"
 	reagent_state = LIQUID
 	color = "#a6b85b"
@@ -225,7 +225,7 @@
 	heating_point = 573
 	heating_products = list("radium", "mercury", "lithium", "nutriment")
 
-/datum/reagent/toxin/fuhrerole/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+/datum/reagent/toxin/Vorgesetzterole/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	if(M.species?.reagent_tag == IS_CHTMANT)
 		M.add_chemical_effect(CE_HEARTHEAL, 2)
 		M.add_chemical_effect(CE_LUNGHEAL, 2)
@@ -241,24 +241,24 @@
 		M.faction = "roach"
 		. = ..()
 
-/datum/reagent/toxin/fuhrerole/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
+/datum/reagent/toxin/Vorgesetzterole/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
 	if(M.species?.reagent_tag == IS_CHTMANT)
 		return
 	else
 		. = ..()
 
-/datum/reagent/toxin/fuhrerole/on_mob_delete(mob/living/carbon/L)
+/datum/reagent/toxin/Vorgesetzterole/on_mob_delete(mob/living/carbon/L)
 	..()
 	if(L.species?.reagent_tag == IS_CHTMANT)
 		return
 	L.faction = initial(L.faction)
 
-/datum/reagent/toxin/fuhrerole/withdrawal_act(mob/living/carbon/M)
+/datum/reagent/toxin/Vorgesetzterole/withdrawal_act(mob/living/carbon/M)
 	if(M.species?.reagent_tag == IS_CHTMANT)
 		return
-	M.stats.addTempStat(STAT_ROB, -STAT_LEVEL_BASIC, STIM_TIME, "fuhrerole_w")
-	M.stats.addTempStat(STAT_TGH, -STAT_LEVEL_BASIC, STIM_TIME, "fuhrerole_w")
+	M.stats.addTempStat(STAT_ROB, -STAT_LEVEL_BASIC, STIM_TIME, "Vorgesetzterole_w")
+	M.stats.addTempStat(STAT_TGH, -STAT_LEVEL_BASIC, STIM_TIME, "Vorgesetzterole_w")
 
-/datum/reagent/toxin/fuhrerole/overdose(mob/living/carbon/M, alien)
+/datum/reagent/toxin/Vorgesetzterole/overdose(mob/living/carbon/M, alien)
 	M.add_chemical_effect(CE_SPEECH_VOLUME, rand(3,4))
 	M.adjustBrainLoss(0.5)

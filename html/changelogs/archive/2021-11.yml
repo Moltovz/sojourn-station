@@ -125,7 +125,7 @@
   - rscadd: 'Added a new drug: Kakerlakenbier. Works as a ghetto serotrotium, can
       be made out of water, fuel, diplopreptum and beer.'
   - rscadd: 'Added a new drug: Monarchenblut. Works as a ghetto serotrotium, can be
-      made out of kakerlakenbier, fuhrerole and kaiseraurum.'
+      made out of kakerlakenbier, Vorgesetzterole and kaiseraurum.'
   ValoTheValo:
   - balance: increased VIG requirement and decreased delay on RPG and LMGs
   - rscdel: removed delay on every weapon that isn't a LMG, GL or RPG

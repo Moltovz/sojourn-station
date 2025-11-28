@@ -23,6 +23,7 @@
 "dL" = (/obj/item/tool/pickaxe/drill/onestar,/turf/simulated/floor/rock,/area/colony)
 "dN" = (/obj/structure/flora/ausbushes/ppflowers,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "dP" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm13)
+"ea" = (/obj/machinery/telecomms/relay/preset/telecomms,/obj/machinery/door/window/northleft{dir = 2},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm14)
 "ek" = (/obj/structure/bed/double/padded,/obj/effect/decal/cleanable/dirt,/obj/item/bedsheet/purpledouble,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/crew_quarters/dorm9)
 "eo" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "er" = (/obj/machinery/floodlight,/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm14)
@@ -112,6 +113,7 @@
 "uX" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "vd" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm13)
 "vA" = (/turf/simulated/shuttle/floor/mining,/area/turbolift/Dorms/levelthree)
+"wc" = (/obj/machinery/ntnet_relay,/obj/machinery/door/window/northleft{dir = 2},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm14)
 "wl" = (/obj/machinery/door/airlock/multi_tile/glass{dir = 2; locked = 1},/turf/simulated/floor/tiled/steel/orangecorner,/area/nadezhda/crew_quarters/dorm14)
 "wp" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
 "wr" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
@@ -148,7 +150,7 @@
 "Dp" = (/obj/machinery/light_switch{pixel_y = 32},/obj/structure/bed/double/padded,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
 "Dq" = (/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/plating/under,/area/colony)
 "DO" = (/obj/structure/cardboardbox{name = "a mapper's emotional support box"; desc = "An opened carboard box, presumably from some shipping company"},/turf/simulated/floor/tiled/steel/orangecorner,/area/nadezhda/crew_quarters/dorm14)
-"Eg" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm14)
+"Eg" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm14)
 "Ej" = (/turf/simulated/shuttle/wall/mining{icon_state = "7,18"},/area/nadezhda/crew_quarters/dorm14)
 "Fo" = (/mob/living/carbon/superior/robot/gp/synth/allied/junkbot,/turf/simulated/floor/rock,/area/colony)
 "Fp" = (/obj/effect/decal/cleanable/rubble,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm14)
@@ -263,7 +265,7 @@ TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGi
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZlMcrMRgHQrBVMtuvlClClClClClClClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZYsOXSWdfeZhseOuvlClClClClClClClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZeZeZeZeZeZneeruvuvjBuvuvlClClClClClClClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisosososososoneMteOjBeOMtjBlClClClClClClClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisosososososoneMtNwjBwceajBlClClClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisoBroxrYfIsoxUquFpEgISNwuvlClClClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisoUisybBbMsjIMeOjDowTjNwjBlClClClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGilClClClClClClClClClClClClCGiGiGiGiGiGisobmYCrLLXsonefqjDrtuvjBuvlClClClClClClClClClClClClClClClClClClClClClClClCTn

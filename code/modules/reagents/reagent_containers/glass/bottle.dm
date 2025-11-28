@@ -357,11 +357,11 @@
 	icon_state = "bottle"
 	preloaded_reagents = list("gewaltine" = 60)
 
-/obj/item/reagent_containers/glass/bottle/fuhrerole
-	name = "fuhrerole bottle"
-	desc = "A small bottle. Contains fuhrerole."
+/obj/item/reagent_containers/glass/bottle/Vorgesetzterole
+	name = "Vorgesetzterole bottle"
+	desc = "A small bottle. Contains Vorgesetzterole."
 	icon_state = "bottle"
-	preloaded_reagents = list("fuhrerole" = 60)
+	preloaded_reagents = list("Vorgesetzterole" = 60)
 
 // ===
 
@@ -417,8 +417,8 @@
 /obj/item/reagent_containers/glass/bottle/trade/gewaltine
 	preloaded_reagents = list("gewaltine" = 60)
 
-/obj/item/reagent_containers/glass/bottle/trade/fuhrerole
-	preloaded_reagents = list("fuhrerole" = 60)
+/obj/item/reagent_containers/glass/bottle/trade/Vorgesetzterole
+	preloaded_reagents = list("Vorgesetzterole" = 60)
 
 /obj/item/reagent_containers/glass/bottle/trade/kaiseraurum
 	preloaded_reagents = list("kaiseraurum" = 60)

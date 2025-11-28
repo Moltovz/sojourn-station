@@ -1283,7 +1283,7 @@ I said no!
 
 /datum/recipe/cube/fuhrer
 	fruit = list("potato" = 2)
-	reagents = list("protein" = 25, "fuhrerole" = 5)
+	reagents = list("protein" = 25, "Vorgesetzterole" = 5)
 	items = list(
 		/obj/item/reagent_containers/snacks/meat/roachmeat/fuhrer,
 		/obj/item/reagent_containers/snacks/meat/roachmeat/fuhrer,

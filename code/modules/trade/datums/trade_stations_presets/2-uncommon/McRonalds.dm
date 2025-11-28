@@ -61,7 +61,7 @@
 		/datum/reagent/toxin/seligitillin = offer_data("seligitillin bottle (60u)", 1250, 1),
 		/datum/reagent/toxin/starkellin = offer_data("starkellinbottle bottle (60u)", 1000, 1),
 		/datum/reagent/toxin/gewaltine = offer_data("gewaltine bottle (60u)", 1400, 1),
-		/datum/reagent/toxin/fuhrerole = offer_data("fuhrerole bottle (60u)", 2400, 1),
+		/datum/reagent/toxin/Vorgesetzterole = offer_data("Vorgesetzterole bottle (60u)", 2400, 1),
 		/obj/item/reagent_containers/snacks/meat/roachmeat/kaiser = offer_data("kaiser roach meat", 1500, 2)
 	)
 

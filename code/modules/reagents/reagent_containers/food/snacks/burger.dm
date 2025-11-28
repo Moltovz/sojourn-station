@@ -307,8 +307,8 @@
 	cooked = TRUE
 
 /obj/item/reagent_containers/snacks/fuhrerburger
-	name = "fuhrer burger"
-	desc = "A burger made out of a fuhrer roach."
+	name = "Vorgesetzter burger"
+	desc = "A burger made out of a Vorgesetzter roach."
 	icon_state = "fuhrerburger"
 	taste_tag = list(MEAT_FOOD)
 	bitesize = 3

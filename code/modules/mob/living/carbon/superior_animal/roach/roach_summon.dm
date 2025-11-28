@@ -40,7 +40,7 @@
 			roach = new /mob/living/carbon/superior/roach/bluespace(src)
 		if("elektromagnetisch")
 			roach = new /mob/living/carbon/superior/roach/elektromagnetisch(src)
-		if("fuhrer")
+		if("Vorgesetzter")
 			roach = new /mob/living/carbon/superior/roach/fuhrer(src)
 		if("gluhend")
 			roach = new /mob/living/carbon/superior/roach/glowing(src)

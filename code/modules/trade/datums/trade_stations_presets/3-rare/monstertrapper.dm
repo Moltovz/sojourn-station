@@ -44,7 +44,7 @@
 	hidden_inventory = list(
 		"High-End Roach Product" = list(
 			/obj/item/reagent_containers/snacks/cube/roach/kraftwerk = custom_good_amount_range(list(1, 2)),
-			/obj/item/reagent_containers/glass/bottle/trade/fuhrerole = good_data("fuhrerole bottle", list(1, 1), 2000)
+			/obj/item/reagent_containers/glass/bottle/trade/Vorgesetzterole = good_data("Vorgesetzterole bottle", list(1, 1), 2000)
 //			/obj/item/reagent_containers/glass/bottle/trade/kaiseraurum = good_data("kaiseraurum bottle", list(1, 1), 1000) Kaiseraurum doesn't exist here, you just get an empty bottle
 		),
 		"Just Spiders" = list(

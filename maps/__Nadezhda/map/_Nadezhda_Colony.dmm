@@ -2125,6 +2125,15 @@
 /obj/structure/flora/small/grassb4,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
+"atJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/gloves/botanic_leather,
+/obj/item/tool/sword/machete,
+/obj/item/clothing/accessory/holster/saber/machete,
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/nadezhda/crew_quarters/hydroponics)
 "atS" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -23349,9 +23358,6 @@
 	name = "Checkpoint Blast Doors";
 	opacity = 0
 	},
-/obj/structure/barricade{
-	layer = 55
-	},
 /turf/simulated/floor/tiled/dark/danger,
 /area/nadezhda/security/maingate)
 "efm" = (
@@ -24031,9 +24037,6 @@
 	layer = 2.6;
 	name = "Checkpoint Blast Doors";
 	opacity = 0
-	},
-/obj/structure/barricade{
-	layer = 55
 	},
 /turf/simulated/floor/tiled/dark/danger,
 /area/nadezhda/security/maingate)
@@ -26877,11 +26880,9 @@
 /obj/machinery/atmospherics/unary/vent_pump,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/accessory/holster/saber/machete,
-/obj/item/tool/sword/machete,
-/obj/item/clothing/gloves/botanic_leather,
 /obj/structure/table/standard,
 /obj/machinery/smartfridge/disk,
+/obj/item/storage/box/data_disk/basic,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/nadezhda/crew_quarters/hydroponics)
 "eLw" = (
@@ -32534,6 +32535,12 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/nadezhda/maintenance/undergroundfloor2north)
+"fKq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/scrap/sparse_weighted,
+/obj/random/mob/roaches/low_chance,
+/turf/simulated/floor/industrial/checker_large,
+/area/nadezhda/maintenance/undergroundfloor2west)
 "fKs" = (
 /obj/structure/barricade{
 	layer = 55
@@ -34334,6 +34341,7 @@
 /area/nadezhda/outside/forest)
 "gcb" = (
 /obj/structure/low_wall/onestar,
+/obj/random/flora/small_jungle_tree,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
 "gcf" = (
@@ -46749,6 +46757,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/lab)
+"ihD" = (
+/turf/simulated/wall/untinted/onestar_reinforced,
+/area/nadezhda/outside/fnest)
 "ihH" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -48558,6 +48569,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/random/lathe_disk/better_any_gun/low_chance,
 /turf/simulated/floor/bluegrid{
 	icon_state = "gcircuit_broken"
 	},
@@ -59242,9 +59254,6 @@
 	name = "Checkpoint Blast Doors";
 	opacity = 0
 	},
-/obj/structure/barricade{
-	layer = 55
-	},
 /turf/simulated/floor/tiled/dark/danger,
 /area/nadezhda/security/maingate)
 "krL" = (
@@ -59293,6 +59302,7 @@
 /area/nadezhda/rnd/lab)
 "krQ" = (
 /obj/effect/decal/cleanable/rubble,
+/obj/effect/spider/stickyweb,
 /turf/unsimulated/wall/jungle,
 /area/turret_protected/ai)
 "krR" = (
@@ -68012,6 +68022,12 @@
 /area/nadezhda/maintenance{
 	name = "Residential District Maintenance"
 	})
+"lXM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/mob/roaches/low_chance,
+/turf/simulated/floor/industrial/checker_large,
+/area/nadezhda/maintenance/undergroundfloor2west)
 "lXP" = (
 /obj/machinery/door/airlock/security,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -68481,6 +68497,7 @@
 "mcr" = (
 /obj/structure/flora/big/bush3,
 /obj/structure/low_wall/onestar,
+/obj/structure/flora/big/bush3,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/forest)
 "mcu" = (
@@ -69493,13 +69510,9 @@
 /turf/simulated/floor/industrial/ornate,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "mjP" = (
-/obj/structure/table/onestar,
-/obj/effect/spider/stickyweb,
-/obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/bluegrid{
-	icon_state = "gcircuit_broken"
-	},
-/area/turret_protected/ai)
+/mob/living/carbon/superior/robot/gp/synth/epistol/sniper/highrange_laggy,
+/turf/simulated/floor/asteroid/dirt,
+/area/nadezhda/outside/fnest)
 "mjU" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -69898,6 +69911,15 @@
 /obj/effect/floor_decal/industrial/caution,
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/inflatable/door,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "checkpointlockdown";
+	layer = 2.6;
+	name = "Checkpoint Blast Doors";
+	opacity = 0
+	},
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/security/maingate/east)
 "mnb" = (
@@ -71094,6 +71116,15 @@
 /obj/effect/floor_decal/industrial/caution,
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/inflatable/door,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "checkpointlockdown";
+	layer = 2.6;
+	name = "Checkpoint Blast Doors";
+	opacity = 0
+	},
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/security/maingate/east)
 "myK" = (
@@ -82413,7 +82444,11 @@
 	req_access = list(33)
 	},
 /obj/machinery/door/firedoor,
-/obj/item/book/manual/wiki/medical_chemistry,
+/obj/item/paper/card{
+	name = "notice card";
+	desc = "A folded bit of paper with a soteria stamp on the front... seems important";
+	info = "For all reactions, anything requesting fuhrerole should instead be substituted using equal parts Vorgesetzterole- from Vorgesetzter roaches."
+	},
 /turf/simulated/floor/tiled/white/monofloor,
 /area/nadezhda/medical/chemistry)
 "otf" = (
@@ -96178,8 +96213,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/nadezhda/security/sechall)
 "qKE" = (
-/obj/structure/table/standard,
-/obj/item/storage/box/data_disk/basic,
+/obj/machinery/vending/plant_gene,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/nadezhda/crew_quarters/hydroponics)
 "qKI" = (
@@ -105869,14 +105903,16 @@
 /area/nadezhda/absolutism/vectorrooms)
 "svn" = (
 /obj/structure/table/rack/shelf,
+/obj/item/book/manual/wiki/medical_chemistry,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/vial,
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/vial,
 /turf/simulated/floor/tiled/white/monofloor,
 /area/nadezhda/medical/chemistry)
 "svs" = (
@@ -110333,6 +110369,7 @@
 "tla" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/crayon_pouch,
+/obj/random/mob/roaches/low_chance,
 /turf/simulated/floor/wood,
 /area/nadezhda/maintenance/undergroundfloor2west)
 "tlc" = (
@@ -114050,21 +114087,9 @@
 /turf/simulated/floor/industrial/fancy_slates,
 /area/nadezhda/maintenance/undergroundfloor1west)
 "tSg" = (
-/obj/machinery/door/blast/regular{
-	density = 0;
-	dir = 4;
-	icon_state = "pdoor0";
-	id = "checkpointlockdown";
-	layer = 2.6;
-	name = "Checkpoint Blast Doors";
-	opacity = 0
-	},
-/obj/effect/window_lwall_spawn/reinforced,
-/obj/structure/barricade{
-	layer = 55
-	},
-/turf/simulated/floor/plating,
-/area/nadezhda/security/maingate)
+/obj/structure/burrow,
+/turf/simulated/floor/rock,
+/area/nadezhda/maintenance/undergroundfloor1south)
 "tSh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/door/window/southright{
@@ -131134,6 +131159,9 @@
 "wMh" = (
 /obj/structure/table/woodentable,
 /obj/item/device/lighting/toggleable/lamp/green,
+/obj/item/contraband/poster/placed/popculture/gilld_chese{
+	pixel_y = -32
+	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm4)
 "wMi" = (
@@ -134066,8 +134094,16 @@
 /area/nadezhda/absolutism/vectorrooms)
 "xmE" = (
 /obj/structure/table/rack/shelf,
-/obj/item/paper/card,
-/obj/item/paper/card,
+/obj/item/paper/card{
+	name = "notice card";
+	desc = "A folded bit of paper with a soteria stamp on the front... seems important";
+	info = "For all reactions, anything requesting fuhrerole should instead be substituted using equal parts Vorgesetzterole- from Vorgesetzter roaches."
+	},
+/obj/item/paper/card{
+	name = "notice card";
+	desc = "A folded bit of paper with a soteria stamp on the front... seems important";
+	info = "For all reactions, anything requesting fuhrerole should instead be substituted using equal parts Vorgesetzterole- from Vorgesetzter roaches."
+	},
 /obj/item/paper/card/flower,
 /obj/item/paper/card/heart,
 /obj/item/paper/card/cat,
@@ -158395,7 +158431,7 @@ rGU
 sYJ
 dxp
 cZb
-sYJ
+tSg
 sYJ
 rGU
 cZb
@@ -185653,7 +185689,7 @@ xUy
 xUC
 sIs
 nyu
-nyu
+lXM
 tvc
 cZb
 cZb
@@ -186868,7 +186904,7 @@ moz
 moz
 mzo
 xUC
-xUC
+mdT
 pEl
 pEl
 pEl
@@ -187268,7 +187304,7 @@ tvc
 tvc
 tvc
 tvc
-eio
+fKq
 moz
 tvc
 lQo
@@ -187885,8 +187921,8 @@ uTs
 ybB
 drr
 sNx
-xUC
-xUC
+mdT
+mdT
 nGo
 tvc
 tNX
@@ -188081,7 +188117,7 @@ moz
 tvc
 dXB
 sXB
-xUC
+mdT
 bqf
 hVX
 hVX
@@ -199955,7 +199991,7 @@ xgH
 svP
 iZR
 vTc
-mFN
+atJ
 wVT
 iAO
 iAO
@@ -240193,7 +240229,7 @@ pkA
 pkA
 flw
 oFK
-tSg
+jml
 wlu
 xbV
 ehW
@@ -240799,7 +240835,7 @@ hWU
 njx
 itD
 mJn
-tSg
+jml
 rBu
 gQR
 ehW
@@ -254208,8 +254244,8 @@ jom
 bzp
 jom
 jom
-asR
-cxU
+jom
+bzp
 cxU
 asR
 asR
@@ -254411,7 +254447,7 @@ sit
 sit
 ogk
 ogk
-xhy
+ogk
 krQ
 brg
 brg
@@ -255215,7 +255251,7 @@ cRL
 gHK
 mHR
 mzF
-mjP
+pTe
 dKq
 pTe
 xXF
@@ -256024,7 +256060,7 @@ gHK
 xdv
 mzF
 jSI
-mzF
+dPu
 jSI
 xXF
 hLc
@@ -256207,7 +256243,7 @@ kvv
 kvv
 gCE
 gCE
-gCE
+ihD
 gCE
 opW
 tiO
@@ -256409,7 +256445,7 @@ kvv
 kvv
 kvv
 gCE
-gCE
+ihD
 vES
 opW
 tiO
@@ -256611,8 +256647,8 @@ kvv
 kvv
 kvv
 gCE
-gCE
-gCE
+ihD
+mjP
 mcr
 rsU
 txQ
