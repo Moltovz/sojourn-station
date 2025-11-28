@@ -8839,7 +8839,6 @@
 	},
 /obj/machinery/newscaster/directional/north,
 /obj/item/book/manual/wiki/security_ironparagraphs,
-/obj/item/book/manual/wiki/security_space_law,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/nadezhda/security/sechall)
 "bCD" = (
@@ -45240,7 +45239,6 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/nadezhda/rnd/rbreakroom)
 "hVz" = (
-/obj/item/book/manual/wiki/security_space_law,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm5)
 "hVA" = (
@@ -61539,7 +61537,6 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 4
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/security/barracks)
 "kNR" = (
@@ -131089,7 +131086,6 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/security/barracks)
 "wLC" = (
