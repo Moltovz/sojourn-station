@@ -103,7 +103,7 @@
 	//Others for slot_orient_objs
 	MinStyleFlag = TRUE
 	StorageData = list(
-		"Xspace" = 4.5*32, //in pixels
+		"Xspace" = 4*32, //in pixels
 		"Yspace" = 1.5*32, //in pixels
 		"ColCount" = 7,
 	)
@@ -144,7 +144,7 @@
 	"move intent"        = list("type" = /obj/screen/mov_intent,        "loc" = "EAST,BOTTOM",        "minloc" = "RIGHT-1,1",    "hideflag" = TOGGLE_BOTTOM_FLAG, "background" = "back1"),
 	"implant bionics"    = list("type" = /obj/screen/implant_bionics,   "loc" = "EAST-2,BOTTOM-1",    "minloc" = "12,1",         "hideflag" = TOGGLE_BOTTOM_FLAG, "background" = "back13"),
 	"craft menu"         = list("type" = /obj/screen/craft_menu,        "loc" = "EAST-2:16,BOTTOM",   "minloc" = "12:16,1",      "hideflag" = TOGGLE_BOTTOM_FLAG, "background" = "back13"),
-	"wield"              = list("type" = /obj/screen/wield,             "loc" = "EAST-2:16,BOTTOM+1", "minloc" = "12:16,2",      "hideflag" = TOGGLE_BOTTOM_FLAG, "background" = "back13"),
+	"wield"              = list("type" = /obj/screen/wield,             "loc" = "EAST-2:16,BOTTOM+1", "minloc" = "11.5,1",      "hideflag" = TOGGLE_BOTTOM_FLAG, "background" = "back13"),
 	"intent"             = list("type" = /obj/screen/intent,            "loc" = "EAST-1,BOTTOM",      "minloc" = "13,1",         "hideflag" = TOGGLE_BOTTOM_FLAG, "background" = "back1"),
 	"damage zone"        = list("type" = /obj/screen/zone_sel,          "loc" = "EAST+1,BOTTOM",      "minloc" = "RIGHT,1",      "hideflag" = TOGGLE_BOTTOM_FLAG, "background" = "back1"),
 //hand buttons
