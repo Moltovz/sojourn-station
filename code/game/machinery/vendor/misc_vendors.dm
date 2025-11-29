@@ -164,6 +164,8 @@
 					/obj/item/pack_card_carp/rare_booster_pack = 5,
 					/obj/item/cardholder = 40,
 					/obj/item/cardholder/precon = 60,
+					/obj/item/cardholder/precon/dozer = 200,
+					/obj/item/cardholder/precon/skeletonappreciation = 200,
 					/obj/item/cardholder/squirl = 20,
 					/obj/item/cardholder/ratbox = 20,
 					/obj/item/cardholder/beebox = 20,
