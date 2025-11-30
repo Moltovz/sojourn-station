@@ -427,3 +427,30 @@
 		else
 			to_chat(user, "<font color=red>No associated computer found. Only local scans will function properly.</font>")
 		to_chat(user, "\n")
+
+
+/obj/item/book/language
+	name = "language book"
+	desc = "a book capable of teaching or removing the teachings of a specific language."
+	var/languagetoadd
+	var/languagetoremove
+
+/obj/item/book/language/attack_self()
+	var/mob/M = usr
+	playsound(src.loc, pick('sound/items/BOOK_Turn_Page_1.ogg',\
+		'sound/items/BOOK_Turn_Page_2.ogg',\
+		'sound/items/BOOK_Turn_Page_3.ogg',\
+		'sound/items/BOOK_Turn_Page_4.ogg',\
+		), rand(40,80), 1)
+
+	if(languagetoadd)
+		M.add_language(languagetoadd)
+
+	if(languagetoremove)
+		M.remove_language(languagetoremove)
+
+/obj/item/book/language/uncommon
+	name = "Uncommon book"
+	desc = "a book that somehow makes you forget English Common"
+	languagetoremove = LANGUAGE_COMMON
+

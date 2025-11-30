@@ -24834,6 +24834,9 @@
 /obj/item/keys/personal{
 	id = "CR1"
 	},
+/obj/item/toy/junk/xmas_tree{
+	pixel_x = -8
+	},
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/crew_quarters/podrooms)
 "eqm" = (
@@ -57769,27 +57772,18 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/nadezhda/absolutism/bioreactor)
 "jZD" = (
-/obj/structure/table/woodentable,
-/obj/machinery/chemical_dispenser/coffee_master{
-	pixel_y = 18
-	},
 /obj/machinery/power/wall_obelisk/silver{
 	pixel_y = 22
 	},
-/obj/item/reagent_containers/drinks/mug{
-	pixel_x = 8
-	},
-/obj/item/reagent_containers/drinks/mug{
-	pixel_x = -8
-	},
-/obj/item/reagent_containers/drinks/mug{
-	pixel_y = 2
-	},
-/obj/item/reagent_containers/drinks/mug{
-	pixel_y = -3
-	},
 /obj/effect/floor_decal/spline/wood{
 	dir = 9
+	},
+/obj/machinery/media/jukebox,
+/obj/item/paper{
+	info = "If you put the volume above 20% I am not going to arbitrate for your subsequent noise complaints.";
+	name = "A letter from the Premier";
+	desc = "This can't be good...";
+	color = "#FFEE8c"
 	},
 /turf/simulated/floor/carpet,
 /area/nadezhda/crew_quarters)
@@ -62126,6 +62120,12 @@
 	},
 /obj/structure/disposalpipe/junction{
 	dir = 8
+	},
+/obj/item/paper{
+	info = "If you put the volume above 20% I am not going to arbitrate for your subsequent noise complaints.";
+	name = "A letter from the Premier";
+	desc = "This can't be good...";
+	color = "#FFEE8c"
 	},
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/crew_quarters/bar)
@@ -68136,9 +68136,23 @@
 /obj/effect/floor_decal/corner/green{
 	dir = 4
 	},
-/obj/item/storage/box/drinkingglasses,
 /obj/effect/floor_decal/spline/wood{
 	dir = 1
+	},
+/obj/machinery/chemical_dispenser/coffee_master{
+	pixel_y = 18
+	},
+/obj/item/reagent_containers/drinks/mug{
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/drinks/mug{
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/drinks/mug{
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/drinks/mug{
+	pixel_y = -3
 	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters)
@@ -99682,7 +99696,6 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 24
 	},
-/obj/machinery/telesci_inhibitor,
 /obj/effect/floor_decal/corner/red{
 	dir = 1
 	},
@@ -99692,6 +99705,8 @@
 /obj/effect/floor_decal/spline/wood{
 	dir = 9
 	},
+/obj/structure/table/woodentable,
+/obj/item/storage/box/drinkingglasses,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters)
 "rjO" = (
@@ -139266,6 +139281,9 @@
 	},
 /obj/item/keys/personal{
 	id = "CR2"
+	},
+/obj/item/toy/junk/xmas_tree{
+	pixel_x = -8
 	},
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/crew_quarters/podrooms2)
