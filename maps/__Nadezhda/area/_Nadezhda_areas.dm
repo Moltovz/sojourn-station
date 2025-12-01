@@ -846,6 +846,24 @@
 /area/nadezhda/crew_quarters/dorm14
 	name = "\improper Dormitories"
 
+/area/nadezhda/crew_quarters/dorma1
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorma2
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorma3
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorma4
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorma5
+	name = "\improper Dormitories"
+
+/area/nadezhda/crew_quarters/dorma6
+	name = "\improper Dormitories"
+
 /area/nadezhda/crew_quarters/podrooms
 	name = "\improper Upper Pod Dormitories"
 
@@ -921,7 +939,7 @@
 	icon_state = "kitchen"
 
 /area/nadezhda/crew_quarters/bar
-	name = "\improper Bar"
+	name = "\improper Diner and Bar"
 	icon_state = "bar"
 	sound_env = LARGE_SOFTFLOOR
 

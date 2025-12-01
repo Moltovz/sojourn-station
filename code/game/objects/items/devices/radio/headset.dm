@@ -16,9 +16,11 @@
 	var/translate_hive = 0
 	var/obj/item/device/encryptionkey/keyslot1 = null
 	var/obj/item/device/encryptionkey/keyslot2 = null
+	var/obj/item/device/encryptionkey/keyslot3 = null
 
 	var/ks1type = /obj/item/device/encryptionkey
 	var/ks2type = null
+	var/ks3type = null
 
 /obj/item/device/radio/headset/New()
 	..()
@@ -27,11 +29,14 @@
 		keyslot1 = new ks1type(src)
 	if(ks2type)
 		keyslot2 = new ks2type(src)
+	if(ks3type)
+		keyslot3 = new ks3type(src)
 	recalculateChannels(1)
 
 /obj/item/device/radio/headset/Destroy()
 	QDEL_NULL(keyslot1)
 	QDEL_NULL(keyslot2)
+	QDEL_NULL(keyslot3)
 	return ..()
 
 /obj/item/device/radio/headset/list_channels(var/mob/user)
@@ -378,7 +383,7 @@
 		return
 
 	if(istype(W, /obj/item/tool/screwdriver))
-		if(keyslot1 || keyslot2)
+		if(keyslot1 || keyslot2 || keyslot3)
 
 
 			for(var/ch_name in channels)
@@ -392,20 +397,25 @@
 					keyslot1.loc = T
 					keyslot1 = null
 
-
-
 			if(keyslot2)
 				var/turf/T = get_turf(user)
 				if(T)
 					keyslot2.loc = T
 					keyslot2 = null
+
+			if(keyslot3)
+				var/turf/T = get_turf(user)
+				if(T)
+					keyslot3.loc = T
+					keyslot3 = null
+
 			to_chat(user, "You pop out the encryption keys in the headset!")
 
 		else
 			to_chat(user, "This headset doesn't have any encryption keys!  How useless...")
 
 	if(istype(W, /obj/item/device/encryptionkey/))
-		if(keyslot1 && keyslot2)
+		if(keyslot1 && keyslot2 && keyslot3)
 			to_chat(user, "The headset can't hold another key!")
 			return
 
@@ -414,11 +424,15 @@
 			W.loc = src
 			keyslot1 = W
 
-		else
+		if(!keyslot2)
 			user.drop_item()
 			W.loc = src
 			keyslot2 = W
 
+		else
+			user.drop_item()
+			W.loc = src
+			keyslot3 = W
 
 	recalculateChannels()
 
