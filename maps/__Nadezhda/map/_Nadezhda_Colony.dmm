@@ -31309,8 +31309,9 @@
 /turf/simulated/floor/industrial/white_large_slates,
 /area/nadezhda/maintenance/surfacenorth)
 "fvl" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/table/steel,
+/obj/item/device/lighting/toggleable/lamp{
+	light_range = 2
 	},
 /turf/simulated/floor/plating,
 /area/nadezhda/crew_quarters/hydroponics)
@@ -163551,7 +163552,7 @@ pij
 pij
 leg
 gDh
-pkU
+fvl
 pkU
 bgV
 bgV
@@ -163956,7 +163957,7 @@ wET
 jpe
 gDh
 mOK
-fvl
+pkU
 mvK
 xuH
 vyV
