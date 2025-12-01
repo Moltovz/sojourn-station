@@ -1,5 +1,7 @@
+"as" = (/obj/structure/cable/yellow,/obj/machinery/power/apc{name = "South APC"; pixel_y = -28},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
 "aE" = (/turf/simulated/wall,/area/nadezhda/crew_quarters/dorma1)
 "aJ" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/airlock/sandstone{id_tag = "D2pA"; name = "Dormitory: Pays-No-Attention"},/turf/simulated/floor/wood,/area/nadezhda/crew_quarters/dorm9)
+"aN" = (/turf/simulated/shuttle/wall/mining{icon_state = "7,18"},/area/nadezhda/crew_quarters/Elevator)
 "aS" = (/obj/random/booze/low_chance,/obj/structure/table/bar_special,/obj/random/booze/low_chance,/turf/simulated/floor/tiled/cafe,/area/nadezhda/crew_quarters/dorm9)
 "aV" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "aY" = (/obj/structure/flora/rock,/turf/simulated/floor/asteroid/dirt,/area/nadezhda/outside/forest)
@@ -15,14 +17,12 @@
 "bZ" = (/obj/structure/toilet,/obj/structure/curtain/open,/obj/structure/window/reinforced{dir = 4},/obj/machinery/door/window{dir = 2},/turf/simulated/floor/tiled/cafe,/area/nadezhda/crew_quarters/dorm14)
 "cc" = (/turf/unsimulated/mineral,/area/nadezhda/outside/forest)
 "ce" = (/turf/simulated/wall/r_wall,/area/nadezhda/hallway/main/stairwell)
-"cq" = (/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
 "cr" = (/obj/effect/floor_decal/border/carpet/black{dir = 9},/obj/effect/floor_decal/border/carpet/black{dir = 10},/obj/effect/floor_decal/border/carpet/black{dir = 6},/obj/effect/floor_decal/border/carpet/black{dir = 5},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/crew_quarters/dorm11)
 "cA" = (/obj/machinery/atmospherics/pipe/simple/visible,/obj/machinery/atmospherics/binary/circulator/anchored{dir = 8},/turf/simulated/floor/fixed/hydrotile,/area/nadezhda/outside/forest)
 "cB" = (/turf/simulated/shuttle/floor/mining{icon_state = "9,23"},/area/turbolift/Dorms/levelthree)
 "df" = (/obj/structure/table/reinforced,/obj/machinery/power/apc{name = "South APC"; pixel_y = -28},/obj/structure/cable/yellow,/obj/machinery/atmospherics/unary/vent_pump{dir = 1},/obj/machinery/button/remote/airlock{dir = 8; id = "tf4"; name = "Door Bolt Control"; pixel_x = 23; specialfunctions = 4},/obj/item/keys/personal{id = "tf4"},/obj/item/toy/junk/xmas_tree{pixel_x = -8},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm11)
 "dr" = (/obj/structure/table/woodentable,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/crew_quarters/dorm9)
 "dE" = (/turf/simulated/shuttle/wall/mining{icon_state = "15,6"; opacity = 0},/area/nadezhda/hallway/main/stairwell)
-"dL" = (/obj/item/tool/pickaxe/drill/onestar,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
 "dN" = (/obj/structure/flora/ausbushes/ppflowers,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "dP" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm13)
 "ea" = (/obj/machinery/telecomms/relay/preset/telecomms,/obj/machinery/door/window/northleft{dir = 2},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
@@ -30,7 +30,7 @@
 "eo" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "er" = (/obj/machinery/floodlight,/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "eu" = (/turf/simulated/shuttle/wall/mining{icon_state = "15,6"; opacity = 0},/area/nadezhda/crew_quarters/dorm14)
-"ev" = (/obj/structure/cable/yellow,/obj/machinery/power/apc{name = "South APC"; pixel_y = -28},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
+"ev" = (/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
 "eJ" = (/turf/simulated/floor/wood,/area/nadezhda/crew_quarters/dorm9)
 "eO" = (/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm14)
 "eZ" = (/turf/simulated/wall,/area/nadezhda/crew_quarters/dorm11)
@@ -39,7 +39,6 @@
 "fm" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/nadezhda/crew_quarters/Elevator)
 "fq" = (/turf/simulated/floor/tiled/white,/area/nadezhda/crew_quarters/Elevator)
 "fw" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/airlock/hatch{name = "Capsule 21: Jade Ivy"; id_tag = "tf1"},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm13)
-"fA" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "fI" = (/obj/machinery/atmospherics/unary/vent_scrubber,/obj/item/device/radio/intercom{dir = 8; pixel_x = 22},/obj/structure/closet,/obj/item/device/radio/headset,/obj/item/storage/backpack/satchel,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm10)
 "gi" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "gr" = (/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/cafe,/area/nadezhda/crew_quarters/dorm9)
@@ -51,7 +50,7 @@
 "ic" = (/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/crew_quarters/dorm9)
 "ii" = (/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "iD" = (/obj/structure/bed/chair/comfy/black{dir = 8},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
-"iG" = (/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
+"iG" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
 "iX" = (/turf/simulated/floor/tiled/white/cargo,/area/nadezhda/crew_quarters/dorm9)
 "jf" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/airlock/hatch{name = "Capsule: VACANT"; id_tag = "tf5"},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm12)
 "jm" = (/turf/simulated/shuttle/wall/mining{icon_state = "13,15"},/area/nadezhda/hallway/main/stairwell)
@@ -59,12 +58,10 @@
 "jD" = (/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/tiled/white,/area/nadezhda/crew_quarters/Elevator)
 "jK" = (/obj/effect/decal/cleanable/dirt,/obj/structure/closet/wall_mounted{pixel_x = 32},/turf/simulated/floor/wood,/area/nadezhda/crew_quarters/dorm9)
 "jU" = (/obj/effect/decal/cleanable/rubble,/obj/item/tool/pickaxe/drill/onestar,/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
-"kr" = (/obj/effect/decal/cleanable/rubble,/obj/structure/boulder,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
 "ku" = (/obj/structure/bed/chair/office/dark{dir = 1},/obj/machinery/light,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
 "kA" = (/obj/structure/catwalk,/obj/structure/railing{dir = 4},/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "kH" = (/turf/simulated/floor/asteroid/dirt,/area/nadezhda/crew_quarters/dorm14)
 "kQ" = (/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/asteroid/dirt,/area/nadezhda/outside/forest)
-"lu" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "lC" = (/turf/simulated/mineral/random,/area/colony)
 "lI" = (/obj/machinery/power/apc{dir = 4; name = "East APC"; pixel_x = 28},/obj/structure/cardboardbox{name = "a mapper's emotional support box"; desc = "An opened carboard box, presumably from some shipping company"},/turf/simulated/floor/tiled/steel/orangecorner,/area/nadezhda/crew_quarters/dorm14)
 "lM" = (/obj/structure/sink/kitchen{dir = 4; pixel_x = -19},/obj/machinery/newscaster/directional/west,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm11)
@@ -72,6 +69,7 @@
 "mt" = (/obj/random/furniture/pottedplant,/obj/item/device/radio/intercom{dir = 8; pixel_x = 22},/turf/simulated/floor/carpet,/area/nadezhda/crew_quarters/dorm9)
 "mw" = (/turf/simulated/shuttle/wall/mining{icon_state = "7,10"},/area/nadezhda/crew_quarters/dorm14)
 "mH" = (/obj/machinery/atmospherics/pipe/simple/visible,/obj/structure/catwalk{icon_state = "catwalk12-0"},/turf/simulated/floor/fixed/hydrotile,/area/nadezhda/outside/forest)
+"mT" = (/turf/simulated/shuttle/wall/mining{icon_state = "7,10"},/area/nadezhda/crew_quarters/Elevator)
 "mW" = (/obj/structure/toilet{dir = 1},/turf/simulated/floor/tiled/steel/panels,/area/nadezhda/crew_quarters/dorm9)
 "ne" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm14)
 "nl" = (/turf/simulated/wall,/area/nadezhda/crew_quarters/dorm12)
@@ -81,6 +79,7 @@
 "ox" = (/obj/structure/closet/secure_closet/freezer,/obj/machinery/power/wall_obelisk{pixel_y = 22},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm10)
 "pk" = (/obj/structure/catwalk,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "pz" = (/obj/structure/bonfire/permanent,/turf/simulated/floor/rock,/area/nadezhda/hallway/main/stairwell)
+"pD" = (/turf/simulated/shuttle/wall/mining{icon_state = "13,15"},/area/nadezhda/crew_quarters/Elevator)
 "pH" = (/obj/structure/boulder,/obj/effect/decal/cleanable/rubble,/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/rock,/area/colony)
 "pK" = (/obj/structure/curtain/open,/obj/machinery/shower{dir = 4},/obj/effect/floor_decal/spline/fancy,/obj/effect/floor_decal/corner_techfloor_grid,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/window/southleft{dir = 4; name = "shower door"},/obj/machinery/door/window/northright,/turf/simulated/floor/tiled/cafe,/area/nadezhda/crew_quarters/dorm14)
 "pM" = (/obj/machinery/atmospherics/unary/vent_scrubber,/obj/item/device/radio/intercom{dir = 8; pixel_x = 22},/obj/structure/closet,/obj/item/device/radio/headset,/obj/item/storage/backpack/satchel,/obj/item/storage/backpack/satchel/medical,/obj/item/storage/pouch/medium_generic,/obj/item/storage/firstaid/ifak,/obj/item/tool/medmultitool/medimplant/sci,/obj/item/cell/small/moebius/nuclear,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm13)
@@ -103,25 +102,23 @@
 "sv" = (/obj/machinery/button/remote/airlock{dir = 1; id = "D1A"; name = "Door Bolt Control"; pixel_y = -32; specialfunctions = 4},/obj/item/bedsheet/green,/obj/structure/bed/padded,/turf/simulated/floor/wood,/area/nadezhda/crew_quarters/dorm9)
 "sy" = (/obj/effect/floor_decal/border/carpet/black{dir = 9},/obj/effect/floor_decal/border/carpet/black{dir = 10},/obj/effect/floor_decal/border/carpet/black{dir = 6},/obj/effect/floor_decal/border/carpet/black{dir = 5},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/crew_quarters/dorm10)
 "sA" = (/turf/simulated/floor/tiled/steel,/area/turbolift/Dorms/transitiontwo)
-"sL" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
-"tn" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
+"sR" = (/turf/simulated/shuttle/wall/mining{icon_state = "10,18"},/area/nadezhda/crew_quarters/Elevator)
 "tB" = (/turf/simulated/wall,/area/nadezhda/crew_quarters/dorm9)
 "tC" = (/turf/simulated/shuttle/wall/mining{icon_state = "10,15"},/area/nadezhda/crew_quarters/dorm14)
-"tN" = (/turf/simulated/shuttle/wall/mining{icon_state = "7,10"},/area/nadezhda/crew_quarters/Elevator)
 "tS" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/white,/area/nadezhda/crew_quarters/Elevator)
 "tT" = (/turf/simulated/floor/asteroid/dirt,/area/nadezhda/outside/forest)
 "uc" = (/obj/structure/table/reinforced,/obj/machinery/power/apc{name = "South APC"; pixel_y = -28},/obj/structure/cable/yellow,/obj/machinery/atmospherics/unary/vent_pump{dir = 1},/obj/machinery/button/remote/airlock{dir = 8; id = "tf2"; name = "Door Bolt Control"; pixel_x = 23; specialfunctions = 4},/obj/item/keys/personal{id = "tf2"},/obj/item/toy/junk/xmas_tree{pixel_x = -8},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
+"ud" = (/turf/simulated/wall/r_wall,/area/nadezhda/crew_quarters/Elevator)
 "ue" = (/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/rock,/area/colony)
 "ui" = (/obj/item/tool/pickaxe/drill/onestar,/obj/structure/table/rack/shelf,/obj/item/keys/personal{id = "poo"},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
 "uj" = (/obj/structure/window/reinforced{dir = 1},/obj/machinery/shower{dir = 8},/obj/effect/floor_decal/corner_techfloor_grid,/turf/simulated/floor/tiled/white/techfloor_grid,/area/nadezhda/crew_quarters/dorm9)
+"um" = (/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
 "ur" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/wood,/area/nadezhda/crew_quarters/dorm9)
 "uv" = (/turf/simulated/mineral/random,/area/nadezhda/crew_quarters/Elevator)
 "uy" = (/obj/structure/boulder,/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm9)
-"uJ" = (/turf/simulated/shuttle/wall/mining{icon_state = "7,18"},/area/nadezhda/crew_quarters/Elevator)
 "uN" = (/obj/machinery/power/solar,/obj/structure/cable,/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "uX" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "vd" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm13)
-"vi" = (/obj/structure/boulder,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
 "vA" = (/turf/simulated/shuttle/floor/mining,/area/turbolift/Dorms/levelthree)
 "wc" = (/obj/machinery/ntnet_relay,/obj/machinery/door/window/northleft{dir = 2},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "wl" = (/obj/machinery/door/airlock/multi_tile/glass{dir = 2; locked = 1},/turf/simulated/floor/tiled/steel/orangecorner,/area/nadezhda/crew_quarters/dorm14)
@@ -129,19 +126,15 @@
 "wr" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
 "ww" = (/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "wB" = (/obj/structure/flora/ausbushes/ppflowers,/obj/structure/catwalk,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
-"wF" = (/obj/effect/decal/cleanable/rubble,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "wI" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "xe" = (/obj/effect/decal/cleanable/dirt,/obj/structure/table/bench/padded,/obj/item/clothing/suit/armor/vest,/obj/item/tool/cheap/spear,/obj/item/device/universal_translator/ear,/obj/item/keys/personal{id = "D2pA"},/turf/simulated/floor/carpet,/area/nadezhda/crew_quarters/dorm9)
 "xz" = (/obj/machinery/door/airlock/maintenance_common,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "xU" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/sign/misc/rent{pixel_x = -32},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
-"yb" = (/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
 "yg" = (/turf/simulated/wall/r_wall,/area/colony)
-"yn" = (/turf/simulated/wall/r_wall,/area/nadezhda/crew_quarters/dorma1)
-"yP" = (/turf/simulated/shuttle/wall/mining{icon_state = "13,15"},/area/nadezhda/crew_quarters/Elevator)
+"yP" = (/turf/simulated/shuttle/floor/mining{icon_state = "9,23"},/area/turbolift/Dorms/leveltwo)
 "yU" = (/obj/effect/decal/cleanable/dirt,/obj/structure/bookcase/guncase,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/crew_quarters/dorm9)
 "yZ" = (/obj/effect/decal/cleanable/rubble,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "zr" = (/obj/machinery/button/remote/airlock{id = "D2pA"; name = "Door Bolt Control"; specialfunctions = 4; pixel_x = -30},/obj/structure/table/bar_special,/obj/random/booze/low_chance,/turf/simulated/floor/tiled/cafe,/area/nadezhda/crew_quarters/dorm9)
-"zB" = (/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
 "zH" = (/obj/machinery/door/airlock/sandstone{name = "Dormitory"},/turf/simulated/floor/tiled/white/cargo,/area/nadezhda/crew_quarters/dorm9)
 "zT" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/white/cargo,/area/nadezhda/crew_quarters/dorm9)
 "Ah" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm12)
@@ -164,17 +157,16 @@
 "Dm" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/table/woodentable,/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/crew_quarters/dorm9)
 "Dn" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/wall,/area/nadezhda/crew_quarters/dorm9)
 "Dp" = (/obj/machinery/light_switch{pixel_y = 32},/obj/structure/bed/double/padded,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
-"Dq" = (/turf/simulated/shuttle/wall/mining{icon_state = "15,6"; opacity = 0},/area/nadezhda/crew_quarters/Elevator)
+"Dq" = (/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "DO" = (/obj/structure/cardboardbox{name = "a mapper's emotional support box"; desc = "An opened carboard box, presumably from some shipping company"},/turf/simulated/floor/tiled/steel/orangecorner,/area/nadezhda/crew_quarters/dorm14)
 "Eg" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "Ej" = (/turf/simulated/shuttle/wall/mining{icon_state = "7,18"},/area/nadezhda/crew_quarters/dorm14)
-"Ez" = (/turf/simulated/shuttle/wall/mining{icon_state = "10,15"},/area/nadezhda/crew_quarters/Elevator)
-"ER" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
-"Fo" = (/mob/living/carbon/superior/robot/gp/synth/allied/junkbot,/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
-"Fp" = (/obj/effect/decal/cleanable/rubble,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
+"Fo" = (/mob/living/carbon/superior/robot/gp/synth/allied/junkbot,/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
+"Fp" = (/turf/simulated/shuttle/wall/mining{icon_state = "15,6"; opacity = 0},/area/nadezhda/crew_quarters/Elevator)
 "Fz" = (/obj/structure/closet/secure_closet/freezer,/obj/machinery/power/wall_obelisk{pixel_y = 22},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
 "FF" = (/obj/structure/toilet,/obj/structure/curtain/open,/obj/structure/window/reinforced{dir = 4},/obj/machinery/door/window{dir = 2},/turf/simulated/floor/tiled/cafe,/area/nadezhda/crew_quarters/dorm11)
 "Gi" = (/turf/simulated/mineral,/area/colony)
+"Gj" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "Gr" = (/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "Gz" = (/obj/structure/closet/secure_closet/freezer,/obj/machinery/power/wall_obelisk{pixel_y = 22},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm11)
 "GD" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/newscaster/directional/east,/obj/structure/sink/kitchen{name = "utility sink"; dir = 8; pixel_x = 20},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm12)
@@ -183,8 +175,6 @@
 "HI" = (/turf/simulated/wall/r_wall,/area/nadezhda/outside/forest)
 "Ib" = (/obj/machinery/light_switch{dir = 8; pixel_x = 32},/obj/structure/flora/pottedplant/star_root,/turf/simulated/floor/wood,/area/nadezhda/crew_quarters/dorm9)
 "Io" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
-"Iq" = (/turf/simulated/shuttle/wall/mining{icon_state = "10,18"},/area/nadezhda/crew_quarters/Elevator)
-"It" = (/turf/simulated/wall,/area/nadezhda/crew_quarters/Elevator)
 "Iu" = (/obj/item/device/lighting/toggleable/flashlight,/turf/simulated/floor/rock,/area/nadezhda/hallway/main/stairwell)
 "IA" = (/obj/structure/bed/chair/office/dark{dir = 1},/obj/machinery/light,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm12)
 "ID" = (/obj/machinery/porta_turret_construct,/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
@@ -199,10 +189,11 @@
 "Ju" = (/turf/unsimulated/mineral,/area/nadezhda/crew_quarters/dorm14)
 "Jw" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/white,/area/nadezhda/crew_quarters/Elevator)
 "JD" = (/obj/effect/decal/cleanable/rubble,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/white,/area/nadezhda/crew_quarters/Elevator)
+"JQ" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "JS" = (/obj/structure/bed/chair/sofa/black/left{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/machinery/power/wall_obelisk{pixel_y = 22},/turf/simulated/floor/carpet,/area/nadezhda/crew_quarters/dorm9)
 "JW" = (/obj/structure/toilet,/obj/structure/curtain/open,/obj/structure/window/reinforced{dir = 4},/obj/machinery/door/window{dir = 2},/turf/simulated/floor/tiled/cafe,/area/nadezhda/crew_quarters/dorm13)
-"Kl" = (/turf/simulated/shuttle/floor/mining,/area/nadezhda/crew_quarters/Elevator)
-"Kp" = (/obj/structure/boulder,/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
+"Kl" = (/turf/simulated/shuttle/floor/mining,/area/turbolift/Dorms/leveltwo)
+"Kp" = (/obj/structure/boulder,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
 "Ku" = (/obj/structure/sink{dir = 1; pixel_y = 16},/obj/structure/mirror{pixel_y = 28},/turf/simulated/floor/tiled/white/cargo,/area/nadezhda/crew_quarters/dorm9)
 "Kv" = (/turf/simulated/shuttle/wall/mining{icon_state = "7,18"},/area/nadezhda/hallway/main/stairwell)
 "Lo" = (/obj/effect/decal/cleanable/rubble,/obj/structure/bed,/obj/machinery/light_switch{pixel_y = 32},/obj/item/paper{info = "Do better."; name = "A letter from... Brigadeer Ayanda Mwangi"; desc = "This REALLY REALLY REALLY can't be good..."; color = "#FFEE8c"},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
@@ -218,7 +209,7 @@
 "Ni" = (/obj/effect/decal/cleanable/dirt,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm12)
 "Nm" = (/obj/structure/flora/ausbushes/ywflowers,/obj/structure/flora/ausbushes/ppflowers,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "Nt" = (/obj/machinery/atmospherics/unary/vent_scrubber,/obj/item/device/radio/intercom{dir = 8; pixel_x = 22},/obj/structure/closet,/obj/item/device/radio/headset,/obj/item/storage/backpack/satchel,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm12)
-"Nw" = (/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
+"Nw" = (/obj/effect/decal/cleanable/rubble,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "NB" = (/obj/machinery/power/solar,/obj/structure/cable{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "NI" = (/obj/structure/table/reinforced,/obj/machinery/microwave,/obj/machinery/alarm{dir = 1; pixel_y = -32},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
 "NQ" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
@@ -226,6 +217,7 @@
 "Oe" = (/obj/machinery/power/apc{dir = 4; name = "East APC"; pixel_x = 28},/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/tiled/white,/area/nadezhda/crew_quarters/Elevator)
 "Oi" = (/obj/structure/bed/chair/sofa/black/right{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/machinery/newscaster/directional/west,/turf/simulated/floor/carpet,/area/nadezhda/crew_quarters/dorm9)
 "Om" = (/obj/structure/curtain/open,/obj/machinery/shower{dir = 4},/obj/effect/floor_decal/spline/fancy,/obj/effect/floor_decal/corner_techfloor_grid,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/window/southleft{dir = 4; name = "shower door"},/obj/machinery/door/window/northright,/turf/simulated/floor/tiled/cafe,/area/nadezhda/crew_quarters/dorm13)
+"On" = (/turf/simulated/wall,/area/nadezhda/crew_quarters/Elevator)
 "Os" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/crew_quarters/dorm9)
 "Oy" = (/turf/simulated/floor/tiled/steel/orangecorner,/area/nadezhda/crew_quarters/dorm14)
 "OS" = (/obj/effect/decal/cleanable/dirt,/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/wood,/area/nadezhda/crew_quarters/dorm9)
@@ -246,6 +238,7 @@
 "Sq" = (/obj/effect/floor_decal/border/carpet/black{dir = 9},/obj/effect/floor_decal/border/carpet/black{dir = 10},/obj/effect/floor_decal/border/carpet/black{dir = 6},/obj/effect/floor_decal/border/carpet/black{dir = 5},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/crew_quarters/dorm14)
 "ST" = (/obj/effect/decal/cleanable/rubble,/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
 "SW" = (/obj/structure/bed/chair/office/dark{dir = 1},/obj/machinery/light,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm11)
+"SX" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "Tc" = (/obj/effect/floor_decal/corner_techfloor_grid,/obj/machinery/button/remote/airlock{id = "tf5"; name = "Door Bolt Control"; pixel_x = -25; specialfunctions = 4},/obj/structure/table/reinforced,/obj/item/keys/personal{id = "tf5"},/obj/item/toy/junk/xmas_tree{pixel_x = -8},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm12)
 "Tj" = (/obj/machinery/power/terminal{dir = 1},/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "Tn" = (/turf/unsimulated/mineral,/area/colony)
@@ -268,16 +261,20 @@
 "XM" = (/obj/machinery/camera/network/engineering,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "XO" = (/obj/structure/table/reinforced,/obj/machinery/microwave,/obj/machinery/alarm{dir = 1; pixel_y = -32},/obj/item/stack/medical/bruise_pack{pixel_x = -15},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm13)
 "XZ" = (/obj/structure/catwalk{icon_state = "catwalk12-0"},/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
+"Yb" = (/turf/simulated/shuttle/wall/mining{icon_state = "10,15"},/area/nadezhda/crew_quarters/Elevator)
 "Yo" = (/obj/structure/sink/kitchen{dir = 4; pixel_x = -19},/obj/machinery/newscaster/directional/west,/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm14)
 "Ys" = (/obj/structure/curtain/open,/obj/machinery/shower{dir = 4},/obj/effect/floor_decal/spline/fancy,/obj/effect/floor_decal/corner_techfloor_grid,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/window/southleft{dir = 4; name = "shower door"},/obj/machinery/door/window/northright,/turf/simulated/floor/tiled/cafe,/area/nadezhda/crew_quarters/dorm11)
+"Yy" = (/obj/effect/decal/cleanable/rubble,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/Elevator)
 "YC" = (/obj/structure/table/reinforced,/obj/machinery/microwave,/obj/machinery/alarm{dir = 1; pixel_y = -32},/turf/simulated/floor/wood/wild1,/area/nadezhda/crew_quarters/dorm10)
+"YD" = (/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
 "YR" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/wood,/area/nadezhda/crew_quarters/dorm9)
 "YS" = (/turf/simulated/shuttle/wall/mining{icon_state = "10,18"},/area/nadezhda/crew_quarters/dorm14)
 "YX" = (/turf/simulated/floor/fixed/hydrotile,/area/nadezhda/outside/forest)
 "Zt" = (/obj/effect/decal/cleanable/rubble,/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/crew_quarters/dorma1)
+"ZK" = (/turf/simulated/wall/r_wall,/area/nadezhda/crew_quarters/dorma1)
 "ZL" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/under,/area/nadezhda/crew_quarters/dorm14)
 "ZO" = (/turf/unsimulated/mineral,/area/nadezhda/hallway/main/stairwell)
-"ZU" = (/turf/simulated/wall/r_wall,/area/nadezhda/crew_quarters/Elevator)
+"ZU" = (/obj/structure/boulder,/turf/simulated/floor/rock,/area/nadezhda/crew_quarters/Elevator)
 "ZZ" = (/turf/simulated/shuttle/floor/mining{icon_state = "9,23"},/area/nadezhda/crew_quarters/Elevator)
 
 (1,1,1) = {"
@@ -288,31 +285,31 @@ TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGi
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZeZeZeZeZeZuvuvuvlClClClClClClClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZFFGzIJbDeZrHuvuvlClClClClClClClClClClClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZlMcrMRgHQrluMtuvlClClClClClClClClClClClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZlMcrMRgHQrGjMtuvlClClClClClClClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZYsOXSWdfeZhsiiuvlClClClClClClClClClClClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZeZeZeZeZeZEReruvuvItuvuvlClClClClClClClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisosososososoERMtNwItwceaItlClClClClClClClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisoBroxrYfIsoxUquFpEgISNwuvlClClClClClClClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisoUisybBbMsjIMiijDowTjNwItlClClClClClClClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGilClClClClClClClClClClClClCGiGiGiGiGiGisobmYCrLLXsoERfqjDrtuvItuvlClClClClClClClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGilClClClClClClClClClClClClCGiGiGiGiGiGisosososososoERfqfquvuvuvuvlClClClClClClClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGieZeZeZeZeZeZSXeruvuvOnuvuvlClClClClClClClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisosososososoSXMtDqOnwceaOnlClClClClClClClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisoBroxrYfIsoxUquNwEgISDquvlClClClClClClClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGisoUisybBbMsjIMiijDowTjDqOnlClClClClClClClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGilClClClClClClClClClClClClCGiGiGiGiGiGisobmYCrLLXsoSXfqjDrtuvOnuvlClClClClClClClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGilClClClClClClClClClClClClCGiGiGiGiGiGisosososososoSXfqfquvuvuvuvlClClClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCGiGiGiGilClClClClClClClClClClClClCGiGiGiGiGiGijBjBjBjBjBjBrcfqfqnlnlnlnlnlnllClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCjBbZFzDpBZjBNafqRynlbVMIWiNtnllClClClClClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCjBYoSqwpwrMdpRfmfmjfAhqyNiGDnlTnTnTnTnlClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCjBpKNIkuucjBtSjDfqnlTcQgIAhknlTnTnTnTnlClClClClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCjBjBjBjBjBjBtSfqjDnlnlnlnlnlnlygygygTnlClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAAAAAAAAAAAVkfmJDxzfAfAFpFpFpfAluZUTnlClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAJWCNQEpMAAtSfqfqZUZUZUZUZUZUZUERZUTnlClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAMgBAdPvdfwJwfmOeZUIqyPyPyPuJZUyZZUTnlClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAOmXOJtRMAAfqfqtSZZZZKlKlKlDqZUyZZUTnlClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAAAAAAAAAAAiijUrcPLZZKlKlKlDqZUhsZUTnlClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCuvTZvidLkrBjFpFpwFZZZZKlKlKlDqZUWzZUTnlClClClClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCuvsLFoiGNwKpNwSTERZUEzyPyPyPtNZUJsZUygygygyglClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEUeynaEaEaEiGKpERZUZUZUZUZUZUZUuvuvlClClCyglClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEBiLouiWZaEKpiGERRitBtBtBtBtBtBtBtBtBtBlCyglClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEZttnzBIoaEHiHiERiDtBJSTtUhVwtBqPRFektBlCyglClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEBEybtncqaEHiHiERtBtBOixeXomttBOsDndruypHuelClClClClClClClClClClClClClClCTn
-TnGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEIDzBevzBaEuvuvowaJurururokjKADicDmyUtBlCyglClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAAAAAAAAAAAVkfmJDxzJQJQNwNwNwJQGjudTnlClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAJWCNQEpMAAtSfqfqudududududududSXudTnlClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAMgBAdPvdfwJwfmOeudsRpDpDpDaNudyZudTnlClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAOmXOJtRMAAfqfqtSZZyPKlKlKlFpudyZudTnlClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCAAAAAAAAAAAAiijUrcPLyPKlKlKlFpudhsudTnlClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCuvTZKpBjNwBjNwNwYyZZyPKlKlKlFpudWzudTnlClClClClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCuvSXFoiiDqiiDqSTSXudYbpDpDpDmTudJsudygygygyglClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEUeZKaEaEaESTZUSXudududududududuvuvlClClCyglClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEBiLouiWZaEZUSTSXRitBtBtBtBtBtBtBtBtBtBlCyglClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEZtiGevIoaEHiHiSXiDtBJSTtUhVwtBqPRFektBlCyglClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEBEYDiGumaEHiHiSXtBtBOixeXomttBOsDndruypHuelClClClClClClClClClClClClClClCTn
+TnGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEIDevasevaEuvuvowaJurururokjKADicDmyUtBlCyglClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCaEaEaEaEaEaEuvuvuvtBzraSPcYRIbtBtBtBtBtBlCyglClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCuvuvuvtBfbgrRYOSeJzHiXKuzTtBlCyglClClClClClClClClClClClClClClCTn
 TnGiGiGiGiGiGiGiGiGilClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClClCtBOcUGhOMLsvtBmWbqujtBlCyglClClClClClClClClClClClClClClCTn
