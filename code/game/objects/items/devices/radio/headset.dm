@@ -477,6 +477,22 @@
 		if(keyslot2.syndie)
 			src.syndie = 1
 
+	if(keyslot3)
+		for(var/ch_name in keyslot3.channels)
+			if(ch_name in src.channels)
+				continue
+			src.channels += ch_name
+			src.channels[ch_name] = keyslot3.channels[ch_name]
+
+		if(keyslot3.translate_binary)
+			src.translate_binary = 1
+
+		if(keyslot3.translate_hive)
+			src.translate_hive = 1
+
+		if(keyslot3.syndie)
+			src.syndie = 1
+
 
 	for (var/ch_name in channels)
 		secure_radio_connections[ch_name] = SSradio.add_object(src, radiochannels[ch_name],  RADIO_CHAT)

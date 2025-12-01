@@ -53071,8 +53071,11 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/structure/grille/broken,
-/turf/simulated/floor/tiled/dark/gray_platform,
+/obj/structure/grille{
+	desc = "Keeps the ruffians out. Hopefully.";
+	name = "perimeter fence"
+	},
+/turf/simulated/floor/asteroid/dirt,
 /area/nadezhda/security/maingate/east)
 "jhO" = (
 /obj/structure/table/steel_reinforced,
@@ -70821,7 +70824,6 @@
 	},
 /obj/effect/floor_decal/industrial/caution,
 /obj/effect/floor_decal/industrial/warning,
-/obj/structure/inflatable/door,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	dir = 4;
@@ -70830,6 +70832,10 @@
 	layer = 2.6;
 	name = "Checkpoint Blast Doors";
 	opacity = 0
+	},
+/obj/machinery/door/airlock/highsecurity{
+	name = "Checkpoint Airlock";
+	req_access = list(1)
 	},
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/security/maingate/east)
@@ -72055,7 +72061,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/industrial/caution,
 /obj/effect/floor_decal/industrial/warning,
-/obj/structure/inflatable/door,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	dir = 4;
@@ -72064,6 +72069,10 @@
 	layer = 2.6;
 	name = "Checkpoint Blast Doors";
 	opacity = 0
+	},
+/obj/machinery/door/airlock/highsecurity{
+	name = "Checkpoint Airlock";
+	req_access = list(1)
 	},
 /turf/simulated/floor/tiled/dark/cargo,
 /area/nadezhda/security/maingate/east)
