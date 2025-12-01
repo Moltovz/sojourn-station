@@ -9,7 +9,7 @@
 	move_to_delay = 4
 	mob_size = MOB_MEDIUM
 	density = TRUE
-	knockdown_odds = 1
+	knockdown_odds = 5
 
 	melee_damage_lower = 8
 	melee_damage_upper = 12

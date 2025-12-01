@@ -10,7 +10,7 @@
 	mob_size = MOB_MEDIUM
 	density = TRUE
 	meat_type = /obj/item/reagent_containers/snacks/meat/roachmeat/panzer
-	knockdown_odds = 3
+	knockdown_odds = 5
 	get_stat_modifier = TRUE //we're big boys, we get a little mod as a treat.
 
 	armor = list(melee = 3, bullet = 1, energy = 0, bomb = 5, bio = 20, rad = 0, agony = 0)

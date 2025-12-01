@@ -8,7 +8,7 @@
 	maxHealth = 125 * ROACH_HEALTH_MOD
 	health = 125 * ROACH_HEALTH_MOD
 
-	knockdown_odds = 5
+	knockdown_odds = 10
 	melee_damage_lower = 15
 	melee_damage_upper = 30
 	move_to_delay = 8

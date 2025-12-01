@@ -19,7 +19,7 @@
 	contaminant_immunity = TRUE
 	toxin_immune = TRUE
 
-	knockdown_odds = 3 //Well we still can knockdown we dont tend to over other affects
+	knockdown_odds = 5 //Well we still can knockdown we dont tend to over other affects
 	melee_damage_lower = 5
 	melee_damage_upper = 7 //Weaker than hunter
 	armor_divisor = 1
