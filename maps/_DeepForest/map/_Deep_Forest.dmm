@@ -11633,12 +11633,6 @@
 /obj/item/oddity/common/paper_bundle,
 /turf/simulated/floor/wood/wild2,
 /area/nadezhda/dungeon/outside/prepper/delta)
-"hSP" = (
-/obj/random/cluster/roaches/low_chance,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark/bluecorner,
-/area/nadezhda/dungeon/outside/prepper)
 "hTg" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet,
@@ -86746,7 +86740,7 @@ nMn
 nMn
 nMn
 rRu
-hSP
+nMn
 eno
 qHH
 qHH
@@ -86950,7 +86944,7 @@ liI
 cZD
 nMn
 nMn
-hSP
+nMn
 nMn
 vTX
 vTX
@@ -87579,7 +87573,7 @@ rYj
 nMn
 nMn
 rRu
-hSP
+nMn
 rRu
 nMn
 dUH

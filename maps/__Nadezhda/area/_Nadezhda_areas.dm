@@ -158,7 +158,7 @@
 //Outside abandoned structures
 
 /area/nadezhda/dungeon/outside
-	is_maintenance = TRUE
+	is_maintenance = FALSE
 	flags = AREA_FLAG_RAD_SHIELDED
 	sound_env = TUNNEL_ENCLOSED
 	ship_area = FALSE
