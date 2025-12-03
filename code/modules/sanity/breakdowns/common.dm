@@ -222,8 +222,7 @@
 	if(ishuman(holder.owner))
 		var/mob/living/carbon/human/H = holder.owner
 		H.sanity.insight_passive_gain_multiplier -= 0.5
-	return..()
-
+	return ..()
 
 /datum/breakdown/common/noinsight/conclude()
 	if(ishuman(holder.owner))
