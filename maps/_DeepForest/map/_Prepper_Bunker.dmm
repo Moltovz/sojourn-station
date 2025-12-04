@@ -1016,6 +1016,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/nadezhda/dungeon/outside/prepper/vault/floor5)
+"el" = (
+/obj/random/cluster/roaches/lower_chance,
+/turf/simulated/floor/tiled/dark,
+/area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "em" = (
 /obj/machinery/porta_turret/prepper,
 /turf/simulated/floor/plating/under,
@@ -3924,7 +3928,6 @@
 "sS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
-/mob/living/simple/mouse,
 /turf/simulated/floor/tiled/white/panels,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "sT" = (
@@ -4372,9 +4375,10 @@
 /turf/simulated/floor/tiled/white/panels,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "tX" = (
-/mob/living/simple/mouse,
-/turf/simulated/floor/tiled/white/panels,
-/area/nadezhda/dungeon/outside/prepper/vault/floor3)
+/obj/effect/decal/cleanable/rubble,
+/obj/random/cluster/roaches/lower_chance,
+/turf/simulated/floor/asteroid/dirt/dark,
+/area/nadezhda/dungeon/outside/prepper/vault/floor4)
 "tY" = (
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/wood/random,
@@ -4899,7 +4903,6 @@
 "vF" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/circuitboard,
-/mob/living/simple/mouse,
 /turf/simulated/floor/tiled/white/panels,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "vG" = (
@@ -9643,7 +9646,7 @@ Ms
 Ms
 yg
 yq
-yg
+el
 yg
 yg
 yg
@@ -10912,7 +10915,7 @@ Im
 Iq
 IA
 IG
-IG
+tX
 Iz
 HZ
 HZ
@@ -11173,7 +11176,7 @@ yq
 yg
 yg
 yg
-Hb
+yq
 yq
 HD
 HO
@@ -17745,7 +17748,7 @@ rP
 sn
 rV
 rV
-tX
+rV
 rV
 rP
 rP
