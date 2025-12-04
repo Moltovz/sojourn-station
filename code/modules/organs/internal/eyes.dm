@@ -26,6 +26,8 @@
 	name = "photoreceptors"
 	desc = "Plant Eyes. They allow you to see."
 	icon_state = "eyes_plant"
+	parent_organ_base = BP_CHEST
+	specific_organ_size = 0
 
 /obj/item/organ/internal/eyes/marqua
 	name = "eyeball"

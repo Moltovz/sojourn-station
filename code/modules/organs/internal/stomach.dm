@@ -23,6 +23,7 @@
 	name = "enzyme pouch"
 	desc = "An enzyme stomach, work just as well as a normal one, designed for plantoids."
 	icon_state = "stomach_plant"
+	specific_organ_size = 1
 
 /obj/item/organ/internal/stomach/improved
 	name = "improved stomach"

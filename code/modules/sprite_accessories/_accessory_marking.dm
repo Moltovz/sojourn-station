@@ -1917,3 +1917,161 @@
 		icon_state = "zeng_l_leg_f"
 		blend = ICON_MULTIPLY
 		body_parts = list(BP_L_LEG)
+
+
+//Mycus
+
+	mycus_head1
+		name = "Broad Mycus Head"
+		icon_state = "broad"
+		body_parts = list(BP_CHEST)
+
+
+	mycus_head2
+		name = "Pancake Mycus Head"
+		icon_state = "pancake"
+		body_parts = list(BP_CHEST)
+
+
+	mycus_head3
+		name = "Small Mycus Head"
+		icon_state = "small_shroom"
+		body_parts = list(BP_CHEST)
+
+
+	mycus_head4
+		name = "Round Mycus Head"
+		icon_state = "round"
+		body_parts = list(BP_CHEST)
+
+
+	mycus_head5
+		name = "Round Mycus Head"
+		icon_state = "round"
+		body_parts = list(BP_CHEST)
+
+	mycus_head6
+		name = "Phallic Mycus Head"
+		icon_state = "dick"
+		body_parts = list(BP_CHEST)
+
+	mycus_head7
+		name = "Bark Mycus Head"
+		icon_state = "bark"
+		body_parts = list(BP_CHEST)
+
+	mycus_head8
+		name = "Bark Mycus Head (Alternate)"
+		icon_state = "bark2"
+		body_parts = list(BP_CHEST)
+
+	mycus_head9
+		name = "Tiny Mycus Head"
+		icon_state = "tiny"
+		body_parts = list(BP_CHEST)
+
+	mycus_head10
+		name = "Standard Mycus Head"
+		icon_state = "standard"
+		body_parts = list(BP_CHEST)
+
+	mycus_head11
+		name = "Standard Mycus Head (Wide)"
+		icon_state = "standardwide"
+		body_parts = list(BP_CHEST)
+
+	mycus_head12
+		name = "Standard Mycus Head (Thick)"
+		icon_state = "standardthick"
+		body_parts = list(BP_CHEST)
+
+	mycus_head
+		name = "Standard Mycus Head (Tall)"
+		icon_state = "standardtall"
+		body_parts = list(BP_CHEST)
+
+	mycus_head13
+		name = "Cup Mycus Head"
+		icon_state = "cup"
+		body_parts = list(BP_CHEST)
+
+	mycus_head
+		name = "Cup Mycus Head (Alternate)"
+		icon_state = "cup"
+		body_parts = list(BP_CHEST)
+
+	mycus_head14
+		name = "Shroom Mycus Head"
+		icon_state = "shrooms"
+		body_parts = list(BP_CHEST)
+
+	mycus_head15
+		name = "Shroom Mycus Head (Alternate)"
+		icon_state = "shrooms2"
+		body_parts = list(BP_CHEST)
+
+	mycus_head16
+		name = "Spore Mycus Head"
+		icon_state = "spore"
+		body_parts = list(BP_CHEST)
+
+	mycus_head17
+		name = "Spore Mycus Head (Alternate)"
+		icon_state = "spore3"
+		body_parts = list(BP_CHEST)
+
+/*
+	mycus_arm_left_male
+		name = "Mycus Shelf Mushroom, Left Arm, Male"
+		icon_state = "armshelf_m"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_ARM)
+
+	mycus_arm_left_female
+		name = "Mycus Shelf Mushroom, Left Arm, Female"
+		icon_state = "armshelf_f"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_ARM)
+
+	mycus_arm_right_maleBP_CHEST
+		name = "Mycus Shelf Mushroom, Left Arm, Male"
+		icon_state = "armshelf_m"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_ARM)
+
+	mycus_arm_right_female
+		name = "Mycus Shelf Mushroom, Left Arm, Female"
+		icon_state = "armshelf_f"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_ARM)
+
+	mycus_head_infection
+		name = "Mycus Shelf Mushroom, Head"
+		icon_state = "smallshelf"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	mycus_leg_right_male
+		name = "Mycus Shelf Mushroom, Left Leg, Male"
+		icon_state = "shelleg"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_R_LEG)
+
+	mycus_leg_right_female
+		name = "Mycus Shelf Mushroom, Left Leg, Female"
+		icon_state = "shelleg"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_R_LEG)
+
+	mycus_leg_left_male
+		name = "Mycus Shelf Mushroom, Left Leg, Male"
+		icon_state = "shelleg"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_LEG)
+
+	mycus_leg_left_female
+		name = "Mycus Shelf Mushroom, Left Leg, Female"
+		icon_state = "shelleg"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_LEG)
+*/

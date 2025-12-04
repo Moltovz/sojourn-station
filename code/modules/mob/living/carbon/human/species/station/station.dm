@@ -688,7 +688,7 @@
 		OP_HEART =    /obj/item/organ/internal/vital/heart/plant,
 		OP_STOMACH =  /obj/item/organ/internal/stomach/plant,
 		BP_BRAIN =    /obj/item/organ/internal/vital/brain/plant,
-		OP_EYES =     /obj/item/organ/internal/eyes,
+		OP_EYES =     /obj/item/organ/internal/eyes/plant,
 		OP_LUNGS =    /obj/item/organ/internal/vital/lungs,
 		OP_LIVER =    /obj/item/organ/internal/liver,
 		OP_KIDNEY_LEFT =  /obj/item/organ/internal/kidney/left,
@@ -696,6 +696,16 @@
 		)
 
 	perks = list(PERK_DARK_HEAL)
+
+	has_limbs = list(
+		BP_CHEST =  new /datum/organ_description/chest,
+		BP_GROIN =  new /datum/organ_description/groin,
+		BP_L_ARM =  new /datum/organ_description/arm/left/full,
+		BP_R_ARM =  new /datum/organ_description/arm/right/full,
+		BP_L_LEG =  new /datum/organ_description/leg/left/full,
+		BP_R_LEG =  new /datum/organ_description/leg/right/full
+		)
+
 
 	stat_modifiers = list(
 		STAT_BIO = 0,
