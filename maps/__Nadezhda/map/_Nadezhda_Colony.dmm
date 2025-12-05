@@ -38807,6 +38807,11 @@
 	dir = 1;
 	opacity = 0
 	},
+/obj/item/reagent_containers/drinks/bottle/cider,
+/obj/item/reagent_containers/drinks/bottle/cider,
+/obj/item/reagent_containers/drinks/bottle/cider,
+/obj/item/reagent_containers/drinks/bottle/cider,
+/obj/item/reagent_containers/drinks/bottle/cider,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "gKk" = (
@@ -70685,6 +70690,10 @@
 /obj/structure/flora/small/trailrocka3,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/hallway/main/stairwell)
+"mlf" = (
+/obj/item/reagent_containers/drinks/bottle/cider,
+/turf/simulated/wall/r_wall,
+/area/nadezhda/medical/sleeper)
 "mln" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -84841,6 +84850,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/misc/rent{
+	pixel_x = -32
+	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters)
 "oDy" = (
@@ -107487,14 +107499,7 @@
 	},
 /obj/structure/closet,
 /obj/item/storage/backpack/satchel,
-/obj/item/clothing/glasses/powered/meson,
 /obj/item/device/radio/headset,
-/obj/item/clothing/head/helmet/faceshield/altyn/maska,
-/obj/item/clothing/suit/storage/rank/insp_trench{
-	name = "armored trenchcoat";
-	desc = "A brown and armored trenchcoat."
-	},
-/obj/item/tool_upgrade/refinement/ported_barrel,
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/crew_quarters/podrooms)
 "svZ" = (
@@ -138147,13 +138152,6 @@
 /obj/machinery/power/wall_obelisk{
 	pixel_y = 22
 	},
-/obj/item/reagent_containers/drinks/bottle/cider,
-/obj/item/reagent_containers/drinks/bottle/cider,
-/obj/item/reagent_containers/drinks/bottle/cider,
-/obj/item/reagent_containers/drinks/bottle/cider,
-/obj/item/reagent_containers/drinks/bottle/cider,
-/obj/item/reagent_containers/drinks/tea/black,
-/obj/item/reagent_containers/drinks/tea/black,
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/crew_quarters/podrooms)
 "xGb" = (
@@ -197722,7 +197720,7 @@ vjl
 qgb
 qUI
 qUI
-qUI
+mlf
 qUI
 bbA
 rIX

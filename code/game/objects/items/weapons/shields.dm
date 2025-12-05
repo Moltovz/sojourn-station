@@ -328,6 +328,10 @@
 		slot_back_str = "riot"
 		)
 
+/obj/item/shield/riot/red
+	icon_state = "riot_red"
+	item_state = "riot_red"
+
 /obj/item/shield/riot/damaged
 
 /obj/item/shield/riot/damaged/Initialize()

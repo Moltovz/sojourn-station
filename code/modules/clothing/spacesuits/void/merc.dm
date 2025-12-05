@@ -79,6 +79,100 @@
 	icon_state = "scaf_wolf"
 	item_state = "scaf_wolf"
 
+
+// EVENT THINGS
+
+//TANK
+/obj/item/clothing/suit/space/void/SCAF/voidwolf/tank
+	name = "REAVER-TANK suit"
+	desc = "A bulky antique suit of refurbished infantry armour, retrofitted with seals and coatings to make it EVA capable but also reducing mobility. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_tank"               //MOB ICON
+	item_state = "scaf_tank"
+	slowdown = 1.1 // Red makes it go fasta!
+	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/tank
+
+/obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/tank
+	name = "REAVER-TANK helmet"
+	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_tank"               //MOB ICON
+	item_state = "scaf_tank"
+
+//LEGGIE
+/obj/item/clothing/suit/space/void/SCAF/voidwolf/legs
+	name = "REAVER-SCAF suit"
+	desc = "A bulky antique suit of refurbished infantry armour, retrofitted with seals and coatings to make it EVA capable but also reducing mobility. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_leggie"               //MOB ICON
+	item_state = "scaf_leggie"
+
+	slowdown = 1.1 // Red makes it go fasta!
+	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/legs
+
+/obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/legs
+	name = "REAVER-SCAF helmet"
+	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_leggie"               //MOB ICON
+	item_state = "scaf_leggie"
+
+//DOCTOR
+/obj/item/clothing/suit/space/void/SCAF/voidwolf/doctor
+	name = "REAVER-DOCTOR suit"
+	desc = "A bulky antique suit of refurbished infantry armour, retrofitted with seals and coatings to make it EVA capable but also reducing mobility. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_doctor"               //MOB ICON
+	item_state = "scaf_doctor"
+	slowdown = 1.1 // Red makes it go fasta!
+	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/doctor
+
+/obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/doctor
+	name = "REAVER-DOCTOR helmet"
+	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_doctor"               //MOB ICON
+	item_state = "scaf_doctor"
+
+//BOMBER
+/obj/item/clothing/suit/space/void/SCAF/voidwolf/bomber
+	name = "REAVER-BOMB suit"
+	desc = "A bulky antique suit of refurbished infantry armour, retrofitted with seals and coatings to make it EVA capable but also reducing mobility. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_bomber"               //MOB ICON
+	item_state = "scaf_bomber"
+	slowdown = 1.1 // Red makes it go fasta!
+	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/bomber
+
+/obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/bomber
+	name = "REAVER-BOMB helmet"
+	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_bomber"               //MOB ICON
+	item_state = "scaf_bomber"
+
+//MARK
+/obj/item/clothing/suit/space/void/SCAF/voidwolf/mark
+	name = "REAVER-MARKSMAN suit"
+	desc = "A bulky antique suit of refurbished infantry armour, retrofitted with seals and coatings to make it EVA capable but also reducing mobility. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_mark"               //MOB ICON
+	item_state = "scaf_mark"
+	slowdown = 1.1 // Red makes it go fasta!
+	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/mark
+
+/obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/mark
+	name = "REAVER-MARKSMAN helmet"
+	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_mark"               //MOB ICON
+	item_state = "scaf_mark"
+
+//CUTTER
+/obj/item/clothing/suit/space/void/SCAF/voidwolf/cutter
+	name = "REAVER-DUELIST suit"
+	desc = "A bulky antique suit of refurbished infantry armour, retrofitted with seals and coatings to make it EVA capable but also reducing mobility. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_cutter"               //MOB ICON
+	item_state = "scaf_cutter"
+	slowdown = 1.1 // Red makes it go fasta!
+	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/cutter
+
+/obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/cutter
+	name = "REAVER-DUELIST helmet"
+	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet. This one has a void wolf paint job with intimidating red colors."
+	icon_state = "scaf_cutter"               //MOB ICON
+	item_state = "scaf_cutter"
+
 /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/toggle_style()
 	set name = "Adjust Helmet Style"
 	set category = "Object"
