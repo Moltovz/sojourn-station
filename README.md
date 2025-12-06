@@ -7,7 +7,7 @@ A downstream branch of the Sojourn codebase which is a downstream of the CEV-Eri
 
 ## CONTRIBUTING
 
-Please see [CONTRIBUTING.md](https://sojourn13.space/wiki/Contributor_Guide) and contact us on the server Discord. 
+Please see [CONTRIBUTING.md](https://sojourn13.space/wiki/Contributor_Guide) and contact us on the Join the [server discord here.](https://discord.gg/8g5RHSQxmW)
 
 
 Current Lead Maintainers - Trilby, CDB.
