@@ -1,12 +1,15 @@
 ![](placeholder)
 # Sojourn 13 : Nadezhda Colony
-[![discord](https://discordapp.com/api/guilds/255035529085583360/widget.png)](https://discord.gg/akFxTw49)
+[Join the discord!!](https://discord.gg/8g5RHSQxmW)
 
 
-A downstream branch of the CEV-Eris codebase.
+A downstream branch of the Sojourn codebase which is a downstream of the CEV-Eris codebase.
 
 ## CONTRIBUTING
 
-Please see [CONTRIBUTING.md](https://sojourn13.space/wiki/Contributor_Guide) and contact us on the server Discord. 
+Please see [CONTRIBUTING.md](https://sojourn13.space/wiki/Contributor_Guide) and contact us on the Join the [discord server here.](https://discord.gg/8g5RHSQxmW)
 
-Current Lead Maintainers - Trilby, CDB.
+
+Current Sojourn Lead Maintainers - Trilby, CDB.
+
+Current Downstream Lead Maintainers - Moltov
