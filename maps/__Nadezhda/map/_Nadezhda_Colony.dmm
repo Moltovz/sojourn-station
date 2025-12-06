@@ -69288,7 +69288,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/hatch{
-	name = "Capsule 1: Kate Anbolho";
+	name = "Capsule 1: Vacant";
 	id_tag = "CR1"
 	},
 /turf/simulated/floor/tiled/white/gray_platform,
@@ -125748,7 +125748,7 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/nadezhda/crew_quarters/hydroponics)
 "vAY" = (
-/obj/structure/bed/chair/sofa/right,
+/obj/structure/bed/chair/sofa/black/right,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorma2)
 "vBb" = (
@@ -131490,7 +131490,7 @@
 /area/turret_protected/ai)
 "wyj" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/bed/chair/sofa/left,
+/obj/structure/bed/chair/sofa/black/left,
 /obj/item/keys/personal{
 	id = "P2"
 	},
