@@ -1,9 +1,9 @@
 ![](placeholder)
 # Sojourn 13 : Nadezhda Colony
-[![discord](https://discordapp.com/api/guilds/255035529085583360/widget.png)](https://discord.gg/akFxTw49)
+[![discord](https://discordapp.com/api/guilds/255035529085583360/widget.png)](https://discord.gg/8g5RHSQxmW)
 
 
-A downstream branch of the CEV-Eris codebase.
+A downstream branch of the Sojourn codebase which is a downstream of the CEV-Eris codebase.
 
 ## CONTRIBUTING
 
