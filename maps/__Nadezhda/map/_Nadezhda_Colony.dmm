@@ -22415,6 +22415,8 @@
 	},
 /obj/item/gun/projectile/revolver/longboi,
 /obj/item/shield/riot/dozershield,
+/obj/item/gun/projectile/automatic/lmg/rpd,
+/obj/item/ammo_magazine/rifle_75_linked_box,
 /turf/simulated/floor/wood,
 /area/nadezhda/crew_quarters/sleep/bedrooms)
 "dUM" = (
@@ -24165,9 +24167,6 @@
 /area/nadezhda/maintenance/undergroundfloor2west)
 "ejB" = (
 /obj/structure/table/reinforced,
-/obj/item/oddity/common/photo_eyes{
-	desc = "A Photo of Julian McCoy in Research and Development. They are looking at a Photo of Julian McCoy in Research and Development. Who is is turning behind him, expression fearful, at the camera."
-	},
 /obj/machinery/door/window/southright{
 	name = "Research desk";
 	req_access = list(5);
@@ -24186,12 +24185,6 @@
 /obj/machinery/door/window/southright{
 	name = "Research desk";
 	req_access = list(5)
-	},
-/obj/item/paper{
-	name = "sheet of paper: Observer";
-	info = "This photograph, incase you couldn't tell already, occasionally switches to show a new scene. The scenes shown are, atleast to our knowledge, either presently happening, or have happened recently. The scenes occuring on the photograph, atleast to our knowledge, again, are always real.";
-	pixel_y = -7;
-	pixel_x = 5
 	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
@@ -36005,38 +35998,6 @@
 /obj/effect/spider/stickyweb,
 /turf/simulated/floor/industrial/white_large_slates,
 /area/nadezhda/maintenance/surfacenorth)
-"glv" = (
-/obj/structure/table/reinforced,
-/obj/item/device/taperecorder/empty{
-	name = "universe recorder"
-	},
-/obj/machinery/door/window/southright{
-	name = "Research desk";
-	req_access = list(5);
-	dir = 4
-	},
-/obj/machinery/door/window/southright{
-	dir = 1;
-	name = "Research desk";
-	req_access = list(5)
-	},
-/obj/machinery/door/window/southright{
-	name = "Research desk";
-	req_access = list(5);
-	dir = 8
-	},
-/obj/machinery/door/window/southright{
-	name = "Research desk";
-	req_access = list(5)
-	},
-/obj/item/paper{
-	name = "sheet of paper: Recorder";
-	info = "This recorder is to be stored inside of soteria-science due to anomalous behavior. It plays messages from the common radio that have yet to be recieved- or spoken in the first place. Initially discovered by me in the interrogation room 2/1/2562. -Warrant Officer Clyde Bidell.";
-	pixel_y = -7;
-	pixel_x = 5
-	},
-/turf/simulated/floor/tiled/dark/violetcorener,
-/area/nadezhda/rnd/research)
 "glz" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -43919,14 +43880,14 @@
 /obj/item/stack/material/plastic{
 	amount = 120
 	},
-/obj/random/material_resources/low_chance,
-/obj/random/material_rare/low_chance,
 /obj/random/material_rare,
 /obj/random/material,
 /obj/random/material,
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/steel/full{
+	amount = 50
+	},
 /obj/item/stack/material/glass{
-	amount = 120
+	amount = 50
 	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
@@ -93033,7 +92994,6 @@
 /area/nadezhda/maintenance/undergroundfloor2north)
 "pXG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/bluespace_dust,
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/southright{
 	dir = 1;
@@ -93053,23 +93013,6 @@
 	name = "Research desk";
 	req_access = list(5);
 	dir = 4
-	},
-/obj/item/bluespace_crystal,
-/obj/machinery/telesci_inhibitor/mini{
-	pixel_y = -10
-	},
-/obj/machinery/telesci_inhibitor/mini{
-	pixel_x = 10
-	},
-/obj/machinery/telesci_inhibitor/mini{
-	pixel_x = -10
-	},
-/obj/item/oddity/broken_necklace,
-/obj/item/paper{
-	name = "sheet of paper: Bluespace";
-	info = "Physical bluespace matter present. If you are reading this: You opened the glass. Why did you do that? Why are you still reading this? Try your best not to disturb the dust more, close the windows, and thoroughly clean the department.";
-	pixel_y = -7;
-	pixel_x = 5
 	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
@@ -104942,10 +104885,6 @@
 /area/nadezhda/maintenance/substation/servist)
 "rZQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/accessory/bracelet/watch/leather{
-	name = "anomalous leather watch";
-	desc = "An expensive watch with a leather brown band. It ticks softly, the time reads 11:59. The second hand twitches as it tries to overtake the minute hand, but never crosses over to midnight... Touching it hurts."
-	},
 /obj/machinery/door/window/southright{
 	name = "Research desk";
 	req_access = list(5);
@@ -104966,12 +104905,6 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced,
-/obj/item/paper{
-	name = "sheet of paper: Doomsday Watch";
-	info = "The hands on this watch remain fixed at 11:59, with the second hand audibly straining against the minute one. Attempts to adjust the mechanism have failed, even when given directly to the artificer's guild. The watch appears to be in perfect working order, mechanically, at least.Personnel are advised NOT to refer to the device as a DOOMSDAY WATCH. This designation has been shown to cause heightened paranoia in staff and colonists who have directly engaged with SolFed, Greyson Positronics, VoidWolf Mercenaries, and other threats to the colony.";
-	pixel_y = -7;
-	pixel_x = 5
-	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
 "rZY" = (
@@ -115688,15 +115621,6 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/item/oddity/ls/manual{
-	desc = "A rugged, somewhat poor compilation of notes and pages from a variety of books and manuals. The first few pages feature information ranging from how to make a molotov cocktail to how to hotwire a mech. It is covered in dry blood and heavy fuel oil. Secured from the crash site of the SEV ERIS."
-	},
-/obj/item/paper{
-	name = "sheet of paper: Manual";
-	info = "The volumes in this... manifesto include instructions on improvised weaponry, incendiary mixtures, and methods for bypassing standard ship security. Honestly, it should be in contraband storage, but the W/O's insist we've got to keep it here. Following the instructions provided in any of the recipies are liable to cause severe injury or death, even if followed to the letter. Papers near the end of the book appear fresh and are consistent with current colony engineering volumes on hydro-electric and solar power, the process of Xeno-archeology, and How to manipulate the trade beacons, yes you CEO read this section Notes on these pages are recent, it is impossible for them to have been written on the ERIS. Soteria-Science staff, marshals, and blackshield claim no responsibility.";
-	pixel_y = -7;
-	pixel_x = 5
-	},
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/nadezhda/rnd/research)
 "tSl" = (
@@ -121970,6 +121894,7 @@
 	name = "armor vest"
 	},
 /obj/item/clothing/glasses/powered/meson,
+/obj/item/clothing/suit/space/void/SCAF/voidwolf/mark,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "uTr" = (
@@ -136190,6 +136115,7 @@
 /obj/structure/closet/cabinet,
 /obj/item/gun/projectile/automatic/c20r,
 /obj/item/gun/energy/firestorm,
+/obj/item/gun/projectile/automatic/sts/rifle/sawn,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorm4)
 "xoW" = (
@@ -198700,7 +198626,7 @@ lqb
 gLz
 gLz
 mIe
-glv
+ejB
 xHB
 rZQ
 brG

@@ -90,6 +90,14 @@
 	item_state = "scaf_tank"
 	slowdown = 1.1 // Red makes it go fasta!
 	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/tank
+	armor_list = list(
+		melee = 25,
+		bullet = 20,
+		energy = 12,
+		bomb = 75,
+		bio = 50,
+		rad = 100
+	)
 
 /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/tank
 	name = "REAVER-TANK helmet"
@@ -120,6 +128,7 @@
 	icon_state = "scaf_doctor"               //MOB ICON
 	item_state = "scaf_doctor"
 	slowdown = 1.1 // Red makes it go fasta!
+	stiffness = LIGHT_STIFFNESS
 	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/doctor
 
 /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/doctor
@@ -136,6 +145,14 @@
 	item_state = "scaf_bomber"
 	slowdown = 1.1 // Red makes it go fasta!
 	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/bomber
+	armor_list = list(
+		melee = 15,
+		bullet = 13,
+		energy = 12,
+		bomb = 100,
+		bio = 100,
+		rad = 25
+	)
 
 /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/bomber
 	name = "REAVER-BOMB helmet"
@@ -150,6 +167,7 @@
 	icon_state = "scaf_mark"               //MOB ICON
 	item_state = "scaf_mark"
 	slowdown = 1.1 // Red makes it go fasta!
+	stiffness = LIGHT_STIFFNESS
 	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/mark
 
 /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/mark
@@ -166,12 +184,28 @@
 	item_state = "scaf_cutter"
 	slowdown = 1.1 // Red makes it go fasta!
 	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/cutter
+	armor_list = list(
+		melee = 10,
+		bullet = 90,     //has god on his side
+		energy = 90,
+		bomb = 75,
+		bio = 100,
+		rad = 100
+	)
 
 /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/cutter
 	name = "REAVER-DUELIST helmet"
 	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet. This one has a void wolf paint job with intimidating red colors."
 	icon_state = "scaf_cutter"               //MOB ICON
 	item_state = "scaf_cutter"
+	armor_list = list(
+		melee = 15,
+		bullet = 90,
+		energy = 90,
+		bomb = 75,
+		bio = 100,
+		rad = 100
+	)
 
 /obj/item/clothing/head/helmet/space/void/SCAF/voidwolf/toggle_style()
 	set name = "Adjust Helmet Style"
