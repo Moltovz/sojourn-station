@@ -3,7 +3,7 @@
 	desc = "A monstrous, dog-sized cockroach. These huge mutants can be everywhere where humans are, on ships, planets and stations."
 	icon = 'icons/mob/mobs-roach.dmi'
 	icon_state = "roach"
-
+	var/jolly = FALSE //for christmas
 	mob_size = MOB_SMALL
 
 	density = 0 //Swarming roaches! They also more robust that way.
@@ -73,6 +73,14 @@
 	fancy_attack_overlay = "roach_attack_flick"
 
 /mob/living/carbon/superior/roach/New()
+	if(prob(10))
+		var/image/hat = image('icons/inventory/head/icon.dmi', "santahatgreen")
+		hat.pixel_x = 2
+		hat.pixel_y = 8
+		overlays += hat
+		name = "Jolly [name]"
+		sanity_damage = -0.1
+		jolly = TRUE
 	..()
 
 /mob/living/carbon/superior/roach/isValidAttackTarget(var/atom/O)
@@ -85,6 +93,7 @@
 //When roaches die near a leader, the leader may call for reinforcements
 /mob/living/carbon/superior/roach/death()
 	.=..()
+	overlays.Cut()
 	if (.)
 		for (var/mob/living/carbon/superior/roach/fuhrer/F in range(src,8))
 			F.distress_call()
@@ -98,3 +107,21 @@
 	. = ..()
 
 	playsound(src, 'sound/voice/insect_battle_screeching.ogg', 30, 1, -3)
+
+/mob/living/carbon/superior/roach/attackby(obj/item/W, mob/user)           //more jolly
+	if(istype(W, /obj/item/reagent_containers/snacks/cookie))
+		if(faction == "neutral")
+			user.visible_message("[user] tries to feed the [src] a cookie, but it is already tamed!","[name] Has already been tamed!")
+			return TRUE
+		if(jolly)
+			colony_friend = TRUE
+			faction = "neutral"
+			user.visible_message("[user] offers a cookie to [src]. How jolly!!!","You offer a cookie to the [name]. How jolly!!!")
+			obey_friends = TRUE
+			following = user
+			follow_distance = 1
+			qdel(W)
+			playsound(src, 'sound/voice/insect_battle_screeching.ogg', 30, 1)
+			playsound(src, 'sound/items/eatfood.ogg', 30, 1)
+			return TRUE
+	return ..()

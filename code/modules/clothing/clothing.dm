@@ -26,6 +26,11 @@
 
 
 /obj/item/clothing/Initialize(mapload, ...)
+	var/total_armor = 0                       //all clothing has its armor visible
+	for(var/stat in armor_list)
+		total_armor += armor_list[stat]
+
+	tool_qualities[QUALITY_ARMOR] = total_armor
 	. = ..()
 
 	var/list/init_accessories = accessories

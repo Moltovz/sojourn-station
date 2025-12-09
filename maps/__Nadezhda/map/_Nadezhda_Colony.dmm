@@ -7356,6 +7356,9 @@
 /obj/item/implanter/death_alarm,
 /obj/item/device/encryptionkey/headset_mar,
 /obj/item/device/encryptionkey/headset_bs/corps,
+/obj/item/contraband/poster/placed/pinup/cat{
+	pixel_x = 32
+	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm5)
 "boZ" = (
@@ -8330,6 +8333,10 @@
 	},
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
@@ -25438,6 +25445,11 @@
 	pixel_x = -30
 	},
 /obj/effect/decal/cleanable/rubble,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "etQ" = (
@@ -27552,6 +27564,12 @@
 	pixel_y = 32
 	},
 /obj/structure/bed/double/padded,
+/mob/living/carbon/superior/roach/tank{
+	faction = "neutral";
+	name = "Elliot";
+	desc = "His father was Forsaken.";
+	colony_friend = 1
+	},
 /turf/simulated/floor/wood/wild1,
 /area/nadezhda/crew_quarters/podrooms)
 "eNw" = (
@@ -38772,6 +38790,7 @@
 /obj/item/reagent_containers/drinks/bottle/cider,
 /obj/item/reagent_containers/drinks/bottle/cider,
 /obj/item/reagent_containers/drinks/bottle/cider,
+/obj/item/reagent_containers/snacks/openable/mre,
 /obj/item/reagent_containers/drinks/bottle/cider,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
@@ -42787,6 +42806,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/crew_quarters/pool)
 "hvA" = (
@@ -48243,6 +48267,9 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 8
 	},
+/obj/item/contraband/poster/placed/pinup/cat{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/bar)
 "ioo" = (
@@ -48739,6 +48766,11 @@
 "isZ" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/crew_quarters/pool)
@@ -60050,6 +60082,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/power/wall_obelisk{
+	pixel_x = -32;
+	pixel_y = -10
+	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "krn" = (
@@ -62885,6 +62921,11 @@
 /obj/machinery/door/airlock/sandstone{
 	name = "Poolside Dormitory 2: Kate Anbolho";
 	id_tag = "P2"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
@@ -69249,7 +69290,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/hatch{
-	name = "Capsule 1: Vacant";
+	name = "Capsule 1: Occupied";
 	id_tag = "CR1"
 	},
 /turf/simulated/floor/tiled/white/gray_platform,
@@ -77270,16 +77311,11 @@
 	name = "North APC";
 	pixel_y = 28
 	},
-/obj/item/ammo_magazine/rifle_75_drum/empty,
-/obj/item/ammo_magazine/rifle_75_drum/empty,
-/obj/item/ammo_magazine/rifle_75_drum/empty,
-/obj/item/ammo_magazine/rifle_75_drum,
-/obj/item/gun/projectile/automatic/ak47/sa,
-/obj/item/tool_upgrade/productivity/ergonomic_grip,
 /obj/structure/cable/green{
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/item/device/defib_kit/compact/combat/loaded,
 /turf/simulated/floor/wood/wild2,
 /area/nadezhda/crew_quarters/dorm10)
 "nrO" = (
@@ -81718,6 +81754,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/nadezhda/hallway/surface/section1)
+"ocS" = (
+/mob/living/carbon/superior/roach/tank{
+	faction = "neutral";
+	name = "Elliot";
+	desc = "His father was Forsaken."
+	},
+/mob/living/carbon/superior/roach/tank{
+	faction = "neutral";
+	name = "Elliot";
+	desc = "His father was Forsaken."
+	},
+/turf/simulated/floor/plating/under,
+/area/colony)
 "ocT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -82501,6 +82550,11 @@
 /area/nadezhda/command/hallway)
 "ojJ" = (
 /obj/effect/floor_decal/steeldecal/steel_decals10,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/crew_quarters/pool)
 "ojM" = (
@@ -84811,9 +84865,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/misc/rent{
-	pixel_x = -32
-	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters)
 "oDy" = (
@@ -90360,6 +90411,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/industrial/bricks,
 /area/nadezhda/maintenance/undergroundfloor1north)
+"pBV" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
+/obj/effect/floor_decal/industrial/warningred,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled/white,
+/area/nadezhda/crew_quarters/pool)
 "pBX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/glass,
@@ -105485,6 +105548,18 @@
 /obj/structure/filingcabinet/filingcabinet,
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/quartermaster/office)
+"seS" = (
+/obj/machinery/power/wall_obelisk{
+	pixel_y = -42
+	},
+/obj/machinery/power/wall_obelisk{
+	pixel_y = -42
+	},
+/obj/machinery/power/wall_obelisk{
+	pixel_y = 22
+	},
+/turf/simulated/floor/wood/wild3,
+/area/nadezhda/crew_quarters/dorma2)
 "seT" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
@@ -114938,6 +115013,11 @@
 /area/shuttle/vasiliy_shuttle_area)
 "tMK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/crew_quarters/pool)
 "tMV" = (
@@ -121895,6 +121975,13 @@
 	},
 /obj/item/clothing/glasses/powered/meson,
 /obj/item/clothing/suit/space/void/SCAF/voidwolf/mark,
+/obj/item/gun/projectile/automatic/ak47/sa/tac,
+/obj/item/paper{
+	info = "Fuck you, buy your own god damn magazines, with love, me.";
+	name = "A letter from me";
+	desc = "This can't be good...";
+	color = "#FFAA8c"
+	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "uTr" = (
@@ -123404,6 +123491,15 @@
 /obj/structure/flora/tree/jungle_small/variant2,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/inside_colony)
+"vgK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/nadezhda/crew_quarters/dorma2)
 "vgL" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -128396,6 +128492,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/crew_quarters/pool)
 "vXN" = (
@@ -129362,6 +129463,11 @@
 	pixel_x = -25;
 	specialfunctions = 4
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "wgR" = (
@@ -130006,6 +130112,14 @@
 	},
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/nadezhda/security/prisoncells)
+"wmO" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/nadezhda/crew_quarters/dorma2)
 "wmP" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -130885,6 +130999,11 @@
 "wsT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/crew_quarters/pool)
 "wsX" = (
@@ -130979,9 +131098,10 @@
 /area/nadezhda/command/prime)
 "wul" = (
 /obj/structure/closet/crate,
-/obj/item/gun/projectile/revolver/tacticool_revolver,
 /obj/item/ammo_magazine/speed_loader_kurtz_50,
 /obj/item/ammo_magazine/speed_loader_kurtz_50,
+/obj/item/tool_upgrade/productivity/ergonomic_grip,
+/obj/item/gun/projectile/revolver/tacticool_revolver/scopeless,
 /turf/simulated/floor/wood/wild2,
 /area/nadezhda/crew_quarters/dorm10)
 "wuC" = (
@@ -131020,6 +131140,11 @@
 "wuI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/item/caution,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/nadezhda/crew_quarters/pool)
 "wuK" = (
@@ -189761,7 +189886,7 @@ fLk
 fLk
 fLk
 fLk
-fLk
+ocS
 fLk
 fLk
 fLk
@@ -201114,7 +201239,7 @@ tMK
 wuI
 hvy
 isZ
-bBZ
+pBV
 rWi
 tTZ
 kJK
@@ -201718,9 +201843,9 @@ gwG
 gwG
 tSJ
 etN
-nXm
+vgK
 wgM
-eRl
+wmO
 rWi
 tYr
 eBR
@@ -202121,7 +202246,7 @@ gwG
 gwG
 eti
 tSJ
-eRl
+seS
 wyj
 eRl
 eRl

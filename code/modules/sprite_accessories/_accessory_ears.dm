@@ -106,15 +106,12 @@
 	colored_layers = 1
 	blend = ICON_MULTIPLY
 
-//Skyrats ported
-/*
-/datum/sprite_accessory/ears/bunnyhc_alt
-	name = "Bunny Ears, Alt"
-	desc = ""
-	icon_state = "bunny_alt"
-	colored_layers = 3 //Looks like 2 is intented
-	blend = ICON_MULTIPLY
-*/
+/datum/sprite_accessory/ears/bunny_longest
+	name = "Bunny Ears (Longest)"
+	icon = 'icons/mob/sprite_accessory/earslong.dmi'
+	icon_state = "longears"
+	colored_layers = 2 // If set to 1, will apply color to the base sprite using the blend variable's mode.
+
 /datum/sprite_accessory/ears/bunny_floppy
 	name = "Bunny Ears, Floppy"
 	desc = ""
@@ -156,7 +153,7 @@
 	name = "Bunny Ears, Long"
 	desc = ""
 	icon_state = "bnnuy_long"
-	colored_layers = 1
+	colored_layers = 2
 	blend = ICON_MULTIPLY
 /*
 //Skyrats ported

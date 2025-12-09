@@ -20,6 +20,24 @@
 	wield_delay = 0.6 SECOND
 	wield_delay_factor = 0.6 // 60 vig
 	gun_parts = list(/obj/item/part/gun/frame/tacticool = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/kurtz = 1)
+	saw_off = TRUE		//Can be sawn off?
+	sawn = /obj/item/gun/projectile/revolver/tacticool_revolver/scopeless			//what it becomes when sawn down, accepts a typepath.
+
+/obj/item/gun/projectile/revolver/tacticool_revolver/scopeless
+	name = "\"Tacticool\" heavy revolver"
+	desc = "A heavy revolver with wrist snapping recoil, often used by mercenaries for showing off thier precision with iron sights. Uses 12mm."
+	icon = 'icons/obj/guns/projectile/tacticool_revolver.dmi'
+	icon_state = "tacticool_revolver1"
+	item_state = "tacticool_revolver"
+	fire_sound = 'sound/weapons/guns/fire/12mm_revolver.ogg'
+	caliber = CAL_50
+	max_shells = 5
+	fire_delay = 4
+	drawChargeMeter = FALSE
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
+	price_tag = 1100 //more op and rare than miller, hits harder, but have fun with hittin anything
+	zoom_factors = list()
+	gun_parts = list()
 
 /obj/item/part/gun/frame/tacticool
 	name = "Tacticool frame"

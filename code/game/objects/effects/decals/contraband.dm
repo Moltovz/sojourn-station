@@ -751,6 +751,10 @@
 	desc = "What the fuck..."
 	icon_state = "posterlusty"
 
+/obj/item/contraband/poster/placed/pinup/cat
+	name = "feline abhuman pinup"
+	desc = "What the fuck..."
+	icon_state = "doublerainbow"
 
 /*Recruitment*/
 /obj/item/contraband/poster/placed/recruitment/deathsquad

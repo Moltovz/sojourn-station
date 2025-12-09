@@ -351,6 +351,11 @@
 	icon_state = "erisgreen"
 	dynamic_lighting = TRUE
 
+/area/nadezhda/outside/dcave
+	name = "Dormatories VoidWolf Cave"
+	icon_state = "erisgreen"
+	dynamic_lighting = TRUE
+
 /area/nadezhda/outside/forest
 	name = "Forest"
 	icon_state = "forest"

@@ -128,7 +128,7 @@
 /datum/sprite_accessory/hair/bob_long
 	name = "Long bob"
 	icon_state = "bob_long"
-*/ 
+*/
 
 /datum/sprite_accessory/hair/bowl1
 	name = "Bowl"
@@ -1267,3 +1267,7 @@
 /datum/sprite_accessory/hair/mycus/spore3
 	name = "Mycus Spore Cap 3"
 	icon_state = "spore3"
+
+/datum/sprite_accessory/hair/shortbangs2
+	name = "Short Bangs 2"
+	icon_state = "hair_shortbangs2"
