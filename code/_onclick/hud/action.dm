@@ -209,17 +209,22 @@
 	. = ..()
 	if(QDELETED(src))
 		return
-	var/list/modifiers = params2list(params)
+//	var/list/modifiers = params2list(params)
+
 	// don't show the tooltip if we're dragging
+/*
 	if(!LAZYACCESS(modifiers, DRAG) && !LAZYACCESS(modifiers, LEFT_CLICK))
 		show_tooltip(params)
+*/ //how about we dont show it in general, shift clicking works
 
 /obj/screen/action_palette/MouseExited()
 	closeToolTip(usr)
 	return ..()
 
+/*
 /obj/screen/action_palette/proc/show_tooltip(params)
 	openToolTip(usr, src, params, title = name, content = desc)
+*/ //no one likes this
 
 /obj/screen/action_palette/Click(location, control, params)
 	var/list/modifiers = params2list(params)

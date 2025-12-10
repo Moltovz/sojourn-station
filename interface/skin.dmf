@@ -113,6 +113,9 @@ macro "macro"
 	elem "ctrlf"
 		name = "CTRL+F"
 		command = "a-intent left"
+	elem "give"
+		name = "G"
+		command = "give"
 	elem "ctrlg"
 		name = "CTRL+G"
 		command = "a-intent right"
@@ -325,6 +328,15 @@ macro "hotkeymode"
 	elem "aup"
 		name = "A+UP"
 		command = "MoveKey 8 0"
+	elem "c"
+		name = "C"
+		command = "rest"
+	elem "shiftc"
+		name = "SHIFT+C"
+		command = ".toggle_scope"
+	elem "cup"
+		name = "C+UP"
+		command = "stopSliding"
 	elem "d"
 		name = "D"
 		command = "MoveKey 4 1"
@@ -337,9 +349,9 @@ macro "hotkeymode"
 	elem "ctrle"
 		name = "CTRL+E"
 		command = "quick-equip"
-	elem "v"
-		name = "V"
-		command = "blocking"
+	elem 
+		name = "G"
+		command = "give"
 	elem "h"
 		name = "H"
 		command = "holster"
@@ -373,6 +385,9 @@ macro "hotkeymode"
 	elem "t"
 		name = "T"
 		command = "say-verb"
+	elem "v"
+		name = "V"
+		command = "blocking"
 	elem "w"
 		name = "W"
 		command = "MoveKey 1 1"
@@ -388,21 +403,12 @@ macro "hotkeymode"
 	elem "shiftx"
 		name = "SHIFT+X"
 		command = ".wield"
-	elem "shiftc"
-		name = "SHIFT+C"
-		command = ".toggle_scope"
 	elem "y"
 		name = "Y"
 		command = "Activate-Held-Object"
 	elem "ctrly"
 		name = "CTRL+Y"
 		command = "Activate-Held-Object"
-	elem "c"
-		name = "C"
-		command = "rest"
-	elem "cup"
-		name = "C+UP"
-		command = "stopSliding"
 	elem "z"
 		name = "Z"
 		command = "Activate-Held-Object"
@@ -909,41 +915,42 @@ macro "borghotkeymode"
 		name = "NUMPAD3"
 		command = "body-l-leg"
 
+
 menu "menu"
-	elem
+	elem 
 		name = "&File"
 		command = ""
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Quick screenshot\tF2"
 		command = ".screenshot auto"
 		category = "&File"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Save screenshot as...\tShift+F2"
 		command = ".screenshot"
 		category = "&File"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = ""
 		command = ""
 		category = "&File"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Reconnect"
 		command = ".reconnect"
 		category = "&File"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Quit\tAlt-F4"
 		command = ".quit"
 		category = "&File"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Icons"
 		command = ""
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Size"
 		command = ""
 		category = "&Icons"
@@ -991,7 +998,7 @@ menu "menu"
 		can-check = true
 		group = "size"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Scaling"
 		command = ""
 		category = "&Icons"
@@ -1021,16 +1028,17 @@ menu "menu"
 		name = "&Help"
 		command = ""
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Admin Help\tF1"
 		command = "adminhelp"
 		category = "&Help"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Hotkeys"
 		command = "Hotkeys-Help"
 		category = "&Help"
 		saved-params = "is-checked"
+
 
 window "mainwindow"
 	elem "mainwindow"
@@ -1110,9 +1118,9 @@ window "mapwindow"
 		anchor1 = 0,0
 		anchor2 = -1,-1
 		font-family = "Grand9k Pixel"
-		font-size = 12pt
+		font-size = 12
 		text-color = #ffffff
-		background-color = #000
+		background-color = #000000
 		saved-params = ""
 		text = ""
 		align = left
@@ -1215,10 +1223,10 @@ window "outputwindow"
 		size = 480x20
 		anchor1 = 0,100
 		anchor2 = 100,100
+		font-size = 10
 		is-default = true
 		border = line
 		saved-params = "command"
-		font-size = 10
 	elem "oocbutton"
 		type = BUTTON
 		pos = 480,460
@@ -1354,3 +1362,4 @@ window "tgui_say"
 		anchor1 = 0,0
 		anchor2 = 0,0
 		saved-params = ""
+

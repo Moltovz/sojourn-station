@@ -34,10 +34,10 @@ ADMIN_VERB_ADD(/client/proc/cmd_admin_subtle_message, R_FUN, FALSE)
 	if(usr)
 		if (usr.client)
 			if(usr.client.holder)
-				to_chat(M, "\bold You hear a voice in your head... \italic [msg]")
+				to_chat(M, "You hear a voice in your head... \italic [msg]")
 
 	log_admin("SubtlePM: [key_name(usr)] -> [key_name(M)] : [msg]")
-	message_admins("\blue \bold SubtleMessage: [key_name_admin(usr)] -> [key_name_admin(M)] : [msg]", 1)
+	message_admins("\blue SubtleMessage: [key_name_admin(usr)] -> [key_name_admin(M)] : [msg]", 1)
 
 
 ADMIN_VERB_ADD(/client/proc/cmd_admin_world_narrate, R_FUN, FALSE)
@@ -56,7 +56,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_admin_world_narrate, R_FUN, FALSE)
 		return
 	to_chat(world, "[msg]")
 	log_admin("GlobalNarrate: [key_name(usr)] : [msg]")
-	message_admins("\blue \bold GlobalNarrate: [key_name_admin(usr)] : [msg]<BR>", 1)
+	message_admins("\blue GlobalNarrate: [key_name_admin(usr)] : [msg]<BR>", 1)
 
 
 ADMIN_VERB_ADD(/client/proc/cmd_admin_direct_narrate, R_ADMIN, FALSE)
@@ -82,7 +82,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_admin_direct_narrate, R_ADMIN, FALSE)
 
 	to_chat(M, msg)
 	log_admin("DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]): [msg]")
-	message_admins("\blue \bold DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]): [msg]<BR>", 1)
+	message_admins("\blue DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]): [msg]<BR>", 1)
 
 
 /client/proc/cmd_admin_godmode(mob/M as mob in SSmobs.mob_list)

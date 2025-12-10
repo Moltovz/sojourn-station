@@ -180,7 +180,6 @@
 /mob/living/carbon/human/say_quote(var/message, var/datum/language/speaking = null)
 	var/verb = "says"
 	var/ending = copytext(message, length(message))
-
 	if(speaking)
 		verb = speaking.get_spoken_verb(ending)
 	else
@@ -190,7 +189,7 @@
 			verb=pick("asks", "inquires", "enquires", "queries")
 		else if(ending=="@")
 			verb="reports"
-
+	playsound(src, 'sound/voice/snes.ogg', rand(10,35), 5) //voiceplaceholder
 	return verb
 
 /mob/living/carbon/human/handle_speech_problems(var/message, var/verb)

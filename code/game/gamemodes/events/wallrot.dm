@@ -5,6 +5,9 @@
 
 	It is not marked negative due to this possible advantage
 */
+
+/* //I fucking hate wallrot
+
 /datum/storyevent/wallrot
 	id = "wallrot"
 	name = "wallrot"
@@ -70,6 +73,7 @@
 	for(var/i=0, i<number_rots, i++)
 		new/obj/effect/overlay/wallrot(src)
 
+*/
 
 /obj/effect/overlay/wallrot
 	name = "wallrot"
@@ -84,3 +88,4 @@
 	icon_state = "fungoartiglieria-[rand(1, 3)]"
 	pixel_x += rand(-8, 8)
 	pixel_y += rand(-8, 8)
+
