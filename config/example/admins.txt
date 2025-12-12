@@ -5,4 +5,5 @@
 # Ranks can be anything defined in admin_ranks.txt           ~Carn   #
 ######################################################################
 
-# somerussians - host
+Moltov - Host
+Britgrenadier1 - Game Master
