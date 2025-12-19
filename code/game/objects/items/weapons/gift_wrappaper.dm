@@ -72,7 +72,6 @@
 		/obj/item/clothing/accessory/tie/yellow)
 
 	if(!ispath(gift_type,/obj/item))	return
-
 	var/obj/item/I = new gift_type(M)
 	M.remove_from_mob(src)
 	M.put_in_hands(I)

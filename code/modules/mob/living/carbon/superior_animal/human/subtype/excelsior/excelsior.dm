@@ -100,6 +100,26 @@
 	mag_type = /obj/item/ammo_magazine/smg_magnum_40/empty
 	mags_left = 2 //2+1
 
+/mob/living/carbon/superior/human/excelsior/excel_ak/jolly
+	name = "Excelsior Elf"
+	icon = 'icons/mob/32x42.dmi'
+	icon_state = "exceljollyak"
+	projectiletype = /obj/item/projectile/bullet/rifle_75
+	drop_items = list(/obj/item/gun/projectile/automatic/ak47)
+	projectilesound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
+	rounds_left = 20
+	mag_type = /obj/item/ammo_magazine/rifle_75/empty
+	mags_left = 2 //2+1
+
+/mob/living/carbon/superior/human/excelsior/excel_ak/jolly/laser //I am lazy
+	icon_state = "exceljollylaser"
+	projectiletype = /obj/item/projectile/beam/heavylaser
+	drop_items = list(/obj/item/gun/energy/cog)
+	projectilesound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
+	rounds_left = 15
+	mag_type = /obj/item/cell/medium/excelsior
+	mags_left = 3 //3+1
+
 /mob/living/carbon/superior/human/excelsior/death(gibbed, deathmessage = "drops its weapon as it explodes in a shower of gore when their death implant detonates!")
 	..()
 	new /obj/effect/gibspawner/human(src.loc)
@@ -128,6 +148,17 @@
 	var/stunning = FALSE
 
 	drop_items = list(/obj/item/shield/buckler/excelsior, /obj/item/tool/hammer/excelsior_hammer)
+
+/mob/living/carbon/superior/human/excelsior/excel_hammer_shield/jolly
+	icon_state = "exceljolly"
+	name = "Excelsior Elf"
+	maxHealth = 170 * EXCELSIOR_HEALTH_MOD //More hp do to shield
+	health = 170 * EXCELSIOR_HEALTH_MOD
+	melee_damage_lower = 25
+	melee_damage_upper = 40
+	armor_divisor = ARMOR_PEN_DEEP
+	rapid = 1
+	armor = list(melee = 10, bullet = 15, energy = 18, bomb = 10, bio = 0, rad = 0)
 
 /mob/living/carbon/superior/human/excelsior/excel_hammer_shield/batton
 	icon_state = "excel_batton_shield"
