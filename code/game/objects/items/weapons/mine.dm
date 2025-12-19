@@ -25,7 +25,6 @@
 
 	var/armed = FALSE
 	var/deployed = FALSE
-	var/excelsior = FALSE
 	anchored = FALSE
 
 /obj/item/mine/Initialize()
@@ -49,6 +48,7 @@
 	excelsior = TRUE
 	prob_explode = 100
 	pulse_difficulty = FAILCHANCE_HARD
+	excelsior = 1
 
 /obj/item/mine/old
 	name = "old landmine"

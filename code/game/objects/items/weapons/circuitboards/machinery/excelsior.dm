@@ -13,6 +13,7 @@
 		/obj/item/stock_parts/capacitor = 2,
 		/obj/item/stack/cable_coil = 30
 	)
+	excelsior = 1
 
 /obj/item/circuitboard/excelsiorautolathe
 	name = "circuit board excelsior autolathe"
@@ -24,6 +25,7 @@
 		/obj/item/stock_parts/matter_bin = 3,
 		/obj/item/stock_parts/manipulator = 1,
 	)
+	excelsior = 1
 
 /obj/item/circuitboard/excelsiorreconstructor
 	name = "circuit board excelsior implant reconstructor"
@@ -35,6 +37,7 @@
 		/obj/item/stock_parts/manipulator = 2,
 		/obj/item/stock_parts/console_screen = 1
 	)
+	excelsior = 1
 
 /obj/item/circuitboard/diesel
 	name = "circuit board diesel generator"
@@ -59,6 +62,7 @@
 		/obj/item/stock_parts/manipulator = 1,
 		/obj/item/stock_parts/console_screen = 1
 	)
+	excelsior = 1
 
 /obj/item/circuitboard/excelsior_teleporter
 	name = "circuit board excelsior teleporter"
@@ -71,7 +75,8 @@
 		/obj/item/cell/large = 1,
 		/obj/item/stock_parts/subspace/crystal = 1
 	)
-
+	excelsior = 1
+	
 /obj/item/circuitboard/excelsior_turret
 	name = "circuit board excelsior turret"
 	build_name = ""
@@ -83,6 +88,7 @@
 		/obj/item/device/assembly/prox_sensor = 1,
 		/obj/item/cell/medium = 1
 	)
+	excelsior = 1
 
 /obj/item/circuitboard/excelsior_autodoc
 	name = "excelsior autodoc"
@@ -96,7 +102,8 @@
 		/obj/item/stock_parts/scanning_module/excelsior = 1,
 		/obj/item/stock_parts/console_screen = 1
 	)
-
+	excelsior = 1
+	
 /obj/item/circuitboard/ex_bluespace_repairer
 	name = "excelsior bluespace aliner"
 	build_name = ""

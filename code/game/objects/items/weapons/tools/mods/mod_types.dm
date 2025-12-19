@@ -899,6 +899,7 @@
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_GOLD = 3)
 	price_tag = 325 //freee markeetttt
 	can_remove = FALSE
+	excelsior = 1
 
 /obj/item/tool_upgrade/augment/ai_tool_excelsior/New()
 	..()

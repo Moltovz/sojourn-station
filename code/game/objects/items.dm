@@ -150,6 +150,10 @@
 	var/dropped_sound_volume_dropoff = -1
 
 	var/thrown_sound
+	
+	//excel check
+	var/excelsior = 0
+
 
 /obj/item/Initialize()
 
@@ -286,6 +290,9 @@
 
 			if(surplus_tag)
 				message += SPAN_NOTICE("\nThis item has a surplus tag and is only worth ten percent its usual value on exports.")
+
+	if(excelsior)
+		message += SPAN_DANGER("You do NOT want to touch this.")
 
 	return ..(user, distance, "", message)
 
@@ -782,3 +789,26 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 	if(dropped_sound)
 		playsound(src, dropped_sound, dropped_sound_volume, dropped_sound_volume_extra_range, dropped_sound_volume_dropoff)
+
+
+//excel sanity check
+/obj/item/pickup(mob/user)
+	. = ..()
+
+	if(!excelsior || !isliving(user)) //stap early if the item isnt commie
+		return
+
+	var/cog = user.stats.getStat(STAT_COG)
+	var/commieluck = rand(1, 100)
+
+	if(cog >= commieluck) //check one against cog
+		to_chat(user, SPAN_NOTICE("Your hand trembles as you touch the [src], but only for a moment."))
+		return
+	if(prob(50)) //check two as a coined flipped
+		to_chat(user, SPAN_WARNING("The [src] pricks your hand with an injector! causing you to drop it!"))
+		user.drop_item(src)        //IDK if this is the right proc for this
+		return
+
+	to_chat(user, SPAN_DANGER("You feel a tiny prick as your mind becomes free!"))
+	var/obj/item/implant/excelsior/E = new /obj/item/implant/excelsior(user)
+	E.install(user, BP_HEAD)                  //pretty sure this wont check to see if the person is protected with thick clothes, thats intended

@@ -281,6 +281,7 @@
 	matter = list(MATERIAL_GLASS = 5, MATERIAL_STEEL = 8, MATERIAL_PLASTEEL = 15)
 	max_durability = 300 //Strong so that we can protect folks from quote a few shots
 	durability = 300
+	excelsior = 1
 
 //Used for mobs as these has less materals and are pre-damageed
 /obj/item/shield/buckler/excelsior/dropped

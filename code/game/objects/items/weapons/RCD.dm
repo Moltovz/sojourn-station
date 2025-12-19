@@ -352,6 +352,7 @@
 	construction_speed = 2
 	construction_efficiency = 3
 	price_tag = 4000
+	excelsior = 1
 
 /obj/item/rcd/excelsior/examine()
 	..()

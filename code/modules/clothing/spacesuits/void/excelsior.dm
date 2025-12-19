@@ -4,6 +4,7 @@
 	icon_state = "cosmo"
 	item_state = "cosmo"
 	psi_blocking = 10
+	excelsior = 1
 
 	//The excelsior armors cost small amounts of rare materials that they can teleport in.
 	//This means they can either build up materials over time, or make it go faster by scavenging rare mats
@@ -34,6 +35,7 @@
 	desc = "An ancient space suit design, remade with advanced materials. Provides good protection, especially against energy discharges."
 	icon_state = "soviet_skaf"
 	item_state = "soviet_skaf"
+	excelsior = 1
 	slowdown = 0.8
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	flags_inv = HIDEGLOVES|HIDEJUMPSUIT|HIDETAIL
@@ -63,6 +65,7 @@
 	name = "Cosmonaut armor"
 	desc = "An ancient space suit design. Provides good protection, especially against energy discharges. This one appears to be an older, less advanced model that is notably free of techno-communist corruption."
 	slowdown = 0.6 //slightly less slowdown, slightly less armor.
+	excelsior = 0
 	armor_list = list(
 		melee = 10,
 		bullet = 12,
@@ -83,6 +86,7 @@
 /obj/item/clothing/head/helmet/space/void/excelsior/progenitor
 	name = "Cosmonaut helmet"
 	desc = "A deceptively well armored space helmet. An ancient design and the likely progenitor to the Excelsior brand."
+	excelsior = 0
 	matter = list(
 		MATERIAL_PLASTIC = 10,
 		MATERIAL_GLASS = 10,

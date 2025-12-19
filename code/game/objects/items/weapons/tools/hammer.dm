@@ -176,6 +176,7 @@
 	tool_qualities = list(QUALITY_HAMMERING = 60, QUALITY_PRYING = 10)
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 10)
 	clickdelay_offset = DEFAULT_ATTACK_COOLDOWN
+	excelsior = 1
 
 /obj/item/tool/hammer/mace
 	name = "mace"

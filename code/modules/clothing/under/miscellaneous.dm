@@ -366,6 +366,7 @@
 	icon_state = "excelsior_white"
 	item_state = "bl_suit"
 	has_sensor = 0
+	excelsior = 1
 
 /obj/item/clothing/under/excelsior/mixed
 	name = "mixed excelsior jumpsuit"

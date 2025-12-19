@@ -302,6 +302,7 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	desc = "A tan plastic firearm grip, unattached from a firearm. To fight for Haven and to spread the unified revolution!"
 	icon_state = "grip_excel"
 	refence_for_legal = "excel"
+	excelsior = 1
 
 /obj/item/part/gun/grip/serb
 	name = "bakelite plastic grip"

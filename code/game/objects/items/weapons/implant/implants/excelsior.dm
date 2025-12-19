@@ -11,6 +11,7 @@
 	var/disguise
 
 	overlay_icon = "excel"
+	excelsior = 1 //duh
 
 /obj/item/implant/excelsior/Initialize()
 	. = ..()
@@ -39,6 +40,7 @@
 /obj/item/implant/excelsior/broken
 	name = "broken excelsior implant"
 	malfunction = MALFUNCTION_PERMANENT
+	excelsior = 0                      //not functional Also, implanters and implant cases wont trigger
 
 /obj/item/implantcase/excelsior/broken
 	name = "glass case - 'broken complant'"

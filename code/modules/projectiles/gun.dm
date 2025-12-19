@@ -48,8 +48,6 @@
 
 	var/fire_sound_text = "gunshot"
 	var/rigged = FALSE
-	var/excelsior = FALSE
-
 	var/datum/recoil/recoil // Reference to the recoil datum in datum/recoil.dm
 	var/list/init_recoil = list(0, 0, 0) // For updating weapon mods
 

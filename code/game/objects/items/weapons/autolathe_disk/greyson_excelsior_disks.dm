@@ -133,6 +133,7 @@
 	disk_name = "Excelsior"
 	desc = "The back has a machine etching: \"This struggle must be organized, according to \"all the rules of the art\", by people who are professionally engaged in revolutionary activity.\""
 	icon_state = "excelsior"
+	excelsior = 1
 
 	license = -1
 	designs = list(
@@ -213,6 +214,7 @@
 	disk_name = "Excelsior"
 	desc = "The back has a machine etching: \"We stand for organized terror - this should be frankly admitted. Terror is an absolute necessity during times of revolution.\""
 	icon_state = "excelsior"
+	excelsior = 1
 
 	license = -1
 	designs = list(
@@ -297,6 +299,7 @@
 	disk_name = "Excelsior"
 	desc = "The back has a machine etching: \"Nobody is to be blamed for being born a slave; but a slave who not only eschews a striving for freedom but justifies and eulogies his slavery - such a slave is a lickspittle and a boor, who arouses a legitimate feeling of indignation, contempt, and loathing..\""
 	icon_state = "excelsior"
+	excelsior = 1
 
 	license = -1
 	designs = list(
@@ -311,6 +314,7 @@
 	disk_name = "Excelsior"
 	desc = "The back has a machine etching: \"The Equalizer that fits in your pocket.\""
 	icon_state = "excelsior"
+	excelsior = 1
 
 	license = -1
 	designs = list(
@@ -325,6 +329,7 @@
 	disk_name = "Excelsior"
 	desc = "The back has a machine etching: \"The gun of long revolution.\""
 	icon_state = "excelsior"
+	excelsior = 1
 
 	license = -1
 	designs = list(
@@ -339,6 +344,7 @@
 	disk_name = "Excelsior"
 	desc = "The back has a machine etching: \"The gun of endless revolution.\""
 	icon_state = "excelsior"
+	excelsior = 1
 
 	license = -1
 	designs = list(
@@ -353,6 +359,7 @@
 	disk_name = "Excelsior"
 	desc = "The back has a machine etching: \"The gun of modern revolution.\""
 	icon_state = "excelsior"
+	excelsior = 1
 
 	license = -1
 	designs = list(
@@ -368,6 +375,7 @@
 	disk_name = "Excelsior"
 	desc = "The back has a machine etching: \"The gun of clean revolution.\""
 	icon_state = "excelsior"
+	excelsior = 1
 
 	license = -1
 	designs = list(
@@ -379,6 +387,7 @@
 	disk_name = "Excelsior"
 	desc = "The back has a machine etching: \"The hammer to break the chains.\""
 	icon_state = "excelsior"
+	excelsior = 1
 
 	license = -1
 	designs = list(

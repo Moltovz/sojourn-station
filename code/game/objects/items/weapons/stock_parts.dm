@@ -307,6 +307,7 @@
 	rating = 5
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 100
+	excelsior = 1
 
 /obj/item/stock_parts/scanning_module/excelsior
 	name = "excelsior scanning module"
@@ -316,6 +317,7 @@
 	rating = 5
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 100
+	excelsior = 1
 
 /obj/item/stock_parts/manipulator/excelsior
 	name = "excelsior manipulator"
@@ -325,6 +327,7 @@
 	rating = 5
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
 	price_tag = 100
+	excelsior = 1
 
 /obj/item/stock_parts/micro_laser/excelsior
 	name = "excelsior micro-laser"
@@ -334,6 +337,7 @@
 	rating = 5
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 100
+	excelsior = 1
 
 /obj/item/stock_parts/matter_bin/excelsior
 	name = "excelsior matter bin"
@@ -343,6 +347,7 @@
 	rating = 5
 	matter = list(MATERIAL_PLASTIC = 3, MATERIAL_GLASS = 1)
 	price_tag = 100
+	excelsior = 1
 
 //alien stock parts (rating 6)
 

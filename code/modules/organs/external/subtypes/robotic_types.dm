@@ -325,6 +325,7 @@ obj/item/organ/external/robotic/synthskin/groin
 	max_damage = 65
 	min_broken_damage = 45
 	price_tag = 1 //commie garbage
+	excelsior = 1
 
 /obj/item/organ/external/robotic/excelsior/l_arm
 	default_description = /datum/organ_description/arm/left

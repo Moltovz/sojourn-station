@@ -56,3 +56,4 @@
 	item_state = "aflare-on"
 	heavy_range = 1.5
 	weak_range = 6
+	excelsior = 1

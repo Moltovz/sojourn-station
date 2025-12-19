@@ -166,6 +166,7 @@
 	clean_speed = 35 //Almost the same as a mop
 	reagent_storage = 30 //Same as mop
 	slip_power = 5
+	excelsior = 1
 
 /obj/item/soap/hunters
 	name = "handmade soap"

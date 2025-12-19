@@ -118,6 +118,7 @@
 	origin_tech = list(TECH_POWER = 3)
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTIC = 2)
 	maxcharge = 18000
+	excelsior = 1
 
 /obj/item/cell/large/neotheology
 	name = "Absolute \"Spark 13000L\""
@@ -285,6 +286,7 @@
 	origin_tech = list(TECH_POWER = 3)
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
 	maxcharge = 1100
+	excelsior = 1
 
 /obj/item/cell/medium/neotheology
 	name = "Absolute \"Spark 1000M\""
@@ -448,6 +450,7 @@
 	origin_tech = list(TECH_POWER = 3)
 	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1)
 	maxcharge = 400
+	excelsior = 1
 
 /obj/item/cell/small/neotheology
 	name = "Absolute \"Spark 300S\""
