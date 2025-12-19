@@ -162,7 +162,7 @@ casingtype = /obj/item/ammo_casing/a75/spent
 /mob/living/carbon/superior/human/voidwolf/elite/myrmidon/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	if(prob(block_chance) || moved)
 		moved = FALSE
-		visible_message("\red \b [src] blocks the [O]!")
+		visible_message("\red [src] blocks the [O]!")
 		return
 	..()
 

@@ -14,6 +14,16 @@
 	icon_state = "gift1"
 	item_state = "gift1"
 
+
+
+/obj/item/a_gift/better
+	name = "gift"
+	desc = "PRESENTS!!!! eek!"
+	icon = 'icons/obj/items.dmi'
+	icon_state = "gift1"
+	item_state = "gift1"
+
+
 /obj/item/a_gift/New()
 	..()
 	pixel_x = rand(-10,10)
@@ -70,6 +80,18 @@
 		/obj/item/device/violin,
 		/obj/item/storage/belt/utility/full,
 		/obj/item/clothing/accessory/tie/yellow)
+
+	if(!ispath(gift_type,/obj/item))	return
+	var/obj/item/I = new gift_type(M)
+	M.remove_from_mob(src)
+	M.put_in_hands(I)
+	I.add_fingerprint(M)
+	qdel(src)
+	return
+
+/obj/item/a_gift/better/attack_self(mob/M as mob)
+	var/gift_type = pick(
+		/obj/item/gun/energy/cog)
 
 	if(!ispath(gift_type,/obj/item))	return
 	var/obj/item/I = new gift_type(M)

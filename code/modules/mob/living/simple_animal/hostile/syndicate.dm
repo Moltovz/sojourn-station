@@ -60,7 +60,7 @@
 
 /mob/living/simple/hostile/syndicate/melee/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	if(prob(65))
-		visible_message("\red \b [src] blocks the [O]! ")
+		visible_message("\red [src] blocks the [O]! ")
 		return
 	..()
 

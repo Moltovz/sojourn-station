@@ -21,6 +21,12 @@
 /obj/item/implant/excelsior/get_scanner_name()
 	return disguise
 
+/obj/item/implant/excelsior/pickup(mob/user)
+	. = ..()
+	if(!user)
+		return
+	to_chat(user, span_warning("The [src] twitches and tries to dig into your skin!"))
+
 /obj/item/implantcase/excelsior
 	name = "glass case - 'complant'"
 	desc = "A case containing an excelsior complant."

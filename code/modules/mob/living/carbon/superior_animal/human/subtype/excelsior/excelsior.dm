@@ -187,7 +187,7 @@
 
 /mob/living/carbon/superior/human/excelsior/excel_hammer_shield/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	if(prob(block_chance))
-		visible_message("\red \b [src] blocks the [O]!")
+		visible_message("\red [src] blocks the [O]!")
 		return
 	..()
 
