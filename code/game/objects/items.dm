@@ -292,7 +292,7 @@
 				message += SPAN_NOTICE("\nThis item has a surplus tag and is only worth ten percent its usual value on exports.")
 
 	if(excelsior)
-		message += SPAN_DANGER("You do NOT want to touch this.")
+		message += SPAN_DANGER("\nSimply looking at this pries at your mind...")
 
 	return ..(user, distance, "", message)
 
@@ -798,6 +798,9 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 	if(!excelsior || !isliving(user)) //stap early if the item isnt commie
 		return
 
+	if(user.faction == "excelsior") //excels can grab shit
+		return
+
 	var/cog = user.stats.getStat(STAT_COG)
 	var/commieluck = rand(1, 100)
 
@@ -806,9 +809,11 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 		return
 	if(prob(50)) //check two as a coined flipped
 		to_chat(user, SPAN_WARNING("The [src] pricks your hand with an injector! causing you to drop it!"))
-		user.drop_item(src)        //IDK if this is the right proc for this
+		user.drop_item(src)        
 		return
 
 	to_chat(user, SPAN_DANGER("You feel a tiny prick as your mind becomes free!"))
 	var/obj/item/implant/excelsior/E = new /obj/item/implant/excelsior(user)
+	message_admins("[key_name_admin(user)] has become an excelsior slave.")
+	log_game("[key_name(user)] has become an excelsior slave.")
 	E.install(user, BP_HEAD)                  //pretty sure this wont check to see if the person is protected with thick clothes, thats intended

@@ -244,6 +244,7 @@
 	structure_damage_factor = STRUCTURE_DAMAGE_NORMAL
 	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 5)
 	cell = /obj/item/cell/medium/excelsior
+	excelsior = 1
 
 /obj/item/tool/baton/slimebaton
 	name = "xenobio baton"

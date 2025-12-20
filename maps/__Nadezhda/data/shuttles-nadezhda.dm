@@ -186,7 +186,7 @@
 	shuttle_area = /area/shuttle/rocinante_shuttle_area
 	current_location = "nav_rocinante_homebase"
 	landmark_transition = "nav_rocinante_transit"
-	destination_tags = list("nav_rocinante_homebase", "nav_rocinante_river", "nav_rocinante_swamp", "nav_rocinante_graysonfield", "nav_space_0")//, "nav_rocinante_spacefort"
+	destination_tags = list("nav_rocinante_homebase", "nav_rocinante_river", "nav_rocinante_swamp", "nav_rocinante_graysonfield", "nav_space_0", "nav_rocinante_jolly")//, "nav_rocinante_spacefort"
 
 /obj/effect/shuttle_landmark/rocinante_home
 	name = "The Rocinante Home Pad "
@@ -228,6 +228,13 @@
 	name = "Local Space Station Dock"
 	landmark_tag = "nav_rocinante_spacefort"
 	base_turf = /turf/simulated/floor/reinforced
+	autoset = TRUE
+
+//events
+/obj/effect/shuttle_landmark/jolly
+	name = "Unknown Signal"
+	landmark_tag = "nav_rocinante_jolly"
+	base_turf = /turf/simulated/floor/snow
 	autoset = TRUE
 
 //Rocinante console

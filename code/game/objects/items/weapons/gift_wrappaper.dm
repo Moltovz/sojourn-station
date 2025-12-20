@@ -91,6 +91,7 @@
 
 /obj/item/a_gift/better/attack_self(mob/M as mob)
 	var/gift_type = pick(
+		/obj/random/gun_fancy,
 		/obj/item/gun/energy/cog)
 
 	if(!ispath(gift_type,/obj/item))	return

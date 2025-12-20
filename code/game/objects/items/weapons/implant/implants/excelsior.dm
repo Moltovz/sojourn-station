@@ -6,18 +6,26 @@
 	var/antag_id = ROLE_EXCELSIOR_REV
 	var/faction_id = FACTION_EXCELSIOR
 	var/global/possible_disguises = list(
-		/obj/item/implant/death_alarm
+		/obj/item/implant/death_alarm,
+		/obj/item/implant/chem,
+		/obj/item/implant/tracking,
+		/obj/item/implant/freedom,
+		/obj/item/implant/uplink,
+		/obj/item/implant/explosive
 	)
 	var/disguise
 
 	overlay_icon = "excel"
-	excelsior = 1 //duh
+	excelsior = 1
 
 /obj/item/implant/excelsior/Initialize()
 	. = ..()
 	if(length(possible_disguises))
 		var/obj/item/implant/I = pick(possible_disguises)
 		disguise = initial(I.name)
+		name = I.name
+		icon_state = I.icon_state
+		desc = I.desc
 
 /obj/item/implant/excelsior/get_scanner_name()
 	return disguise
