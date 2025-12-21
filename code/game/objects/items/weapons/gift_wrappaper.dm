@@ -18,7 +18,7 @@
 
 /obj/item/a_gift/better
 	name = "gift"
-	desc = "PRESENTS!!!! eek!"
+	desc = "PRESENTS!!!! eek... why does it look like a gun?"
 	icon = 'icons/obj/items.dmi'
 	icon_state = "gift1"
 	item_state = "gift1"
@@ -91,7 +91,39 @@
 
 /obj/item/a_gift/better/attack_self(mob/M as mob)
 	var/gift_type = pick(
-		/obj/random/gun_fancy,
+		/obj/item/gun/energy/lasersmg/p9evil,
+		/obj/item/gun/energy/plasma,
+		/obj/item/gun/energy/sniperrifle,
+		/obj/item/gun/energy/taser,
+		/obj/item/gun/projectile/automatic/ak47/sa/sawn,
+		/obj/item/gun/projectile/automatic/ak47/sa,
+		/obj/item/gun/projectile/automatic/c20r/sci,
+		/obj/item/gun/projectile/automatic/lmg/rpd,
+		/obj/item/gun/projectile/automatic/lmg,
+		/obj/item/gun/projectile/automatic/mac/croon,
+		/obj/item/gun/projectile/automatic/mamba,
+		/obj/item/gun/projectile/automatic/omnirifle/solmarine/shotgunless_sawn,
+		/obj/item/gun/projectile/automatic/scaffold,
+		/obj/item/gun/projectile/automatic/vector,
+		/obj/item/gun/projectile/basilisk,
+		/obj/item/gun/projectile/boltgun/sawn/sa,
+		/obj/item/gun/projectile/boltgun/scout,
+		/obj/item/gun/projectile/colt/ten,
+		/obj/item/gun/projectile/rebar,
+		/obj/item/gun/energy/crossbow,
+		/obj/item/gun/projectile/revolver/artwork_revolver,
+		/obj/item/gun/projectile/shotgun/buffalo,
+		/obj/item/gun/projectile/rpg,
+		/obj/item/gun/energy/crossbow,
+		/obj/item/gun/projectile/shotgun/pump/hunter_crossbow,
+		/obj/item/gun/projectile/shotgun/pump/gladstone,
+		/obj/item/gun/projectile/shotgun/riot,
+		/obj/item/gun/projectile/stamper,
+		/obj/item/gun/energy/plasma/excubitor,
+		/obj/item/gun/energy/peacekeeper,
+		/obj/item/gun/energy/gun/martin/upgraded,
+		/obj/item/gun/energy/gun/martin/upgraded,   //rigging
+		/obj/item/gun/energy/gun/martin/upgraded,
 		/obj/item/gun/energy/cog)
 
 	if(!ispath(gift_type,/obj/item))	return

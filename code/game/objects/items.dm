@@ -153,6 +153,7 @@
 	
 	//excel check
 	var/excelsior = 0
+	var/excelsior_message = "Simply looking at this pries at your mind..."
 
 
 /obj/item/Initialize()
@@ -292,7 +293,7 @@
 				message += SPAN_NOTICE("\nThis item has a surplus tag and is only worth ten percent its usual value on exports.")
 
 	if(excelsior)
-		message += SPAN_DANGER("\nSimply looking at this pries at your mind...")
+		message += SPAN_DANGER("\n[excelsior_message]")
 
 	return ..(user, distance, "", message)
 
