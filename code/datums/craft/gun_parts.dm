@@ -19,7 +19,7 @@
 	// Currently installed mechanism
 	var/obj/item/part/gun/grip/InstalledMechanism
 	// Which mechanism the frame accepts?
-	var/list/mechanismvar = /obj/item/part/gun/mechanism
+	var/list/mechanismvar = /obj/item/part/gun/mechanism //I wanted to just make this a list but I am not touching every damn file
 
 	// Currently installed barrel
 	var/obj/item/part/gun/barrel/InstalledBarrel
@@ -30,6 +30,14 @@
 
 	//Cares about having modular gun parts or not (i.e can take different barrels to make same gun ect)
 	var/nra = TRUE
+
+/proc/gun_part_names(list/typepaths)
+	var/list/names = list()
+	for(var/path in typepaths)
+		var/obj/item/I = new path
+		names += I.name
+		qdel(I)
+	return english_list(names, "nothing", " or ")
 
 /obj/item/part/gun/frame/New(loc, ...)
 	. = ..()
@@ -242,15 +250,17 @@
 		if(InstalledGrip)
 			to_chat(user, SPAN_NOTICE("\the [src] has \a [InstalledGrip] installed."))
 		else
-			to_chat(user, SPAN_NOTICE("\the [src] does not have a grip installed."))
+			to_chat(user, SPAN_NOTICE("\the [src] still needs a grip: [gun_part_names(gripvars)]."))
 		if(InstalledMechanism)
 			to_chat(user, SPAN_NOTICE("\the [src] has \a [InstalledMechanism] installed."))
 		else
-			to_chat(user, SPAN_NOTICE("\the [src] does not have a mechanism installed."))
+			var/obj/item/I = new mechanismvar          //this was killing me IDK why mechanisms arent a list. So this just temporarily makes a actual object to get a name from instead of the type path, if this is stupid and there was an easier way, I missed it, please kill me.
+			to_chat(user, SPAN_NOTICE("\the [src] still needs a mechanism: [I.name]."))
+			qdel(I)
 		if(InstalledBarrel)
 			to_chat(user, SPAN_NOTICE("\the [src] has \a [InstalledBarrel] installed."))
 		else
-			to_chat(user, SPAN_NOTICE("\the [src] does not have a barrel installed."))
+			to_chat(user, SPAN_NOTICE("\the [src] still needs a barrel: [gun_part_names(barrelvars)]."))
 		if(in_range(user, src) || isghost(user))
 			if(serial_type)
 				to_chat(user, SPAN_WARNING("There is a serial number on the frame, it reads [serial_type]."))
