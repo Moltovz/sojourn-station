@@ -108,28 +108,3 @@
     . = ..()
     for(var/path in deckocards)
         new path(src)
-
-/obj/item/cardholder/precon/skeletonappreciation
-    name = "\"Aristoc(rats)\" CardCarp deck"
-    desc = "A box of CardCarp cards usually provided to intermediate players. Intended to be played with the rat side deck. This one is focused on using a LOT of bones and not much else!"
-    deckocards = list(
-        /obj/item/card_carp/antqueen,
-		/obj/item/card_carp/antqueen,
-        /obj/item/card_carp/geck,
-		/obj/item/card_carp/geck,
-        /obj/item/card_carp/bat,
-		/obj/item/card_carp/bat,
-        /obj/item/card_carp/fieldmice,
-        /obj/item/card_carp/ratking,
-		/obj/item/card_carp/ratking,
-        /obj/item/card_carp/cat,
-		/obj/item/card_carp/cat,
-		/obj/item/card_carp/cat,
-		/obj/item/card_carp/cat,
-        /obj/item/card_carp/stinkbug,
-        /obj/item/card_carp/stinkbug,
-        /obj/item/card_carp/coyote,
-        /obj/item/card_carp/coyote,
-        /obj/item/card_carp/coyote,
-        /obj/item/card_carp/coyote,
-        /obj/item/card_carp/gpelt)
