@@ -429,7 +429,7 @@
 		M.add_chemical_effect(CE_OXYGENATED, 1)
 		M.add_chemical_effect(CE_BLOODCLOT, 0.50)
 		M.add_chemical_effect(CE_ANTITOX, 2)
-		M.add_chemical_effect(CE_ANTIBIOTIC, 5)
+		M.add_chemical_effect(CE_ANTIBIOTIC, 6)
 		M.add_chemical_effect(CE_PULSE, -2)
 		M.adjustOxyLoss(-(1 + (M.getOxyLoss() * 0.05)) * effect_multiplier)
 		M.heal_organ_damage(effect_multiplier, effect_multiplier, 5 * effect_multiplier, 5 * effect_multiplier)
@@ -451,7 +451,7 @@
 		M.add_chemical_effect(CE_OXYGENATED, 2)
 		M.add_chemical_effect(CE_BLOODCLOT, 1)
 		M.add_chemical_effect(CE_ANTITOX, 2)
-		M.add_chemical_effect(CE_ANTIBIOTIC, 5)
+		M.add_chemical_effect(CE_ANTIBIOTIC, 6)
 		M.add_chemical_effect(CE_PULSE, -2)
 		M.adjustOxyLoss(-(1 + (M.getOxyLoss() * 0.05)) * effect_multiplier)
 		M.heal_organ_damage(effect_multiplier, effect_multiplier, 5 * effect_multiplier, 5 * effect_multiplier)
@@ -958,7 +958,7 @@ We don't use this but we might find use for it. Porting it since it was updated 
 	nerve_system_accumulations = -5
 
 /datum/reagent/medicine/spaceacillin/affect_blood(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
-	M.add_chemical_effect(CE_ANTIBIOTIC, 5)
+	M.add_chemical_effect(CE_ANTIBIOTIC, 6)
 	M.add_chemical_effect(CE_ANTITOX, 1)
 
 /datum/reagent/medicine/sterilizine

@@ -2291,6 +2291,7 @@
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "aut" = (
@@ -4726,6 +4727,7 @@
 	},
 /obj/machinery/door/window/eastleft,
 /obj/structure/curtain,
+/obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/nadezhda/crew_quarters/dorma2)
 "aQK" = (
@@ -8364,6 +8366,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "bwI" = (
@@ -10742,6 +10745,10 @@
 /obj/machinery/camera/motion/security,
 /turf/simulated/floor/tiled/steel/bar_dance,
 /area/turret_protected/ai)
+"bTd" = (
+/mob/living/carbon/superior/spider/nurse,
+/turf/simulated/floor/wood/wild3,
+/area/nadezhda/crew_quarters/dorma2)
 "bTe" = (
 /obj/structure/bookcase{
 	name = "bookcase (Adult)"
@@ -18311,6 +18318,7 @@
 /area/nadezhda/outside/scave)
 "dkt" = (
 /obj/machinery/door/unpowered/simple/wood,
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "dky" = (
@@ -25555,6 +25563,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "etQ" = (
@@ -28181,6 +28190,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "eRl" = (
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "eRm" = (
@@ -30577,7 +30587,6 @@
 "fms" = (
 /obj/structure/bed/double/padded,
 /obj/item/bedsheet/purpledouble,
-/obj/item/gun/projectile/automatic/omnirifle/scoped,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "fmz" = (
@@ -33761,6 +33770,9 @@
 	cant_be_pulled = 1;
 	abstract = 1
 	},
+/obj/item/clothing/shoes/footwraps,
+/obj/item/clothing/shoes/workboots/toeless,
+/obj/item/clothing/shoes/jackboots/toeless,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorm5)
 "fRf" = (
@@ -38934,12 +38946,7 @@
 	dir = 1;
 	opacity = 0
 	},
-/obj/item/reagent_containers/drinks/bottle/cider,
-/obj/item/reagent_containers/drinks/bottle/cider,
-/obj/item/reagent_containers/drinks/bottle/cider,
-/obj/item/reagent_containers/drinks/bottle/cider,
-/obj/item/reagent_containers/snacks/openable/mre,
-/obj/item/reagent_containers/drinks/bottle/cider,
+/obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "gKk" = (
@@ -60934,6 +60941,7 @@
 	name = "utility sink";
 	pixel_y = 28
 	},
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/nadezhda/crew_quarters/dorma2)
 "kwJ" = (
@@ -76686,6 +76694,11 @@
 /obj/random/junk/low_chance,
 /turf/simulated/floor/rock,
 /area/nadezhda/maintenance/undergroundfloor1north)
+"nkc" = (
+/obj/effect/spider/stickyweb,
+/mob/living/carbon/superior/spider/nurse/queen,
+/turf/simulated/floor/wood/wild3,
+/area/nadezhda/crew_quarters/dorma2)
 "nke" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -81361,6 +81374,8 @@
 /area/nadezhda/hallway/surface/section1)
 "nXm" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spider/stickyweb,
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "nXo" = (
@@ -95429,6 +95444,8 @@
 	pixel_x = 22
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spider/stickyweb,
+/mob/living/carbon/superior/spider/nurse/recluse,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "qoY" = (
@@ -100425,6 +100442,11 @@
 	},
 /turf/simulated/floor/tiled/steel,
 /area/nadezhda/engineering/foyer)
+"riu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spider/stickyweb,
+/turf/simulated/floor/wood/wild3,
+/area/nadezhda/crew_quarters/dorma2)
 "riv" = (
 /obj/effect/spider/stickyweb,
 /obj/effect/spider/stickyweb,
@@ -105909,6 +105931,8 @@
 /obj/machinery/power/wall_obelisk{
 	pixel_y = 22
 	},
+/obj/effect/decal/cleanable/cobweb2,
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "seT" = (
@@ -109323,6 +109347,7 @@
 	pixel_y = 27
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "sKb" = (
@@ -122354,27 +122379,7 @@
 	specialfunctions = 4
 	},
 /obj/structure/closet/cabinet,
-/obj/item/clothing/suit/storage/rank/insp_trench{
-	name = "armored trenchcoat";
-	desc = "A brown and armored trenchcoat."
-	},
-/obj/item/tool_upgrade/refinement/ported_barrel,
-/obj/item/clothing/head/helmet/faceshield/altyn/maska,
-/obj/item/device/radio/headset,
-/obj/item/clothing/suit/armor/vest/ironhammer{
-	desc = "An armored vest that protects against some damage.";
-	name = "armor vest"
-	},
-/obj/item/clothing/glasses/powered/meson,
-/obj/item/clothing/suit/space/void/SCAF/voidwolf/mark,
-/obj/item/gun/projectile/automatic/ak47/sa/tac,
-/obj/item/gun/projectile/automatic/bulldog/rds,
-/obj/item/paper{
-	info = "Fuck you, buy your own god damn magazines, with love, me.";
-	name = "A letter from me";
-	desc = "This can't be good...";
-	color = "#FFAA8c"
-	},
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "uTr" = (
@@ -123897,6 +123902,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/spider/stickyweb,
+/mob/living/carbon/superior/spider/nurse/recluse,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "vgL" = (
@@ -126177,6 +126184,7 @@
 /area/nadezhda/crew_quarters/hydroponics)
 "vAY" = (
 /obj/structure/bed/chair/sofa/black/right,
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorma2)
 "vBb" = (
@@ -129881,6 +129889,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "wgR" = (
@@ -131990,9 +131999,7 @@
 "wyj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/sofa/black/left,
-/obj/item/keys/personal{
-	id = "P2"
-	},
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/carpet/bcarpet,
 /area/nadezhda/crew_quarters/dorma2)
 "wyl" = (
@@ -139103,6 +139110,12 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/flora/pottedplant/xmas,
+/obj/effect/decal/cleanable/cobweb2{
+	icon_state = "cobweb1";
+	tag = "icon-cobweb1";
+	dir = 1
+	},
+/obj/effect/spider/stickyweb,
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "xJy" = (
@@ -139757,17 +139770,9 @@
 /area/nadezhda/maintenance/surfaceeast)
 "xPH" = (
 /obj/structure/table/reinforced,
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/scrap,
-/obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/scrap,
-/obj/item/gun/projectile/boltgun/lever/custer,
-/obj/item/tool/nailstick,
-/obj/item/keys/personal{
-	id = "CR1"
-	},
 /obj/item/toy/junk/xmas_tree{
 	pixel_x = -8
 	},
-/obj/item/tool/hammer/homewrecker,
 /obj/item/modular_computer/telescreen/preset/generic{
 	pixel_y = -28
 	},
@@ -139776,6 +139781,9 @@
 	pixel_x = -22
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/keys/personal{
+	id = "P2"
+	},
 /turf/simulated/floor/wood/wild3,
 /area/nadezhda/crew_quarters/dorma2)
 "xPO" = (
@@ -202738,8 +202746,8 @@ eti
 tSJ
 seS
 wyj
-eRl
-eRl
+nkc
+bTd
 rWi
 tYr
 eBR
@@ -202940,7 +202948,7 @@ tSJ
 tSJ
 sKa
 eRl
-nXm
+riu
 xJw
 rWi
 pKC
@@ -203342,7 +203350,7 @@ bsZ
 cxg
 aQC
 krh
-nXm
+riu
 xPH
 tSJ
 rWi
@@ -203543,7 +203551,7 @@ cxg
 syU
 cxg
 kwH
-nXm
+riu
 qoX
 nTf
 tSJ
