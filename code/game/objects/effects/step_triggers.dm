@@ -464,3 +464,44 @@ var/list/obj/effect/step_trigger/STEP_TELEPORTERS = list()
 /obj/effect/step_trigger/temple_to_bigtemple_2_A
 	id = "temple_to_bigtemple_2_A"
 	id_target = "temple_to_bigtemple_1_A"
+
+
+/obj/effect/step_trigger/colony_to_backrooms1
+	id = "colony_to_backrooms_A"
+	id_target = "colony_to_backrooms_B"
+
+/obj/effect/step_trigger/colony_to_backrooms2
+	id = "colony_to_backrooms_B"
+	id_target = "colony_to_backrooms_A"
+
+/obj/effect/step_trigger/colony_to_backrooms2a
+	id = "colony_to_backrooms_A2"
+	id_target = "colony_to_backrooms_B2"
+
+/obj/effect/step_trigger/colony_to_backrooms2b
+	id = "colony_to_backrooms_B2"
+	id_target = "colony_to_backrooms_A2"
+
+/obj/effect/step_trigger/colony_to_backrooms3a
+	id = "colony_to_backrooms_A4"
+	id_target = "colony_to_backrooms_B4"
+
+/obj/effect/step_trigger/colony_to_backrooms3b
+	id = "colony_to_backrooms_B4"
+	id_target = "colony_to_backrooms_A4"
+
+/obj/effect/step_trigger/colony_to_backrooms4a
+	id = "colony_to_backrooms_A5"
+	id_target = "colony_to_backrooms_B5"
+
+/obj/effect/step_trigger/colony_to_backrooms4b
+	id = "colony_to_backrooms_B5"
+	id_target = "colony_to_backrooms_A5"
+
+/obj/effect/step_trigger/colony_to_backrooms5a
+	id = "colony_to_backrooms_A6"
+	id_target = "colony_to_backrooms_B6"
+
+/obj/effect/step_trigger/colony_to_backrooms5b
+	id = "colony_to_backrooms_B6"
+	id_target = "colony_to_backrooms_A6"

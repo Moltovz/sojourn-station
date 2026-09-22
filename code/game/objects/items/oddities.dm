@@ -1064,3 +1064,16 @@
 	oddity_stats = list(
 		STAT_ROB = 20,
 	)
+
+
+/obj/item/oddity/rare/hohoho
+	name = "Winter 2025 Trophy"
+	desc = "Awarded to responders to an unusual signal from the colony mountainside on 12/23/2565"
+	description_fluff = "You feel like focusing on this oddity a very bad idea"
+	anchored = 1
+	icon_state = "ho"
+	perk = PERK_THIN_SKIN
+	min_stats = 6
+	oddity_stats = list(
+		STAT_ROB = 20,
+	)

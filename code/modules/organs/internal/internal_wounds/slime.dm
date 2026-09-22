@@ -122,6 +122,7 @@
 
 // Infections
 /datum/component/internal_wound/slime/infection
+	treatments_tool = list(QUALITY_LASER_CUTTING = FAILCHANCE_HARD)
 	treatments_chem = list(CE_ANTIBIOTIC = 5)
 	characteristic_flag = IWOUND_CAN_DAMAGE|IWOUND_PROGRESS |IWOUND_SPREAD
 	severity = 0
