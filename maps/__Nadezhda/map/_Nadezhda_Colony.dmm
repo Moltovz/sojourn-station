@@ -64647,9 +64647,7 @@
 	},
 /obj/item/clothing/head/helmet/laserproof/iron_lock_security,
 /obj/item/clothing/suit/armor/vest/iron_lock_security,
-/obj/item/clothing/shoes/ablasive/iron_lock_security,
 /obj/structure/closet/onestar/tier1/special/empty,
-/obj/item/clothing/gloves/thick/ablasive/iron_lock_security,
 /turf/simulated/floor/tiled/cafe,
 /area/nadezhda/crew_quarters/dorm1)
 "lgk" = (
@@ -139013,17 +139011,11 @@
 /obj/structure/table/rack/shelf,
 /obj/item/clothing/suit/armor/vest/ablative/militia,
 /obj/item/clothing/suit/armor/vest/ablative/militia,
-/obj/item/clothing/gloves/thick/ablasive/militia{
-	pixel_y = -6
-	},
 /obj/item/clothing/head/helmet/laserproof/militia{
 	pixel_y = 10
 	},
 /obj/item/clothing/head/helmet/laserproof/militia{
 	pixel_y = 10
-	},
-/obj/item/clothing/gloves/thick/ablasive/militia{
-	pixel_y = -6
 	},
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/nadezhda/security/armory_blackshield)
