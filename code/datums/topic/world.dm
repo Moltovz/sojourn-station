@@ -172,7 +172,6 @@
 		info["name"] = M.name == M.real_name ? M.name : "[M.name] ([M.real_name])"
 		info["role"] = M.mind ? (M.mind.assigned_role ? M.mind.assigned_role : "No role") : "No mind"
 		info["antag"] = M.mind ? (M.mind.antagonist.len ? "Antag" : "Not antag") : "No mind"
-		info["hasbeenrev"] = M.mind ? M.mind.has_been_rev : "No mind"
 		info["stat"] = M.stat
 		info["type"] = M.type
 		if(isliving(M))
@@ -224,8 +223,8 @@
 	if(!rank)
 		rank = "Admin"
 
-	var/message =	"<font color='red'>IRC-[rank] PM from <b><a href='?irc_msg=[input["sender"]]'>IRC-[input["sender"]]</a></b>: [input["msg"]]</font>"
-	var/amessage =  "<font color='blue'>IRC-[rank] PM from <a href='?irc_msg=[input["sender"]]'>IRC-[input["sender"]]</a> to <b>[key_name(C)]</b> : [input["msg"]]</font>"
+	var/message =	"<font color='red'>IRC-[rank] PM from <b><a href='byond://?irc_msg=[input["sender"]]'>IRC-[input["sender"]]</a></b>: [input["msg"]]</font>"
+	var/amessage =  "<font color='blue'>IRC-[rank] PM from <a href='byond://?irc_msg=[input["sender"]]'>IRC-[input["sender"]]</a> to <b>[key_name(C)]</b> : [input["msg"]]</font>"
 
 	C.received_irc_pm = world.time
 	C.irc_admin = input["sender"]

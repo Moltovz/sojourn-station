@@ -40,7 +40,7 @@
 
 	M.attack_log += text("\[[time_stamp()]\] <font color='orange'>Has been flashed (attempt) with [src.name]  by [user.name] ([user.ckey])</font>")
 	user.attack_log += text("\[[time_stamp()]\] <font color='red'>Used the [src.name] to flash [M.name] ([M.ckey])</font>")
-	msg_admin_attack("[user.name] ([user.ckey]) Used the [src.name] to flash [M.name] ([M.ckey]) (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)")
+	msg_admin_attack("[user.name] ([user.ckey]) Used the [src.name] to flash [M.name] ([M.ckey]) (<a href='byond://?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)")
 
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 	user.do_attack_animation(M)
@@ -72,12 +72,11 @@
 	if(issuperioranimal(M))
 		if(M.stat!=DEAD)
 			var/flash_strength = 10
-			if(issuperioranimal(M))
-				var/mob/living/carbon/superior/H = M
-				flash_strength -= H.flash_resistances
+			var/mob/living/carbon/superior/S = M
+			flash_strength -= S.flash_resistances + S.eyecheck()
 			if(flash_strength > 0)
-				M.Weaken(flash_strength)
-				user.visible_message(SPAN_NOTICE("[user] overloads [M]'s sensors with the flash!")) //This IS what we want.
+				S.Weaken(flash_strength)
+				user.visible_message(SPAN_NOTICE("[user] overloads [S]'s sensors with the flash!")) //This IS what we want.
 				return //hacky way to stop miss-messages for the player. but should work
 			else
 				flashfail = TRUE

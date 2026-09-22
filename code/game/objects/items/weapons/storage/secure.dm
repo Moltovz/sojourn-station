@@ -54,7 +54,7 @@
 					src.l_setshort = 1
 					src.l_set = 0
 					user.show_message(SPAN_NOTICE("Internal memory reset. Please give it a few seconds to reinitialize."), 1)
-					sleep(80)
+					sleep(2)
 					src.l_setshort = 0
 					src.l_hacking = 0
 				else
@@ -90,7 +90,7 @@
 	message = text("[]", src.code)
 	if (!src.locked)
 		message = "*****"
-	dat += text("<HR>\n>[]<BR>\n<A href='?src=\ref[];type=1'>1</A>-<A href='?src=\ref[];type=2'>2</A>-<A href='?src=\ref[];type=3'>3</A><BR>\n<A href='?src=\ref[];type=4'>4</A>-<A href='?src=\ref[];type=5'>5</A>-<A href='?src=\ref[];type=6'>6</A><BR>\n<A href='?src=\ref[];type=7'>7</A>-<A href='?src=\ref[];type=8'>8</A>-<A href='?src=\ref[];type=9'>9</A><BR>\n<A href='?src=\ref[];type=R'>R</A>-<A href='?src=\ref[];type=0'>0</A>-<A href='?src=\ref[];type=E'>E</A><BR>\n</TT>", message, src, src, src, src, src, src, src, src, src, src, src, src)
+	dat += text("<HR>\n>[]<BR>\n<a href='byond://?src=\ref[];type=1'>1</A>-<a href='byond://?src=\ref[];type=2'>2</A>-<a href='byond://?src=\ref[];type=3'>3</A><BR>\n<a href='byond://?src=\ref[];type=4'>4</A>-<a href='byond://?src=\ref[];type=5'>5</A>-<a href='byond://?src=\ref[];type=6'>6</A><BR>\n<a href='byond://?src=\ref[];type=7'>7</A>-<a href='byond://?src=\ref[];type=8'>8</A>-<a href='byond://?src=\ref[];type=9'>9</A><BR>\n<a href='byond://?src=\ref[];type=R'>R</A>-<a href='byond://?src=\ref[];type=0'>0</A>-<a href='byond://?src=\ref[];type=E'>E</A><BR>\n</TT>", message, src, src, src, src, src, src, src, src, src, src, src, src)
 	user << browse(HTML_SKELETON(dat), "window=caselock;size=300x280")
 
 /obj/item/storage/secure/Topic(href, href_list)
@@ -153,6 +153,7 @@
 	throw_speed = 1
 	throw_range = 4
 	w_class = ITEM_SIZE_BULKY
+	var/has_loot = FALSE
 
 /obj/item/storage/secure/briefcase/attack_hand(mob/user as mob)
 	if ((src.loc == user) && (src.locked == 1))
@@ -164,6 +165,87 @@
 		close_all()
 	src.add_fingerprint(user)
 	return
+
+
+/obj/item/storage/secure/briefcase/random_items
+	has_loot = TRUE
+
+/obj/item/storage/secure/briefcase/random_items/populate_contents()
+	..()
+	if(has_loot)
+		var/loops = rand(1,3)
+		while(loops)
+			loops -= 1
+			if(prob(50))
+				new /obj/item/paper(src)
+			if(prob(30))
+				new /obj/item/paper(src)
+
+		if(prob(rand(30,80)))
+			new /obj/random/pen_safe(src)
+
+		if(prob(rand(30,80)))
+			new /obj/random/pen_safe(src)
+
+		if(prob(rand(10,20)))
+			new /obj/random/credits/c100(src)
+
+		if(prob(rand(30,50)))
+			if(prob(70))
+				new /obj/item/pc_part/drive/disk/adv/coin(src)
+			else
+				new /obj/item/pc_part/drive/disk/adv/coin/random_size(src)
+
+		if(prob(rand(10,30)))
+			new /obj/item/newspaper(src)
+
+		if(prob(rand(20,70)))
+			if(prob(rand(40,95)))
+				new /obj/item/folder(src)
+			if(prob(rand(30,80)))
+				new /obj/item/folder/blue(src)
+			if(prob(rand(30,80)))
+				new /obj/item/folder/red(src)
+			if(prob(rand(30,80)))
+				new /obj/item/folder/yellow(src)
+			if(prob(rand(30,80)))
+				new /obj/item/folder/cyan(src)
+
+		if(prob(30))
+			new /obj/item/stack/medical/bruise_pack(src)
+			new /obj/random/medical/always_spawn(src)
+		if(prob(15))
+			new /obj/random/cloth/gloves(src)
+		if(prob(15))
+			new /obj/random/cloth/glasses(src)
+		if(prob(rand(70,100)))
+			new /obj/random/drinking_glasses(src)
+
+		if(prob(rand(10,30)))
+			if(prob(rand(10,15)))
+				new /obj/item/oddity/common/blueprint(src)
+			if(prob(rand(5,15)))
+				new /obj/item/oddity/common/old_newspaper(src)
+			if(prob(rand(5,15)))
+				new /obj/item/oddity/common/paper_crumpled(src)
+			if(prob(5))
+				new /obj/item/oddity/common/old_pda(src)
+			if(prob(rand(25,30)))
+				new /obj/item/oddity/common/paper_bundle(src)
+			if(prob(rand(5,10)))
+				new /obj/item/oddity/common/disk(src)
+
+		if(prob(5))
+			new /obj/random/lathe_disk(src)
+		if(prob(3))
+			new /obj/random/gun_pistol/always_spawn(src)
+
+		l_code += "[rand(0,9)]"
+		l_code += "[rand(0,9)]"
+		l_code += "[rand(0,9)]"
+		l_code += "[rand(0,9)]"
+		l_code += "[rand(0,9)]"
+		l_set = TRUE
 
 // -----------------------------
 //        Secure Safe

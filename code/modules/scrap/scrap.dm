@@ -105,11 +105,34 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		if(prob(66))
 			big_item.make_old()
 		qdel(CATCH)
+	else
+		//25% to get a scrap geo
+		if(prob(25))
+			big_item = new/obj/item/scrap_geo(src)
 
 /obj/structure/scrap/proc/try_make_loot()
 	if(loot_generated)
 		return
 	loot_generated = TRUE
+
+	var/area/my_area = get_area(src.loc)
+
+	if(my_area.is_gp)
+		loot_list += list(
+			/obj/item/stack/os_cash = 0.5,
+			/obj/random/cloth/greyson_clothing/low_chance = 0.1,
+			/obj/item/clothing/mask/smokable/cigarette/os = 0.2,
+			/obj/item/reagent_containers/drinks/os_coffee = 0.2,
+			/obj/item/reagent_containers/snacks/openable/os_soypack = 0.05,
+			/obj/item/reagent_containers/snacks/openable/os_bun = 0.05,
+			/obj/item/reagent_containers/snacks/openable/os_meat = 0.05,
+			/obj/item/reagent_containers/snacks/openable/candy/os = 0.05,
+			/obj/item/reagent_containers/snacks/openable/mre/os = 0.05,
+			/obj/item/reagent_containers/snacks/os_paste = 0.03,
+			/obj/item/reagent_containers/snacks/openable/os_heart = 0.01,
+			/obj/item/reagent_containers/snacks/openable/os_liver = 0.01
+		)
+
 	if(!big_item)
 		make_big_loot()
 
@@ -309,6 +332,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		visible_message("<span class='notice'><span style='color:orange'>A pile of refined scrap is found beneath the [src]!</span>")
 	qdel(src)
 
+//Super easy task to farm for super minior gains
 /obj/structure/scrap/attackby(obj/item/W, mob/living/carbon/human/user)
 	if(user.a_intent != I_HURT)
 		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
@@ -316,7 +340,7 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 		var/tool_type = W.get_tool_type(user, usable_qualities, src)
 		switch(tool_type)
 			if(QUALITY_SHOVELING)
-				if(W.use_tool(user, src, WORKTIME_NORMAL, QUALITY_SHOVELING, FAILCHANCE_VERY_EASY, required_stat = STAT_ROB, forced_sound = "rummage"))
+				if(W.use_tool(user, src, WORKTIME_NORMAL - user.learnt_tasks.get_task_mastery_level("SCRAPPER"), QUALITY_SHOVELING, FAILCHANCE_VERY_EASY - user.learnt_tasks.get_task_mastery_level("SCRAPPER"), required_stat = STAT_ROB, forced_sound = "rummage"))
 					user.visible_message(SPAN_NOTICE("[user] [pick(ways)] \the [src]."))
 					user.do_attack_animation(src)
 					if(user.stats.getPerk(PERK_JUNKBORN))
@@ -326,10 +350,13 @@ GLOBAL_LIST_EMPTY(scrap_base_cache)
 					dig_out_lump(user.loc, 0)
 					shuffle_loot()
 					clear_if_empty()
+					user.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/scrapper, "SCRAPPER", skill_gained = 0.1, learner = user)
+
 			if(QUALITY_HAMMERING)
-				if(W.use_tool(user,src, WORKTIME_EXTREMELY_LONG, QUALITY_HAMMERING, FAILCHANCE_HARD, required_stat = STAT_ROB, forced_sound = "rummage"))
+				if(W.use_tool(user,src, WORKTIME_EXTREMELY_LONG - user.learnt_tasks.get_task_mastery_level("SCRAPPER"), QUALITY_HAMMERING, FAILCHANCE_HARD - user.learnt_tasks.get_task_mastery_level("SCRAPPER"), required_stat = STAT_ROB, forced_sound = "rummage"))
 					user.visible_message(SPAN_NOTICE("[user] compacts \the [src] into a solid mass!"))
 					make_cube()
+					user.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/scrapper, "SCRAPPER", skill_gained = 0.2, learner = user)
 
 /obj/structure/scrap/large
 	name = "large scrap pile"

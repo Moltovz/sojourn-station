@@ -194,7 +194,7 @@
 		new /obj/item/gun/projectile/revolver/deckard(src)
 		new /obj/item/ammo_magazine/speed_loader_kurtz_50/rubber/pepperball(src)
 		new /obj/item/ammo_magazine/speed_loader_kurtz_50/rubber/pepperball(src)
-		new /obj/item/ammo_magazine/speed_loader_kurtz_50(src)
+		new /obj/item/ammo_magazine/speed_loader_kurtz_50/entanglement(src)
 		new /obj/item/ammo_magazine/speed_loader_kurtz_50(src)
 		new /obj/item/clothing/accessory/holster/armpit(src)
 
@@ -227,7 +227,7 @@
 	populate_contents()
 		new /obj/item/gun/projectile/revolver/rev10/mateba(src)
 		new /obj/item/ammo_magazine/speed_loader_kurtz_50/rubber/pepperball(src)
-		new /obj/item/ammo_magazine/speed_loader_kurtz_50(src)
+		new /obj/item/ammo_magazine/speed_loader_kurtz_50/entanglement(src)
 		new /obj/item/ammo_magazine/speed_loader_kurtz_50(src)
 		new /obj/item/clothing/accessory/holster/armpit(src)
 
@@ -293,8 +293,8 @@
 	populate_contents()
 		new /obj/item/clothing/suit/armor/vest/ablative/ironhammer(src)
 		new /obj/item/clothing/head/helmet/laserproof/marshal(src)
-		new /obj/item/clothing/gloves/thick/ablasive(src)
-		new /obj/item/clothing/shoes/ablasive(src)
+		new /obj/item/clothing/gloves/thick/ablative(src)
+		new /obj/item/clothing/shoes/ablative(src)
 
 /obj/item/storage/box/m_kit/riot
 	name = "Riot Armor Kit"

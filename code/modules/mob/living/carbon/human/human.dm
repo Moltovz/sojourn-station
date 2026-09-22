@@ -23,8 +23,6 @@
 	hud_list[SPECIALROLE_HUD] = image('icons/mob/hud.dmi', src, "hudblank",     ON_MOB_HUD_LAYER)
 	hud_list[STATUS_HUD_OOC]  = image('icons/mob/hud.dmi', src, "hudhealthy",   ON_MOB_HUD_LAYER)
 
-
-
 	GLOB.human_mob_list |= src
 	..()
 
@@ -124,6 +122,17 @@
 	if(N)
 		. += "Nanites Point: [N.nanite_points]"
 
+	if(stats.getPerk(PERK_NO_OBFUSCATION) && stats.getPerk(PERK_BLOOD_LUST))
+		. += "Bloodlust Aura: [target_dummy ? "Active" : "Inactive"]"
+
+	//If we get the perk or have no obfuscation then tell us are genetic instablity
+	if((stats.getPerk(PERK_GLUTTEN) && unnatural_mutations) || stats.getPerk(PERK_NO_OBFUSCATION))
+		. += "Genetic Instablity Level: [unnatural_mutations.total_instability]/[unnatural_mutations.allowed_instability_base]"
+		//No you dont get this for free
+		if(unnatural_mutations.processing_destabilization && stats.getPerk(PERK_NO_OBFUSCATION))
+			. += "::WARNING:: Genetic Destabilization! You are in the process of turning into a Once Was!"
+			. += "::WARNING:: Once Was Progression [unnatural_mutations.stage]/13"
+
 	src.stats.initialized = TRUE
 
 /mob/living/carbon/human/flash(duration = 0, drop_items = FALSE, doblind = FALSE, doblurry = FALSE, eye_damage = 0)
@@ -210,35 +219,37 @@
 		if(slot in list(slot_l_store, slot_r_store))
 			continue
 		var/obj/item/thing_in_slot = get_equipped_item(slot)
-		dat += "<BR><B>[entry]:</b> <a href='?src=\ref[src];item=[slot]'>[istype(thing_in_slot) ? thing_in_slot : "nothing"]</a>"
+		dat += "<BR><B>[entry]:</b> <a href='byond://?src=\ref[src];item=[slot]'>[istype(thing_in_slot) ? thing_in_slot : "nothing"]</a>"
 
 	dat += "<BR><HR>"
 
-/*	if(species.hud.has_hands)
-		dat += "<BR><b>Left hand:</b> <A href='?src=\ref[src];item=[slot_l_hand]'>[istype(l_hand) ? l_hand : "nothing"]</A>"
-		dat += "<BR><b>Right hand:</b> <A href='?src=\ref[src];item=[slot_r_hand]'>[istype(r_hand) ? r_hand : "nothing"]</A>"*/
+/*
+	if(species.hud.has_hands)
+		dat += "<BR><b>Left hand:</b> <a href='byond://?src=\ref[src];item=[slot_l_hand]'>[istype(l_hand) ? l_hand : "nothing"]</A>"
+		dat += "<BR><b>Right hand:</b> <a href='byond://?src=\ref[src];item=[slot_r_hand]'>[istype(r_hand) ? r_hand : "nothing"]</A>"
+*/
 
 	// Do they get an option to set internals?
 	if(istype(wear_mask, /obj/item/clothing/mask) || istype(head, /obj/item/clothing/head/helmet/space))
 		if(istype(back, /obj/item/tank) || istype(belt, /obj/item/tank) || istype(s_store, /obj/item/tank))
-			dat += "<BR><A href='?src=\ref[src];item=internals'>Toggle internals.</A>"
+			dat += "<BR><a href='byond://?src=\ref[src];item=internals'>Toggle internals.</A>"
 
 	// Other incidentals.
 	if(handcuffed)
-		dat += "<BR><A href='?src=\ref[src];item=[slot_handcuffed]'>Handcuffed</A>"
+		dat += "<BR><a href='byond://?src=\ref[src];item=[slot_handcuffed]'>Handcuffed</A>"
 	if(legcuffed)
-		dat += "<BR><A href='?src=\ref[src];item=[slot_legcuffed]'>Legcuffed</A>"
+		dat += "<BR><a href='byond://?src=\ref[src];item=[slot_legcuffed]'>Legcuffed</A>"
 
 	for(var/entry in worn_underwear)
 		var/obj/item/underwear/UW = entry
-		dat += "<BR><a href='?src=\ref[src];item=\ref[UW]'>Remove \the [UW]</a>"
+		dat += "<BR><a href='byond://?src=\ref[src];item=\ref[UW]'>Remove \the [UW]</a>"
 
 	if(suit && suit.accessories.len)
-		dat += "<BR><A href='?src=\ref[src];item=tie'>Remove accessory</A>"
-	dat += "<BR><A href='?src=\ref[src];item=splints'>Remove splints</A>"
-	dat += "<BR><A href='?src=\ref[src];item=pockets'>Empty pockets</A>"
-	dat += "<BR><A href='?src=\ref[user];refresh=1'>Refresh</A>"
-	dat += "<BR><A href='?src=\ref[user];mach_close=mob[name]'>Close</A>"
+		dat += "<BR><a href='byond://?src=\ref[src];item=tie'>Remove accessory</A>"
+	dat += "<BR><a href='byond://?src=\ref[src];item=splints'>Remove splints</A>"
+	dat += "<BR><a href='byond://?src=\ref[src];item=pockets'>Empty pockets</A>"
+	dat += "<BR><a href='byond://?src=\ref[user];refresh=1'>Refresh</A>"
+	dat += "<BR><a href='byond://?src=\ref[user];mach_close=mob[name]'>Close</A>"
 
 	user << browse(HTML_SKELETON(dat), text("window=mob[name];size=340x540"))
 	onclose(user, "mob[name]")
@@ -437,7 +448,7 @@ var/list/rank_prefix = list(\
 								to_chat(usr, "<b>Major Crimes:</b> [R.fields["ma_crim"]]")
 								to_chat(usr, "<b>Details:</b> [R.fields["ma_crim_d"]]")
 								to_chat(usr, "<b>Notes:</b> [R.fields["notes"]]")
-								to_chat(usr, "<a href='?src=\ref[src];secrecordComment=`'>\[View Comment Log\]</a>")
+								to_chat(usr, "<a href='byond://?src=\ref[src];secrecordComment=`'>\[View Comment Log\]</a>")
 								read = 1
 
 			if(!read)
@@ -466,7 +477,7 @@ var/list/rank_prefix = list(\
 									counter++
 								if (counter == 1)
 									to_chat(usr, "No comment found")
-								to_chat(usr, "<a href='?src=\ref[src];secrecordadd=`'>\[Add comment\]</a>")
+								to_chat(usr, "<a href='byond://?src=\ref[src];secrecordadd=`'>\[Add comment\]</a>")
 
 			if(!read)
 				to_chat(usr, "\red Unable to locate a data core entry for this person.")
@@ -565,7 +576,7 @@ var/list/rank_prefix = list(\
 								to_chat(usr, "<b>Major Disabilities:</b> [R.fields["ma_dis"]]")
 								to_chat(usr, "<b>Details:</b> [R.fields["ma_dis_d"]]")
 								to_chat(usr, "<b>Notes:</b> [R.fields["notes"]]")
-								to_chat(usr, "<a href='?src=\ref[src];medrecordComment=`'>\[View Comment Log\]</a>")
+								to_chat(usr, "<a href='byond://?src=\ref[src];medrecordComment=`'>\[View Comment Log\]</a>")
 								read = 1
 
 			if(!read)
@@ -598,7 +609,7 @@ var/list/rank_prefix = list(\
 									counter++
 								if (counter == 1)
 									to_chat(usr, "No comment found")
-								to_chat(usr, "<a href='?src=\ref[src];medrecordadd=`'>\[Add comment\]</a>")
+								to_chat(usr, "<a href='byond://?src=\ref[src];medrecordadd=`'>\[Add comment\]</a>")
 
 			if(!read)
 				to_chat(usr, "\red Unable to locate a data core entry for this person.")
@@ -660,6 +671,12 @@ var/list/rank_prefix = list(\
 	if(E)
 		total_protection += E.flash_protection
 
+	if(unnatural_mutations.getMutation(MUTATION_XENO_EYELIDS))
+		total_protection += 2
+
+	if(unnatural_mutations.getMutation(MUTATION_ADVANCED_EYELIDS))
+		total_protection += 1
+
 	return total_protection
 
 ///earcheck()
@@ -693,6 +710,10 @@ var/list/rank_prefix = list(\
 		ear_protection_questionmark *= 0.5
 		ear_protection_questionmark = round(ear_protection_questionmark)
 		ear_protection_questionmark -= 1
+
+	//We are placed After EOQ do to power creep :)
+	if(unnatural_mutations.getMutation(MUTATION_HARDEN_EARS))
+		ear_protection_questionmark += 2
 
 	return ear_protection_questionmark
 
@@ -1621,7 +1642,7 @@ var/list/rank_prefix = list(\
 			if(BV.damage > 4) // Same as examine text, if our blood vessels are damaged beyond self-healing threshold...
 				status += "<font color='6533da'>swollen with black and blue spots</font>" // ...Let us see our bruises.
 		if(org.status & ORGAN_SPLINTED) // If our limb is splinted, tell us...
-			status += "<a href='?src=\ref[src];item=splints'>splinted</a>" // ...And let us remove the splints ourselves!
+			status += "<a href='byond://?src=\ref[src];item=splints'>splinted</a>" // ...And let us remove the splints ourselves!
 		var/status_text = SPAN_NOTICE("OK")
 		if(status.len)
 			status_text = SPAN_WARNING(english_list(status))

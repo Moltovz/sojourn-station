@@ -18,10 +18,10 @@
 					is_multikeying = 1
 				if(matches)
 					if(M.client)
-						message_admins("<font color='red'><B>Notice: </B></font><font color='blue'><A href='?src=\ref[usr];priv_msg=\ref[src]'>[key_name_admin(src)]</A> has the same [matches] as <A href='?src=\ref[usr];priv_msg=\ref[M]'>[key_name_admin(M)]</A>.</font>", 1)
+						message_admins("<font color='red'><B>Notice: </B></font><font color='blue'><a href='byond://?src=\ref[usr];priv_msg=\ref[src]'>[key_name_admin(src)]</A> has the same [matches] as <a href='byond://?src=\ref[usr];priv_msg=\ref[M]'>[key_name_admin(M)]</A>.</font>", 1)
 						log_access("Notice: [key_name(src)] has the same [matches] as [key_name(M)].")
 					else
-						message_admins("<font color='red'><B>Notice: </B></font><font color='blue'><A href='?src=\ref[usr];priv_msg=\ref[src]'>[key_name_admin(src)]</A> has the same [matches] as [key_name_admin(M)] (no longer logged in). </font>", 1)
+						message_admins("<font color='red'><B>Notice: </B></font><font color='blue'><a href='byond://?src=\ref[usr];priv_msg=\ref[src]'>[key_name_admin(src)]</A> has the same [matches] as [key_name_admin(M)] (no longer logged in). </font>", 1)
 						log_access("Notice: [key_name(src)] has the same [matches] as [key_name(M)] (no longer logged in).")
 		if(is_multikeying && !client.warned_about_multikeying)
 			client.warned_about_multikeying = 1
@@ -43,11 +43,11 @@
 
 	next_move = 1
 	sight |= SEE_SELF
+	client.statobj = src
 
-	// YES, this is expensive
-	// YES, this calls 200k Move() calls
-	// however eris paralax is so bad that removing this breaks it
-
+	MakeParallax()
+	// We don't call the parent login proc. Previous comment below.
+	// --
 	// BYOND's internal implementation of login does two things
 	// 1: Set statobj to the mob being logged into (We got this covered)
 	// 2: And I quote "If the mob has no location, place it near (1,1,1) if possible"
@@ -58,7 +58,7 @@
 	// We don't allow moves from nullspace -> somewhere. This means the loop has to iterate all the turfs in (1,1,1)'s area
 	// For us, (1,1,1) is a space tile. This means roughly 200,000! calls to Move()
 	// You do not want this
-	..()
+	// ..()
 
 //	if(!client) Soj Edit removes some client checking
 //		return FALSE
@@ -93,3 +93,4 @@
 		client.fullscreen_check()
 		client.init_verbs()
 		update_action_buttons()
+	return TRUE

@@ -25,7 +25,6 @@
 		if(get_dist(src, thing) <= viewRange)
 			list_to_return += thing
 	return list_to_return*/
-
 /mob/living/carbon/superior/proc/findTarget(prioritizeCurrent = FALSE)
 
 	if (prioritizeCurrent)
@@ -34,42 +33,28 @@
 				return //if we already have a target_mob and we want to not untarget, lets just return
 
 	var/list/filteredTargets = list()
-
 	var/turf/our_turf = get_turf(src)
-	if (our_turf) //If we're not in anything, continue
-		var/list/inview = view(src, viewRange)
+	if(!our_turf)
+		return FALSE
 
-		for(var/obj/item/item_clearing in inview) //removes all items from are list this should make mobs target faster
-			inview -= item_clearing
+	// Mobs
+	for(var/mob/living/L in view(src, viewRange))
+		if(isValidAttackTarget(L))
+			if(L.target_dummy && prioritize_dummies) //We are target before anyone, quick return
+				return L
+			filteredTargets += L
 
-		for(var/mob/living/target_mob in inview) //as anything : Removed do optimization
-			if(isValidAttackTarget(target_mob))
-				if(target_mob.target_dummy && prioritize_dummies) //Target me over anyone else
-					return target_mob
-				filteredTargets += target_mob
-			inview -= target_mob
+	for(var/obj/machinery/A in view(src, viewRange))
 
-		for(var/obj/machinery/tesla_turret/tesla_turret in view(src, viewRange))
-			if(isValidAttackTarget(tesla_turret))
-				filteredTargets += tesla_turret
-			inview -= tesla_turret
+		// Turrets
+		if(istype(A, /obj/machinery/tesla_turret) || istype(A, /obj/machinery/porta_turret) || istype(A, /obj/machinery/power/os_turret))
+			if(isValidAttackTarget(A))
+				filteredTargets += A
 
-		for(var/obj/machinery/porta_turret/porta_turret in view(src, viewRange))
-			if(isValidAttackTarget(porta_turret))
-				filteredTargets += porta_turret
-			inview -= porta_turret
-
-		for(var/obj/machinery/power/os_turret/os_turret in view(src, viewRange))
-			if(isValidAttackTarget(os_turret))
-				filteredTargets += os_turret
-			inview -= os_turret
-
-		for(var/obj/mecha/M in GLOB.mechas_list)
-			//As goofy as this looks its more optimized as were not looking at every mech outside are z-level if they are around us. - Trilby
-			if(M.z == z)
-				if(get_dist(src, M) <= viewRange)
-					if(isValidAttackTarget(M))
-						filteredTargets += M
+	// Mechas
+	for(var/obj/mecha/M in view(src, viewRange))
+		if(isValidAttackTarget(M))
+			filteredTargets += M
 
 	var/atom/filteredTarget = safepick(getTargets(filteredTargets, src))
 
@@ -147,6 +132,10 @@
 	target_mob = null
 	target_location = null
 
+//Used in cases where we are checking perks, currently only checked when mob is living
+/mob/living/carbon/superior/proc/uniquic_isValidAttackTarget(atom/O)
+	return FALSE
+
 /mob/living/carbon/superior/proc/isValidAttackTarget(atom/O)
 
 //Soj optimizations: Faster returns rather then mega returns
@@ -159,6 +148,9 @@
 		//If we are standing well below crit, then it is still a threat
 		if(L.health <= (ishuman(L) ? HEALTH_THRESHOLD_CRIT : 0) && resting)
 			return FALSE
+		//Uniquic overrides factions and attack same unless uniquic incorperates those aspects.
+		if(uniquic_isValidAttackTarget(L))
+			return TRUE
 		if((!attack_same && (L.faction == faction)) || (L in friends)) //just cuz your a friend dosnt mean it magically will no longer attack same
 			return FALSE
 		if(L.friendly_to_colony && friendly_to_colony) //If are target and areselfs have the friendly to colony tag, used for chtmant protection
@@ -367,7 +359,7 @@
 			if (retaliation_type)
 				if (retaliation_type & APPROACH_ATTACKER)
 					if (stat != DEAD)
-						INVOKE_ASYNC(SSmove_manager, /datum/controller/subsystem/move_manager/proc/move_to, src, target_location, (comfy_range - comfy_distance), move_to_delay)
+						INVOKE_ASYNC(SSmove_manager, /datum/controller/subsystem/move_manager/proc/move_to, src, target_location, (comfy_range - comfy_distance), movement_delay())
 
 
 /mob/living/carbon/superior/proc/movement_tech()

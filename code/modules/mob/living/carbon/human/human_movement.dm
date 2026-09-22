@@ -13,7 +13,7 @@
 	if(CE_SLOWDOWN in chem_effects)
 		tally += chem_effects[CE_SLOWDOWN]
 	if(MOVING_QUICKLY(src))
-		tally -= unique_armor_check(src, src, 0)
+		tally -= unique_armor_check(src, src, 0, "shoes")
 	if(isturf(loc))
 		var/turf/T = loc
 		if(T.get_lumcount() < 0.6)
@@ -185,6 +185,9 @@
 	update_momentum()
 
 /mob/living/carbon/human/proc/update_momentum()
+	if(QDELETED(src))
+		deltimer(momentum_reduction_timer)
+		return
 	if(momentum_speed)
 		momentum_reduction_timer = addtimer(CALLBACK(src, PROC_REF(calc_momentum)), 1 SECONDS, TIMER_STOPPABLE)
 	else

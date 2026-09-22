@@ -131,6 +131,7 @@
 	var/predetermed = null //Used for NPCs to sudo rng, uses define zones directly
 
 	var/steel_rain = 0
+	var/entanglement_level = 0
 
 /obj/item/projectile/New()
 
@@ -215,6 +216,7 @@
 			L.IgniteMob()
 			src.visible_message(SPAN_WARNING("\The [src] sets [target] on fire!"))
 		L.apply_effects(stun, weaken, paralyze, irradiate, stutter, eyeblur, drowsy)
+		L.entanglement += entanglement_level
 	return TRUE
 
 // generate impact effect
@@ -241,9 +243,9 @@
 */
 /obj/item/projectile/proc/get_structure_damage(var/injury_type)
 	if(!injury_type) // Assume homogenous
-		return (damage_types[BRUTE] + damage_types[BURN]) * wound_check(INJURY_TYPE_HOMOGENOUS, wounding_mult, edge, sharp) * 2
+		return (damage_types[BRUTE] + damage_types[BURN]) * wound_check(INJURY_TYPE_HOMOGENOUS, wounding_mult, edge, sharp) * structure_damage_factor
 	else
-		return (damage_types[BRUTE] + damage_types[BURN]) * wound_check(injury_type, wounding_mult, edge, sharp) * 2
+		return (damage_types[BRUTE] + damage_types[BURN]) * wound_check(injury_type, wounding_mult, edge, sharp) * structure_damage_factor
 
 //return 1 if the projectile should be allowed to pass through after all, 0 if not.
 /obj/item/projectile/proc/check_penetrate(atom/A)
@@ -753,7 +755,7 @@
 		else
 			target_mob.attack_log += "\[[time_stamp()]\] <b>[original_firer] (May No Longer Exists)</b> shot <b>[target_mob]/[target_mob.ckey]</b> with <b>\a [src]</b>"
 			if(target_mob?.ckey && original_firer?.ckey) //We dont care about PVE
-				msg_admin_attack("[original_firer.name] (May No Longer Exists) shot [target_mob] ([target_mob.ckey]) with \a [src] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[target_mob.x];Y=[target_mob.y];Z=[target_mob.z]'>JMP</a>)")
+				msg_admin_attack("[original_firer.name] (May No Longer Exists) shot [target_mob] ([target_mob.ckey]) with \a [src] (<a href='byond://?_src_=holder;adminplayerobservecoodjump=1;X=[target_mob.x];Y=[target_mob.y];Z=[target_mob.z]'>JMP</a>)")
 				log_admin("[target_mob.real_name] Ckey [original_firer.ckey] shot with [src.type] by [original_firer.ckey] named [original_firer.real_name]")
 
 	if(target_mob.mob_classification & CLASSIFICATION_ORGANIC)

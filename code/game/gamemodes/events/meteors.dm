@@ -405,7 +405,7 @@ disabled
 	if (istype(hit_location))
 		var/area/A = get_area(hit_location)
 		var/where = "[A? A.name : "Unknown Location"] | [hit_location.x], [hit_location.y]"
-		var/whereLink = "<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[hit_location.x];Y=[hit_location.y];Z=[hit_location.z]'>[where]</a>"
+		var/whereLink = "<a href='byond://?_src_=holder;adminplayerobservecoodjump=1;X=[hit_location.x];Y=[hit_location.y];Z=[hit_location.z]'>[where]</a>"
 		message_admins("A meteor has impacted at ([whereLink])", 0, 1)
 		log_game("A meteor has impacted at ([where]).")
 
@@ -452,6 +452,18 @@ disabled
 /obj/effect/meteor/big/meteor_effect()
 	..()
 	explosion(src.loc, 1, 2, 3, 4, 0)
+
+/obj/effect/meteor/dust/glass
+	name = "glass shard"
+	meteordrop = /obj/item/material/shard
+
+/obj/effect/meteor/dust/rods
+	name = "steel rod"
+	meteordrop = /obj/item/stack/rods
+
+/obj/effect/meteor/dust/metal
+	name = "steel wreck"
+	meteordrop = /obj/item/stack/material/steel
 
 //Flaming meteor
 /obj/effect/meteor/flaming

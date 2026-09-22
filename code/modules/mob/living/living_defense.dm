@@ -90,6 +90,11 @@
 			remaining_ablative *= 1.25
 			armor *= 1.25
 
+		if(stats.getPerk(PERK_NT_SHIELD))
+			var/datum/perk/cooldown/nt_shield/shield_arts = stats.getPerk(PERK_NT_SHIELD)
+			armor += min(2, shield_arts.swings * 0.25)
+			if(stats.getPerk(PERK_NT_FURIOSO))
+				armor += min(6, shield_arts.swings * 0.25)
 
 	for(var/dmg_type in dmg_types)
 		var/dmg = dmg_types[dmg_type]
@@ -244,6 +249,10 @@
 	if (P.is_hot() >= HEAT_MOBIGNITE_THRESHOLD)
 		IgniteMob()
 
+	if(unnatural_mutations.getMutation(MUTATION_XENO_SKIN))
+		P.sharp = 0
+		P.edge = 0
+
 	//Being hit while using a deadman switch
 	if(istype(get_active_hand(),/obj/item/device/assembly/signaler))
 		var/obj/item/device/assembly/signaler/signaler = get_active_hand()
@@ -339,6 +348,10 @@
 //	if(HULK in user.mutations)
 //		effective_force *= 2
 
+	if(unnatural_mutations.getMutation(MUTATION_XENO_SKIN))
+		I.sharp = 0
+		I.edge = 0
+
 	//Apply weapon damage
 	if (damage_through_armor(effective_force, I.damtype, hit_zone, ARMOR_MELEE, I.armor_divisor, used_weapon = I, sharp = is_sharp(I), edge = has_edge(I)))
 		return TRUE
@@ -378,7 +391,7 @@
 				src.attack_log += text("\[[time_stamp()]\] <font color='orange'>Has been hit with a [O], thrown by [M.name] ([assailant.ckey])</font>")
 				M.attack_log += text("\[[time_stamp()]\] <font color='red'>Hit [src.name] ([src.ckey]) with a thrown [O]</font>")
 				if(!ismouse(src))
-					msg_admin_attack("[src.name] ([src.ckey]) was hit by a [O], thrown by [M.name] ([assailant.ckey]) (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[src.x];Y=[src.y];Z=[src.z]'>JMP</a>)")
+					msg_admin_attack("[src.name] ([src.ckey]) was hit by a [O], thrown by [M.name] ([assailant.ckey]) (<a href='byond://?_src_=holder;adminplayerobservecoodjump=1;X=[src.x];Y=[src.y];Z=[src.z]'>JMP</a>)")
 
 		// Begin BS12 momentum-transfer code.
 		var/mass = 1.5
