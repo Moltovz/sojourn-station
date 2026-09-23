@@ -455,7 +455,7 @@
 	icon_state = "turret"
 	cooldown_time = 1 SECONDS
 	spawn_weight  = 60
-	var/firing_range = 7
+	var/firing_range = 9
 	var/last_target					//last target fired at, prevents turrets from erratically firing at all valid targets in range
 	var/shot_delay = 30				//3 seconds between each shot by default, gets faster with evo level
 	var/last_fired = 0				//1: if the turret is cooling down from a shot, 0: turret is ready to fire

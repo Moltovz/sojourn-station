@@ -62,7 +62,7 @@ GLOBAL_LIST_INIT(turret_channels, new/list(5))
 	var/damage_mod = 0.7
 
 	/// How far we will fire at mobs from. 6 by default.
-	var/firing_range = 6
+	var/firing_range = 8
 
 	// Used to not target allied mobs
 	var/colony_allied_turret = FALSE //Are we allied with the colony?

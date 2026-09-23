@@ -146,6 +146,7 @@
 	icon_state = "actionA"
 	screen_loc = "11,1:13"
 	var/minloc = "10,2:13"
+	var/ErisOptimized_minloc
 	layer = ABOVE_HUD_LAYER
 	plane = ABOVE_HUD_PLANE
 

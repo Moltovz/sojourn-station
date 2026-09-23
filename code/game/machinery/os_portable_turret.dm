@@ -17,7 +17,7 @@
 
 	// Targeting
 	var/should_target_players = TRUE			// TRUE targets players, FALSE targets superior animals (roaches, golems, and spiders)
-	var/firing_range = 7						// 15x15 atm, so we dont no-scope off screen target
+	var/firing_range = 9						// 15x15 atm, so we dont no-scope off screen target
 	var/returning_fire = FALSE					// Will attempt to fire at the nearest target when attacked and no one is in range
 	var/last_target								//last target fired at, prevents turrets from erratically firing at all valid targets in range
 

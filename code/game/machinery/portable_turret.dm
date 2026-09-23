@@ -14,7 +14,7 @@
 	anchored = TRUE
 
 	/// How far we will fire at mobs from. 7 by default.
-	var/firing_range = 7
+	var/firing_range = 9
 
 	density = FALSE
 	use_power = IDLE_POWER_USE				//this turret uses and requires power
